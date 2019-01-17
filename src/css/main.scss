@@ -10,14 +10,40 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     color: $textColor;
+    line-height: $textLineHeight;
+}
+
+.title {
+    line-height: $headingLineHeight;
+    margin-bottom: .6em;
+}
+
+.paragraph {
+    margin-bottom: .8em;
+}
+
+.button {
+    padding: 15px 25px;
+    background-color: $buttonBackgroundColor;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: $defaultShadow;
+    display: inline-block;
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 100vw;
     height: 100vh;
     font-size: 1.2rem;
     font-weight: 600;
+    color: white;
+    text-shadow: $defaultShadow;
 
     &__image {
         object-fit: cover;
@@ -34,8 +60,6 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
-        text-shadow: $textShadow;
         transition: background-color $transitionLength $transitionEasing;
 
         &--white {
@@ -53,12 +77,18 @@ html {
         &--logo {
             display: flex;
             align-items: center;
-            margin-right: 200px;
+            margin-right: 150px;
         }
     }
 
     &__logo {
         height: 24px;
         margin-right: 10px;
+    }
+
+    &__text {
+        position: absolute;
+        width: 600px;
+        transform: translateX(-5vw);
     }
 }

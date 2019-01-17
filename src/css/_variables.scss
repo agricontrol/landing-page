@@ -1,5 +1,10 @@
 $textColor: #606060;
-$textShadow: 0 2px 5px transparentize(black, .85);
+$textLineHeight: 1.5;
+$headingLineHeight: 1.1;
+
+$defaultShadow: 0 2px 5px transparentize(black, .85);
+
+$buttonBackgroundColor: transparentize($textColor, .25);
 
 $transitionLength: .3s;
 $transitionEasing: ease-in-out;
