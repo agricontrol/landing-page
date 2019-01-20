@@ -1,45 +1,73 @@
 <!doctype html>
 <html lang="de-ch">
-    <head>
-        <meta charset="utf-8">
-        <title>Agricontrol</title>
-        <link rel="shortcut icon" href="img/logo.png">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="Robin Löffel">
-        <meta name="viewport" content="width=device-width">
-        <meta property="og:url" content="https://agricontrol.app">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="">
-        <meta property="og:description" content="">
-        <meta property="og:image" content="">
-    </head>
 
-    <body>
-        <header class="header">
-            <nav class="header__navigation">
-                <a class="header__link header__link--logo" href=".">
-                    <img class="header__logo" src="img/logo.svg">
-                    Agricontrol
-                </a>
-                <a class="header__link" href="#vorteil">Ihr Vorteil</a>
-                <a class="header__link" href="#funktion">Wie's funktioniert</a>
-                <a class="header__link" href="#preise">Preise</a>
-                <a class="header__link" href="#wir">Über uns</a>
-            </nav>
-            <img class="header__image" src="img/header.jpg">
-            <div class="header__text">
-                <h2 class="title">Ihr neuer Standard zur Feldverwaltung</h2>
-                <p class="paragraph">Agricontrol ist die einfachste Art und Weise, wie Sie nie den Überblick verlieren. Wahren Sie einen kühlen Kopf und konzentrieren Sie sich auf das Wichtige.</p>
-                <a class="button" href="#">Agricontrol entdecken</a>
+<head>
+    <meta charset="utf-8">
+    <title>Agricontrol – Ihr neuer Standard zur Feldverwaltung</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <meta name="description" content="Agricontrol ist die einfachste Art und Weise, wie Sie nie den Überblick verlieren. Wahren Sie einen kühlen Kopf und konzentrieren Sie sich auf das Wichtige.">
+    <meta name="keywords" content="agricontrol, fruchtfolge, felder, feld, verwaltung, feldverwaltung, bepflanzung, kulturen, agrar, landwirtschaft, düngen, säen, rapportieren">
+    <meta name="author" content="Robin Löffel">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:url" content="https://agricontrol.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agricontrol – Ihr neuer Standard zur Feldverwaltung">
+    <meta property="og:description" content="Agricontrol ist die einfachste Art und Weise, wie Sie nie den Überblick verlieren. Wahren Sie einen kühlen Kopf und konzentrieren Sie sich auf das Wichtige.">
+    <meta property="og:image" content="">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__navigation">
+            <a class="header__link header__link--logo" href="#" data-jump=".header">
+                <img class="header__logo" src="img/logo.svg">
+                Agricontrol
+            </a>
+            <a class="header__link" href="#" data-jump="[data-vorteil-anchor]">Ihr Vorteil</a>
+            <a class="header__link" href="#" data-jump="[data-funktion-anchor]">Wie's funktioniert</a>
+            <a class="header__link" href="#" data-jump=".section:nth-child(3)">Preise</a>
+            <a class="header__link" href="#" data-jump=".section:nth-child(1)">Über uns</a>
+        </nav>
+        <img class="header__image" src="img/header.jpg">
+        <div class="header__text">
+            <h1 class="title">Ihr neuer Standard zur Feldverwaltung</h1>
+            <p class="paragraph">Agricontrol ist die einfachste Art und Weise, wie Sie nie den Überblick verlieren. Wahren Sie einen kühlen Kopf und konzentrieren Sie sich auf das Wichtige.</p>
+            <a class="button" href="#">Agricontrol entdecken</a>
+        </div>
+    </header>
+    <main>
+        <section class="section" data-vorteil-anchor>
+            <div class="section__child">
+                <img class="section__image" src="img/massey-fergusson.jpg" alt="">
             </div>
-        </header>
-        <main>
-        </main>
-        <footer>
-        </footer>
+            <div class="section__child">
+                <h2 class="title title--section">Ihr Vorteil</h2>
+                <p class="paragraph paragraph--section">
+                    Spicy jalapeno bacon ipsum dolor amet shank brisket tongue sirloin turducken kevin ham. Porchetta picanha pig kevin chuck, rump burgdoggen ball tip doner spare ribs. Venison andouille corned beef, brisket flank beef pork. Tri-tip
+                    ham hock jowl shankle pig, meatball kielbasa bresaola brisket shoulder corned beef venison cow. Pastrami drumstick bresaola, spare ribs flank sausage filet mignon shoulder bacon meatball beef tongue swine.
+                </p>
+                <a class="button button--section" href="#">Mit Agricontrol durchstarten</a>
+            </div>
+        </section>
+        <section class="section" data-funktion-anchor>
+            <div class="section__child">
+                <h2 class="title title--section">Ihr Vorteil</h2>
+                <p class="paragraph paragraph--section">
+                    Spicy jalapeno bacon ipsum dolor amet shank brisket tongue sirloin turducken kevin ham. Porchetta picanha pig kevin chuck, rump burgdoggen ball tip doner spare ribs. Venison andouille corned beef, brisket flank beef pork. Tri-tip
+                    ham hock jowl shankle pig, meatball kielbasa bresaola brisket shoulder corned beef venison cow. Pastrami drumstick bresaola, spare ribs flank sausage filet mignon shoulder bacon meatball beef tongue swine.
+                </p>
+                <a class="button button--section" href="#">Mit Agricontrol durchstarten</a>
+            </div>
+            <div class="section__child">
+                <img class="section__image" src="img/pointing.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</body>
 
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
-        <link rel="stylesheet" href="css/main.css">
-    </body>
 </html>
