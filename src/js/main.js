@@ -4,7 +4,7 @@ const navigation = document.querySelector('.header__navigation');
 const jumpLinks = document.querySelectorAll('[data-jump]');
 
 document.addEventListener('scroll', () => {
-    if (window.scrollY > 0 && !navigation.classList.contains('header__navigation--white')) {
+    if (!navigation.classList.contains('header__navigation--white') && window.scrollY > 0) {
         navigation.classList.add('header__navigation--white');
     }
 
@@ -18,5 +18,7 @@ document.addEventListener('scroll', () => {
         jump(event.target.dataset.jump, {
             offset: -(navigation.clientHeight)
         });
+
+        event.preventDefault();
     });
 });

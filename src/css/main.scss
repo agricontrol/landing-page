@@ -20,7 +20,12 @@ html {
     &--section {
         display: inline-block;
         font-weight: 600;
-        margin-left: 50px;
+    }
+
+    &--full-width {
+        display: inline-flex;
+        flex-basis: 100%;
+        justify-content: center;
     }
 }
 
@@ -29,7 +34,6 @@ html {
 
     &--section {
         font-weight: 600;
-        margin-left: 50px;
     }
 }
 
@@ -42,11 +46,17 @@ html {
     font-size: .8rem;
     box-shadow: $defaultShadow;
     display: inline-block;
+    transition: transform $transitionLength $transitionEasing,
+                box-shadow $transitionLength $transitionEasing;
 
     &--section {
         color: white;
-        margin-left: 50px;
         box-shadow: none;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: $defaultShadow;
     }
 }
 
@@ -94,6 +104,11 @@ html {
         color: inherit;
         text-decoration: none;
         padding: 50px 60px;
+        transition: padding $transitionLength $transitionLength;
+
+        .header__navigation--white & {
+            padding: 40px;
+        }
 
         &--logo {
             display: flex;
@@ -121,8 +136,21 @@ html {
     padding: 50px;
     font-weight: 600;
 
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &--centered {
+        flex-wrap: wrap;
+    }
+
     &__child {
         flex: 1;
+        padding: 0 50px;
+
+        &--image {
+            padding: 0;
+        }
 
         &~& {}
     }
