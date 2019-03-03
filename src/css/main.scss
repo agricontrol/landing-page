@@ -18,12 +18,13 @@ html {
     margin-bottom: .6em;
 
     &--section {
-        display: inline-block;
+        display: block;
         font-weight: 600;
+        margin-bottom: 1em;
     }
 
     &--full-width {
-        display: inline-flex;
+        display: flex;
         flex-basis: 100%;
         justify-content: center;
     }
@@ -151,8 +152,6 @@ html {
         &--image {
             padding: 0;
         }
-
-        &~& {}
     }
 
     &__image {
