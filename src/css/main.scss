@@ -1,6 +1,8 @@
 @import "variables";
 
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -9,8 +11,9 @@
 html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
-    color: $textColor;
+    color: $tightGrey;
     line-height: $textLineHeight;
+    background-color: $easyBlue;
 }
 
 .title {
@@ -31,10 +34,23 @@ html {
 }
 
 .paragraph {
-    margin-bottom: .8em;
+    &:not(:last-child) {
+        margin-bottom: .8em;
+    }
 
     &--section {
         font-weight: 600;
+    }
+
+    &--footer {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-size: 80%;
+
+        &:not(:last-child) {
+            margin-bottom: .4em;
+        }
     }
 }
 
@@ -95,7 +111,7 @@ html {
 
         &--white {
             background-color: white;
-            color: $textColor;
+            color: $tightGrey;
             text-shadow: none;
             box-shadow: $defaultShadow;
         }
@@ -134,20 +150,41 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 50px 70px;
     font-weight: 600;
-
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
+    position: relative;
+    background-color: #fff;
 
     &--centered {
         flex-wrap: wrap;
     }
 
+    &--blue {
+        background-color: $easyBlue;
+    }
+
+    &--image-only {
+        padding: 100px;
+    }
+
+    &--has-overlay {
+        &::before {
+            content: '';
+            width: calc(100% - 200px);
+            height: calc(100% - 200px);
+            position: absolute;
+            background-color: #000;
+            opacity: .5;
+        }
+    }
+
     &__child {
         flex: 1;
         padding: 0 50px;
+
+        &:first-child {
+            text-align: right;
+        }
 
         &--image {
             padding: 0;
@@ -157,4 +194,34 @@ html {
     &__image {
         width: 100%;
     }
+
+    &__overlay-link {
+        position: absolute;
+        text-decoration: none;
+    }
+
+    &__overlay-title {
+        color: white;
+    }
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    opacity: .75;
+}
+
+.separator {
+    width: 50vw;
+    margin: auto;
+    border: 0;
+    height: 2px;
+    background-color: transparentize($tightGrey, .85);
+}
+
+.footer {
+    padding: 100px;
+}
+
+.link {
+    color: inherit;
 }
