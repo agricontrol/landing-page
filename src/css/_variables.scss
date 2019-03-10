@@ -1,12 +1,26 @@
+$pureWhite: #fff;
+$pureBlack: #000;
 $tightGrey: #606060;
 $easyBlue: #BAE8F8;
+$lightEasyBlue: transparentize($easyBlue, .8);
+$lightPureBlack: transparentize($pureBlack, .85);
+$lighterPureBlack: transparentize($pureBlack, .95);
+$lightestPureBlack: transparentize($pureBlack, .98);
+$lightTightGrey: transparentize($tightGrey, .25);
 
 $textLineHeight: 1.6;
 $headingLineHeight: 1.1;
 
-$defaultShadow: 0 2px 5px transparentize(#000, .85);
-
-$buttonBackgroundColor: transparentize($tightGrey, .25);
+$defaultShadow: 0 2px 5px $lightPureBlack;
+$bigShadow: 0 5px 15px 2px $lightPureBlack;
 
 $transitionLength: .3s;
 $transitionEasing: ease-in-out;
+
+$defaultSpace: 50px;
+$halfSpace: $defaultSpace / 2;
+$fourthSpace: $defaultSpace / 4;
+$oneAndHalfSpace: $defaultSpace + $halfSpace;
+$doubleSpace: $defaultSpace * 2;
+$twoAndHaldSpace: $doubleSpace + $halfSpace;
+$tripleSpace: $defaultSpace * 3;

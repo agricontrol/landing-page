@@ -30,6 +30,7 @@ html {
         display: flex;
         flex-basis: 100%;
         justify-content: center;
+        margin-bottom: $defaultSpace;
     }
 }
 
@@ -46,17 +47,33 @@ html {
         display: flex;
         align-content: center;
         justify-content: center;
-        font-size: 80%;
+        font-size: 85%;
 
         &:not(:last-child) {
             margin-bottom: .4em;
         }
     }
+
+    &--card-header {
+        border-bottom: 1px solid $lighterPureBlack;
+        padding: $halfSpace $defaultSpace;
+        font-weight: 400;
+    }
+
+    &--card-price {
+        padding: $halfSpace $defaultSpace 0;
+        font-size: 250%;
+    }
+
+    &--card-copy {
+        opacity: .5;
+        padding: 0 $defaultSpace $halfSpace $defaultSpace;
+    }
 }
 
 .button {
     padding: 15px 25px;
-    background-color: $buttonBackgroundColor;
+    background-color: $lightTightGrey;
     color: inherit;
     text-decoration: none;
     border-radius: 10px;
@@ -67,7 +84,7 @@ html {
                 box-shadow $transitionLength $transitionEasing;
 
     &--section {
-        color: white;
+        color: $pureWhite;
         box-shadow: none;
     }
 
@@ -85,7 +102,7 @@ html {
     width: 100vw;
     height: 100vh;
     font-weight: 600;
-    color: white;
+    color: $pureWhite;
     text-shadow: $defaultShadow;
 
     &__image {
@@ -110,7 +127,7 @@ html {
                     text-shadow $transitionLength $transitionEasing;
 
         &--white {
-            background-color: white;
+            background-color: $pureWhite;
             color: $tightGrey;
             text-shadow: none;
             box-shadow: $defaultShadow;
@@ -120,7 +137,7 @@ html {
     &__link {
         color: inherit;
         text-decoration: none;
-        padding: 50px 60px;
+        padding: $defaultSpace 60px;
         transition: padding $transitionLength $transitionLength;
 
         .header__navigation--white & {
@@ -130,7 +147,7 @@ html {
         &--logo {
             display: flex;
             align-items: center;
-            margin-right: 150px;
+            margin-right: $tripleSpace;
         }
     }
 
@@ -150,10 +167,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 50px 70px;
+    padding: $defaultSpace $defaultSpace 70px;
     font-weight: 600;
     position: relative;
-    background-color: #fff;
+    background-color: $pureWhite;
 
     &--centered {
         flex-wrap: wrap;
@@ -164,7 +181,7 @@ html {
     }
 
     &--image-only {
-        padding: 100px;
+        padding: $doubleSpace;
     }
 
     &--has-overlay {
@@ -173,16 +190,16 @@ html {
             width: calc(100% - 200px);
             height: calc(100% - 200px);
             position: absolute;
-            background-color: #000;
+            background-color: $pureBlack;
             opacity: .5;
         }
     }
 
     &__child {
         flex: 1;
-        padding: 0 50px;
+        padding: 0 $defaultSpace;
 
-        &:first-child {
+        &--right-text {
             text-align: right;
         }
 
@@ -201,7 +218,25 @@ html {
     }
 
     &__overlay-title {
-        color: white;
+        color: $pureWhite;
+    }
+
+    &__card {
+        flex: 0 0 75%;
+        min-width: 300px;
+        max-width: 700px;
+        padding: 0;
+        border-radius: 10px;
+        box-shadow: $bigShadow;
+        overflow: hidden;
+
+        .paragraph {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
     }
 }
 
@@ -215,13 +250,94 @@ html {
     margin: auto;
     border: 0;
     height: 2px;
-    background-color: transparentize($tightGrey, .85);
+    background-color: $lightPureBlack;
 }
 
 .footer {
-    padding: 100px;
+    padding: $defaultSpace;
 }
 
 .link {
     color: inherit;
+
+    &--card-footer {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: $halfSpace;
+        text-decoration: none;
+        background-color: $lightestPureBlack;
+        transition: background-color $transitionLength $transitionEasing;
+
+        &:hover {
+            background-color: $lighterPureBlack;
+        }
+
+        &::after {
+            content: '';
+            margin-left: $fourthSpace;
+            width: $halfSpace;
+            height: $halfSpace;
+            background-size: cover;
+            background-image: url('/img/arrow-right.svg');
+        }
+    }
+}
+
+.periodicity {
+    font-size: 40%;
+    margin-left: 10px;
+    opacity: .5;
+}
+
+.price-list {
+    padding: $halfSpace $doubleSpace $defaultSpace;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: $fourthSpace;
+        }
+
+        &::before {
+            content: '';
+            width: $halfSpace;
+            height: $halfSpace;
+            background-size: cover;
+            margin-right: $fourthSpace;
+        }
+
+        &--calendar {
+            &::before {
+                background-image: url('/img/calendar.svg');
+            }
+        }
+
+        &--credit-card {
+            &::before {
+                background-image: url('/img/credit-card.svg');
+            }
+        }
+
+        &--smile {
+            &::before {
+                background-image: url('/img/smile.svg');
+            }
+        }
+
+        &--watch {
+            &::before {
+                background-image: url('/img/watch.svg');
+            }
+        }
+
+        &--sun {
+            &::before {
+                background-image: url('/img/sun.svg');
+            }
+        }
+    }
 }
