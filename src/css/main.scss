@@ -80,17 +80,10 @@ html {
     font-size: .8rem;
     box-shadow: $defaultShadow;
     display: inline-block;
-    transition: transform $transitionLength $transitionEasing,
-                box-shadow $transitionLength $transitionEasing;
 
     &--section {
         color: $pureWhite;
         box-shadow: none;
-    }
-
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: $defaultShadow;
     }
 }
 
@@ -100,10 +93,20 @@ html {
     justify-content: center;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     font-weight: 600;
     color: $pureWhite;
     text-shadow: $defaultShadow;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(to bottom, transparent, $pureWhite);
+    }
 
     &__image {
         object-fit: cover;
@@ -127,7 +130,7 @@ html {
                     text-shadow $transitionLength $transitionEasing;
 
         &--white {
-            background-color: $pureWhite;
+            background-color: $navigationWhite;
             color: $tightGrey;
             text-shadow: none;
             box-shadow: $defaultShadow;
@@ -167,13 +170,14 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: $defaultSpace $defaultSpace 70px;
+    padding: $doubleSpace $defaultSpace 0;
     font-weight: 600;
     position: relative;
     background-color: $pureWhite;
 
     &--centered {
         flex-wrap: wrap;
+        padding: $doubleSpace;
     }
 
     &--blue {
@@ -197,14 +201,21 @@ html {
 
     &__child {
         flex: 1;
-        padding: 0 $defaultSpace;
 
         &--right-text {
             text-align: right;
         }
 
-        &--image {
-            padding: 0;
+        &:not(.section__child--image) {
+            &:nth-child(1) {
+                margin-right: $defaultSpace;
+                text-align: right;
+            }
+
+            &:nth-child(2) {
+                margin-left: $defaultSpace;
+                text-align: left;
+            }
         }
     }
 
@@ -240,21 +251,8 @@ html {
     }
 }
 
-.strikethrough {
-    text-decoration: line-through;
-    opacity: .75;
-}
-
-.separator {
-    width: 50vw;
-    margin: auto;
-    border: 0;
-    height: 2px;
-    background-color: $lightPureBlack;
-}
-
 .footer {
-    padding: $defaultSpace;
+    padding: 0 $defaultSpace $defaultSpace;
 }
 
 .link {
