@@ -278,7 +278,7 @@ html {
             width: $halfSpace;
             height: $halfSpace;
             background-size: cover;
-            background-image: url('/img/arrow-right.svg');
+            background-image: url('../img/arrow-right.svg');
         }
     }
 }
@@ -310,31 +310,37 @@ html {
 
         &--calendar {
             &::before {
-                background-image: url('/img/calendar.svg');
+                background-image: url('../img/calendar.svg');
             }
         }
 
         &--credit-card {
             &::before {
-                background-image: url('/img/credit-card.svg');
+                background-image: url('../img/credit-card.svg');
             }
         }
 
         &--smile {
             &::before {
-                background-image: url('/img/smile.svg');
+                background-image: url('../img/smile.svg');
             }
         }
 
         &--watch {
             &::before {
-                background-image: url('/img/watch.svg');
+                background-image: url('../img/watch.svg');
             }
         }
 
         &--sun {
             &::before {
-                background-image: url('/img/sun.svg');
+                background-image: url('../img/sun.svg');
+            }
+        }
+
+        &--phone {
+            &::before {
+                background-image: url('../img/smartphone.svg');
             }
         }
     }
