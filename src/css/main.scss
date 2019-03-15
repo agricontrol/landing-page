@@ -1,4 +1,5 @@
 @import "variables";
+@import "mediaqueries";
 
 *,
 *::after,
@@ -147,10 +148,34 @@ html {
             padding: 40px;
         }
 
+        @include mqTabletToDesktop {
+            padding: 45px;
+
+            .header__navigation--white & {
+                padding: 35px;
+            }
+        }
+
+        @include mqPhoneToTablet {
+            padding: 40px;
+
+            .header__navigation--white & {
+                padding: 30px;
+            }
+        };
+
         &--logo {
             display: flex;
             align-items: center;
             margin-right: $tripleSpace;
+
+            @include mqTabletToDesktop {
+                margin-right: $doubleSpace;
+            };
+
+            @include mqPhoneToTablet {
+                margin-right: $oneAndHalfSpace;
+            };
         }
     }
 
@@ -233,6 +258,7 @@ html {
     }
 
     &__card {
+        margin: 0;
         flex: 0 0 75%;
         min-width: 300px;
         max-width: 700px;

@@ -25,3 +25,7 @@ $oneAndHalfSpace: $defaultSpace + $halfSpace;
 $doubleSpace: $defaultSpace * 2;
 $twoAndHaldSpace: $doubleSpace + $halfSpace;
 $tripleSpace: $defaultSpace * 3;
+
+$breakpointPhone: 640px;
+$breakpointTablet: 1024px;
+$breakpointDesktop: 1280px;

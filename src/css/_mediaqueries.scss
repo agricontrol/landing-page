@@ -1,0 +1,31 @@
+@import "variables";
+
+@mixin mqToPhone {
+    @media (max-width: $breakpointPhone - 1) {
+        @content;
+    }
+}
+
+@mixin mqToTablet {
+    @media (max-width: $breakpointTablet - 1) {
+        @content;
+    }
+}
+
+@mixin mqPhoneToTablet {
+    @media (min-width: $breakpointPhone) and (max-width: $breakpointTablet - 1) {
+        @content;
+    }
+}
+
+@mixin mqTabletToDesktop {
+    @media (min-width: $breakpointTablet) and (max-width: $breakpointDesktop - 1) {
+        @content;
+    }
+}
+
+@mixin fromDesktop {
+    @media (min-width: $breakpointDesktop) {
+        @content;
+    }
+}
