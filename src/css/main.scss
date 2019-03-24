@@ -136,6 +136,20 @@ html {
             text-shadow: none;
             box-shadow: $defaultShadow;
         }
+
+        @include mqToTablet {
+            flex-wrap: wrap;
+            transform: translateY(-50%);
+            transition: background-color $transitionLength $transitionEasing,
+                        color $transitionLength $transitionEasing,
+                        box-shadow $transitionLength $transitionEasing,
+                        text-shadow $transitionLength $transitionEasing,
+                        transform $transitionLength $transitionEasing;
+
+            &--translated {
+                transform: translateY(0);
+            }
+        }
     }
 
     &__link {
@@ -148,35 +162,38 @@ html {
             padding: 40px;
         }
 
+        &--logo {
+            display: flex;
+            align-items: center;
+            margin-right: $tripleSpace;
+        }
+
         @include mqTabletToDesktop {
             padding: 45px;
 
             .header__navigation--white & {
                 padding: 35px;
             }
+
+            &--logo {
+                margin-right: $doubleSpace;
+            }
         }
 
-        @include mqPhoneToTablet {
+        @include mqToTablet {
             padding: 40px;
+            flex: 1;
 
-            .header__navigation--white & {
-                padding: 30px;
+            &--logo {
+                margin-right: 0;
+                flex-basis: 100%;
+                order: 1;
+            }
+
+            &:not(&--logo) {
+                text-align: center;
             }
         };
-
-        &--logo {
-            display: flex;
-            align-items: center;
-            margin-right: $tripleSpace;
-
-            @include mqTabletToDesktop {
-                margin-right: $doubleSpace;
-            };
-
-            @include mqPhoneToTablet {
-                margin-right: $oneAndHalfSpace;
-            };
-        }
     }
 
     &__logo {

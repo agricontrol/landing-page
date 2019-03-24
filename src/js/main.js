@@ -22,3 +22,5 @@ document.addEventListener('scroll', () => {
         event.preventDefault();
     });
 });
+
+import './mobileNav';
