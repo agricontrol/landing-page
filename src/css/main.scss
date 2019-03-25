@@ -188,6 +188,17 @@ html {
                 margin-right: 0;
                 flex-basis: 100%;
                 order: 1;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 40px;
+                    width: $halfSpace;
+                    height: $halfSpace;
+                    background-size: cover;
+                    background-image: url('../img/menu-white.svg');
+                }
             }
 
             &:not(&--logo) {
@@ -387,4 +398,14 @@ html {
             }
         }
     }
+}
+
+.feather {
+    width: $halfSpace;
+    height: $halfSpace;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
 }

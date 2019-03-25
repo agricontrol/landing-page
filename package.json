@@ -33,5 +33,9 @@
         "webpack": "^4.29.6",
         "webpack-merge": "^4.2.1",
         "webpack-stream": "^5.2.1"
+    },
+    "devDependencies": {
+        "core-js": "^3.0.0",
+        "feather-icons": "^4.19.0"
     }
 }
