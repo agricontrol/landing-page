@@ -16,9 +16,11 @@
         "@babel/preset-env": "^7.4.2",
         "babel-eslint": "^10.0.1",
         "babel-loader": "^8.0.5",
+        "core-js": "^3.0.0",
         "del": "^4.0.0",
-        "eslint": "^5.15.3",
+        "eslint": "^5.16.0",
         "eslint-loader": "^2.1.2",
+        "feather-icons": "^4.20.0",
         "gulp": "^4.0.0",
         "gulp-autoprefixer": "^6.0.0",
         "gulp-clean-css": "^4.0.0",
@@ -28,14 +30,10 @@
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "^2.6.5",
         "jump.js": "^1.0.2",
-        "open": "^0.0.5",
+        "open": "^6.0.0",
         "vinyl-named": "^1.1.0",
         "webpack": "^4.29.6",
         "webpack-merge": "^4.2.1",
         "webpack-stream": "^5.2.1"
-    },
-    "devDependencies": {
-        "core-js": "^3.0.0",
-        "feather-icons": "^4.19.0"
     }
 }

@@ -9,7 +9,10 @@ module.exports = {
         root: 'src',
         js: 'src/js/**/*.js',
         css: 'src/css/**/*.scss',
-        img: 'src/img/**/*',
+        img: [
+            'src/img/**/*',
+            'node_modules/feather-icons/dist/feather-sprite.svg'
+        ],
         copy: 'src/{*,}.*',
         entry: {
             js: 'src/js/main.js',

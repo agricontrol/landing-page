@@ -325,15 +325,6 @@ html {
         &:hover {
             background-color: $lighterPureBlack;
         }
-
-        &::after {
-            content: '';
-            margin-left: $fourthSpace;
-            width: $halfSpace;
-            height: $halfSpace;
-            background-size: cover;
-            background-image: url('../img/arrow-right.svg');
-        }
     }
 }
 
@@ -408,4 +399,12 @@ html {
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
+
+    &--before-text {
+        margin-right: $fourthSpace;
+    }
+
+    &--after-text {
+        margin-left: $fourthSpace;
+    }
 }
