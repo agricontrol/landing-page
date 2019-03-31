@@ -6815,6 +6815,11 @@ svgo@^1.0.5:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+svgxuse@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/svgxuse/-/svgxuse-1.2.6.tgz#d6251edd07a75cb28618e0c23e8d4db64936d6be"
+  integrity sha512-0KC0I24LDskC2vaVjUQfFmdtKJk8wFwMYOjCci0HlhBRSc0F86dZRqNBHf6BoS5bibQ7chgnBQWyJCTYkzVuSA==
+
 table@^5.2.3:
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/table/-/table-5.2.3.tgz#cde0cc6eb06751c009efab27e8c820ca5b67b7f2"

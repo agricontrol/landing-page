@@ -46,6 +46,7 @@ html {
 
     &--footer {
         display: flex;
+        flex-wrap: wrap;
         align-content: center;
         justify-content: center;
         font-size: 85%;
@@ -139,20 +140,28 @@ html {
 
         @include mqToTablet {
             flex-wrap: wrap;
-            transform: translateY(-50%);
             transition: background-color $transitionLength $transitionEasing,
                         color $transitionLength $transitionEasing,
                         box-shadow $transitionLength $transitionEasing,
                         text-shadow $transitionLength $transitionEasing,
                         transform $transitionLength $transitionEasing;
+        }
 
-            &--translated {
-                transform: translateY(0);
-            }
+        @include mqPhoneToTablet {
+            transform: translateY(-50%);
+        }
+
+        @include mqToPhone {
+            transform: translateY(-67%);
+        }
+
+        &--translated {
+            transform: translateY(0);
         }
     }
 
     &__link {
+        flex: 1;
         color: inherit;
         text-decoration: none;
         padding: $defaultSpace 60px;
@@ -166,6 +175,10 @@ html {
             display: flex;
             align-items: center;
             margin-right: $tripleSpace;
+        }
+
+        &--mobile-nav {
+            display: none;
         }
 
         @include mqTabletToDesktop {
@@ -182,28 +195,15 @@ html {
 
         @include mqToTablet {
             padding: 40px;
-            flex: 1;
+            margin-right: 0;
 
-            &--logo {
-                margin-right: 0;
-                flex-basis: 100%;
-                order: 1;
-                position: relative;
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    right: 40px;
-                    width: $halfSpace;
-                    height: $halfSpace;
-                    background-size: cover;
-                    background-image: url('../img/menu-white.svg');
-                }
+            &--mobile-nav {
+                display: flex;
             }
+        };
 
-            &:not(&--logo) {
-                text-align: center;
-            }
+        @include mqToPhone {
+            flex-basis: 50%;
         };
     }
 
@@ -214,8 +214,23 @@ html {
 
     &__text {
         position: absolute;
-        width: 600px;
+        max-width: 600px;
         transform: translateX(-5vw);
+    }
+
+    &__row-wrapper {
+        justify-content: space-between;
+
+        .header__link {
+            flex: initial;
+        }
+
+        @include mqToTablet {
+            display: flex;
+            align-items: center;
+            flex: 1 0 100%;
+            order: 1;
+        }
     }
 }
 
@@ -344,50 +359,6 @@ html {
         &:not(:last-child) {
             margin-bottom: $fourthSpace;
         }
-
-        &::before {
-            content: '';
-            width: $halfSpace;
-            height: $halfSpace;
-            background-size: cover;
-            margin-right: $fourthSpace;
-        }
-
-        &--calendar {
-            &::before {
-                background-image: url('../img/calendar.svg');
-            }
-        }
-
-        &--credit-card {
-            &::before {
-                background-image: url('../img/credit-card.svg');
-            }
-        }
-
-        &--smile {
-            &::before {
-                background-image: url('../img/smile.svg');
-            }
-        }
-
-        &--watch {
-            &::before {
-                background-image: url('../img/watch.svg');
-            }
-        }
-
-        &--sun {
-            &::before {
-                background-image: url('../img/sun.svg');
-            }
-        }
-
-        &--phone {
-            &::before {
-                background-image: url('../img/smartphone.svg');
-            }
-        }
     }
 }
 
@@ -406,5 +377,14 @@ html {
 
     &--after-text {
         margin-left: $fourthSpace;
+    }
+
+    &--shadow {
+        filter: drop-shadow($defaultShadow);
+        transition: filter $transitionLength $transitionEasing;
+
+        .header__navigation--white & {
+            filter: drop-shadow(0 2px 5px transparent);
+        }
     }
 }

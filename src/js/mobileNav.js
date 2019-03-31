@@ -1,10 +1,10 @@
-const linkLogo = document.querySelector('.header__link--logo');
-const navigation = linkLogo.closest('.header__navigation');
+const trigger = document.querySelector('.header__link--mobile-nav');
+const navigation = document.querySelector('.header__navigation');
 
-const toggleMobileNav = () => {
-    if (matchMedia('(max-width: 1023px)').matches) {
-        navigation.classList.toggle('header__navigation--translated');
-    }
+const toggleMobileNav = event => {
+    navigation.classList.toggle('header__navigation--translated');
+
+    event.preventDefault();
 };
 
-linkLogo.addEventListener('click', toggleMobileNav);
+trigger.addEventListener('click', toggleMobileNav);

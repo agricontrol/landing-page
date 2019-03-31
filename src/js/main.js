@@ -1,7 +1,8 @@
+import './polyfills';
+
 import jump from 'jump.js';
 
 const navigation = document.querySelector('.header__navigation');
-const linkLogo = navigation.querySelector('.header__link--logo');
 const jumpLinks = document.querySelectorAll('[data-jump]');
 
 document.addEventListener('scroll', () => {
@@ -16,11 +17,9 @@ document.addEventListener('scroll', () => {
 
 [...jumpLinks].forEach(node => {
     node.addEventListener('click', event => {
-        if (!event.target.isSameNode(linkLogo) && !matchMedia('(max-width: 1023px)').matches) {
-            jump(event.target.dataset.jump, {
-                offset: -(navigation.clientHeight)
-            });
-        }
+        jump(event.target.dataset.jump);
+
+        navigation.classList.remove('header__navigation--translated');
 
         event.preventDefault();
     });

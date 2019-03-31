@@ -31,6 +31,7 @@
         "gulp-sourcemaps": "^2.6.5",
         "jump.js": "^1.0.2",
         "open": "^6.0.0",
+        "svgxuse": "^1.2.6",
         "vinyl-named": "^1.1.0",
         "webpack": "^4.29.6",
         "webpack-merge": "^4.2.1",
