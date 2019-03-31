@@ -58,6 +58,12 @@
             "start": "Start using Agricontrol",
             "startNow": "Start using Agricontrol now",
             "createAccount": "Sign up and try Agricontrol for free"
+        },
+        "languages": {
+            "german": "German",
+            "french": "French",
+            "italian": "Italian",
+            "english": "English"
         }
     }
 }

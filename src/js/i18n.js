@@ -1,6 +1,6 @@
 import Mehrsprachig from 'mehrsprachig';
 
-const instance = new Mehrsprachig({
+const mehrsprachig = new Mehrsprachig({
     sources: {
         'de-ch': '/data/de.json',
         'fr-ch': '/data/fr.json',
@@ -8,5 +8,12 @@ const instance = new Mehrsprachig({
         'en': '/data/en.json'
     }
 });
+const triggers = document.querySelectorAll('[data-mehrsprachig-switch]');
+const setLanguage = event => {
+    mehrsprachig.setLanguage(event.target.dataset.mehrsprachigSwitch);
+    event.preventDefault();
+};
 
-window.mehrsprachig = instance;
+[...triggers].forEach(trigger => {
+    trigger.addEventListener('click', setLanguage);
+})
