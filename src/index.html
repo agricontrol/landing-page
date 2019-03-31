@@ -22,7 +22,7 @@
         <nav class="header__navigation">
             <div class="header__row-wrapper">
                 <a class="header__link header__link--logo" href="#" data-jump=".header">
-                    <img class="header__logo" src="img/logo.svg">
+                    <img class="header__logo" src="img/logo.svg" data-mehrsprachig="alt=navigation.logo">
                     Agricontrol
                 </a>
                 <a class="header__link header__link--mobile-nav" href="#">
@@ -31,99 +31,117 @@
                     </svg>
                 </a>
             </div>
-            <a class="header__link" href="#" data-jump="[data-advantage-anchor]">Vorteile</a>
-            <a class="header__link" href="#" data-jump="[data-functionality-anchor]">Funktionen</a>
-            <a class="header__link" href="#" data-jump="[data-prices-anchor]">Angebot</a>
-            <a class="header__link" href="#" data-jump="[data-about-anchor]">Über uns</a>
+            <a class="header__link" href="#" data-jump="[data-advantage-anchor]" data-mehrsprachig="navigation.advantages">Vorteile</a>
+            <a class="header__link" href="#" data-jump="[data-functionality-anchor]" data-mehrsprachig="navigation.functionality">Funktionen</a>
+            <a class="header__link" href="#" data-jump="[data-offer-anchor]" data-mehrsprachig="navigation.offer">Angebot</a>
+            <a class="header__link" href="#" data-jump="[data-about-anchor]" data-mehrsprachig="navigation.about">Über uns</a>
         </nav>
-        <img class="header__image" src="img/header.jpg">
+        <img class="header__image" src="img/header.jpg" data-mehrsprachig="alt=header.hero">
         <div class="header__text">
-            <h1 class="title">Ihr neuer Standard zur Feldverwaltung</h1>
-            <p class="paragraph">Agricontrol ist die einfachste Art und Weise, wie Sie nie den Überblick verlieren. Wahren Sie einen kühlen Kopf und konzentrieren Sie sich auf das Wichtige.</p>
-            <a class="button" href="#">Agricontrol entdecken</a>
+            <h1 class="title" data-mehrsprachig="header.heading">Ihr neuer Standard zur Feldverwaltung</h1>
+            <p class="paragraph" data-mehrsprachig="header.paragraph">Agricontrol ist die einfachste Art und Weise, wie Sie nie den Überblick verlieren. Wahren Sie einen kühlen Kopf und konzentrieren Sie sich auf das Wichtige.</p>
+            <a class="button" href="#" data-mehrsprachig="commons.ctas.explore">Agricontrol entdecken</a>
         </div>
     </header>
     <main>
         <section class="section" data-advantage-anchor>
             <div class="section__child section__child--image">
-                <img class="section__image" src="img/massey-fergusson.jpg" alt="">
+                <img class="section__image" src="img/massey-fergusson.jpg" data-mehrsprachig="alt=sections.advantages.image">
             </div>
             <div class="section__child">
-                <h2 class="title title--section">Ihr Vorteil</h2>
-                <p class="paragraph paragraph--section">
-                    Spicy jalapeno bacon ipsum dolor amet shank brisket tongue sirloin turducken kevin ham. Porchetta picanha pig kevin chuck, rump burgdoggen ball tip doner spare ribs. Venison andouille corned beef, brisket flank beef pork. Tri-tip ham hock jowl shankle pig, meatball kielbasa bresaola brisket shoulder corned beef venison cow. Pastrami drumstick bresaola, spare ribs flank sausage filet mignon shoulder bacon meatball beef tongue swine.
-                </p>
-                <a class="button button--section" href="#">Mit Agricontrol durchstarten</a>
+                <h2 class="title title--section" data-mehrsprachig="sections.advantages.heading"></h2>
+                <p class="paragraph paragraph--section" data-mehrsprachig="sections.advantages.paragraph"></p>
+                <a class="button button--section" href="//agricontrol.app/register" data-mehrsprachig="commons.ctas.start"></a>
             </div>
         </section>
         <section class="section" data-functionality-anchor>
             <div class="section__child">
-                <h2 class="title title--section">Wies funktioniert</h2>
-                <p class="paragraph paragraph--section">
-                    Spicy jalapeno bacon ipsum dolor amet shank brisket tongue sirloin turducken kevin ham. Porchetta picanha pig kevin chuck, rump burgdoggen ball tip doner spare ribs. Venison andouille corned beef, brisket flank beef pork. Tri-tip ham hock jowl shankle pig, meatball kielbasa bresaola brisket shoulder corned beef venison cow. Pastrami drumstick bresaola, spare ribs flank sausage filet mignon shoulder bacon meatball beef tongue swine.
-                </p>
-                <a class="button button--section" href="#">Mit Agricontrol durchstarten</a>
+                <h2 class="title title--section" data-mehrsprachig="sections.functionality.heading"></h2>
+                <p class="paragraph paragraph--section" data-mehrsprachig="sections.functionality.paragraphs.first"></p>
+                <p class="paragraph paragraph--section" data-mehrsprachig="sections.functionality.paragraphs.second"></p>
+                <a class="button button--section" href="//agricontrol.app/register" data-mehrsprachig="commons.ctas.startNow">Mit Agricontrol durchstarten</a>
             </div>
             <div class="section__child section__child--image">
-                <img class="section__image" src="img/pointing.jpg" alt="">
+                <img class="section__image" src="img/pointing.jpg" data-mehrsprachig="alt=sections.functionality.image">
             </div>
         </section>
-        <section class="section section--centered" data-prices-anchor>
-            <h2 class="title title--full-width">Machen Sie das Meiste aus Ihrer Zeit</h2>
+        <section class="section section--centered" data-offer-anchor>
+            <h2 class="title title--full-width" data-mehrsprachig="sections.offer.heading"></h2>
             <div class="section__child section__card">
-                <p class="paragraph paragraph--card-header">Gratis Probeperiode + Frühkundenrabatt</p>
-                <p class="paragraph paragraph--card-price">449.— <small class="periodicity">pro Jahr</small></p>
-                <p class="paragraph paragraph--card-copy">nach Ablauf der Testphase, statt 499.—</p>
+                <p class="paragraph paragraph--card-header" data-mehrsprachig="sections.offer.card.header"></p>
+                <p class="paragraph paragraph--card-price">
+                    <span data-mehrsprachig="sections.offer.card.specialPrice"></span>
+                    <small class="periodicity" data-mehrsprachig="sections.offer.card.periodicity"></small>
+                </p>
+                <p class="paragraph paragraph--card-copy" data-mehrsprachig="sections.offer.card.regularPrice"></p>
                 <ul class="price-list">
                     <li class="price-list__item">
                         <svg class="feather feather--before-text">
                              <use href="img/feather-sprite.svg#calendar"/>
                         </svg>
-                        Zwei Monate uneingeschränkte Testperiode
+                        <span data-mehrsprachig="sections.offer.card.sellingPoints.testPeriod"></span>
                     </li>
                     <li class="price-list__item">
                         <svg class="feather feather--before-text">
                              <use href="img/feather-sprite.svg#credit-card"/>
                         </svg>
-                        Keine Zahlungsinformationen beim Anmelden
+                        <span data-mehrsprachig="sections.offer.card.sellingPoints.paymentInfo"></span>
                     </li>
                     <li class="price-list__item">
                         <svg class="feather feather--before-text">
                              <use href="img/feather-sprite.svg#smile"/>
                         </svg>
-                        Keinerlei versteckte Kosten oder Gebühren
+                        <span data-mehrsprachig="sections.offer.card.sellingPoints.hiddenFees"></span>
                     </li>
                     <li class="price-list__item">
                         <svg class="feather feather--before-text">
                              <use href="img/feather-sprite.svg#smartphone"/>
                         </svg>
-                        Ihre Informationen einsehen, wo immer Sie sind
+                        <span data-mehrsprachig="sections.offer.card.sellingPoints.whereverYouAre"></span>
+                    </li>
+                    <li class="price-list__item">
+                        <svg class="feather feather--before-text">
+                             <use href="img/feather-sprite.svg#users"/>
+                        </svg>
+                        <span data-mehrsprachig="sections.offer.card.sellingPoints.usersIncluded"></span>
                     </li>
                     <li class="price-list__item">
                         <svg class="feather feather--before-text">
                              <use href="img/feather-sprite.svg#sun"/>
                         </svg>
-                        Mehr Zeit für Sie und Ihr Leben
+                        <span data-mehrsprachig="sections.offer.card.sellingPoints.moreTime"></span>
                     </li>
                 </ul>
-                <a href="#" class="link link--card-footer">
+                <a href="//agricontrol.app/register" class="link link--card-footer">
                     <svg class="feather feather--before-text">
                          <use href="img/feather-sprite.svg#arrow-right"/>
                     </svg>
-                    Jetzt Ihr Konto eröffnen
+                    <span data-mehrsprachig="commons.ctas.createAccount"></span>
                 </a>
             </div>
         </section>
         <section class="section section--blue section--has-overlay section--image-only" data-about-anchor>
-            <img class="section__image" src="img/about.jpg" alt="">
-            <a href="#" class="section__overlay-link">
-                <h2 class="section__overlay-title">Über uns</h2>
+            <img class="section__image" src="img/about.jpg" data-mehrsprachig="alt=sections.about.image">
+            <a href="about.html" class="section__overlay-link">
+                <h2 class="section__overlay-title" data-mehrsprachig="sections.about.heading"></h2>
             </a>
         </section>
     </main>
     <footer class="footer">
-        <p class="paragraph paragraph--footer">&copy; Agricontrol 2019 &mdash; <a class="link" href="mailto:help@agricontrol.app">help@agricontrol.app</a> &mdash; <a class="link" href="#">Nutzungsbedingungen</a> &mdash; <a class="link" href="#">Impressum</a></p>
-        <p class="paragraph paragraph--footer">Gemacht mit Liebe und einer Prise Sonnenschein</p>
+        <p class="paragraph paragraph--footer">
+            <a class="link" href="mailto:help@agricontrol.app">help@agricontrol.app</a>
+            &mdash;
+            <a class="link" href="nutzungsbedingungen.html" data-mehrsprachig="footer.termsOfService"></a>
+            &mdash;
+            <a class="link" href="impressum.html" data-mehrsprachig="footer.siteNotice"></a>
+            &mdash;
+            <a class="link" href="datenschutz.html" data-mehrsprachig="footer.privacy"></a>
+        </p>
+        <p class="paragraph paragraph--footer">
+            &copy; Agricontrol, 2019
+            &mdash;
+            <span data-mehrsprachig="footer.footNote"></span>
+        </p>
     </footer>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
     <script src="js/main.js"></script>

@@ -25,4 +25,5 @@ document.addEventListener('scroll', () => {
     });
 });
 
+import './i18n';
 import './mobileNav';

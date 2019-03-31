@@ -1,0 +1,63 @@
+{
+    "navigation": {
+        "advantages": "Advantages",
+        "offer": "Offer",
+        "functionality": "Functionality",
+        "about": "About us"
+    },
+    "header": {
+        "hero": "A man in a John Deere tractor",
+        "heading": "Your new field management solution",
+        "paragraph": "Agricontrol helps you never lose the overview. It makes it unbelievably easy to manage your fields and crops. So that you have more time for the important things."
+    },
+    "sections": {
+        "advantages": {
+            "heading": "Your advantage",
+            "paragraph": "With Agricontrol you can manage your fields and activities wherever you are. The application is available on your smartphone and you can record new activities directly on the tractor. You don't have to spend a lot of time on filling out papers anymore. And at the end of the year, you can easily create an export for your controller in just a few clicks.",
+            "image": "A man in a Massey Fergusson tractor"
+        },
+        "functionality": {
+            "heading": "How it works",
+            "paragraphs": {
+                "first": "Agricontrol is an application that makes field management easier for you. On your computer as well as on your smartphone, you can add and change fields, crops and activities within a very short amount of time.",
+                "second": "With a login to Agricontrol you can add your fields and then easily create your crops on it. Agricontrol will draw your attention to the fact that a newly recorded crop does not respect the rules of crop rotation defined in your account and will display your fields and crops in an easy-to-read manner. You have your own lists in which you can record your machines, fertilisers and pesticides, soil cultivation measures and diseases. Once entered, these are available to you if you want to create new activities or edit existing ones with just a few clicks on the respective crops."
+            },
+            "image": "A man on a field pointing towards hay balls"
+        },
+        "offer": {
+            "heading": "Make the most of your time",
+            "card": {
+                "header": "Free trial + Early adopter discount",
+                "specialPrice": "449.–",
+                "periodicity": "a year",
+                "regularPrice": "after the trial period, instead of 499.—",
+                "sellingPoints": {
+                    "testPeriod": "Two months of unlimited testing",
+                    "paymentInfo": "No payment info required when signing up",
+                    "hiddenFees": "No hidden fees or charges what so ever",
+                    "whereverYouAre": "Access your data wherever you may be",
+                    "moreTime": "More time for you and your life",
+                    "usersIncluded": "Add up to three users to your account"
+                }
+            }
+        },
+        "about": {
+            "heading": "About us",
+            "image": "Team work is our strength"
+        }
+    },
+    "footer": {
+        "termsOfService": "Terms of Service",
+        "siteNotice": "Site Notice",
+        "privacy": "Privacy Notice",
+        "footNote": "Made with love and a sprinkle of sunshine"
+    },
+    "commons": {
+        "ctas": {
+            "explore": "Discover Agricontrol",
+            "start": "Start using Agricontrol",
+            "startNow": "Start using Agricontrol now",
+            "createAccount": "Sign up and try Agricontrol for free"
+        }
+    }
+}

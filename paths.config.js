@@ -13,7 +13,10 @@ module.exports = {
             'src/img/**/*',
             'node_modules/feather-icons/dist/feather-sprite.svg'
         ],
-        copy: 'src/{*,}.*',
+        copy: [
+            'src/{*,}.*',
+            'src/data/*'
+        ],
         entry: {
             js: 'src/js/main.js',
             css: 'src/css/main.scss'
