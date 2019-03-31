@@ -14,7 +14,10 @@ html {
     font-size: 20px;
     color: $tightGrey;
     line-height: $textLineHeight;
-    background-color: $easyBlue;
+
+    @include mqToTablet {
+        font-size: 18px;
+    }
 }
 
 .title {
@@ -57,6 +60,10 @@ html {
         border-bottom: 1px solid $lighterPureBlack;
         padding: $halfSpace $defaultSpace;
         font-weight: 400;
+
+        @include mqToTablet {
+            text-align: center;
+        }
     }
 
     &--card-price {
@@ -211,8 +218,8 @@ html {
 
     &__text {
         position: absolute;
+        width: 80vw;
         max-width: 600px;
-        transform: translateX(-5vw);
     }
 
     &__row-wrapper {
@@ -231,18 +238,24 @@ html {
     }
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: $doubleSpace $defaultSpace 0;
+    padding: $doubleSpace 5vw 0;
     font-weight: 600;
     position: relative;
-    background-color: $pureWhite;
+    max-width: 1440px;
 
     &--centered {
         flex-wrap: wrap;
-        padding: $doubleSpace;
+        padding: $doubleSpace 5vw;
     }
 
     &--blue {
@@ -250,14 +263,15 @@ html {
     }
 
     &--image-only {
-        padding: $doubleSpace;
+        padding: 0;
+        margin: $doubleSpace;
     }
 
     &--has-overlay {
         &::before {
             content: '';
-            width: calc(100% - 200px);
-            height: calc(100% - 200px);
+            width: 100%;
+            height: 100%;
             position: absolute;
             background-color: $pureBlack;
             opacity: .5;
@@ -267,20 +281,37 @@ html {
     &__child {
         flex: 1;
 
-        &--right-text {
-            text-align: right;
+        &--card {
+            margin: 0;
+            flex: 0 0 75%;
+            min-width: 300px;
+            max-width: 700px;
+            padding: 0;
+            border-radius: 10px;
+            box-shadow: $bigShadow;
+            overflow: hidden;
+
+            .paragraph {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+
+            @include mqToTablet {
+                margin: 0 5vw;
+            }
         }
 
-        &:not(.section__child--image) {
-            &:nth-child(1) {
-                margin-right: $defaultSpace;
-                text-align: right;
-            }
+        &--image {
+                &:first-child {
+                    margin-right: $defaultSpace;
+                }
 
-            &:nth-child(2) {
-                margin-left: $defaultSpace;
-                text-align: left;
-            }
+                &:last-child {
+                    margin-left: $defaultSpace;
+                }
         }
     }
 
@@ -297,22 +328,31 @@ html {
         color: $pureWhite;
     }
 
-    &__card {
-        margin: 0;
-        flex: 0 0 75%;
-        min-width: 300px;
-        max-width: 700px;
-        padding: 0;
-        border-radius: 10px;
-        box-shadow: $bigShadow;
-        overflow: hidden;
+    @include mqToTablet {
+        flex-direction: column;
 
-        .paragraph {
-            display: flex;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
+        &--image-only {
+            padding: 0;
+            margin: 5vw;
+        }
+
+        &__child {
+            &:first-child:not(&--card) {
+                margin-right: 0;
+            }
+
+            &:last-child:not(&--card) {
+                margin-left: 0;
+            }
+
+            &:not(&--image):not(&--card) {
+                margin: 0 10vw;
+            }
+
+            &--image {
+                order: -1;
+                margin-bottom: $defaultSpace;
+            }
         }
     }
 }
@@ -356,6 +396,10 @@ html {
         &:not(:last-child) {
             margin-bottom: $fourthSpace;
         }
+    }
+
+    @include mqToTablet {
+        padding: $halfSpace 10vw $defaultSpace;
     }
 }
 

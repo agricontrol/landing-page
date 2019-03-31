@@ -29,3 +29,9 @@
         @content;
     }
 }
+
+@mixin fromTablet {
+    @media (min-width: $breakpointTablet) {
+        @content;
+    }
+}
