@@ -2,10 +2,10 @@ import Mehrsprachig from 'mehrsprachig';
 
 const mehrsprachig = new Mehrsprachig({
     sources: {
-        'de-ch': '/data/de.json',
-        'fr-ch': '/data/fr.json',
-        'it-ch': '/data/it.json',
-        'en': '/data/en.json'
+        'de-ch': 'data/de.json',
+        'fr-ch': 'data/fr.json',
+        'it-ch': 'data/it.json',
+        'en': 'data/en.json'
     }
 });
 const triggers = document.querySelectorAll('[data-mehrsprachig-switch]');
