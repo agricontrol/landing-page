@@ -34,7 +34,7 @@ html {
         display: flex;
         flex-basis: 100%;
         justify-content: center;
-        margin-bottom: $defaultSpace;
+        margin: 0 10vw $defaultSpace;
     }
 }
 
@@ -135,7 +135,8 @@ html {
                     box-shadow $transitionLength $transitionEasing,
                     text-shadow $transitionLength $transitionEasing;
 
-        &--white {
+        &--white,
+        &--translated {
             background-color: $navigationWhite;
             color: $tightGrey;
             text-shadow: none;
@@ -198,8 +199,12 @@ html {
 
         @include mqToTablet {
             flex: 1;
-            padding: 40px;
+            padding: 30px;
             margin-right: 0;
+
+            .header__navigation--white & {
+                padding: 30px;
+            }
 
             &--mobile-nav {
                 display: flex;
@@ -235,6 +240,10 @@ html {
             flex: 1 0 100%;
             order: 1;
         }
+    }
+
+    @include mqToPhone {
+        margin-bottom: 10vh;
     }
 }
 
@@ -330,6 +339,7 @@ html {
 
     @include mqToTablet {
         flex-direction: column;
+        padding: 0 0 $oneAndHalfSpace;
 
         &--image-only {
             padding: 0;
