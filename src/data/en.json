@@ -65,5 +65,41 @@
             "italian": "Italian",
             "english": "English"
         }
+    },
+    "termsOfService": {
+        "heading": "Terms of Service",
+        "paragraphs": {
+            "first": {
+                "heading": "",
+                "copy": ""
+            }
+        }
+    },
+    "siteNotice": {
+        "heading": "Site Notice",
+        "paragraphs": {
+            "first": {
+                "heading": "",
+                "copy": ""
+            }
+        }
+    },
+    "privacy": {
+        "heading": "Privacy Notice",
+        "paragraphs": {
+            "first": {
+                "heading": "",
+                "copy": ""
+            }
+        }
+    },
+    "about": {
+        "heading": "About Us",
+        "paragraphs": {
+            "first": {
+                "heading": "",
+                "copy": ""
+            }
+        }
     }
 }

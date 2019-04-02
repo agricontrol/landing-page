@@ -8,6 +8,13 @@ const scrollToNode = event => {
     navigation.classList.remove('header__navigation--translated');
     event.preventDefault();
 };
+const cameFromAnotherPageWithHash = () => {
+    if (location.hash) {
+        const section = `[data-${location.hash.substring(1)}-anchor]`;
+        jump(section);
+        location.hash = '';
+    }
+};
 
 document.addEventListener('scroll', () => {
     if (!navigation.classList.contains('header__navigation--white') && window.scrollY > 0) {
@@ -18,6 +25,8 @@ document.addEventListener('scroll', () => {
         navigation.classList.remove('header__navigation--white');
     }
 });
+
+window.addEventListener('load', cameFromAnotherPageWithHash);
 
 [...jumpLinks].forEach(node => {
     node.addEventListener('click', scrollToNode);

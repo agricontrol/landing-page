@@ -66,5 +66,41 @@
             "italian": "Italienisch",
             "english": "Englisch"
         }
+    },
+    "termsOfService": {
+        "heading": "Allgemeine Geschäftsbedingungen (AGBs)",
+        "paragraphs": {
+            "first": {
+                "heading": "",
+                "copy": ""
+            }
+        }
+    },
+    "siteNotice": {
+        "heading": "Impressum",
+        "paragraphs": {
+            "first": {
+                "heading": "",
+                "copy": ""
+            }
+        }
+    },
+    "privacy": {
+        "heading": "Datenschutz",
+        "paragraphs": {
+            "first": {
+                "heading": "",
+                "copy": ""
+            }
+        }
+    },
+    "about": {
+        "heading": "Über uns",
+        "paragraphs": {
+            "first": {
+                "heading": "",
+                "copy": ""
+            }
+        }
     }
 }
