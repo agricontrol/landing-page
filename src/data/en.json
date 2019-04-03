@@ -1,5 +1,6 @@
 {
     "navigation": {
+        "logo": "Logo of Agricontrol",
         "advantages": "Advantages",
         "offer": "Offer",
         "functionality": "Functionality",
@@ -67,7 +68,7 @@
         }
     },
     "termsOfService": {
-        "heading": "Terms of Service",
+        "heading": "Terms of service",
         "paragraphs": {
             "first": {
                 "heading": "",
@@ -76,7 +77,7 @@
         }
     },
     "siteNotice": {
-        "heading": "Site Notice",
+        "heading": "Site notice",
         "paragraphs": {
             "first": {
                 "heading": "",
@@ -85,7 +86,7 @@
         }
     },
     "privacy": {
-        "heading": "Privacy Notice",
+        "heading": "Privacy policy",
         "paragraphs": {
             "first": {
                 "heading": "",
@@ -94,7 +95,7 @@
         }
     },
     "about": {
-        "heading": "About Us",
+        "heading": "About us",
         "paragraphs": {
             "first": {
                 "heading": "",
