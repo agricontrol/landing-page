@@ -102,5 +102,13 @@
                 "copy": ""
             }
         }
+    },
+    "cookies": {
+        "text": "Wir verwenden Cookies. Was genau das bedeutet können Sie hier einsehen: ",
+        "link": {
+            "text": "Datenschutzerklärung",
+            "href": "datenschutz.html"
+        },
+        "button": "Akzeptieren"
     }
 }

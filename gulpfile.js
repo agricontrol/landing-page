@@ -11,9 +11,13 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
+const gif = require('gulp-if');
 
 const pathsConfig = require('./paths.config');
 const webpackConfig = require('./webpack.config');
+
+const prod = process.argv.includes('--prod');
+const dev = !prod;
 
 
 gulp.task('clean', () => del(pathsConfig.dist.root));
@@ -32,11 +36,11 @@ gulp.task('serve', done => {
 gulp.task('css', () => {
     return gulp.src(pathsConfig.src.entry.css)
         .pipe(plumber())
-        .pipe(sourcemaps.init())
+        .pipe(gif(dev, sourcemaps.init()))
         .pipe(sass.sync())
-        .pipe(autoprefixer())
-        .pipe(cleanCss())
-        .pipe(sourcemaps.write('.'))
+        .pipe(gif(prod, autoprefixer()))
+        .pipe(gif(prod, cleanCss()))
+        .pipe(gif(dev, sourcemaps.write('.')))
         .pipe(gulp.dest(pathsConfig.dist.css))
         .pipe(connect.reload());
 });
@@ -53,7 +57,7 @@ gulp.task('js', () => {
 gulp.task('img', () => {
     return gulp.src(pathsConfig.src.img)
         .pipe(plumber())
-        .pipe(imagemin([
+        .pipe(gif(prod, imagemin([
             imagemin.jpegtran({
                 progressive: true
             }),
@@ -61,7 +65,9 @@ gulp.task('img', () => {
                 optimizationLevel: 7
             }),
             imagemin.svgo()
-        ]))
+        ], {
+            verbose: true
+        })))
         .pipe(gulp.dest(pathsConfig.dist.img))
         .pipe(connect.reload());
 });

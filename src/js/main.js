@@ -34,3 +34,4 @@ window.addEventListener('load', cameFromAnotherPageWithHash);
 
 import './i18n';
 import './mobileNav';
+import './cookies';
