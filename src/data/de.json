@@ -58,7 +58,8 @@
             "explore": "Agricontrol entdecken",
             "start": "Mit Agricontrol durchstarten",
             "startNow": "Jetzt mit Agricontrol durchstarten",
-            "createAccount": "Jetzt kostenlos Ihr Konto eröffnen und Agricontrol ausprobieren"
+            "createAccount": "Jetzt kostenlos Ihr Konto eröffnen und Agricontrol ausprobieren",
+            "logIn": "Einloggen"
         },
         "languages": {
             "german": "Deutsch",
