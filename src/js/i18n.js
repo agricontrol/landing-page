@@ -1,6 +1,7 @@
 import Mehrsprachig from 'mehrsprachig';
 
 const mehrsprachig = new Mehrsprachig({
+    language: 'de-ch',
     sources: {
         'de-ch': 'data/de.json',
         'fr-ch': 'data/fr.json',

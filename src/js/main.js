@@ -17,11 +17,11 @@ const cameFromAnotherPageWithHash = () => {
 };
 
 document.addEventListener('scroll', () => {
-    if (!navigation.classList.contains('header__navigation--white') && window.scrollY > 0) {
+    if (!navigation.classList.contains('header__navigation--white') && window.pageYOffset > 0) {
         navigation.classList.add('header__navigation--white');
     }
 
-    if (window.scrollY === 0) {
+    if (window.pageYOffset === 0) {
         navigation.classList.remove('header__navigation--white');
     }
 });

@@ -220,7 +220,7 @@ html {
     }
 
     &__logo {
-        height: 24px;
+        max-width: 24px;
         margin-right: 10px;
     }
 
@@ -264,6 +264,8 @@ html {
     font-weight: 600;
     position: relative;
     max-width: 1440px;
+    min-height: 1px;
+    width: 100%;
 
     &--centered {
         flex-wrap: wrap;
@@ -272,14 +274,15 @@ html {
 
     &--image-only {
         padding: $doubleSpace;
-        width: 100%;
     }
 
     &--has-overlay {
         &::before {
             content: '';
-            width: 100%;
-            height: 100%;
+            top: $doubleSpace;
+            left: $doubleSpace;
+            width: calc(100% - #{2 * $doubleSpace});
+            height: calc(100% - #{2 * $doubleSpace});
             position: absolute;
             background-color: $pureBlack;
             opacity: .5;
@@ -337,6 +340,8 @@ html {
     &__overlay-link {
         position: absolute;
         text-decoration: none;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     &__overlay-title {
