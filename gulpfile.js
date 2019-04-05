@@ -105,5 +105,5 @@ gulp.task('watch:root', done => {
 
 
 gulp.task('watch', gulp.parallel('watch:img', 'watch:js', 'watch:css', 'watch:root'));
-gulp.task('build', gulp.parallel('js', 'css', 'img', 'copy'));
-gulp.task('default', gulp.series('clean', 'build', 'serve', 'browser', 'watch'));
+gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img', 'copy')));
+gulp.task('default', gulp.series('build', 'serve', 'browser', 'watch'));

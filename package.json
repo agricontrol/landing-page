@@ -9,6 +9,7 @@
     "scripts": {
         "start": "gulp",
         "prod": "gulp --prod",
+        "dist": "gulp build --prod",
         "update": "yarn upgrade-interactive --latest"
     },
     "dependencies": {
