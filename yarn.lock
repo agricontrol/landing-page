@@ -4800,10 +4800,10 @@ mdn-data@~1.1.0:
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-1.1.4.tgz#50b5d4ffc4575276573c4eedb8780812a8419f01"
   integrity sha512-FSYbp3lyKjyj3E7fMl6rYvUdX0FBXaluGqlFoYESWQlyUTq8R+wp0rkFxoYFqZlHCvsUXGjyJmLQSnXToYhOSA==
 
-mehrsprachig@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/mehrsprachig/-/mehrsprachig-0.4.2.tgz#5bfa03e467c70287d9455a95125bcc5724230eda"
-  integrity sha512-ANta1+K73RVpqJ6BLhnvhzUNbNNg5QjW3YO1WrElwbJrUcd9wDiPgmdbQ4UvjoEINUzoRWid8E5C6wJ+WMLOhA==
+mehrsprachig@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/mehrsprachig/-/mehrsprachig-0.4.5.tgz#fc745bdb34f76e462a7bf3dfbee6fdb07b453c69"
+  integrity sha512-xhtbQPfCKQjvc2446BmkbyqfQs6QNp+OIt+8LsTWRcO79uOzYgv0rbOReTARGmTlvJIf5AROcAKUb7xiRtofGw==
   dependencies:
     whatwg-fetch "^3.0.0"
 
