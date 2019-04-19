@@ -1,7 +1,8 @@
 import jump from 'jump.js';
 import './polyfills';
 
-const navigation = document.querySelector('.header__navigation');
+const header = document.querySelector('.header');
+const navigation = header.querySelector('.header__navigation');
 const jumpLinks = document.querySelectorAll('[data-jump]');
 const scrollToNode = event => {
     jump(event.target.dataset.jump, {
@@ -23,7 +24,7 @@ document.addEventListener('scroll', () => {
         navigation.classList.add('header__navigation--white');
     }
 
-    if (window.pageYOffset === 0) {
+    if (window.pageYOffset === 0 && !header.classList.contains('header--compact')) {
         navigation.classList.remove('header__navigation--white');
     }
 });

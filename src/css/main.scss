@@ -126,6 +126,19 @@ html {
         background: linear-gradient(to bottom, transparent, $pureWhite);
     }
 
+    &--compact {
+        height: $doubleSpace;
+        margin-bottom: 0;
+
+        &::after {
+            content: none;
+        }
+
+        @include mqToTablet {
+            height: $twoAndHalfSpace;
+        }
+    }
+
     &__image {
         position: absolute;
         top: 0;
@@ -299,10 +312,6 @@ html {
             order: 1;
         }
     }
-
-    @include mqToPhone {
-        margin-bottom: 10vh;
-    }
 }
 
 .main {
@@ -410,6 +419,19 @@ html {
         &--image-only {
             padding: 0;
             margin: 5vw;
+        }
+
+        &--has-overlay {
+            &::before {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &:first-child {
+            padding-top: $oneAndHalfSpace;
         }
 
         &__child {
