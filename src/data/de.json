@@ -9,7 +9,7 @@
     "header": {
         "hero": "Ein Mann in einem John-Deere-Traktor",
         "heading": "Ihr neuer Standard zur Feldverwaltung",
-        "paragraph": "Agricontrol hilft Ihnen mit wenig Aufwand den Überblick zu behalten. Auf einfache Art und Weise verwalten Sie ihre Felder und können sich auf das Wichtige konzentrieren."
+        "paragraph": "Agricontrol hilft Ihnen, mit wenig Aufwand den Überblick zu behalten. Auf einfache Art und Weise verwalten Sie ihre Felder und können sich auf das Wichtige konzentrieren."
     },
     "sections": {
         "advantages": {
@@ -21,7 +21,7 @@
             "heading": "Wie es funktioniert",
             "paragraphs": {
                 "first": "Agricontrol ist eine Applikation, welche Ihnen die Feldverwaltung erleichtert. Sowohl auf dem Computer wie auch auf dem Smartphone erfassen und ändern Sie Felder, Kulturen und Tätigkeiten auf dem Feld innert kürzester Zeit.",
-                "second": "Mit einem Login bei Agricontrol erfassen Sie ihre Felder und können dann unkompliziert Ihre Kulturen erfassen. Agricontrol macht Sie darauf aufmerksam wenn eine neu erfasste Kultur die Regeln der Fruchtfolge nicht berücksichtigt und stellt Ihnen Ihre Felder und Kulturen übersichtlich dar. Sie haben eigene Listen, in welchen Sie Ihre Maschinen, Dünge- und Pflanzenschutzmittel, Bodenbearbeitungsmassnahmen und Krankheiten/Schädlinge erfassen können. Einmal erfasst stehen Ihnen diese zur Verfügung wenn Sie mit wenigen Klicks auf den jeweiligen Kulturen neue Tätigkeiten erassen oder erfasste bearbeiten wollen."
+                "second": "Mit einem Login bei Agricontrol erfassen Sie ihre Felder und können dann unkompliziert Ihre Kulturen erfassen. Agricontrol macht Sie darauf aufmerksam wenn eine neu erfasste Kultur die Regeln der Fruchtfolge nicht berücksichtigt und stellt Ihnen Ihre Felder und Kulturen übersichtlich dar. Sie haben eigene Listen, in welchen Sie Ihre Maschinen, Dünge- und Pflanzenschutzmittel, Bodenbearbeitungsmassnahmen und Krankheiten/Schädlinge erfassen können. Einmal erfasst stehen Ihnen diese zur Verfügung wenn Sie mit wenigen Klicks auf den jeweiligen Kulturen neue Tätigkeiten erfassen oder erfasste bearbeiten wollen."
             },
             "image": "Ein Mann auf einem Feld zeigt auf Heuballen"
         },
@@ -58,7 +58,7 @@
             "explore": "Agricontrol entdecken",
             "start": "Mit Agricontrol durchstarten",
             "startNow": "Jetzt mit Agricontrol durchstarten",
-            "createAccount": "Jetzt kostenlos Ihr Konto eröffnen und Agricontrol ausprobieren",
+            "createAccount": "Jetzt kostenlos ausprobieren",
             "logIn": "Einloggen"
         },
         "languages": {
