@@ -1,4 +1,13 @@
 {
+    "meta": {
+        "titles": {
+            "home": "Agricontrol — Your new standard for field management",
+            "about": "Agricontrol — About us",
+            "termsAndConditions": "Agricontrol — Terms and conditions",
+            "siteNotice": "Agricontrol — Legal notice",
+            "privacy": "Agricontrol — Privacy policy"
+        }
+    },
     "navigation": {
         "logo": "Logo of Agricontrol",
         "advantages": "Advantages",
@@ -48,9 +57,9 @@
         }
     },
     "footer": {
-        "termsOfService": "Terms of Service",
-        "siteNotice": "Site Notice",
-        "privacy": "Privacy Notice",
+        "termsAndConditions": "Terms and conditions",
+        "siteNotice": "Legal notice",
+        "privacy": "Privacy policy",
         "footNote": "Made with love and a sprinkle of sunshine"
     },
     "commons": {
@@ -68,40 +77,165 @@
             "english": "English"
         }
     },
-    "termsOfService": {
-        "heading": "Terms of service",
-        "paragraphs": {
+    "termsAndConditions": {
+        "heading": "General terms and conditions for \"agricontrol.app\" and \"agricontrol.ch\"",
+        "sections": {
             "first": {
-                "heading": "",
-                "copy": ""
+                "heading": "1. Scope of validity",
+                "paragraphs": {
+                    "first": "\"agricontrol.app\" resp. \"agricontrol.ch\" is a platform and an offering of Informatio Ltd. and provides services exclusively under the following conditions. Agreements deviating from the terms and condition must be made in writing.",
+                    "second": "\"Platform\" means the website and mobile application owned by Informatio GmbH. The general terms and conditions form part of the \"agricontrol.app\" and \"agricontrol.ch\" offer and by accessing the platform and/or using the services of the platform, the user confirms that he has read, understood and agreed to these general terms and conditions."
+                }
+            },
+            "second": {
+                "heading": "2. Offer and prices",
+                "paragraphs": {
+                    "first": "All offers on \"agricontrol.app\" and \"agricontrol.ch\" are non-binding. Informatio Ltd. reserves the right to change offers and prices without prior notice. The current offers and prices at the time of registration apply. The scope and functionalities of the platform can be changed, extended, restricted or discontinued at any time. Price changes made after registration apply only to new registrations. Prices are quoted in Swiss francs (CHF) and include statutory value-added tax."
+                }
+            },
+            "third": {
+                "heading": "3. Payments",
+                "paragraphs": {
+                    "first": "The invoice amount is due upon delivery of the invoice and must be paid within 30 days."
+                }
+            },
+            "fourth": {
+                "heading": "4. Registry",
+                "paragraphs": {
+                    "first": "In order to use the services of \"agricontrol.app\" or \"agricontrol.ch\", the visitor must register and create a user account. When registering, the surname, first name, e-mail address and billing address must be provided. This information can be viewed and adjusted in the profile at any time and must be true and complete.",
+                    "second": "Personal login data must be treated confidentially by the user and third parties may not be granted access respectively the login data may not be passed on to third parties. Informatio Ltd. cannot be held liable for any damage resulting from the misuse or unauthorised disclosure of login data. A violation of these terms and conditions can lead to the loss of access to \"agricontrol.app\" and \"agricontrol.ch\"."
+                }
+            },
+            "fifth": {
+                "heading": "5. Liability",
+                "paragraphs": {
+                    "first": "The liability of Informatio Ltd. is excluded for all damages, including loss of revenue or profit, loss of use or costs for the purchase of replacement services, resulting from the use, misuse or loss of performance of the services of \"agricontrol.app\" or \"agricontrol.ch\". In any case, the user is responsible for the security of his data. No liability will be accepted for lost data.",
+                    "second": "Informatio Ltd. is not responsible or liable for any incorrect or misspelled information including email addresses, incorrect (mobile) phone numbers and has no obligation to verify them. The user alone is responsible for the correctness and up-to-dateness of the account data.",
+                    "third": "Although the provision of the platform has been made with care and diligence, neither can it be verified or guaranteed that all information is accurate, correct and complete, nor can Informatio Ltd be held accountable for errors (including obvious errors or typographical errors), interruptions (due to a temporary and/or partial breakdown, updating or maintenance work on \"agricontrol.app\" or \"agricontrol.ch\" or any other reason), inaccurate, misleading or untrue information or failure to transmit the information.",
+                    "fourth": "Informatio Ltd. is not liable for the contents of external and linked websites. \"agricontrol.app\" and \"agricontrol.ch\" may be temporarily unavailable due to maintenance work. This may result in data loss. In this context Informatio Ltd. is not liable."
+                }
+            },
+            "sixth": {
+                "heading": "6. Information obligation",
+                "paragraphs": {
+                    "first": "The parties shall inform the other party in a timely manner of any hindrances which may call into question the contractual fulfilment or payment or may lead to inappropriate solutions."
+                }
+            },
+            "seventh": {
+                "heading": "7. Final provisions",
+                "paragraphs": {
+                    "first": "Place of jurisdiction is the registered office of Informatio Ltd. Swiss law is applicable."
+                }
             }
         }
     },
     "siteNotice": {
-        "heading": "Site notice",
-        "paragraphs": {
+        "heading": "Legal notice",
+        "sections": {
             "first": {
-                "heading": "",
-                "copy": ""
+                "heading": "Contact address",
+                "paragraphs": {
+                    "first": "<address class='address'>Informatio Ltd.<br>Parkterrasse 14<br>3012 Bern<br><a class='link' href='mailto:help@agricontrol.ch'>help@agricontrol.ch</a></address>"
+                }
+            },
+            "second": {
+                "heading": "Billing address & headquarters",
+                "paragraphs": {
+                    "first": "<address class='address'>Informatio Ltd.<br>Brüelmattenweg 12<br>2577 Finsterhennen</address>"
+                }
+            },
+            "third": {
+                "heading": "Disclaimer",
+                "paragraphs": {
+                    "first": "The author assumes no liability whatsoever with regard to the correctness, accuracy, up-to-dateness, reliability and completeness of the information provided.",
+                    "second": "Liability claims against the author for damages of a material or immaterial nature arising from access to or use or non-use of the published information, from misuse of the connection or from technical faults are excluded.",
+                    "third": "All offers are non-binding. The author expressly reserves the right to change, supplement or delete parts of the pages or the site without prior notice or to cease publication temporarily or permanently."
+                }
+            },
+            "fourth": {
+                "heading": "Liability for links",
+                "paragraphs": {
+                    "first": "References and links to third-party websites are outside our area of responsibility. Any responsibility for such websites is rejected. Access to and use of such websites is at the user's own risk."
+                }
+            },
+            "fifth": {
+                "heading": "Technical implementation",
+                "paragraphs": {
+                    "first": "<a class='link' href='http://arnasoftech.com' target='_blank'>Arna Softech Private Ltd.</a>"
+                }
             }
         }
     },
     "privacy": {
         "heading": "Privacy policy",
-        "paragraphs": {
+        "sections": {
             "first": {
-                "heading": "",
-                "copy": ""
+                "heading": "Responsible authority",
+                "paragraphs": {
+                    "first": "The responsible authority in the sense of the data protection laws, in particular the EU data protection basic regulation (DSGVO), is: <address class='address'>Lukas Kocherhans<br>3084 Wabern</address><a class='link' href='mailto:help@agricontrol.app'>help@agricontrol.app</a> – <a class='link' href='//agricontrol.app'>agricontrol.app</a>"
+                }
+            },
+            "second": {
+                "heading": "General information",
+                "paragraphs": {
+                    "first": "Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Confederation (Data Protection Act, DSG), every person has the right to the protection of his or her privacy and to the protection of his or her personal data against misuse. The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this data protection declaration.",
+                    "second": "In cooperation with our hosting providers, we strive to protect the databases as best as possible against unauthorized access, loss, misuse or falsification.",
+                    "third": "We would like to point out that data transmission over the Internet (e.g. communication by e-mail) can be subject to security vulnerabilities. A complete protection of the data against access by third parties is not possible.",
+                    "fourth": "By using this website, you consent to the collection, processing and use of data in accordance with the following description. This website can be visited without registration. Data such as pages accessed or names of files accessed, date and time are stored on the server for statistical purposes without this data being directly related to your person. Personal data, in particular name, address or e-mail address are collected as far as possible on a voluntary basis. The data will not be passed on to third parties without your consent."
+                }
+            },
+            "third": {
+                "heading": "Privacy policy for cookies",
+                "paragraphs": {
+                    "first": "This website uses cookies. These are small text files that make it possible to store specific, user-related information on the user's device while he or she is using the website. Cookies make it possible to determine the frequency of use and number of users of the site, to analyse how the site is used, but also to make our offer more customer-friendly. Cookies remain stored after the end of a browser session and can be called up again when a new page visit is made. If you do not wish for this to happen, you should set your Internet browser so that it refuses to accept cookies.",
+                    "second": "A general objection to the use of cookies used for online marketing purposes can be raised for a large number of services, especially in the case of tracking, via the US website <a class='link' href='https://aboutads.info/choices/' target='_blank'>YourAdChoices</a> or the EU website <a class='link' href='https://youronlinechoices.com/' target='_blank'>Your Online Choices</a>. Furthermore, the storage of cookies can be achieved by deactivating them in the browser settings. Please note that in this case not all functions of this online offer can be used."
+
+                }
+            },
+            "fourth": {
+                "heading": "Privacy policy for SSL encryption",
+                "paragraphs": {
+                    "first": "This website uses SSL encryption for security reasons and to protect the transmission of confidential content, such as requests that you send to us as a site operator. You can recognise an encrypted connection by the fact that the address line of the browser changes from \"http://\" to \"https://\" and by the lock symbol in your browsers address line.",
+                    "second": "If SSL encryption is activated, the data that you transmit to us cannot be read by third parties."
+                }
+            },
+            "fifth": {
+                "heading": "Privacy policy for Google Analytics",
+                "paragraphs": {
+                    "first": "This website uses Google Analytics, a web analytics service provided by <address class='address'>Google Inc.<br>1600 Amphitheatre Parkway<br>Mountain View, CA 94043<br>USA</address> To disable Google Analytics, Google provides a browser plug-in at <a class='link' href='https://tools.google.com/dlpage/gaoptout' target='_blank'>tools.google.com/dlpage/gaoptout</a>.",
+                    "second": "Google Analytics uses cookies. These are small text files that make it possible to store specific, user-related information on the user's end device. These enable Google to analyse the use of our website. The information collected through cookies about the use of our pages (including your IP address) is generally transmitted to a Google server in the USA and stored there. We would like to point out that on this website Google Analytics was extended by the code \"gat._anonymizeIp();\" in order to guarantee an anonymous recording of IP addresses (so-called IP masking). If anonymisation is active, Google abbreviates IP addresses within member states of the European Union or in other signatory states to the Agreement on the European Economic Area, which means that no conclusions can be drawn about your identity.",
+                    "third": "Only in exceptional cases is the full IP address transmitted to a Google server in the USA and shortened there. Google complies with the privacy provisions of the Privacy Shield Agreement and is registered with the U.S. Department of Commerce's Privacy Shield program. Google uses the information it collects to evaluate and report on the use of our site and to provide other related services to us. You can learn more at <a class='link' href='https://support.google.com/analytics/answer/6004245' target='_blank'>support.google.com/analytics/answer/6004245</a>."
+                }
+            },
+            "sixth": {
+                "heading": "Privacy policy for the use of Google Web Fonts",
+                "paragraphs": {
+                    "first": "This website uses so-called web fonts provided by Google for the uniform display of fonts. When you call up a page, your browser loads the required web fonts into your browser cache in order to display texts and fonts correctly. If your browser does not support web fonts, a standard font will be used by your computer.",
+                    "second": "For more information about Google Web Fonts, see <a class='link' href='https://developers.google.com/fonts/faq' target='_blank'>developers.google.com/fonts/faq</a> and Google's privacy policy: <a class='link' href='https://policies.google.com/privacy' target='_blank'>policies.google.com/privacy</a>."
+                }
+            },
+            "seventh": {
+                "heading": "Changes",
+                "paragraphs": {
+                    "first": "We may change this privacy statement at any time without notice. The current version published on our website applies. If the data protection declaration is part of an agreement with you, we will inform you of the change by e-mail or other suitable means in the event of an update."
+                }
+            },
+            "eigth": {
+                "heading": "Questions to the Data Protection Officer",
+                "paragraphs": {
+                    "first": "If you have any questions about data protection, please send us an e-mail or contact the person responsible for data protection in our organisation listed at the beginning of the data protection declaration.",
+                    "second": "Wabern, 08.04.2019<br>Source: <a class='link' href='https://www.swissanwalt.ch/' target='_blank'>Privacy policy generator of SwissAnwalt</a>"
+                }
             }
         }
     },
     "about": {
         "heading": "About us",
         "paragraphs": {
-            "first": {
-                "heading": "",
-                "copy": ""
-            }
+            "first": "Agricontrol arose out of the need to be able to offer farmers in Switzerland a modern way of field management independent of location and equipment.",
+            "second": "Thanks to the support and experience of Informatio Ltd., we were able to pursue this idea and develop a concept with all our heart and soul. The result is a product that meets current customer needs and is well positioned for the future. ",
+            "third": "Fields, cultures and activities can be recorded and processed flexibly on the computer as well as on the smartphone within a very short time. Tedious paperwork becomes a thing of the past and eventually, a complete report can be created and printed out within just a few clicks.",
+            "fourth": "We—Robin Löffel, Lukas Kocherhans, Matthias Jakob and Holger Jakob—wish you lots of fun with our product!"
         }
     },
     "cookies": {

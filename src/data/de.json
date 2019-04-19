@@ -1,4 +1,13 @@
 {
+    "meta": {
+        "titles": {
+            "home": "Agricontrol – Ihr neuer Standard zur Feldverwaltung",
+            "about": "Agricontrol – Über uns",
+            "termsAndConditions": "Agricontrol – Nutzungsbedingungen",
+            "siteNotice": "Agricontrol – Impressum",
+            "privacy": "Agricontrol – Datenschutz"
+        }
+    },
     "navigation": {
         "logo": "Logo von Agricontrol",
         "advantages": "Vorteile",
@@ -48,7 +57,7 @@
         }
     },
     "footer": {
-        "termsOfService": "Nutzungsbedingungen",
+        "termsAndConditions": "Nutzungsbedingungen",
         "siteNotice": "Impressum",
         "privacy": "Datenschutz",
         "footNote": "Gemacht mit Liebe und einer Prise Sonnenschein"
@@ -68,7 +77,7 @@
             "english": "Englisch"
         }
     },
-    "termsOfService": {
+    "termsAndConditions": {
         "heading": "Allgemeine Geschäftsbedingungen (AGB) für «agricontrol.app» / «agricontrol.ch»",
         "sections": {
             "first": {
