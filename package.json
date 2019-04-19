@@ -9,21 +9,20 @@
     "scripts": {
         "start": "gulp",
         "prod": "gulp --prod",
-        "dist": "gulp build --prod",
-        "update": "yarn upgrade-interactive --latest"
+        "dist": "gulp build --prod"
     },
     "dependencies": {
         "@babel/core": "^7.4.3",
         "@babel/preset-env": "^7.4.3",
         "babel-eslint": "^10.0.1",
         "babel-loader": "^8.0.5",
-        "core-js": "^3.0.0",
+        "core-js": "^3.0.1",
         "del": "^4.1.0",
         "eslint": "^5.16.0",
         "eslint-loader": "^2.1.2",
         "feather-icons": "^4.21.0",
         "gulp": "^4.0.0",
-        "gulp-autoprefixer": "^6.0.0",
+        "gulp-autoprefixer": "^6.1.0",
         "gulp-clean-css": "^4.0.0",
         "gulp-connect": "^5.7.0",
         "gulp-if": "^2.0.2",
@@ -33,10 +32,10 @@
         "gulp-sourcemaps": "^2.6.5",
         "jump.js": "^1.0.2",
         "mehrsprachig": "^0.4.6",
-        "open": "^6.0.0",
+        "open": "^6.1.0",
         "svgxuse": "^1.2.6",
         "vinyl-named": "^1.1.0",
-        "webpack": "^4.29.6",
+        "webpack": "^4.30.0",
         "webpack-merge": "^4.2.1",
         "webpack-stream": "^5.2.1"
     }

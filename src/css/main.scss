@@ -224,7 +224,7 @@ html {
             display: none;
         }
 
-        @include fromTablet {
+        @include mqFromTablet {
             &::after {
                 content: '';
                 position: absolute;
