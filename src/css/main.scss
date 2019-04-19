@@ -211,13 +211,13 @@ html {
             display: none;
         }
 
-        @include fromDesktop {
+        @include fromTablet {
             &::after {
                 content: '';
                 position: absolute;
                 bottom: 10%;
-                left: 0;
-                width: 100%;
+                left: 10%;
+                width: 80%;
                 height: 3px;
                 background-color: $pureWhite;
                 box-shadow: $defaultShadow;
@@ -266,7 +266,8 @@ html {
     }
 
     &__logo {
-        max-width: 24px;
+        width: 24px;
+        height: 24px;
         margin-right: 10px;
     }
 
