@@ -4,7 +4,9 @@ import './polyfills';
 const navigation = document.querySelector('.header__navigation');
 const jumpLinks = document.querySelectorAll('[data-jump]');
 const scrollToNode = event => {
-    jump(event.target.dataset.jump);
+    jump(event.target.dataset.jump, {
+        offset: -(navigation.clientHeight)
+    });
     navigation.classList.remove('header__navigation--translated');
     event.preventDefault();
 };
