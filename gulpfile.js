@@ -11,7 +11,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
-const gif = require('gulp-if');
+const noop = require('gulp-noop');
 
 const pathsConfig = require('./paths.config');
 const webpackConfig = require('./webpack.config');
@@ -36,11 +36,11 @@ gulp.task('serve', done => {
 gulp.task('css', () => {
     return gulp.src(pathsConfig.src.entry.css)
         .pipe(plumber())
-        .pipe(gif(dev, sourcemaps.init()))
+        .pipe(dev ? sourcemaps.init() : noop())
         .pipe(sass.sync())
-        .pipe(gif(prod, autoprefixer()))
-        .pipe(gif(prod, cleanCss()))
-        .pipe(gif(dev, sourcemaps.write('.')))
+        .pipe(prod ? autoprefixer() : noop())
+        .pipe(prod ? cleanCss() : noop())
+        .pipe(dev ? sourcemaps.write('.') : noop())
         .pipe(gulp.dest(pathsConfig.dist.css))
         .pipe(connect.reload());
 });
@@ -57,7 +57,7 @@ gulp.task('js', () => {
 gulp.task('img', () => {
     return gulp.src(pathsConfig.src.img)
         .pipe(plumber())
-        .pipe(gif(prod, imagemin([
+        .pipe(prod ? imagemin([
             imagemin.jpegtran({
                 progressive: true
             }),
@@ -67,7 +67,7 @@ gulp.task('img', () => {
             imagemin.svgo()
         ], {
             verbose: true
-        })))
+        }) : noop())
         .pipe(gulp.dest(pathsConfig.dist.img))
         .pipe(connect.reload());
 });

@@ -239,11 +239,7 @@
         }
     },
     "cookies": {
-        "text": "We use cookies. You can look at what exactly that means here: ",
-        "link": {
-            "text": "Privacy notice",
-            "href": "datenschutz.html"
-        },
+        "text": "We use cookies. You can look at what exactly that means in our <a class='link' href='datenschutz.html' target='_blank'>Privacy policy</a>.",
         "button": "Accept"
     }
 }

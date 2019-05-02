@@ -22,10 +22,10 @@ const fadeInBanner = () => {
     }, 500);
 }
 
-button.addEventListener('click', fadeOutBanner);
-
 if (acceptsCookies) {
     deleteBanner();
 } else {
+    button.addEventListener('click', fadeOutBanner);
+
     fadeInBanner();
 }
