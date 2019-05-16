@@ -3,25 +3,23 @@ const merge = require('webpack-merge');
 const TerserPlugin = require('terser-webpack-plugin');
 const prod = process.argv.includes('--prod');
 
-let config = {
+module.exports = {
     output: {
         filename: '[name].js'
     },
-    devtool: 'source-map',
-    mode: 'development',
+    devtool: prod ? false : 'source-map',
+    mode: prod ? 'production' : 'development',
     module: {
         rules: [{
             test: /\.js$/,
-            use: [ 'babel-loader', 'eslint-loader' ],
+            use: [
+                'babel-loader',
+                'eslint-loader'
+            ],
             exclude: /node_modules/
         }]
     },
-};
-
-if (prod) {
-    config = merge(config, {
-        devtool: false,
-        mode: 'production',
+    ...(prod && {
         optimization: {
             minimizer: [
                 new TerserPlugin({
@@ -33,7 +31,5 @@ if (prod) {
                 })
             ]
         }
-    });
-}
-
-module.exports = config;
+    })
+};

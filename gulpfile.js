@@ -9,7 +9,6 @@ const connect = require('gulp-connect');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
-const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 const noop = require('gulp-noop');
 
@@ -34,14 +33,16 @@ gulp.task('serve', done => {
 });
 
 gulp.task('css', () => {
-    return gulp.src(pathsConfig.src.entry.css)
+    return gulp.src(pathsConfig.src.entry.css, {
+            sourcemaps: dev ? true : false
+        })
         .pipe(plumber())
-        .pipe(dev ? sourcemaps.init() : noop())
         .pipe(sass.sync())
         .pipe(prod ? autoprefixer() : noop())
         .pipe(prod ? cleanCss() : noop())
-        .pipe(dev ? sourcemaps.write('.') : noop())
-        .pipe(gulp.dest(pathsConfig.dist.css))
+        .pipe(gulp.dest(pathsConfig.dist.css, {
+            sourcemaps: dev ? true : false
+        }))
         .pipe(connect.reload());
 });
 
