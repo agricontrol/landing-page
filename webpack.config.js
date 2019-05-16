@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const merge = require('webpack-merge');
 const TerserPlugin = require('terser-webpack-plugin');
 const prod = process.argv.includes('--prod');
 
