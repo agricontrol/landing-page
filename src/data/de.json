@@ -240,7 +240,7 @@
         }
     },
     "cookies": {
-        "text": "Wir verwenden Cookies. Was genau das bedeutet können Sie in unserer <a class='link' href='datenschutz.html' target='_blank'>Datenschutzerklärung</a> einsehen.",
+        "text": "Wir verwenden Cookies. Was genau das bedeutet, können Sie in unserer <a class='link' href='datenschutz.html' target='_blank'>Datenschutzerklärung</a> einsehen.",
         "button": "Akzeptieren"
     }
 }

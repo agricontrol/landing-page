@@ -87,8 +87,8 @@ html {
     box-shadow: $defaultShadow;
     display: inline-block;
     text-shadow: none;
-    transition: transform #{$transitionLength} $transitionEasing,
-                box-shadow #{$transitionLength} $transitionEasing;
+    transition: transform $transitionLength $transitionEasing,
+                box-shadow $transitionLength $transitionEasing;
 
     &:hover {
         transform: translateY(-3px);
@@ -102,6 +102,25 @@ html {
 
     &--sales {
         background-color: $invertedMaastrichtBlue;
+        border: 2px solid $invertedMaastrichtBlue;
+    }
+
+    &--ghost {
+        background-color: transparent;
+        border: 2px solid $lightMaastrichtBlue;
+        color: $lightMaastrichtBlue;
+        box-shadow: none;
+        transition: transform $transitionLength $transitionEasing,
+                    box-shadow $transitionLength $transitionEasing,
+                    color $transitionLength $transitionEasing,
+                    background-color $transitionLength $transitionEasing,
+                    border-color $transitionLength $transitionEasing;
+
+        &:hover {
+            border-color: transparent;
+            background-color: $lightMaastrichtBlue;
+            color: $pureWhite;
+        }
     }
 }
 

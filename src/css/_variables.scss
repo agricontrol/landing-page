@@ -4,6 +4,7 @@ $tightGrey: #606060;
 $easyBlue: #BAE8F8;
 $lightMaastrichtBlue: transparentize(#091540, .6);
 $invertedMaastrichtBlue: darken(invert($lightMaastrichtBlue), 60%);
+$invertedMaastrichtBlue: #67bf66;
 $lightEasyBlue: transparentize($easyBlue, .8);
 $lightPureBlack: transparentize($pureBlack, .85);
 $lighterPureBlack: transparentize($pureBlack, .95);
