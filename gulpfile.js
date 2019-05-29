@@ -16,7 +16,6 @@ const pathsConfig = require('./paths.config');
 const webpackConfig = require('./webpack.config');
 
 const prod = process.argv.includes('--prod');
-const dev = !prod;
 
 
 gulp.task('clean', () => del(pathsConfig.dist.root));
@@ -34,14 +33,14 @@ gulp.task('serve', done => {
 
 gulp.task('css', () => {
     return gulp.src(pathsConfig.src.entry.css, {
-            sourcemaps: dev ? true : false
+            sourcemaps: prod ? false : true
         })
         .pipe(plumber())
         .pipe(sass.sync())
         .pipe(prod ? autoprefixer() : noop())
         .pipe(prod ? cleanCss() : noop())
         .pipe(gulp.dest(pathsConfig.dist.css, {
-            sourcemaps: dev ? true : false
+            sourcemaps: prod ? false : true
         }))
         .pipe(connect.reload());
 });
@@ -72,7 +71,6 @@ gulp.task('img', () => {
         .pipe(gulp.dest(pathsConfig.dist.img))
         .pipe(connect.reload());
 });
-
 
 gulp.task('copy', () => {
     return gulp.src(pathsConfig.src.copy, {

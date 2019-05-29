@@ -87,11 +87,9 @@ html {
     box-shadow: $defaultShadow;
     display: inline-block;
     text-shadow: none;
-    transition: transform $transitionLength $transitionEasing,
-                box-shadow $transitionLength $transitionEasing;
+    transition: box-shadow $transitionLength $transitionEasing;
 
     &:hover {
-        transform: translateY(-3px);
         box-shadow: $bigShadow;
     }
 
@@ -100,26 +98,21 @@ html {
         box-shadow: none;
     }
 
-    &--sales {
+    &--primary {
+        color: $pureWhite;
         background-color: $invertedMaastrichtBlue;
         border: 2px solid $invertedMaastrichtBlue;
     }
 
     &--ghost {
-        background-color: transparent;
-        border: 2px solid $lightMaastrichtBlue;
-        color: $lightMaastrichtBlue;
+        background-color: transparentize($invertedMaastrichtBlue, .4);
+        border: 2px solid transparent;
         box-shadow: none;
-        transition: transform $transitionLength $transitionEasing,
-                    box-shadow $transitionLength $transitionEasing,
-                    color $transitionLength $transitionEasing,
-                    background-color $transitionLength $transitionEasing,
-                    border-color $transitionLength $transitionEasing;
+        transition: box-shadow $transitionLength $transitionEasing,
+                    background-color $transitionLength $transitionEasing;
 
         &:hover {
-            border-color: transparent;
-            background-color: $lightMaastrichtBlue;
-            color: $pureWhite;
+            background-color: $invertedMaastrichtBlue;
         }
     }
 }
@@ -257,6 +250,12 @@ html {
                 transform-origin: bottom;
                 transform: scaleY(0);
             }
+
+            &--logo {
+                &::after {
+                    content: none;
+                }
+            }
         }
 
         &:hover {
@@ -355,10 +354,6 @@ html {
         padding: $doubleSpace 5vw;
     }
 
-    &--image-only {
-        padding: $doubleSpace;
-    }
-
     &--has-overlay {
         &::before {
             content: '';
@@ -434,11 +429,6 @@ html {
     @include mqToTablet {
         flex-direction: column;
         padding: 0 0 $oneAndHalfSpace;
-
-        &--image-only {
-            padding: 0;
-            margin: 5vw;
-        }
 
         &--has-overlay {
             &::before {
