@@ -7,7 +7,7 @@ module.exports = {
     },
     src: {
         root: 'src',
-        js: 'src/js/**/*.js',
+        js: 'src/{js,views}/**/*.{js,hbs}',
         css: 'src/css/**/*.scss',
         img: [
             'src/img/**/*',

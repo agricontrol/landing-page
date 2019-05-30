@@ -6,5 +6,8 @@ module.exports = {
             corejs: 3
         }]
     ],
+    plugins: [
+        '@babel/plugin-proposal-class-properties'
+    ],
     ignore: [ 'node_modules' ]
 };

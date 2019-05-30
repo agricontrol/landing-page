@@ -1,3 +1,11 @@
+// import views from '../views/views';
+// import { Sr } from './router/router';
+//
+// const sr = new Sr('/', {
+//     '/': views.home,
+//     '/about': views.about
+// });
+
 import jump from 'jump.js';
 import './polyfills';
 

@@ -16,6 +16,9 @@ module.exports = {
                 'eslint-loader'
             ],
             exclude: /node_modules/
+        }, {
+            test: /\.hbs$/,
+            use: 'handlebars-loader'
         }]
     },
     ...(prod && {

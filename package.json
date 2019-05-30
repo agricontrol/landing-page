@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "@babel/core": "^7.4.5",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
         "@babel/preset-env": "^7.4.5",
         "babel-eslint": "^10.0.1",
         "babel-loader": "^8.0.6",
@@ -29,6 +30,8 @@
         "gulp-noop": "^1.0.0",
         "gulp-plumber": "^1.2.1",
         "gulp-sass": "^4.0.2",
+        "handlebars": "^4.1.2",
+        "handlebars-loader": "^1.7.1",
         "jump.js": "^1.0.2",
         "mehrsprachig": "^0.4.8",
         "open": "^6.3.0",
