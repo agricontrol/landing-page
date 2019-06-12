@@ -21,12 +21,12 @@
         "del": "^4.1.1",
         "eslint": "^5.16.0",
         "eslint-loader": "^2.1.2",
-        "feather-icons": "^4.21.0",
+        "feather-icons": "^4.22.1",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
         "gulp-clean-css": "^4.2.0",
         "gulp-connect": "^5.7.0",
-        "gulp-imagemin": "^5.0.3",
+        "gulp-imagemin": "^6.0.0",
         "gulp-noop": "^1.0.0",
         "gulp-plumber": "^1.2.1",
         "gulp-sass": "^4.0.2",
@@ -37,7 +37,7 @@
         "open": "^6.3.0",
         "svgxuse": "^1.2.6",
         "vinyl-named": "^1.1.0",
-        "webpack": "^4.32.2",
+        "webpack": "^4.33.0",
         "webpack-stream": "^5.2.1"
     }
 }
