@@ -308,6 +308,7 @@ html {
         transform: translate(-50%, -50%);
         width: 80vw;
         max-width: 600px;
+        z-index: 1;
 
         .button {
             margin: $eigthSpace;
@@ -418,6 +419,10 @@ html {
     &__image {
         width: 100%;
         border-radius: 10px;
+
+        @include mqToTablet {
+            border-radius: initial;
+        };
     }
 
     &__overlay-link {
