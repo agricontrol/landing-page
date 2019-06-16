@@ -55,6 +55,11 @@
         "about": {
             "heading": "Qui sommes-nous?",
             "image": "Une image de Lukas, Matthias et Robin d'Agricontrol."
+        },
+        "whatsToCome": {
+            "heading": "Ce qui va venir",
+            "image": "Homme dans une moissonneuse-batteuse sur un champ de blé",
+            "paragraph": "Nous travaillons sans relâche pour améliorer et simplifier la gestion sur le terrain pour vous avec Agricontrol. C'est pourquoi nous continuons à développer notre produit. En plus d'optimiser constamment la solution, nous travaillons actuellement au développement de nouvelles fonctionnalités. En quelques mois vous pourrez enregistrer toutes les activités telles que la fertilisation, la culture du sol et la protection des cultures dans Agricontrol. Celle-ci peut ensuite être automatiquement préparée sous forme de fiche de zone et exportée."
         }
     },
     "footer": {

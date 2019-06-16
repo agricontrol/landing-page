@@ -55,6 +55,11 @@
         "about": {
             "heading": "About us",
             "image": "Team work is our strength"
+        },
+        "whatsToCome": {
+            "heading": "What's to come",
+            "image": "Man in combine harvester on a wheat field",
+            "paragraph": "We are working tirelessly on improving and simplifying field management for you with Agricontrol. That's why we continue to develop our product. In addition to constantly refining the tool, we are currently working on developing new functionalities. In just a few months you will be able to record all activities such as fertilisation, soil cultivation and plant protection in Agricontrol. This can then be automatically prepared as a field sheet and exported."
         }
     },
     "footer": {

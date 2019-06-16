@@ -349,9 +349,12 @@ html {
     min-height: 1px;
     width: 100%;
 
+    &:last-child {
+        padding-bottom: $tripleSpace;
+    }
+
     &--centered {
         flex-wrap: wrap;
-        padding: $doubleSpace 5vw;
     }
 
     &--has-overlay {
@@ -577,7 +580,6 @@ html {
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin-bottom: $tripleSpace;
     overflow: hidden;
     border-radius: 10px;
     transition: box-shadow $transitionEasing $transitionLength;
