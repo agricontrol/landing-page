@@ -3,47 +3,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://agricontrol.app</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://agricontrol.app/dashboard/</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://agricontrol.app/dashboard/login</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://agricontrol.app/dashboard/register</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://agricontrol.app/dashboard/faq</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://agricontrol.app/ueber-uns.html</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
     </url>
     <url>
         <loc>https://agricontrol.app/nutzungsbedingungen.html</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
     </url>
     <url>
         <loc>https://agricontrol.app/impressum.html</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
     </url>
     <url>
         <loc>https://agricontrol.app/datenschutz.html</loc>
-        <lastmod>2019-06-01</lastmod>
+        <lastmod>2019-08-03</lastmod>
     </url>
 </urlset>

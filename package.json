@@ -9,7 +9,8 @@
     "scripts": {
         "start": "gulp",
         "prod": "gulp --prod",
-        "dist": "gulp build --prod"
+        "dist": "gulp build --prod",
+        "update": "yarn upgrade-interactive --latest"
     },
     "dependencies": {
         "@babel/core": "^7.5.5",
@@ -34,7 +35,7 @@
         "open": "^6.4.0",
         "svgxuse": "^1.2.6",
         "vinyl-named": "^1.1.0",
-        "webpack": "^4.37.0",
+        "webpack": "^4.39.1",
         "webpack-stream": "^5.2.1"
     }
 }
