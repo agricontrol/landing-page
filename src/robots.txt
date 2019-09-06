@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /int/
-Sitemap: https://agricontrol.app/sitemap.xml
+Sitemap: https://agricontrol.app/sitemap.txt

@@ -12,9 +12,10 @@ const mehrsprachig = new Mehrsprachig({
 const triggers = document.querySelectorAll('[data-mehrsprachig-switch]');
 const setLanguage = event => {
     mehrsprachig.setLanguage(event.target.dataset.mehrsprachigSwitch);
+    document.documentElement.setAttribute('lang', event.target.dataset.mehrsprachigSwitch);
     event.preventDefault();
 };
 
 [...triggers].forEach(trigger => {
     trigger.addEventListener('click', setLanguage);
-})
+});

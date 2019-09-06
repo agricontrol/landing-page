@@ -1,6 +1,13 @@
-# enable rewriting
+# hsts header
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+# enable rewrites
 RewriteEngine On
 
-# rewrite every request to https
+# http to https
 RewriteCond %{HTTPS} =off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L,R=301]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [qsappend,last,redirect=301]
+
+# www to non-www
+RewriteCond %{HTTP_HOST} ^(www\.)(.*)$ [nocase]
+RewriteRule ^(.*)$ https://%2%{REQUEST_URI} [qsappend,last,redirect=301]
