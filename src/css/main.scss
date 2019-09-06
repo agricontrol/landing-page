@@ -43,10 +43,6 @@ html {
         margin-bottom: .8em;
     }
 
-    &--section {
-        font-weight: 600;
-    }
-
     &--footer {
         text-align: center;
         font-size: 85%;
@@ -84,6 +80,7 @@ html {
     text-decoration: none;
     border-radius: 10px;
     font-size: .8rem;
+    font-weight: 600;
     display: inline-block;
     text-shadow: none;
     transition: box-shadow $transitionLength $transitionEasing;
@@ -343,7 +340,6 @@ html {
     justify-content: center;
     align-items: center;
     padding: $doubleSpace 5vw 0;
-    font-weight: 600;
     position: relative;
     max-width: 1440px;
     min-height: 1px;
@@ -614,6 +610,10 @@ html {
         width: 90%;
         margin-bottom: 0;
     }
+}
+
+.picture {
+    line-height: 0;
 }
 
 @import "cookies";

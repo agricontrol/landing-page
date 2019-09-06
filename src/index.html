@@ -47,7 +47,11 @@
             <a class="header__link" href="#" data-jump="[data-offer-anchor]" data-mehrsprachig="navigation.offer"></a>
             <a class="header__link" href="#" data-jump="[data-about-anchor]" data-mehrsprachig="navigation.about"></a>
         </nav>
-        <img class="header__image" src="img/header.jpg" data-mehrsprachig="alt=header.hero" data-object-fit="cover" data-object-position="top">
+        <picture class="picture">
+            <source type="image/webp" srcset="img/header.webp">
+            <source type="image/jpeg" srcset="img/header.jpg">
+            <img class="header__image" src="img/header.jpg" data-mehrsprachig="alt=header.hero" data-object-fit="cover" data-object-position="top">
+        </picture>
         <div class="header__text">
             <h1 class="title" data-mehrsprachig="header.heading"></h1>
             <p class="paragraph" data-mehrsprachig="header.paragraph"></p>
@@ -58,7 +62,11 @@
     <main class="main">
         <section class="section" data-advantage-anchor>
             <div class="section__child section__child--image">
-                <img class="section__image" src="img/massey-fergusson.jpg" data-mehrsprachig="alt=sections.advantages.image">
+                <picture class="picture">
+                    <source type="image/webp" srcset="img/massey-fergusson.webp">
+                    <source type="image/jpeg" srcset="img/massey-fergusson.jpg">
+                    <img class="section__image" src="img/massey-fergusson.jpg" data-mehrsprachig="alt=sections.advantages.image">
+                </picture>
             </div>
             <div class="section__child">
                 <h2 class="title title--section" data-mehrsprachig="sections.advantages.heading"></h2>
@@ -74,12 +82,20 @@
                 <a class="button button--primary" href="https://agricontrol.app/dashboard/register" data-mehrsprachig="commons.ctas.startNow">Mit Agricontrol durchstarten</a>
             </div>
             <div class="section__child section__child--image">
-                <img class="section__image" src="img/pointing.jpg" data-mehrsprachig="alt=sections.functionality.image">
+                <picture class="picture">
+                    <source type="image/webp" srcset="img/pointing.webp">
+                    <source type="image/jpeg" srcset="img/pointing.jpg">
+                    <img class="section__image" src="img/pointing.jpg" data-mehrsprachig="alt=sections.functionality.image">
+                </picture>
             </div>
         </section>
         <section class="section">
             <div class="section__child section__child--image">
-                <img class="section__image" src="img/whats-to-come.jpg" data-mehrsprachig="alt=sections.whatsToCome.image">
+                <picture class="picture">
+                    <source type="image/webp" srcset="img/whats-to-come.webp">
+                    <source type="image/jpeg" srcset="img/whats-to-come.jpg">
+                    <img class="section__image" src="img/whats-to-come.jpg" data-mehrsprachig="alt=sections.whatsToCome.image">
+                </picture>
             </div>
             <div class="section__child">
                 <h2 class="title title--section" data-mehrsprachig="sections.whatsToCome.heading"></h2>
@@ -144,7 +160,11 @@
         </section>
         <section class="section" data-about-anchor>
             <article class="image-article">
-                <img class="image-article--picture" src="img/about.jpg" data-mehrsprachig="alt=sections.about.image">
+                <picture class="picture">
+                    <source type="image/webp" srcset="img/about.webp">
+                    <source type="image/jpeg" srcset="img/about.jpg">
+                    <img class="image-article--picture" src="img/about.jpg" data-mehrsprachig="alt=sections.about.image">
+                </picture>
                 <a href="ueber-uns.html" class="image-article--link">
                     <h2 class="section__overlay-title" data-mehrsprachig="sections.about.heading"></h2>
                 </a>
@@ -187,7 +207,7 @@
         <span data-mehrsprachig="cookies.text:html"></span>
         <button class="cookie-banner__button button button--section" data-mehrsprachig="cookies.button"></button>
     </div>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap">
     <script src="js/main.js"></script>
 </body>
 

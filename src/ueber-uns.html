@@ -47,7 +47,11 @@
             <a class="header__link" href="./#offer" data-mehrsprachig="navigation.offer"></a>
             <a class="header__link" href="./#about" data-mehrsprachig="navigation.about"></a>
         </nav>
-        <img class="header__image" src="img/about.jpg" data-mehrsprachig="alt=header.hero">
+        <picture class="picture">
+            <source type="image/webp" srcset="img/about.webp">
+            <source type="image/jpeg" srcset="img/about.jpg">
+            <img class="header__image" src="img/about.jpg" data-mehrsprachig="alt=header.hero" data-object-fit="cover">
+        </picture>
     </header>
     <main class="main">
         <section class="section section--text-only">
