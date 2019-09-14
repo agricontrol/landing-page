@@ -12,10 +12,7 @@
     transition: opacity $transitionLength $transitionEasing;
     z-index: 1;
 
-    &__button {
-        font-weight: 600;
-        cursor: pointer;
-        border: 0;
+    .button {
         margin-left: $fourthSpace;
     }
 

@@ -1,12 +1,14 @@
 const acceptsCookies = localStorage.getItem('acceptsCookies');
 const banner = document.querySelector('.cookie-banner');
-const button = banner.querySelector('.cookie-banner__button');
+const button = banner.querySelector('.button');
 
 const deleteBanner = () => {
     banner.parentNode.removeChild(banner);
 };
 
-const fadeOutBanner = () => {
+const fadeOutBanner = event => {
+    event.preventDefault();
+
     banner.classList.add('cookie-banner--invisible');
 
     banner.addEventListener('transitionend', () => {
@@ -26,6 +28,5 @@ if (acceptsCookies) {
     deleteBanner();
 } else {
     button.addEventListener('click', fadeOutBanner);
-
     fadeInBanner();
 }

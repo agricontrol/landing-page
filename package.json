@@ -3,23 +3,21 @@
     "description": "Landing page for Agricontrol",
     "author": "Robin Löffel <hi@robinloeffel.ch> (https://robinloeffel.ch)",
     "license": "MIT",
-    "private": true,
     "homepage": "https://agricontrol.app",
     "repository": "rbnlffl/agricontrol-landing",
     "scripts": {
         "start": "gulp",
         "prod": "gulp --prod",
-        "dist": "gulp build --prod",
-        "update": "yarn upgrade-interactive --latest"
+        "dist": "gulp build --prod"
     },
-    "dependencies": {
-        "@babel/core": "^7.5.5",
-        "@babel/preset-env": "^7.5.5",
+    "devDependencies": {
+        "@babel/core": "^7.6.0",
+        "@babel/preset-env": "^7.6.0",
         "babel-eslint": "^10.0.3",
         "babel-loader": "^8.0.6",
         "core-js": "^3.2.1",
         "del": "^5.1.0",
-        "eslint": "^6.3.0",
+        "eslint": "^6.4.0",
         "eslint-loader": "^3.0.0",
         "feather-icons": "^4.24.1",
         "gulp": "^4.0.2",
@@ -35,7 +33,7 @@
         "open": "^6.4.0",
         "svgxuse": "^1.2.6",
         "vinyl-named": "^1.1.0",
-        "webpack": "^4.39.3",
+        "webpack": "^4.40.2",
         "webpack-stream": "^5.2.1"
     }
 }

@@ -1,5 +1,6 @@
 @import "variables";
 @import "mediaqueries";
+@import "mixins";
 
 *,
 *::after,
@@ -10,7 +11,7 @@
 }
 
 html {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', 'system-ui', sans-serif;
     font-size: 20px;
     color: $tightGrey;
     line-height: $textLineHeight;
@@ -48,7 +49,7 @@ html {
         font-size: 85%;
 
         &:not(:last-child) {
-            margin-bottom: .4em;
+            margin-bottom: .6em;
         }
     }
 
@@ -83,11 +84,7 @@ html {
     font-weight: 600;
     display: inline-block;
     text-shadow: none;
-    transition: box-shadow $transitionLength $transitionEasing;
-
-    &:hover {
-        box-shadow: $bigShadow;
-    }
+    @include afterShadow;
 
     &--section {
         color: $pureWhite;
@@ -97,15 +94,12 @@ html {
     &--primary {
         color: $pureWhite;
         background-color: $invertedMaastrichtBlue;
-        border: 2px solid $invertedMaastrichtBlue;
     }
 
     &--ghost {
         background-color: transparentize($invertedMaastrichtBlue, .4);
-        border: 2px solid transparent;
         box-shadow: none;
-        transition: box-shadow $transitionLength $transitionEasing,
-                    background-color $transitionLength $transitionEasing;
+        transition: background-color $transitionLength $transitionEasing;
 
         &:hover {
             background-color: $invertedMaastrichtBlue;
@@ -327,6 +321,14 @@ html {
             order: 1;
         }
     }
+
+    &--small {
+        height: 80vh;
+
+        &::after {
+            content: none;
+        }
+    }
 }
 
 .main {
@@ -346,7 +348,11 @@ html {
     width: 100%;
 
     &:last-child {
-        padding-bottom: $tripleSpace;
+        margin-bottom: $doubleSpace;
+    }
+
+    &:only-child {
+        padding: $doubleSpace 0;
     }
 
     &--centered {
@@ -382,14 +388,9 @@ html {
             min-width: 300px;
             max-width: 700px;
             padding: 0;
-            border: 1px solid $lighterPureBlack;
+            border: 1px solid $lightPureBlack;
             border-radius: 10px;
-            overflow: hidden;
-            transition: box-shadow $transitionLength $transitionEasing;
-
-            &:hover {
-                box-shadow: $bigShadow;
-            }
+            @include afterShadow;
 
             .paragraph {
                 display: flex;
@@ -433,6 +434,7 @@ html {
 
     &__overlay-title {
         color: $pureWhite;
+        z-index: 1;
     }
 
     @include mqToTablet {
@@ -490,6 +492,8 @@ html {
         overflow: hidden;
         text-decoration: none;
         background-color: $lightestPureBlack;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
 
         &::after {
             content: '';
@@ -576,34 +580,44 @@ html {
     justify-content: center;
     align-items: center;
     width: 80%;
-    overflow: hidden;
     border-radius: 10px;
-    transition: box-shadow $transitionEasing $transitionLength;
-
-    &:hover {
-        box-shadow: $bigShadow;
-
-        .image-article--link {
-            background-color: transparent;
-        }
-    }
+    @include afterShadow;
 
     &--picture {
         width: 100%;
+        border-radius: inherit;
     }
 
     &--link {
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: inherit;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         text-decoration: none;
-        background-color: $lightTightGrey;
-        transition: background-color $transitionEasing $transitionLength;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background-color: transparentize($lightTightGrey, .2);
+            backdrop-filter: blur(5px);
+            transition: opacity $transitionLength $transitionEasing;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 0;
+            }
+        }
     }
 
     @include mqToTablet {
@@ -613,7 +627,8 @@ html {
 }
 
 .picture {
-    line-height: 0;
+    display: flex;
+    border-radius: inherit;
 }
 
 @import "cookies";
