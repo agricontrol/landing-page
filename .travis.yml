@@ -7,7 +7,7 @@ install:
     - yarn install
 
 script:
-    - yarn prod
+    - yarn dist
 
 deploy:
     provider: script
