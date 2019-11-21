@@ -1,7 +1,8 @@
+dist: bionic
 language: node_js
-node_js:
-    - 12.13.0
 cache: yarn
+node_js:
+    - lts/*
 
 install:
     - yarn install
@@ -11,4 +12,4 @@ script:
 
 deploy:
     provider: script
-    script: node bin/deploy.js $SFTP_USER $SFTP_PASSWORD $SFTP_HOST
+    script: bash bin/deploy.sh $SFTP_USER $SFTP_PASSWORD $SFTP_HOST
