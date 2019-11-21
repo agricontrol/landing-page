@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+    - 12.13.0
+cache: yarn
+
+install:
+    - yarn install
+
+script:
+    - yarn prod
+
+deploy:
+    provider: script
+    script: node bin/deploy.js $SFTP_USER $SFTP_PASSWORD $SFTP_HOST
