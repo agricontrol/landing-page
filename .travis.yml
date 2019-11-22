@@ -16,4 +16,4 @@ script:
 deploy:
     cleanup: false
     provider: script
-    script: sh bin/deploy.sh $SFTP_USER SFTP_HOST
+    script: sh bin/deploy.sh $SFTP_USER $SFTP_HOST
