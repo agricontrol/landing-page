@@ -11,5 +11,6 @@ script:
     - yarn dist
 
 deploy:
+    skip_cleanup: true
     provider: script
     script: sh bin/deploy.sh $SFTP_USER SFTP_HOST
