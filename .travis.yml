@@ -4,10 +4,9 @@ language: node_js
 cache: yarn
 node_js:
     - lts/*
-addons:
-    ssh_known_hosts: agricontrol.app
 
 install:
+    - echo "${SFTP_HOST} ${KNOWN_HOST_SSHED} ${KNOWN_HOST_KEY}" >> $HOME/.ssh/known_hosts
     - yarn install
 
 script:
