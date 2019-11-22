@@ -12,4 +12,4 @@ script:
 
 deploy:
     provider: script
-    script: bash bin/deploy.sh $SFTP_USER $SFTP_PASSWORD $SFTP_HOST
+    script: sh bin/deploy.sh $SFTP_USER SFTP_HOST
