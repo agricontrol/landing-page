@@ -5,7 +5,7 @@ cache: yarn
 node_js:
     - lts/*
 addons:
-    ssh_known_hosts: $SFTP_HOST
+    ssh_known_hosts: agricontrol.app
 
 install:
     - yarn install
