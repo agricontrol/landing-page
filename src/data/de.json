@@ -55,11 +55,6 @@
         "about": {
             "heading": "Über uns",
             "image": "Teamwork ist unsere Stärke"
-        },
-        "whatsToCome": {
-            "heading": "Was noch kommt",
-            "image": "Mann in Mähdrescher auf einem Weizenfeld",
-            "paragraph": "Wir arbeiten mit Hochdruck daran, mit Agricontrol die Feldverwaltung für Sie zu verbessern und zu vereinfachen. Deshalb entwickeln wir unser Produkt weiter. Neben der ständigen Optimierung des Tools arbeiten wir aktuell daran, neue Funktionalitäten zu entwickeln. Bereits in wenigen Monaten werden Sie sämtliche Tätigkeiten wie Düngungen, Bodenbearbeitungen und Pflanzenschutz in Agricontrol erfassen können. Dies können dann automatisiert als Feldblatt aufbereitet und exportiert werden."
         }
     },
     "footer": {
