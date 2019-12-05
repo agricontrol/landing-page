@@ -37,7 +37,7 @@ gulp.task('css', () => {
         })
         .pipe(plumber())
         .pipe(sass.sync())
-        .pipe(prod ? autoprefixer() : noop())
+        .pipe(autoprefixer())
         .pipe(prod ? cleanCss() : noop())
         .pipe(gulp.dest(pathsConfig.dist.css, {
             sourcemaps: prod ? false : true

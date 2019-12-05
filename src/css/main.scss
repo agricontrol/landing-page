@@ -575,7 +575,6 @@ html {
 }
 
 .image-article {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -627,8 +626,8 @@ html {
 }
 
 .picture {
-    display: flex;
     border-radius: inherit;
+    font-size: 0;
 }
 
 @import "cookies";
