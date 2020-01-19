@@ -1,5 +1,3 @@
-@import "variables";
-
 @mixin mqToPhone {
     @media (max-width: $breakpointPhone - 1) {
         @content;

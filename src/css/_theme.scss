@@ -1,0 +1,619 @@
+html {
+    font-family: 'Source Sans Pro', 'system-ui', sans-serif;
+    font-size: 20px;
+    color: $tightGrey;
+    line-height: $textLineHeight;
+
+    @include mqToTablet {
+        font-size: 18px;
+    }
+}
+
+.title {
+    line-height: $headingLineHeight;
+    margin-bottom: .6em;
+
+    &--section {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+
+    &--full-width {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        margin: 0 10vw $defaultSpace;
+    }
+}
+
+.paragraph {
+    &:not(:last-child) {
+        margin-bottom: .8em;
+    }
+
+    &--footer {
+        text-align: center;
+        font-size: 85%;
+
+        &:not(:last-child) {
+            margin-bottom: .6em;
+        }
+    }
+
+    &--card-header {
+        border-bottom: 1px solid $lighterPureBlack;
+        padding: $halfSpace $defaultSpace;
+        font-weight: 400;
+
+        @include mqToTablet {
+            text-align: center;
+        }
+    }
+
+    &--card-price {
+        padding: $halfSpace $defaultSpace 0;
+        font-size: 250%;
+    }
+
+    &--card-copy {
+        opacity: .5;
+        padding: 0 $defaultSpace $halfSpace $defaultSpace;
+    }
+}
+
+.button {
+    padding: 15px 25px;
+    background-color: $lightMaastrichtBlue;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: .8rem;
+    font-weight: 600;
+    display: inline-block;
+    text-shadow: none;
+    @include afterShadow;
+
+    &--section {
+        color: $pureWhite;
+        box-shadow: none;
+    }
+
+    &--primary {
+        color: $pureWhite;
+        background-color: $invertedMaastrichtBlue;
+    }
+
+    &--ghost {
+        background-color: transparentize($invertedMaastrichtBlue, .4);
+        box-shadow: none;
+        transition: background-color $transitionLength $transitionEasing;
+
+        &:hover {
+            background-color: $invertedMaastrichtBlue;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    font-weight: 600;
+    color: $pureWhite;
+    text-shadow: $defaultShadow;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(to bottom, transparent, $pureWhite);
+    }
+
+    &--compact {
+        height: $doubleSpace;
+        margin-bottom: 0;
+
+        &::after {
+            content: none;
+        }
+
+        @include mqToTablet {
+            height: $twoAndHalfSpace;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__navigation {
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color $transitionLength $transitionEasing,
+                    color $transitionLength $transitionEasing,
+                    box-shadow $transitionLength $transitionEasing,
+                    text-shadow $transitionLength $transitionEasing;
+
+        &--white,
+        &--translated {
+            background-color: $navigationWhite;
+            color: $tightGrey;
+            text-shadow: none;
+            box-shadow: $defaultShadow;
+        }
+
+        &--white {
+            .header__link {
+                &::after {
+                    background-color: $tightGrey;
+                    box-shadow: none;
+                    bottom: 0;
+                }
+            }
+        }
+
+        @include mqToTablet {
+            flex-wrap: wrap;
+            transition: background-color $transitionLength $transitionEasing,
+                        color $transitionLength $transitionEasing,
+                        box-shadow $transitionLength $transitionEasing,
+                        text-shadow $transitionLength $transitionEasing,
+                        transform $transitionLength $transitionEasing;
+        }
+
+        @include mqPhoneToTablet {
+            transform: translateY(-50%);
+        }
+
+        @include mqToPhone {
+            transform: translateY(-80%);
+        }
+
+        &--translated {
+            transform: translateY(0);
+        }
+    }
+
+    &__link {
+        position: relative;
+        color: inherit;
+        text-decoration: none;
+        padding: $defaultSpace 60px;
+        transition: padding $transitionLength $transitionLength;
+
+        .header__navigation--white & {
+            padding: 40px;
+        }
+
+        &--logo {
+            display: flex;
+            align-items: center;
+            margin-right: $tripleSpace;
+        }
+
+        &--mobile-nav {
+            display: none;
+        }
+
+        @include mqFromTablet {
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 10%;
+                left: 10%;
+                width: 80%;
+                height: 3px;
+                background-color: $pureWhite;
+                box-shadow: $defaultShadow;
+                transition: transform $transitionLength $transitionEasing;
+                transform-origin: bottom;
+                transform: scaleY(0);
+            }
+
+            &--logo {
+                &::after {
+                    content: none;
+                }
+            }
+        }
+
+        &:hover {
+            &::after {
+                transform: scaleY(1);
+            }
+        }
+
+        @include mqTabletToDesktop {
+            padding: 45px;
+
+            .header__navigation--white & {
+                padding: 35px;
+            }
+
+            &--logo {
+                margin-right: $doubleSpace;
+            }
+        }
+
+        @include mqToTablet {
+            flex: 1;
+            padding: 30px;
+            margin-right: 0;
+
+            .header__navigation--white & {
+                padding: 30px;
+            }
+
+            &--mobile-nav {
+                display: flex;
+            }
+        };
+
+        @include mqToPhone {
+            flex-basis: 100%;
+            border-bottom: 1px solid $lighterPureBlack;
+        };
+    }
+
+    &__logo {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        max-width: 600px;
+        z-index: 1;
+
+        .button {
+            margin: $eigthSpace;
+        }
+    }
+
+    &__row-wrapper {
+        justify-content: space-between;
+
+        .header__link {
+            flex: initial;
+            border: 0;
+        }
+
+        @include mqToTablet {
+            display: flex;
+            align-items: center;
+            flex: 1 0 100%;
+            order: 1;
+        }
+    }
+
+    &--small {
+        height: 80vh;
+
+        &::after {
+            content: none;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $doubleSpace 5vw 0;
+    position: relative;
+    max-width: 1440px;
+    min-height: 1px;
+    width: 100%;
+
+    &:last-child {
+        margin-bottom: $doubleSpace;
+    }
+
+    &:only-child {
+        padding: $doubleSpace 0;
+    }
+
+    &--centered {
+        flex-wrap: wrap;
+    }
+
+    &--has-overlay {
+        &::before {
+            content: '';
+            top: $doubleSpace;
+            left: $doubleSpace;
+            width: calc(100% - #{2 * $doubleSpace});
+            height: calc(100% - #{2 * $doubleSpace});
+            position: absolute;
+            background-color: $pureBlack;
+            opacity: .25;
+        }
+    }
+
+    &--text-only {
+        display: block;
+        width: 75vw;
+        max-width: 700px;
+        padding: 100px 0;
+    }
+
+    &__child {
+        flex: 1;
+
+        &--card {
+            margin: 0;
+            flex: 0 0 75%;
+            min-width: 300px;
+            max-width: 700px;
+            padding: 0;
+            border: 1px solid $lightPureBlack;
+            border-radius: 10px;
+            @include afterShadow;
+
+            .paragraph {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+
+            @include mqToTablet {
+                margin: 0 5vw;
+            }
+        }
+
+        &--image {
+                &:first-child {
+                    margin-right: $defaultSpace;
+                }
+
+                &:last-child {
+                    margin-left: $defaultSpace;
+                }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 10px;
+
+        @include mqToTablet {
+            border-radius: initial;
+        };
+    }
+
+    &__overlay-link {
+        position: absolute;
+        text-decoration: none;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__overlay-title {
+        color: $pureWhite;
+        z-index: 1;
+    }
+
+    @include mqToTablet {
+        flex-direction: column;
+        padding: 0 0 $oneAndHalfSpace;
+
+        &--has-overlay {
+            &::before {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &:first-child {
+            padding-top: $oneAndHalfSpace;
+        }
+
+        &__child {
+            &:first-child:not(&--card) {
+                margin-right: 0;
+            }
+
+            &:last-child:not(&--card) {
+                margin-left: 0;
+            }
+
+            &:not(&--image):not(&--card) {
+                margin: 0 10vw;
+            }
+
+            &--image {
+                order: -1;
+                margin-bottom: $defaultSpace;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 0 $defaultSpace $defaultSpace;
+}
+
+.link {
+    color: inherit;
+
+    &--card-footer {
+        position: relative;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: $halfSpace;
+        overflow: hidden;
+        text-decoration: none;
+        background-color: $lightestPureBlack;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $lightEasyBlue;
+            border-top: 1px solid $easyBlue;
+            transition: transform $transitionLength $transitionEasing;
+            transform-origin: right;
+            transform: scaleX(0);
+        }
+
+        &:hover {
+            &::after {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+.periodicity {
+    font-size: 40%;
+    margin-left: 10px;
+    opacity: .5;
+}
+
+.price-list {
+    padding: $halfSpace $doubleSpace $defaultSpace;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: $fourthSpace;
+        }
+    }
+
+    @include mqToTablet {
+        padding: $halfSpace 10vw $defaultSpace;
+    }
+}
+
+.feather {
+    width: $halfSpace;
+    height: $halfSpace;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+
+    &--before-text {
+        margin-right: $fourthSpace;
+    }
+
+    &--after-text {
+        margin-left: $fourthSpace;
+    }
+
+    &--shadow {
+        filter: drop-shadow($defaultShadow);
+        transition: filter $transitionLength $transitionEasing;
+
+        .header__navigation--white & {
+            filter: drop-shadow(0 2px 5px transparent);
+        }
+    }
+}
+
+.address {
+    font-style: normal;
+    margin: $eigthSpace 0;
+}
+
+.image-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    @include afterShadow;
+
+    &--picture {
+        width: 100%;
+        border-radius: inherit;
+    }
+
+    &--link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background-color: transparentize($lightTightGrey, .2);
+            backdrop-filter: blur(5px);
+            transition: opacity $transitionLength $transitionEasing;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+
+    @include mqToTablet {
+        width: 90%;
+        margin-bottom: 0;
+    }
+}
+
+.picture {
+    border-radius: inherit;
+    font-size: 0;
+}

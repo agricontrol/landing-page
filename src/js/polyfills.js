@@ -16,3 +16,7 @@ if (!('objectFit' in document.documentElement.style)) {
         image.style.display = 'none';
     });
 }
+
+if (!('forEach' in NodeList.prototype)) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
