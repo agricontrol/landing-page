@@ -438,6 +438,10 @@ html {
             }
         }
 
+        &:last-child {
+            margin-bottom: 0;
+        }
+
         &:first-child {
             padding-top: $oneAndHalfSpace;
         }
