@@ -58,9 +58,7 @@ gulp.task('img', () => {
     return gulp.src(pathsConfig.src.img)
         .pipe(plumber())
         .pipe(prod ? imagemin([
-            imagemin.jpegtran({
-                progressive: true
-            }),
+            imagemin.mozjpeg(),
             imagemin.optipng({
                 optimizationLevel: 7
             }),
