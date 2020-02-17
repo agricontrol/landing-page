@@ -1,9 +1,10 @@
 import 'svgxuse';
+import 'mdn-polyfills/NodeList.prototype.forEach';
 
 if (!('objectFit' in document.documentElement.style)) {
     const images = document.querySelectorAll('[data-object-fit]');
 
-    [...images].forEach(image => {
+    images.forEach(image => {
         const div = document.createElement('div');
         div.style.backgroundImage = `url(${image.src})`;
         div.style.backgroundSize = image.dataset.objectFit || 'cover';
@@ -15,8 +16,4 @@ if (!('objectFit' in document.documentElement.style)) {
         image.parentNode.insertBefore(div, image);
         image.style.display = 'none';
     });
-}
-
-if (!('forEach' in NodeList.prototype)) {
-    NodeList.prototype.forEach = Array.prototype.forEach;
 }

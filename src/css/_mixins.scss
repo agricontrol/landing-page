@@ -1,4 +1,4 @@
-@mixin afterShadow() {
+@mixin after-shadow() {
     position: relative;
 
     &::after {
@@ -10,9 +10,9 @@
         height: 100%;
         border-radius: inherit;
         z-index: -1;
-        box-shadow: $bigShadow;
+        box-shadow: $shadow-big;
         opacity: 0;
-        transition: opacity $transitionLength $transitionEasing;
+        transition: opacity $transition-length $transition-easing;
     }
 
     &:hover {

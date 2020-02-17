@@ -16,13 +16,13 @@ const fadeOutBanner = event => {
     });
 
     localStorage.setItem('acceptsCookies', 'true');
-}
+};
 
 const fadeInBanner = () => {
     setTimeout(() => {
         banner.classList.remove('cookie-banner--invisible');
     }, 500);
-}
+};
 
 if (acceptsCookies) {
     deleteBanner();

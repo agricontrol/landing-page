@@ -1,40 +1,147 @@
 {
-    "name": "agricontrol-landing",
+    "name": "agricontrol",
+    "version": "0.0.1",
     "description": "Landing page for Agricontrol",
-    "author": "Robin Löffel <hi@robinloeffel.ch> (https://robinloeffel.ch)",
+    "homepage": "agricontrol.app",
     "license": "MIT",
-    "homepage": "https://agricontrol.app",
-    "repository": "rbnlffl/agricontrol-landing",
+    "repository": "robinloeffel/agricontrol",
+    "author": {
+        "name": "Robin Löffel",
+        "email": "hi@robinloeffel.ch",
+        "url": "robinloeffel.ch"
+    },
     "scripts": {
-        "start": "gulp",
-        "prod": "gulp --prod",
-        "dist": "gulp build --prod"
+        "start": "gulp --dev",
+        "prod": "gulp",
+        "dist": "gulp dist"
     },
     "devDependencies": {
-        "@babel/core": "^7.8.4",
-        "@babel/preset-env": "^7.8.4",
-        "babel-eslint": "^10.0.3",
-        "babel-loader": "^8.0.6",
-        "core-js": "^3.6.4",
+        "@rollup/plugin-buble": "^0.21.1",
+        "@rollup/plugin-commonjs": "^11.0.2",
+        "@rollup/plugin-node-resolve": "^7.1.1",
+        "autoprefixer": "^9.7.4",
+        "cssnano": "^4.1.10",
         "del": "^5.1.0",
         "eslint": "^6.8.0",
-        "eslint-loader": "^3.0.3",
-        "feather-icons": "^4.25.0",
+        "feather-icons": "^4.26.0",
         "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^7.0.1",
-        "gulp-clean-css": "^4.2.0",
         "gulp-connect": "^5.7.0",
+        "gulp-filter": "^6.0.0",
         "gulp-imagemin": "^7.1.0",
-        "gulp-noop": "^1.0.0",
         "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^2.0.0",
         "gulp-sass": "^4.0.2",
         "jump.js": "^1.0.2",
+        "mdn-polyfills": "^5.20.0",
         "mehrsprachig": "^0.5.1",
         "open": "^7.0.2",
-        "regenerator-runtime": "^0.13.3",
-        "svgxuse": "^1.2.6",
-        "vinyl-named": "^1.1.0",
-        "webpack": "^4.41.5",
-        "webpack-stream": "^5.2.1"
+        "postcss-preset-env": "^6.7.0",
+        "postcss-reporter": "^6.0.1",
+        "rollup": "^1.31.1",
+        "rollup-plugin-eslint": "^7.0.0",
+        "rollup-plugin-terser": "^5.2.0",
+        "stylelint": "^13.2.0",
+        "stylelint-config-sass-guidelines": "^7.0.0",
+        "stylelint-config-standard": "^20.0.0",
+        "svgxuse": "^1.2.6"
+    },
+    "browserslist": [
+        ">1% in ch",
+        "not dead"
+    ],
+    "eslintConfig": {
+        "extends": "eslint:recommended",
+        "env": {
+            "es2017": true,
+            "node": true,
+            "browser": true
+        },
+        "parserOptions": {
+            "sourceType": "module"
+        },
+        "rules": {
+            "curly": [
+                "error",
+                "all"
+            ],
+            "eqeqeq": [
+                "error",
+                "always"
+            ],
+            "comma-dangle": [
+                "error",
+                "never"
+            ],
+            "quotes": [
+                "error",
+                "single"
+            ],
+            "semi": [
+                "error",
+                "always"
+            ],
+            "wrap-iife": [
+                "error",
+                "inside"
+            ],
+            "brace-style": [
+                "error",
+                "1tbs"
+            ],
+            "func-style": [
+                "error",
+                "expression"
+            ],
+            "space-before-function-paren": [
+                "error",
+                "never"
+            ],
+            "array-bracket-spacing": [
+                "error",
+                "always",
+                {
+                    "objectsInArrays": false,
+                    "arraysInArrays": false
+                }
+            ],
+            "no-multi-spaces": "error",
+            "no-multi-assign": "error",
+            "no-use-before-define": "error",
+            "require-await": "error",
+            "vars-on-top": "error",
+            "no-var": "error",
+            "prefer-const": "error",
+            "no-unneeded-ternary": "error",
+            "arrow-spacing": "error",
+            "no-duplicate-imports": "error",
+            "global-require": "error"
+        }
+    },
+    "stylelint": {
+        "extends": [
+            "stylelint-config-standard",
+            "stylelint-config-sass-guidelines"
+        ],
+        "rules": {
+            "indentation": null,
+            "order/properties-alphabetical-order": null,
+            "max-nesting-depth": null,
+            "declaration-colon-newline-after": null,
+            "selector-class-pattern": null,
+            "declaration-empty-line-before": null,
+            "declaration-block-no-duplicate-properties": true,
+            "block-no-empty": true,
+            "no-extra-semicolons": true,
+            "number-leading-zero": "never",
+            "color-named": "never",
+            "shorthand-property-no-redundant-values": true,
+            "declaration-no-important": true,
+            "color-hex-case": "lower",
+            "font-family-name-quotes": "always-unless-keyword",
+            "string-quotes": "single",
+            "value-no-vendor-prefix": true
+        },
+        "defaultSeverity": "warning"
     }
 }

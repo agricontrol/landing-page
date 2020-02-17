@@ -1,36 +1,36 @@
-$pureWhite: #fff;
-$pureBlack: #000;
-$tightGrey: #606060;
-$easyBlue: #BAE8F8;
-$lightMaastrichtBlue: transparentize(#091540, .6);
-$invertedMaastrichtBlue: darken(invert($lightMaastrichtBlue), 60%);
-$invertedMaastrichtBlue: #67bf66;
-$lightEasyBlue: transparentize($easyBlue, .8);
-$lightPureBlack: transparentize($pureBlack, .85);
-$lighterPureBlack: transparentize($pureBlack, .95);
-$lightestPureBlack: transparentize($pureBlack, .98);
-$lightTightGrey: transparentize($tightGrey, .25);
-$navigationWhite: transparentize($pureWhite, .02);
+$color-white: #fff;
+$color-navigation-white: transparentize($color-white, .02);
+$color-black: #000;
+$color-light-black: transparentize($color-black, .85);
+$color-lighter-black: transparentize($color-black, .95);
+$color-lightest-black: transparentize($color-black, .98);
+$color-grey: #606060;
+$color-light-grey: transparentize($color-grey, .25);
+$color-maastricht-blue: #091540;
+$color-light-maastricht-blue: transparentize($color-maastricht-blue, .6);
+$color-mantis: #67bf66;
+$color-charlotte: #bae8f8;
+$color-light-charlotte: transparentize($color-charlotte, .8);
 
-$textLineHeight: 1.6;
-$headingLineHeight: 1.1;
+$line-height-text: 1.6;
+$line-height-heading: 1.1;
 
-$defaultShadow: 0 2px 5px $lightPureBlack;
-$defaultShadowUp: 0 -2px 5px $lightPureBlack;
-$bigShadow: 0 5px 15px 2px $lightPureBlack;
+$shadow: 0 2px 5px $color-light-black;
+$shadow-up: 0 -2px 5px $color-light-black;
+$shadow-big: 0 5px 15px 2px $color-light-black;
 
-$transitionLength: .3s;
-$transitionEasing: ease-in-out;
+$transition-length: .3s;
+$transition-easing: ease-in-out;
 
-$defaultSpace: 50px;
-$halfSpace: $defaultSpace / 2;
-$fourthSpace: $defaultSpace / 4;
-$eigthSpace: $defaultSpace / 8;
-$oneAndHalfSpace: $defaultSpace + $halfSpace;
-$doubleSpace: $defaultSpace * 2;
-$twoAndHalfSpace: $doubleSpace + $halfSpace;
-$tripleSpace: $defaultSpace * 3;
+$space: 50px;
+$space-half: $space / 2;
+$space-fourth: $space / 4;
+$space-eigth: $space / 8;
+$space-one-and-a-half: $space + $space-half;
+$space-double: $space * 2;
+$space-two-and-a-half: $space-double + $space-half;
+$space-triple: $space * 3;
 
-$breakpointPhone: 768px;
-$breakpointTablet: 1024px;
-$breakpointDesktop: 1280px;
+$breakpoint-phone: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1280px;

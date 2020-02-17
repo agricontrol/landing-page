@@ -1,16 +1,16 @@
 html {
-    font-family: 'Source Sans Pro', 'system-ui', sans-serif;
+    font-family: 'Source Sans Pro', system-ui, sans-serif;
     font-size: 20px;
-    color: $tightGrey;
-    line-height: $textLineHeight;
+    color: $color-grey;
+    line-height: $line-height-text;
 
-    @include mqToTablet {
+    @include mq-to-tablet {
         font-size: 18px;
     }
 }
 
 .title {
-    line-height: $headingLineHeight;
+    line-height: $line-height-heading;
     margin-bottom: .6em;
 
     &--section {
@@ -23,7 +23,7 @@ html {
         display: flex;
         flex-basis: 100%;
         justify-content: center;
-        margin: 0 10vw $defaultSpace;
+        margin: 0 10vw $space;
     }
 }
 
@@ -42,29 +42,30 @@ html {
     }
 
     &--card-header {
-        border-bottom: 1px solid $lighterPureBlack;
-        padding: $halfSpace $defaultSpace;
+        border-bottom: 1px solid $color-lighter-black;
+        padding: $space-half $space;
         font-weight: 400;
 
-        @include mqToTablet {
+        @include mq-to-tablet {
             text-align: center;
         }
     }
 
     &--card-price {
-        padding: $halfSpace $defaultSpace 0;
+        padding: $space-half $space 0;
         font-size: 250%;
     }
 
     &--card-copy {
         opacity: .5;
-        padding: 0 $defaultSpace $halfSpace $defaultSpace;
+        padding: 0 $space $space-half $space;
     }
 }
 
 .button {
+    @include after-shadow;
     padding: 15px 25px;
-    background-color: $lightMaastrichtBlue;
+    background-color: $color-light-maastricht-blue;
     color: inherit;
     text-decoration: none;
     border-radius: 10px;
@@ -72,25 +73,24 @@ html {
     font-weight: 600;
     display: inline-block;
     text-shadow: none;
-    @include afterShadow;
 
     &--section {
-        color: $pureWhite;
+        color: $color-white;
         box-shadow: none;
     }
 
     &--primary {
-        color: $pureWhite;
-        background-color: $invertedMaastrichtBlue;
+        color: $color-white;
+        background-color: $color-mantis;
     }
 
     &--ghost {
-        background-color: transparentize($invertedMaastrichtBlue, .4);
+        background-color: transparentize($color-mantis, .4);
         box-shadow: none;
-        transition: background-color $transitionLength $transitionEasing;
+        transition: background-color $transition-length $transition-easing;
 
         &:hover {
-            background-color: $invertedMaastrichtBlue;
+            background-color: $color-mantis;
         }
     }
 }
@@ -103,8 +103,8 @@ html {
     width: 100%;
     height: 110vh;
     font-weight: 600;
-    color: $pureWhite;
-    text-shadow: $defaultShadow;
+    color: $color-white;
+    text-shadow: $shadow;
 
     &::after {
         content: '';
@@ -113,19 +113,19 @@ html {
         bottom: 0;
         height: 30vh;
         width: 100%;
-        background: linear-gradient(to bottom, transparent, $pureWhite);
+        background: linear-gradient(to bottom, transparent, $color-white);
     }
 
     &--compact {
-        height: $doubleSpace;
+        height: $space-double;
         margin-bottom: 0;
+
+        @include mq-to-tablet {
+            height: $space-two-and-a-half;
+        }
 
         &::after {
             content: none;
-        }
-
-        @include mqToTablet {
-            height: $twoAndHalfSpace;
         }
     }
 
@@ -139,110 +139,14 @@ html {
         height: 100%;
     }
 
-    &__navigation {
-        position: fixed;
-        z-index: 9;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-color $transitionLength $transitionEasing,
-                    color $transitionLength $transitionEasing,
-                    box-shadow $transitionLength $transitionEasing,
-                    text-shadow $transitionLength $transitionEasing;
-
-        &--white,
-        &--translated {
-            background-color: $navigationWhite;
-            color: $tightGrey;
-            text-shadow: none;
-            box-shadow: $defaultShadow;
-        }
-
-        &--white {
-            .header__link {
-                &::after {
-                    background-color: $tightGrey;
-                    box-shadow: none;
-                    bottom: 0;
-                }
-            }
-        }
-
-        @include mqToTablet {
-            flex-wrap: wrap;
-            transition: background-color $transitionLength $transitionEasing,
-                        color $transitionLength $transitionEasing,
-                        box-shadow $transitionLength $transitionEasing,
-                        text-shadow $transitionLength $transitionEasing,
-                        transform $transitionLength $transitionEasing;
-        }
-
-        @include mqPhoneToTablet {
-            transform: translateY(-50%);
-        }
-
-        @include mqToPhone {
-            transform: translateY(-80%);
-        }
-
-        &--translated {
-            transform: translateY(0);
-        }
-    }
-
     &__link {
         position: relative;
         color: inherit;
         text-decoration: none;
-        padding: $defaultSpace 60px;
-        transition: padding $transitionLength $transitionLength;
+        padding: $space 60px;
+        transition: padding $transition-length $transition-length;
 
-        .header__navigation--white & {
-            padding: 40px;
-        }
-
-        &--logo {
-            display: flex;
-            align-items: center;
-            margin-right: $tripleSpace;
-        }
-
-        &--mobile-nav {
-            display: none;
-        }
-
-        @include mqFromTablet {
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: 10%;
-                left: 10%;
-                width: 80%;
-                height: 3px;
-                background-color: $pureWhite;
-                box-shadow: $defaultShadow;
-                transition: transform $transitionLength $transitionEasing;
-                transform-origin: bottom;
-                transform: scaleY(0);
-            }
-
-            &--logo {
-                &::after {
-                    content: none;
-                }
-            }
-        }
-
-        &:hover {
-            &::after {
-                transform: scaleY(1);
-            }
-        }
-
-        @include mqTabletToDesktop {
+        @include mq-tablet-to-desktop {
             padding: 45px;
 
             .header__navigation--white & {
@@ -250,11 +154,11 @@ html {
             }
 
             &--logo {
-                margin-right: $doubleSpace;
+                margin-right: $space-double;
             }
         }
 
-        @include mqToTablet {
+        @include mq-to-tablet {
             flex: 1;
             padding: 30px;
             margin-right: 0;
@@ -266,12 +170,104 @@ html {
             &--mobile-nav {
                 display: flex;
             }
-        };
+        }
 
-        @include mqToPhone {
+        @include mq-to-phone {
             flex-basis: 100%;
-            border-bottom: 1px solid $lighterPureBlack;
-        };
+            border-bottom: 1px solid $color-lighter-black;
+        }
+
+        @include mq-from-tablet {
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 10%;
+                left: 10%;
+                width: 80%;
+                height: 3px;
+                background-color: $color-white;
+                box-shadow: $shadow;
+                transition: transform $transition-length $transition-easing;
+                transform-origin: bottom;
+                transform: scaleY(0);
+            }
+
+            &--logo {
+                &::after {
+                    content: none;
+                }
+            }
+        }
+
+        .header__navigation--white & {
+            padding: 40px;
+
+            &::after {
+                background-color: $color-grey;
+                box-shadow: none;
+                bottom: 0;
+            }
+        }
+
+        &--logo {
+            display: flex;
+            align-items: center;
+            margin-right: $space-triple;
+        }
+
+        &--mobile-nav {
+            display: none;
+        }
+
+        &:hover {
+            &::after {
+                transform: scaleY(1);
+            }
+        }
+    }
+
+    &__navigation {
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color $transition-length $transition-easing,
+            color $transition-length $transition-easing,
+            box-shadow $transition-length $transition-easing,
+            text-shadow $transition-length $transition-easing;
+
+        @include mq-to-tablet {
+            flex-wrap: wrap;
+            transition: background-color $transition-length $transition-easing,
+                        color $transition-length $transition-easing,
+                        box-shadow $transition-length $transition-easing,
+                        text-shadow $transition-length $transition-easing,
+                        transform $transition-length $transition-easing;
+        }
+
+        @include mq-phone-to-tablet {
+            transform: translateY(-50%);
+        }
+
+        @include mq-to-phone {
+            transform: translateY(-80%);
+        }
+
+        &--white,
+        &--translated {
+            background-color: $color-navigation-white;
+            color: $color-grey;
+            text-shadow: none;
+            box-shadow: $shadow;
+        }
+
+        &--translated {
+            transform: translateY(0);
+        }
     }
 
     &__logo {
@@ -290,23 +286,23 @@ html {
         z-index: 1;
 
         .button {
-            margin: $eigthSpace;
+            margin: $space-eigth;
         }
     }
 
     &__row-wrapper {
         justify-content: space-between;
 
-        .header__link {
-            flex: initial;
-            border: 0;
-        }
-
-        @include mqToTablet {
+        @include mq-to-tablet {
             display: flex;
             align-items: center;
             flex: 1 0 100%;
             order: 1;
+        }
+
+        .header__link {
+            flex: initial;
+            border: 0;
         }
     }
 
@@ -329,105 +325,15 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: $doubleSpace 5vw 0;
+    padding: $space-double 5vw 0;
     position: relative;
     max-width: 1440px;
     min-height: 1px;
     width: 100%;
 
-    &:last-child {
-        margin-bottom: $doubleSpace;
-    }
-
-    &:only-child {
-        padding: $doubleSpace 0;
-    }
-
-    &--centered {
-        flex-wrap: wrap;
-    }
-
-    &--has-overlay {
-        &::before {
-            content: '';
-            top: $doubleSpace;
-            left: $doubleSpace;
-            width: calc(100% - #{2 * $doubleSpace});
-            height: calc(100% - #{2 * $doubleSpace});
-            position: absolute;
-            background-color: $pureBlack;
-            opacity: .25;
-        }
-    }
-
-    &--text-only {
-        display: block;
-        width: 75vw;
-        max-width: 700px;
-        padding: 100px 0;
-    }
-
-    &__child {
-        flex: 1;
-
-        &--card {
-            margin: 0;
-            flex: 0 0 75%;
-            min-width: 300px;
-            max-width: 700px;
-            padding: 0;
-            border: 1px solid $lightPureBlack;
-            border-radius: 10px;
-            @include afterShadow;
-
-            .paragraph {
-                display: flex;
-                align-content: center;
-                align-items: center;
-                justify-content: center;
-                margin: 0;
-            }
-
-            @include mqToTablet {
-                margin: 0 5vw;
-            }
-        }
-
-        &--image {
-                &:first-child {
-                    margin-right: $defaultSpace;
-                }
-
-                &:last-child {
-                    margin-left: $defaultSpace;
-                }
-        }
-    }
-
-    &__image {
-        width: 100%;
-        border-radius: 10px;
-
-        @include mqToTablet {
-            border-radius: initial;
-        };
-    }
-
-    &__overlay-link {
-        position: absolute;
-        text-decoration: none;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    &__overlay-title {
-        color: $pureWhite;
-        z-index: 1;
-    }
-
-    @include mqToTablet {
+    @include mq-to-tablet {
         flex-direction: column;
-        padding: 0 0 $oneAndHalfSpace;
+        padding: 0 0 $space-one-and-a-half;
 
         &--has-overlay {
             &::before {
@@ -443,7 +349,7 @@ html {
         }
 
         &:first-child {
-            padding-top: $oneAndHalfSpace;
+            padding-top: $space-one-and-a-half;
         }
 
         &__child {
@@ -461,14 +367,104 @@ html {
 
             &--image {
                 order: -1;
-                margin-bottom: $defaultSpace;
+                margin-bottom: $space;
             }
         }
+    }
+
+    &:last-child {
+        margin-bottom: $space-double;
+    }
+
+    &:only-child {
+        padding: $space-double 0;
+    }
+
+    &--centered {
+        flex-wrap: wrap;
+    }
+
+    &--has-overlay {
+        &::before {
+            content: '';
+            top: $space-double;
+            left: $space-double;
+            width: calc(100% - #{2 * $space-double});
+            height: calc(100% - #{2 * $space-double});
+            position: absolute;
+            background-color: $color-black;
+            opacity: .25;
+        }
+    }
+
+    &--text-only {
+        display: block;
+        width: 75vw;
+        max-width: 700px;
+        padding: 100px 0;
+    }
+
+    &__child {
+        flex: 1;
+
+        &--card {
+            @include after-shadow;
+            margin: 0;
+            flex: 0 0 75%;
+            min-width: 300px;
+            max-width: 700px;
+            padding: 0;
+            border: 1px solid $color-light-black;
+            border-radius: 10px;
+
+            @include mq-to-tablet {
+                margin: 0 5vw;
+            }
+
+            .paragraph {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+        }
+
+        &--image {
+                &:first-child {
+                    margin-right: $space;
+                }
+
+                &:last-child {
+                    margin-left: $space;
+                }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 10px;
+
+        @include mq-to-tablet {
+            border-radius: initial;
+        }
+    }
+
+    &__overlay-link {
+        position: absolute;
+        text-decoration: none;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__overlay-title {
+        color: $color-white;
+        z-index: 1;
     }
 }
 
 .footer {
-    padding: 0 $defaultSpace $defaultSpace;
+    padding: 0 $space $space;
 }
 
 .link {
@@ -480,10 +476,10 @@ html {
         align-content: center;
         align-items: center;
         justify-content: center;
-        padding: $halfSpace;
+        padding: $space-half;
         overflow: hidden;
         text-decoration: none;
-        background-color: $lightestPureBlack;
+        background-color: $color-lightest-black;
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
 
@@ -495,9 +491,9 @@ html {
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: $lightEasyBlue;
-            border-top: 1px solid $easyBlue;
-            transition: transform $transitionLength $transitionEasing;
+            background-color: $color-light-charlotte;
+            border-top: 1px solid $color-charlotte;
+            transition: transform $transition-length $transition-easing;
             transform-origin: right;
             transform: scaleX(0);
         }
@@ -518,25 +514,25 @@ html {
 }
 
 .price-list {
-    padding: $halfSpace $doubleSpace $defaultSpace;
+    padding: $space-half $space-double $space;
+
+    @include mq-to-tablet {
+        padding: $space-half 10vw $space;
+    }
 
     &__item {
         display: flex;
         align-items: center;
 
         &:not(:last-child) {
-            margin-bottom: $fourthSpace;
+            margin-bottom: $space-fourth;
         }
-    }
-
-    @include mqToTablet {
-        padding: $halfSpace 10vw $defaultSpace;
     }
 }
 
 .feather {
-    width: $halfSpace;
-    height: $halfSpace;
+    width: $space-half;
+    height: $space-half;
     stroke: currentColor;
     stroke-width: 2;
     stroke-linecap: round;
@@ -544,16 +540,16 @@ html {
     fill: none;
 
     &--before-text {
-        margin-right: $fourthSpace;
+        margin-right: $space-fourth;
     }
 
     &--after-text {
-        margin-left: $fourthSpace;
+        margin-left: $space-fourth;
     }
 
     &--shadow {
-        filter: drop-shadow($defaultShadow);
-        transition: filter $transitionLength $transitionEasing;
+        filter: drop-shadow($shadow);
+        transition: filter $transition-length $transition-easing;
 
         .header__navigation--white & {
             filter: drop-shadow(0 2px 5px transparent);
@@ -563,16 +559,21 @@ html {
 
 .address {
     font-style: normal;
-    margin: $eigthSpace 0;
+    margin: $space-eigth 0;
 }
 
 .image-article {
+    @include after-shadow;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
     border-radius: 10px;
-    @include afterShadow;
+
+    @include mq-to-tablet {
+        width: 90%;
+        margin-bottom: 0;
+    }
 
     &--picture {
         width: 100%;
@@ -599,9 +600,9 @@ html {
             width: 100%;
             height: 100%;
             border-radius: inherit;
-            background-color: transparentize($lightTightGrey, .2);
+            background-color: transparentize($color-light-grey, .2);
             backdrop-filter: blur(5px);
-            transition: opacity $transitionLength $transitionEasing;
+            transition: opacity $transition-length $transition-easing;
         }
 
         &:hover {
@@ -609,11 +610,6 @@ html {
                 opacity: 0;
             }
         }
-    }
-
-    @include mqToTablet {
-        width: 90%;
-        margin-bottom: 0;
     }
 }
 
