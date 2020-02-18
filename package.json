@@ -23,6 +23,7 @@
         "cssnano": "^4.1.10",
         "del": "^5.1.0",
         "eslint": "^6.8.0",
+        "eslint-config-sweet": "^0.1.0",
         "feather-icons": "^4.26.0",
         "gulp": "^4.0.2",
         "gulp-connect": "^5.7.0",
@@ -51,72 +52,7 @@
         "not dead"
     ],
     "eslintConfig": {
-        "extends": "eslint:recommended",
-        "env": {
-            "es2017": true,
-            "node": true,
-            "browser": true
-        },
-        "parserOptions": {
-            "sourceType": "module"
-        },
-        "rules": {
-            "curly": [
-                "error",
-                "all"
-            ],
-            "eqeqeq": [
-                "error",
-                "always"
-            ],
-            "comma-dangle": [
-                "error",
-                "never"
-            ],
-            "quotes": [
-                "error",
-                "single"
-            ],
-            "semi": [
-                "error",
-                "always"
-            ],
-            "wrap-iife": [
-                "error",
-                "inside"
-            ],
-            "brace-style": [
-                "error",
-                "1tbs"
-            ],
-            "func-style": [
-                "error",
-                "expression"
-            ],
-            "space-before-function-paren": [
-                "error",
-                "never"
-            ],
-            "array-bracket-spacing": [
-                "error",
-                "always",
-                {
-                    "objectsInArrays": false,
-                    "arraysInArrays": false
-                }
-            ],
-            "no-multi-spaces": "error",
-            "no-multi-assign": "error",
-            "no-use-before-define": "error",
-            "require-await": "error",
-            "vars-on-top": "error",
-            "no-var": "error",
-            "prefer-const": "error",
-            "no-unneeded-ternary": "error",
-            "arrow-spacing": "error",
-            "no-duplicate-imports": "error",
-            "global-require": "error"
-        }
+        "extends": "sweet"
     },
     "stylelint": {
         "extends": [
@@ -124,24 +60,16 @@
             "stylelint-config-sass-guidelines"
         ],
         "rules": {
-            "indentation": null,
-            "order/properties-alphabetical-order": null,
-            "max-nesting-depth": null,
-            "declaration-colon-newline-after": null,
-            "selector-class-pattern": null,
-            "declaration-empty-line-before": null,
             "declaration-block-no-duplicate-properties": true,
-            "block-no-empty": true,
-            "no-extra-semicolons": true,
-            "number-leading-zero": "never",
-            "color-named": "never",
-            "shorthand-property-no-redundant-values": true,
+            "declaration-colon-newline-after": null,
+            "declaration-empty-line-before": null,
             "declaration-no-important": true,
-            "color-hex-case": "lower",
             "font-family-name-quotes": "always-unless-keyword",
-            "string-quotes": "single",
-            "value-no-vendor-prefix": true
-        },
-        "defaultSeverity": "warning"
+            "indentation": null,
+            "max-nesting-depth": null,
+            "no-extra-semicolons": true,
+            "order/properties-alphabetical-order": null,
+            "selector-class-pattern": null
+        }
     }
 }

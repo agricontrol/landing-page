@@ -11,7 +11,7 @@ html {
 
 .title {
     line-height: $line-height-heading;
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 
     &--section {
         display: block;
@@ -29,7 +29,7 @@ html {
 
 .paragraph {
     &:not(:last-child) {
-        margin-bottom: .8em;
+        margin-bottom: 0.8em;
     }
 
     &--footer {
@@ -37,7 +37,7 @@ html {
         font-size: 85%;
 
         &:not(:last-child) {
-            margin-bottom: .6em;
+            margin-bottom: 0.6em;
         }
     }
 
@@ -57,7 +57,7 @@ html {
     }
 
     &--card-copy {
-        opacity: .5;
+        opacity: 0.5;
         padding: 0 $space $space-half $space;
     }
 }
@@ -69,7 +69,7 @@ html {
     color: inherit;
     text-decoration: none;
     border-radius: 10px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 600;
     display: inline-block;
     text-shadow: none;
@@ -85,7 +85,7 @@ html {
     }
 
     &--ghost {
-        background-color: transparentize($color-mantis, .4);
+        background-color: transparentize($color-mantis, 0.4);
         box-shadow: none;
         transition: background-color $transition-length $transition-easing;
 
@@ -393,7 +393,7 @@ html {
             height: calc(100% - #{2 * $space-double});
             position: absolute;
             background-color: $color-black;
-            opacity: .25;
+            opacity: 0.25;
         }
     }
 
@@ -510,7 +510,7 @@ html {
 .periodicity {
     font-size: 40%;
     margin-left: 10px;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .price-list {
@@ -600,7 +600,7 @@ html {
             width: 100%;
             height: 100%;
             border-radius: inherit;
-            background-color: transparentize($color-light-grey, .2);
+            background-color: transparentize($color-light-grey, 0.2);
             backdrop-filter: blur(5px);
             transition: opacity $transition-length $transition-easing;
         }

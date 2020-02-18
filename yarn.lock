@@ -2056,6 +2056,11 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
+eslint-config-sweet@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-sweet/-/eslint-config-sweet-0.1.0.tgz#5052faba22b2e368ea929e74deb80621ab2e0241"
+  integrity sha512-Xehs8QU4HOnDtXONUAgGXiJx5bV7CQx81tUHCqiUZOYjYux14+tZSP1y3F7yVan4lst0qCNsFmo3aXZzIAZ8bQ==
+
 eslint-scope@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.0.0.tgz#e87c8887c73e8d1ec84f1ca591645c358bfc8fb9"

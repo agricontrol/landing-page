@@ -1,16 +1,16 @@
 $color-white: #fff;
-$color-navigation-white: transparentize($color-white, .02);
+$color-navigation-white: transparentize($color-white, 0.02);
 $color-black: #000;
-$color-light-black: transparentize($color-black, .85);
-$color-lighter-black: transparentize($color-black, .95);
-$color-lightest-black: transparentize($color-black, .98);
+$color-light-black: transparentize($color-black, 0.85);
+$color-lighter-black: transparentize($color-black, 0.95);
+$color-lightest-black: transparentize($color-black, 0.98);
 $color-grey: #606060;
-$color-light-grey: transparentize($color-grey, .25);
+$color-light-grey: transparentize($color-grey, 0.25);
 $color-maastricht-blue: #091540;
-$color-light-maastricht-blue: transparentize($color-maastricht-blue, .6);
+$color-light-maastricht-blue: transparentize($color-maastricht-blue, 0.6);
 $color-mantis: #67bf66;
 $color-charlotte: #bae8f8;
-$color-light-charlotte: transparentize($color-charlotte, .8);
+$color-light-charlotte: transparentize($color-charlotte, 0.8);
 
 $line-height-text: 1.6;
 $line-height-heading: 1.1;
@@ -19,7 +19,7 @@ $shadow: 0 2px 5px $color-light-black;
 $shadow-up: 0 -2px 5px $color-light-black;
 $shadow-big: 0 5px 15px 2px $color-light-black;
 
-$transition-length: .3s;
+$transition-length: 0.3s;
 $transition-easing: ease-in-out;
 
 $space: 50px;
