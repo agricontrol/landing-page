@@ -1,5 +1,5 @@
 import './polyfills';
 import './navigation';
 import './i18n';
-import './mobileNav';
+import './mobile-nav';
 import './cookies';

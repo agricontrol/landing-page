@@ -1,5 +1,8 @@
-@mixin after-shadow() {
+@mixin after-shadow(
+    $shadow-size: $shadow-big
+) {
     position: relative;
+    transform: translateZ(0);
 
     &::after {
         content: '';
@@ -10,7 +13,7 @@
         height: 100%;
         border-radius: inherit;
         z-index: -1;
-        box-shadow: $shadow-big;
+        box-shadow: $shadow-size;
         opacity: 0;
         transition: opacity $transition-length $transition-easing;
     }

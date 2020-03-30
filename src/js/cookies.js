@@ -10,7 +10,6 @@ const fadeOutBanner = event => {
     event.preventDefault();
 
     banner.classList.add('cookie-banner--invisible');
-
     banner.addEventListener('transitionend', () => {
         deleteBanner();
     });

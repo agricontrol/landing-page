@@ -6,8 +6,8 @@ const connect = require('gulp-connect');
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
-const rename = require('gulp-rename');
-const filter = require('gulp-filter');
+const rezzy = require('gulp-rezzy');
+const webp = require('gulp-webp');
 const autoprefixer = require('autoprefixer');
 const stylelint = require('stylelint');
 const cssnano = require('cssnano');
@@ -20,7 +20,7 @@ const commonjs = require('@rollup/plugin-commonjs');
 const { terser } = require('rollup-plugin-terser');
 const { eslint } = require('rollup-plugin-eslint');
 
-const dev = process.argv.includes('--dev');
+const development = process.argv.includes('--dev');
 
 
 gulp.task('clean', () => del('dist'));
@@ -38,7 +38,7 @@ gulp.task('serve', done => {
 
 gulp.task('css', () => {
     return gulp.src('src/css/*', {
-            sourcemaps: dev
+            sourcemaps: development
         })
         .pipe(plumber())
         .pipe(postcss([
@@ -47,41 +47,37 @@ gulp.task('css', () => {
                 clearReportedMessages: true
             })
         ]))
-        .pipe(filter([ '**', '!**/{main}.scss' ]))
         .pipe(sass.sync())
         .pipe(postcss([
             cssEnv(),
-            !dev && autoprefixer(),
-            !dev && cssnano(),
+            !development && autoprefixer(),
+            !development && cssnano(),
             reporter({
                 clearReportedMessages: true
             })
         ].filter(p => p)))
-        .pipe(rename('bundle.css'))
         .pipe(gulp.dest('dist/css', {
             sourcemaps: '.'
         }))
         .pipe(connect.reload());
 });
 
-gulp.task('js', async() => {
+gulp.task('js', async () => {
     const bundle = await rollup({
         input: 'src/js/main.js',
         plugins: [
             eslint(),
             resolve(),
             commonjs(),
-            !dev && buble(),
-            !dev && terser({
-                output: {
-                    comments: false
-                }
+            !development && buble(),
+            !development && terser({
+                output: { comments: false }
             })
         ].filter(p => p)
     });
 
     await bundle.write({
-        sourcemap: dev,
+        sourcemap: development,
         file: 'dist/js/bundle.js',
         format: 'iife'
     });
@@ -89,24 +85,48 @@ gulp.task('js', async() => {
 
 gulp.task('img', () => {
     return gulp.src([
-            'src/img/*',
+            'src/img/favicon.png',
+            'src/img/logo.svg',
+            'src/img/open-graph.jpg',
             'node_modules/feather-icons/dist/feather-sprite.svg'
         ])
         .pipe(plumber())
-        .pipe(imagemin({
-            verbose: true
-        }))
+        .pipe(imagemin({ verbose: true }))
         .pipe(gulp.dest('dist/img'))
         .pipe(connect.reload());
+});
+
+gulp.task('img:manipulate', () => {
+    return gulp.src([
+        'src/img/about.jpg',
+        'src/img/funktionsweise.jpg',
+        'src/img/header.jpg',
+        'src/img/vorteil.jpg'
+    ])
+    .pipe(plumber())
+    .pipe(rezzy([{
+        width: 1920,
+        height: 1440,
+        suffix: '-1920w'
+    }, {
+        width: 1280,
+        height: 960,
+        suffix: '-1280w'
+    }, {
+        width: 640,
+        height: 480,
+        suffix: '-640w'
+    }]))
+    .pipe(imagemin({ verbose: true }))
+    .pipe(webp())
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('copy', () => {
     return gulp.src([
             'src/{*,}.*',
             'src/data/*'
-        ], {
-            base: 'src'
-        })
+        ], { base: 'src' })
         .pipe(plumber())
         .pipe(gulp.dest('dist'))
         .pipe(connect.reload());
@@ -114,7 +134,7 @@ gulp.task('copy', () => {
 
 
 gulp.task('watch:img', done => {
-    gulp.watch('src/img/*', gulp.parallel('img'));
+    gulp.watch('src/img/*', gulp.parallel('img', 'img:manipulate'));
     done();
 });
 
@@ -138,6 +158,6 @@ gulp.task('watch:root', done => {
 
 
 gulp.task('watch', gulp.parallel('watch:img', 'watch:js', 'watch:css', 'watch:root'));
-gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img', 'copy')));
+gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img', 'img:manipulate', 'copy')));
 gulp.task('dist', gulp.series('build', 'open:dist'));
 gulp.task('default', gulp.series('build', 'serve', 'open:browser', 'watch'));
