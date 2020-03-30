@@ -14,7 +14,7 @@ const cssnano = require('cssnano');
 const cssEnv = require('postcss-preset-env');
 const reporter = require('postcss-reporter');
 const { rollup } = require('rollup');
-const buble = require('@rollup/plugin-buble');
+const babel = require('rollup-plugin-babel');
 const resolve = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const { terser } = require('rollup-plugin-terser');
@@ -37,28 +37,19 @@ gulp.task('serve', done => {
 });
 
 gulp.task('css', () => {
-    return gulp.src('src/css/*', {
-            sourcemaps: development
-        })
+    return gulp.src('src/css/*', { sourcemaps: development })
         .pipe(plumber())
         .pipe(postcss([
             stylelint(),
-            reporter({
-                clearReportedMessages: true
-            })
+            reporter({ clearReportedMessages: true })
         ]))
         .pipe(sass.sync())
         .pipe(postcss([
             cssEnv(),
             !development && autoprefixer(),
-            !development && cssnano(),
-            reporter({
-                clearReportedMessages: true
-            })
+            !development && cssnano()
         ].filter(p => p)))
-        .pipe(gulp.dest('dist/css', {
-            sourcemaps: '.'
-        }))
+        .pipe(gulp.dest('dist/css', { sourcemaps: '.' }))
         .pipe(connect.reload());
 });
 
@@ -69,7 +60,7 @@ gulp.task('js', async () => {
             eslint(),
             resolve(),
             commonjs(),
-            !development && buble(),
+            !development && babel(),
             !development && terser({
                 output: { comments: false }
             })
@@ -83,7 +74,7 @@ gulp.task('js', async () => {
     });
 });
 
-gulp.task('img', () => {
+gulp.task('img:minimize', () => {
     return gulp.src([
             'src/img/favicon.png',
             'src/img/logo.svg',
@@ -96,7 +87,7 @@ gulp.task('img', () => {
         .pipe(connect.reload());
 });
 
-gulp.task('img:manipulate', () => {
+gulp.task('img:optimize', () => {
     return gulp.src([
         'src/img/about.jpg',
         'src/img/funktionsweise.jpg',
@@ -123,10 +114,7 @@ gulp.task('img:manipulate', () => {
 });
 
 gulp.task('copy', () => {
-    return gulp.src([
-            'src/{*,}.*',
-            'src/data/*'
-        ], { base: 'src' })
+    return gulp.src([ 'src/{*,}.*', 'src/data/*' ], { base: 'src' })
         .pipe(plumber())
         .pipe(gulp.dest('dist'))
         .pipe(connect.reload());
@@ -134,7 +122,7 @@ gulp.task('copy', () => {
 
 
 gulp.task('watch:img', done => {
-    gulp.watch('src/img/*', gulp.parallel('img', 'img:manipulate'));
+    gulp.watch('src/img/*', gulp.parallel('img:minimize', 'img:optimize'));
     done();
 });
 
@@ -149,15 +137,12 @@ gulp.task('watch:css', done => {
 });
 
 gulp.task('watch:root', done => {
-    gulp.watch([
-        'src/{*,}.*',
-        'src/data/*'
-    ], gulp.parallel('copy'));
+    gulp.watch([ 'src/{*,}.*', 'src/data/*' ], gulp.parallel('copy'));
     done();
 });
 
 
 gulp.task('watch', gulp.parallel('watch:img', 'watch:js', 'watch:css', 'watch:root'));
-gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img', 'img:manipulate', 'copy')));
+gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img:minimize', 'img:optimize', 'copy')));
 gulp.task('dist', gulp.series('build', 'open:dist'));
 gulp.task('default', gulp.series('build', 'serve', 'open:browser', 'watch'));

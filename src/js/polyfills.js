@@ -1,5 +1,4 @@
 import 'svgxuse';
-import 'mdn-polyfills/NodeList.prototype.forEach';
 
 if (!('objectFit' in document.documentElement.style)) {
     const images = document.querySelectorAll('[data-object-fit]');

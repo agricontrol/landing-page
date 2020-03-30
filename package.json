@@ -16,10 +16,12 @@
         "dist": "gulp dist"
     },
     "devDependencies": {
-        "@rollup/plugin-buble": "^0.21.1",
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
         "@rollup/plugin-commonjs": "^11.0.2",
         "@rollup/plugin-node-resolve": "^7.1.1",
         "autoprefixer": "^9.7.5",
+        "core-js": "^3.6.4",
         "cssnano": "^4.1.10",
         "del": "^5.1.0",
         "eslint": "^6.8.0",
@@ -27,7 +29,6 @@
         "feather-icons": "^4.26.0",
         "gulp": "^4.0.2",
         "gulp-connect": "^5.7.0",
-        "gulp-filter": "^6.0.0",
         "gulp-imagemin": "^7.1.0",
         "gulp-plumber": "^1.2.1",
         "gulp-postcss": "^8.0.0",
@@ -35,12 +36,12 @@
         "gulp-sass": "^4.0.2",
         "gulp-webp": "^4.0.1",
         "jump.js": "^1.0.2",
-        "mdn-polyfills": "^5.20.0",
         "mehrsprachig": "^0.5.1",
         "open": "^7.0.3",
         "postcss-preset-env": "^6.7.0",
         "postcss-reporter": "^6.0.1",
         "rollup": "^2.3.0",
+        "rollup-plugin-babel": "^4.4.0",
         "rollup-plugin-eslint": "^7.0.0",
         "rollup-plugin-terser": "^5.3.0",
         "stylelint": "^13.2.1",
@@ -63,5 +64,18 @@
             "max-nesting-depth": 3,
             "order/properties-alphabetical-order": null
         }
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "useBuiltIns": "usage",
+                    "corejs": 3,
+                    "bugfixes": true,
+                    "debug": true
+                }
+            ]
+        ]
     }
 }
