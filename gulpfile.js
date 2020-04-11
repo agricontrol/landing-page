@@ -109,6 +109,7 @@ gulp.task('img:optimize', () => {
         suffix: '-640w'
     }]))
     .pipe(imagemin({ verbose: true }))
+    .pipe(gulp.dest('dist/img'))
     .pipe(webp())
     .pipe(gulp.dest('dist/img'));
 });
