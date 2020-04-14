@@ -108,10 +108,11 @@ gulp.task('img:optimize', () => {
         height: 480,
         suffix: '-640w'
     }]))
-    .pipe(imagemin({ verbose: true }))
+    .pipe(imagemin({ verbose: development }))
     .pipe(gulp.dest('dist/img'))
     .pipe(webp())
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('dist/img'))
+    .pipe(connect.reload());
 });
 
 gulp.task('copy', () => {
