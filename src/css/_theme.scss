@@ -148,28 +148,12 @@ html {
 
         @include mq-tablet-to-desktop {
             padding: 45px;
-
-            .header__navigation--white & {
-                padding: 35px;
-            }
-
-            &--logo {
-                margin-right: $space-double;
-            }
         }
 
         @include mq-to-tablet {
             flex: 1;
             padding: 30px;
             margin-right: 0;
-
-            .header__navigation--white & {
-                padding: 30px;
-            }
-
-            &--mobile-nav {
-                display: flex;
-            }
         }
 
         @include mq-to-phone {
@@ -211,10 +195,22 @@ html {
             display: flex;
             align-items: center;
             margin-right: $space-triple;
+
+            @include mq-tablet-to-desktop {
+                margin-right: $space-double;
+            }
+
+            @include mq-to-tablet {
+                margin-right: 0;
+            }
         }
 
         &--mobile-nav {
             display: none;
+
+            @include mq-to-tablet {
+                display: flex;
+            }
         }
 
         &:hover {
@@ -265,6 +261,16 @@ html {
 
         &--translated {
             transform: translateY(0);
+        }
+
+        &--white .header__link {
+            @include mq-tablet-to-desktop {
+                padding: 35px;
+            }
+
+            @include mq-to-tablet {
+                padding: 30px;
+            }
         }
     }
 
