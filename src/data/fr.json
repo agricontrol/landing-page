@@ -1,247 +1,247 @@
 {
-    "meta": {
-        "titles": {
-            "home": "Agricontrol – Votre nouveau standard pour la gestion des parcelles",
-            "about": "Agricontrol – Qui sommes-nous?",
-            "termsAndConditions": "Agricontrol – Conditions d'utilisations",
-            "siteNotice": "Agricontrol – Mentions légales",
-            "privacy": "Agricontrol – Protection des données"
-        },
-        "description": "Agricontrol est le moyen le plus facile de ne jamais perdre le fil. Gardez la tête froide et concentrez-vous sur ce qui est important."
+  "meta": {
+    "titles": {
+      "home": "Agricontrol – Votre nouveau standard pour la gestion des parcelles",
+      "about": "Agricontrol – Qui sommes-nous?",
+      "termsAndConditions": "Agricontrol – Conditions d'utilisations",
+      "siteNotice": "Agricontrol – Mentions légales",
+      "privacy": "Agricontrol – Protection des données"
     },
-    "navigation": {
-        "logo": "Logo d'Agricontrol",
-        "advantages": "Avantages",
-        "offer": "Offre",
-        "functionality": "Fonctions",
-        "about": "Qui sommes-nous?"
+    "description": "Agricontrol est le moyen le plus facile de ne jamais perdre le fil. Gardez la tête froide et concentrez-vous sur ce qui est important."
+  },
+  "navigation": {
+    "logo": "Logo d'Agricontrol",
+    "advantages": "Avantages",
+    "offer": "Offre",
+    "functionality": "Fonctions",
+    "about": "Qui sommes-nous?"
+  },
+  "header": {
+    "hero": "Un homme dans un tracteur de John Deere.",
+    "heading": "Votre nouveau standard pour la gestion des parcelles",
+    "paragraph": "Agricontrol vous aide à garder un aperçu de la situation avec un minimum d'effort. Vous pouvez facilement gérer vos champs et vous concentrer sur ce qui est important."
+  },
+  "sections": {
+    "advantages": {
+      "heading": "Votre avantage",
+      "paragraph": "Avec Agricontrol, vous pouvez gérer vos champs et vos activités où que vous soyez. L'application est disponible sur votre smartphone et vous pouvez saisir les nouvelles activités directement sur le tracteur. Vous n'avez pas besoin de passer beaucoup de temps dans la paperasse et finalement vous pouvez créer une exportation pour votre contrôleur en quelques clics.",
+      "image": "Un homme dans un tracteur de Massey Fergusson."
     },
-    "header": {
-        "hero": "Un homme dans un tracteur de John Deere.",
-        "heading": "Votre nouveau standard pour la gestion des parcelles",
-        "paragraph": "Agricontrol vous aide à garder un aperçu de la situation avec un minimum d'effort. Vous pouvez facilement gérer vos champs et vous concentrer sur ce qui est important."
+    "functionality": {
+      "heading": "Comment ça fonctionne",
+      "paragraphs": {
+        "first": "Agricontrol est une application qui vous facilite la gestion des champs. Il est possible d'enregistrer et de modifier les champs, les cultures et les activités sur votre ordinateur et sur votre smartphone dans un délai très court.",
+        "second": "Avec une connexion à Agricontrol, vous pouvez enregistrer vos champs et ensuite facilement enregistrer vos cultures. Agricontrol vous avertit si une culture nouvellement enregistrée ne tient pas compte des règles de rotation des cultures et affiche clairement vos champs et cultures. Vous disposez de vos propres listes dans lesquelles vous pouvez enregistrer vos machines, engrais et produits phytosanitaires, les mesures de travail du sol et les maladies/parasites. Une fois enregistrées, elles sont à votre disposition si vous souhaitez enregistrer de nouvelles activités ou éditer les activités enregistrées en quelques clics sur les cultures respectives."
+      },
+      "image": "Un homme montre sur une balle de foin."
     },
-    "sections": {
-        "advantages": {
-            "heading": "Votre avantage",
-            "paragraph": "Avec Agricontrol, vous pouvez gérer vos champs et vos activités où que vous soyez. L'application est disponible sur votre smartphone et vous pouvez saisir les nouvelles activités directement sur le tracteur. Vous n'avez pas besoin de passer beaucoup de temps dans la paperasse et finalement vous pouvez créer une exportation pour votre contrôleur en quelques clics.",
-            "image": "Un homme dans un tracteur de Massey Fergusson."
-        },
-        "functionality": {
-            "heading": "Comment ça fonctionne",
-            "paragraphs": {
-                "first": "Agricontrol est une application qui vous facilite la gestion des champs. Il est possible d'enregistrer et de modifier les champs, les cultures et les activités sur votre ordinateur et sur votre smartphone dans un délai très court.",
-                "second": "Avec une connexion à Agricontrol, vous pouvez enregistrer vos champs et ensuite facilement enregistrer vos cultures. Agricontrol vous avertit si une culture nouvellement enregistrée ne tient pas compte des règles de rotation des cultures et affiche clairement vos champs et cultures. Vous disposez de vos propres listes dans lesquelles vous pouvez enregistrer vos machines, engrais et produits phytosanitaires, les mesures de travail du sol et les maladies/parasites. Une fois enregistrées, elles sont à votre disposition si vous souhaitez enregistrer de nouvelles activités ou éditer les activités enregistrées en quelques clics sur les cultures respectives."
-            },
-            "image": "Un homme montre sur une balle de foin."
-        },
-        "offer": {
-            "heading": "Profitez au mieux de votre temps",
-            "card": {
-                "header": "Période d'essai gratuite + rabais pour les clients anticipés",
-                "specialPrice": "399.–",
-                "periodicity": "par année",
-                "regularPrice": "suite à la période d'essai, au lieu de 499.–",
-                "sellingPoints": {
-                    "testPeriod": "Deux mois d'essai sans restriction",
-                    "paymentInfo": "Pas d'informations de paiement lors de l'inscription",
-                    "hiddenFees": "Pas de coûts ou frais cachés",
-                    "whereverYouAre": "Accédez à vos informations où que vous soyez",
-                    "moreTime": "Plus de temps pour vous et votre vie (inclus)",
-                    "usersIncluded": "Jusqu'à 3 utilisateurs inclus dans le prix"
-                }
-            }
-        },
-        "about": {
-            "heading": "Qui sommes-nous?",
-            "image": "Une image de Lukas, Matthias et Robin d'Agricontrol."
+    "offer": {
+      "heading": "Profitez au mieux de votre temps",
+      "card": {
+        "header": "Période d'essai gratuite + rabais pour les clients anticipés",
+        "specialPrice": "399.–",
+        "periodicity": "par année",
+        "regularPrice": "suite à la période d'essai, au lieu de 499.–",
+        "sellingPoints": {
+          "testPeriod": "Deux mois d'essai sans restriction",
+          "paymentInfo": "Pas d'informations de paiement lors de l'inscription",
+          "hiddenFees": "Pas de coûts ou frais cachés",
+          "whereverYouAre": "Accédez à vos informations où que vous soyez",
+          "moreTime": "Plus de temps pour vous et votre vie (inclus)",
+          "usersIncluded": "Jusqu'à 3 utilisateurs inclus dans le prix"
         }
-    },
-    "footer": {
-        "termsAndConditions": "Conditions d'utilisations",
-        "faq": "Foire aux questions",
-        "siteNotice": "Mentions légales",
-        "privacy": "Protection des données",
-        "footNote": "Fait avec amour et un rayon de soleil"
-    },
-    "commons": {
-        "ctas": {
-            "explore": "Découvrir Agricontrol",
-            "start": "Démarrer avec Agricontrol",
-            "startNow": "Démarrer maintenant avec Agricontrol",
-            "createAccount": "Essayez maintenant gratuitement",
-            "logIn": "Se connecter"
-        },
-        "languages": {
-            "german": "Allemand",
-            "french": "Français",
-            "italian": "Italien",
-            "english": "Anglais"
-        }
-    },
-    "termsAndConditions": {
-        "heading": "Conditions générales «agricontrol.app» et «agricontrol.ch» (CGV)",
-        "sections": {
-            "first": {
-                "heading": "1. Domaine d'application",
-                "paragraphs": {
-                    "first": "agricontrol.app et agricontrol.ch est une plateforme et une offre de la société Informatio GmbH et fournit des services exclusivement dans les conditions suivantes (CGV). Les accords dérogeant aux CGV doivent être conclus par écrit.",
-                    "second": "Plateforme désigne le site Web et l'application mobile appartenant à Informatio GmbH. Les conditions générales font partie de l'offre agricontrol.app et agricontrol.ch et en accédant à la plateforme et/ou en utilisant les services de la plateforme, l'utilisateur confirme avoir lu, compris et accepté les présentes conditions générales de vente."
-                }
-            },
-            "second": {
-                "heading": "2. Offre et prix",
-                "paragraphs": {
-                    "first": "Toutes les offres sur agricontrol.app et agricontrol.ch sont sans engagement. Informatio GmbH se réserve le droit de modifier les offres et les prix sans préavis. Les offres et prix en vigueur au moment de l'inscription sont valables. La portée et les fonctionnalités de la plateforme peuvent être modifiées, étendues, restreintes ou supprimées à tout moment. Les changements de prix effectués après l'enregistrement ne s'appliquent qu'aux nouveaux enregistrements. Les prix sont indiqués en francs suisses (CHF) et incluent la taxe sur la valeur ajoutée légale. "
-                }
-            },
-            "third": {
-                "heading": "3. Conditions de paiement",
-                "paragraphs": {
-                    "first": "Le montant de la facture est dû à la livraison de la facture et doit être payé dans les 30 jours."
-                }
-            },
-            "fourth": {
-                "heading": "4. L'inscription",
-                "paragraphs": {
-                    "first": "Pour pouvoir utiliser les services de agricontrol.app ou agricontrol.ch, l'utilisateur doit se faire inscrire et créer un compte client. Lors de l'inscription, le nom, le prénom, l'adresse e-mail et l'adresse de facturation doivent être indiqués. Ces informations peuvent être consultées et ajustées dans le profil à tout moment et doivent être correctes et complètes.",
-                    "second": " Les données personnelles d'accès doivent être traitées confidentiellement par l'utilisateur et les tiers ne doivent pas être autorisés à y accéder ou les données d'accès ne doivent pas être transmises à des tiers. Informatio GmbH ne peut être tenue responsable de tout dommage résultant d'une mauvaise utilisation ou d'une divulgation non autorisée des données d'accès. Toute violation des présentes CGV peut entraîner la perte de l'accès à agricontrol.app et agricontrol.ch."
-                }
-            },
-            "fifth": {
-                "heading": "5. Responsabilité",
-                "paragraphs": {
-                    "first": "La responsabilité de Informatio GmbH est exclue pour tous les dommages, y compris les pertes de chiffre d'affaires ou de bénéfice, les pertes d'utilisation ou les frais d'achat de services de remplacement, résultant de l'utilisation, de la mauvaise utilisation ou de la perte de performance des services de agricontrol.app ou agricontrol.ch. Dans tous les cas, l'utilisateur est lui-même responsable de la sécurité de ses données. Nous déclinons toute responsabilité en cas de perte de données.",
-                    "second": "Informatio GmbH n'est pas responsable des informations incorrectes ou mal orthographiées, y compris l'adresse e-mail, le numéro de téléphone (mobile) incorrect et n'a aucune obligation de les vérifier. L'utilisateur est seul responsable de l'exactitude et de l'actualité des données clients.",
-                    "third": "Bien que la mise à disposition de la plateforme ait été faite avec soin et attention, il n'est pas possible de vérifier et de garantir que toutes les informations sont correctes, exactes et complètes et Informatio GmbH ne peut être tenue responsable des erreurs (même des erreurs évidentes ou typographiques), interruptions (suite à une panne temporaire ou partielle, à des interventions de maintenance ou à la réalisation d'une actualisation ou de mise à jour de agricontrol.app ou agricontrol.ch ou pour quelque autre motif) ou des informations imprécises, erronées ou non correctes ou à la transmission de ces informations.",
-                    "fourth": "La société Informatio GmbH décline toute responsabilité pour le contenu des sites Web externes et des sites liés. agricontrol.app et agricontrol.ch peuvent être temporairement indisponibles en raison de travaux de maintenance. Cela peut entraîner une perte de données. Dans ce contexte, Informatio GmbH n'est pas responsable."
-                }
-            },
-            "sixth": {
-                "heading": "6. Devoir d'information",
-                "paragraphs": {
-                    "first": "Les parties informent le cocontractant en temps utile de tout empêchement remettant en cause l'exécution ou le paiement du contrat ou pouvant conduire à des solutions inappropriées."
-                }
-            },
-            "seventh": {
-                "heading": "7. Dispositions finales",
-                "paragraphs": {
-                    "first": "Le lieu de juridiction est le siège social de Informatio GmbH. Le droit suisse est applicable."
-                }
-            }
-        }
-    },
-    "siteNotice": {
-        "heading": "Mentions légales",
-        "sections": {
-            "first": {
-                "heading": "Coordonnées",
-                "paragraphs": {
-                    "first": "<address class='address'>Informatio S.A.R.L.<br>Parkterrasse 14<br>3012 Bern<br><a class='link' href='mailto:help@agricontrol.ch'>help@agricontrol.ch</a></address>"
-                }
-            },
-            "second": {
-                "heading": "Adresse de facturation et siège social",
-                "paragraphs": {
-                    "first": "<address class='address'>Informatio S.A.R.L.<br>Brüelmattenweg 12<br>2577 Finsterhennen</address>"
-                }
-            },
-            "third": {
-                "heading": "Dénégation de responsabilité",
-                "paragraphs": {
-                    "first": "L'auteur décline toute responsabilité quant à l'exactitude, la précision, l'actualité, la fiabilité et la complétude des informations mises à disposition.",
-                    "second": "La responsabilité de l'auteur est exclue en cas de dommages matériels ou immatériels résultant de l'accès, de l'utilisation ou de la non-utilisation des informations publiées, d'une mauvaise utilisation de la connexion ou de défaillances techniques.",
-                    "third": "Toutes les offres sont sans engagement. L'auteur se réserve explicitement le droit de modifier, de compléter ou d'effacer des parties des pages ou l'ensemble de l'offre sans avis préalable ou de cesser temporairement ou définitivement la publication."
-                }
-            },
-            "fourth": {
-                "heading": "Responsabilité pour les liens",
-                "paragraphs": {
-                    "first": "Les références et les liens vers des sites Internet de tiers ne relèvent pas de notre responsabilité. Toute responsabilité pour ces sites Web est rejetée. L'accès à ces sites Web et leur utilisation se font aux risques et périls de l'utilisateur."
-                }
-            },
-            "fifth": {
-                "heading": "Réalisation technique",
-                "paragraphs": {
-                    "first": "<a class='link' href='http://arnasoftech.com' target='_blank'>Arna Softech Private Limited</a>"
-                }
-            }
-        }
-    },
-    "privacy": {
-        "heading": "Déclaration de confidentialité",
-        "sections": {
-            "first": {
-                "heading": "Autorité responsable",
-                "paragraphs": {
-                    "first": "L'autorité responsable au sens de la législation sur la protection des données, en particulier le règlement de base de l'UE sur la protection des données (RGPD), est:<address class='address'>Lukas Kocherhans<br>3084 Wabern</address><a class='link' href='mailto:help@agricontrol.app'>help@agricontrol.app</a> – <a class='link' href='//agricontrol.app'>agricontrol.app</a>"
-                }
-            },
-            "second": {
-                "heading": "Informations générales",
-                "paragraphs": {
-                    "first": "En vertu de l'article 13 de la Constitution fédérale et des dispositions de la Confédération relatives à la protection des données (loi sur la protection des données, LPD), toute personne a droit à la protection de sa vie privée et à la protection contre l'utilisation abusive de ses données personnelles. Les opérateurs de ce site prennent très au sérieux la protection de vos données personnelles. Nous traitons vos données personnelles de manière confidentielle et conformément aux dispositions légales de protection des données et à la présente déclaration de protection des données.",
-                    "second": "En collaboration avec nos hébergeurs, nous nous engageons à protéger au mieux les bases de données contre tout accès non autorisé, perte, abus ou falsification.",
-                    "third": "Nous vous informons que la transmission de données sur Internet (p. ex. la communication par e-mail) peut présenter des failles de sécurité. Une protection complète des données contre l'accès par des tiers n'est pas possible.",
-                    "fourth": "En utilisant ce site Web, vous consentez à la collecte, au traitement et à l'utilisation des données conformément à la description suivante. Ce site peut être visité sans inscription. Les données telles que les pages consultées ou les noms des fichiers consultés, la date et l'heure sont stockées sur le serveur à des buts statistiques sans que ces données ne soient directement liées à votre personne. Les données personnelles, en particulier le nom, l'adresse ou l'adresse e-mail sont collectées dans la mesure du possible sur une base volontaire. Les données ne seront pas transmises à des tiers sans votre consentement."
-                }
-            },
-            "third": {
-                "heading": "Déclaration de confidentialité pour les cookies",
-                "paragraphs": {
-                    "first": "Ce site Web utilise des cookies. Il s'agit de petits fichiers texte qui permettent de stocker des informations spécifiques relatives à l'utilisateur sur le terminal de l'utilisateur pendant qu'il utilise le site Web. Les cookies permettent notamment de déterminer la fréquence d'utilisation et le nombre d'utilisateurs des pages, d'analyser leur utilisation, mais aussi de rendre notre offre plus adaptée au client. Les cookies restent stockés après la fin d'une session de navigation et peuvent être rappelés lorsqu'une nouvelle page est visitée. Si vous ne le souhaitez pas, vous devez configurer votre navigateur Internet pour qu'il refuse d'accepter les cookies.",
-                    "second": "Une objection générale à l'utilisation des cookies à des buts de marketing en ligne peut être faite pour un grand nombre de services, en particulier dans le cas du tracking, via le site américain <a class='link' href='https://aboutads.info/choices/' target='_blank'>YourAdChoices</a> ou le site européen <a class='link' href='https://youronlinechoices.com/' target='_blank'>Your Online Choices</a>. En outre, il est possible d'enregistrer les cookies en les désactivant dans les paramètres du navigateur. Veuillez noter que dans ce cas, toutes les fonctions de cette offre en ligne ne peuvent pas être utilisées."
-
-                }
-            },
-            "fourth": {
-                "heading": "Politique de confidentialité pour le cryptage SSL",
-                "paragraphs": {
-                    "first": "Ce site Web utilise le cryptage SSL pour des raisons de sécurité et pour protéger la transmission de contenu confidentiel, comme les demandes que vous nous envoyez en tant qu'exploitant du site. Vous reconnaissez une connexion cryptée au fait que la ligne d'adresse du navigateur passe de «http://» à «https://» et au symbole du cadenas sur la ligne de votre navigateur.",
-                    "second": "Si le cryptage SSL est activé, les données que vous nous transmettez ne peuvent pas être lues par des tiers."
-                }
-            },
-            "fifth": {
-                "heading": "Règles de confidentialité pour Google Analytics",
-                "paragraphs": {
-                    "first": "Ce site Web utilise Google Analytics, un service d'analyse Web fourni par: <address class='address'>Google Inc.<br>1600 Amphitheatre Parkway<br>Mountain View, CA 94043<br>USA</address> Pour désactiver Google Analytics, Google fournit un plug-in de navigateur sur <a class='link' href='https://tools.google.com/dlpage/gaoptout' target='_blank'>tools.google.com/dlpage/gaoptout</a>.",
-                    "second": "Google Analytics utilise des cookies. Il s'agit de petits fichiers texte qui permettent de stocker des informations spécifiques relatives à l'utilisateur sur le terminal de l'utilisateur. Ceux-ci permettent à Google d'analyser l'utilisation de notre offre Internet. Les informations collectées par les cookies concernant l'utilisation de nos pages (y compris votre adresse IP) sont généralement transmises à un serveur Google aux Etats-Unis et y sont stockées. Nous attirons votre attention sur le fait que Google Analytics a été complété par le code «gat._anonymizeIp();» sur ce site web afin de garantir un enregistrement anonyme des adresses IP (appelé masquage IP).",
-                    "third": "Si l'anonymisation est active, Google abrége les adresses IP dans les États membres de l'Union européenne ou dans d'autres États signataires de l'Accord sur l'Espace économique européen, ce qui signifie qu'aucune conclusion ne peut être tirée sur votre identité. Ce n'est que dans des cas exceptionnels que l'adresse IP complète est transmise à un serveur Google aux États-Unis et raccourcie à cet endroit. Google se conforme aux dispositions relatives à la protection de la vie privée de l'accord sur la protection de la vie privée et est enregistré auprès du programme de protection de la vie privée du ministère du commerce et utilise les informations qu'il collecte pour évaluer et signaler l'utilisation de nos sites Web et pour nous fournir d'autres services connexes. Pour en savoir plus, rendez-vous sur <a class='link' href='https://support.google.com/analytics/answer/6004245' target='_blank'>support.google.com/analytics/answer/6004245</a>."
-                }
-            },
-            "sixth": {
-                "heading": "Règles de confidentialité pour l'utilisation des caractères Google Web Fonts",
-                "paragraphs": {
-                    "first": "Ce site Web utilise les polices Web fournies par Google pour l'affichage uniforme des polices. Lorsque vous accédez à une page, votre navigateur charge les polices Web requises dans le cache de votre navigateur afin d'afficher correctement les textes et les polices. Si votre navigateur ne supporte pas les polices Web, une police standard sera utilisée par votre ordinateur.",
-                    "second": "Pour plus d'informations sur Google Web Fonts, consultez le site <a class='link' href='https://developers.google.com/fonts/faq' target='_blank'>developers.google.com/fonts/faq</a> et les règles de confidentialité de Google: <a class='link' href='https://policies.google.com/privacy' target='_blank'>policies.google.com/privacy</a>."
-                }
-            },
-            "seventh": {
-                "heading": "Modifications",
-                "paragraphs": {
-                    "first": "Nous pouvons modifier cette déclaration de confidentialité à tout moment et sans préavis. La version actuellement publiée sur notre site Web est applicable. Si la déclaration de protection des données fait partie d'un accord avec vous, nous vous informerons de la modification par e-mail ou par tout autre moyen approprié en cas de mise à jour."
-                }
-            },
-            "eigth": {
-                "heading": "Questions au délégué à la protection des données",
-                "paragraphs": {
-                    "first": "Si vous avez des questions concernant la protection des données, veuillez nous envoyer un e-mail ou contacter la personne responsable de la protection des données dans notre organisation mentionnée au début de la déclaration de protection des données.",
-                    "second": "Wabern, 08.04.2019<br>Quelle: <a class='link' href='https://www.swissanwalt.ch/' target='_blank'>Générateur de protection de données de SwissAnwalt</a>"
-                }
-            }
-        }
+      }
     },
     "about": {
-        "heading": "Qui sommes-nous?",
-        "paragraphs": {
-            "first": "Agricontrol est né de la nécessité d'offrir aux agriculteurs suisses un moyen moderne de gestion des champs, indépendamment de l'emplacement et de l'équipement.",
-            "second": "Grâce au soutien et à l'expérience d'Informatio S.A.R.L., nous avons pu poursuivre cette idée et développer un concept avec tout notre cœur et toute notre âme. Le résultat est un produit qui répond aux besoins actuels des clients et qui est bien positionné pour l'avenir.",
-            "third": "Les champs, les cultures et les activités peuvent être enregistrés et traités de manière flexible sur l'ordinateur et sur le smartphone dans un minimum de temps. La paperasserie ennuyeuse devient superflue et à la fin un rapport complet peut être créé et imprimé en quelques clics.",
-            "fourth": "Nous – Robin Löffel, Lukas Kocherhans, Matthias Jakob et Holger Jakob – vous souhaitons beaucoup de plaisir avec notre produit!"
-        }
-    },
-    "cookies": {
-        "text": "Nous utilisons des cookies. Vous pouvez voir exactement ce que cela signifie dans notre <a class='link' href='datenschutz.html' target='_blank'>déclaration de protection des données</a>.",
-        "button": "Accepter"
+      "heading": "Qui sommes-nous?",
+      "image": "Une image de Lukas, Matthias et Robin d'Agricontrol."
     }
+  },
+  "footer": {
+    "termsAndConditions": "Conditions d'utilisations",
+    "faq": "Foire aux questions",
+    "siteNotice": "Mentions légales",
+    "privacy": "Protection des données",
+    "footNote": "Fait avec amour et un rayon de soleil"
+  },
+  "commons": {
+    "ctas": {
+      "explore": "Découvrir Agricontrol",
+      "start": "Démarrer avec Agricontrol",
+      "startNow": "Démarrer maintenant avec Agricontrol",
+      "createAccount": "Essayez maintenant gratuitement",
+      "logIn": "Se connecter"
+    },
+    "languages": {
+      "german": "Allemand",
+      "french": "Français",
+      "italian": "Italien",
+      "english": "Anglais"
+    }
+  },
+  "termsAndConditions": {
+    "heading": "Conditions générales «agricontrol.app» et «agricontrol.ch» (CGV)",
+    "sections": {
+      "first": {
+        "heading": "1. Domaine d'application",
+        "paragraphs": {
+          "first": "agricontrol.app et agricontrol.ch est une plateforme et une offre de la société Informatio GmbH et fournit des services exclusivement dans les conditions suivantes (CGV). Les accords dérogeant aux CGV doivent être conclus par écrit.",
+          "second": "Plateforme désigne le site Web et l'application mobile appartenant à Informatio GmbH. Les conditions générales font partie de l'offre agricontrol.app et agricontrol.ch et en accédant à la plateforme et/ou en utilisant les services de la plateforme, l'utilisateur confirme avoir lu, compris et accepté les présentes conditions générales de vente."
+        }
+      },
+      "second": {
+        "heading": "2. Offre et prix",
+        "paragraphs": {
+          "first": "Toutes les offres sur agricontrol.app et agricontrol.ch sont sans engagement. Informatio GmbH se réserve le droit de modifier les offres et les prix sans préavis. Les offres et prix en vigueur au moment de l'inscription sont valables. La portée et les fonctionnalités de la plateforme peuvent être modifiées, étendues, restreintes ou supprimées à tout moment. Les changements de prix effectués après l'enregistrement ne s'appliquent qu'aux nouveaux enregistrements. Les prix sont indiqués en francs suisses (CHF) et incluent la taxe sur la valeur ajoutée légale. "
+        }
+      },
+      "third": {
+        "heading": "3. Conditions de paiement",
+        "paragraphs": {
+          "first": "Le montant de la facture est dû à la livraison de la facture et doit être payé dans les 30 jours."
+        }
+      },
+      "fourth": {
+        "heading": "4. L'inscription",
+        "paragraphs": {
+          "first": "Pour pouvoir utiliser les services de agricontrol.app ou agricontrol.ch, l'utilisateur doit se faire inscrire et créer un compte client. Lors de l'inscription, le nom, le prénom, l'adresse e-mail et l'adresse de facturation doivent être indiqués. Ces informations peuvent être consultées et ajustées dans le profil à tout moment et doivent être correctes et complètes.",
+          "second": " Les données personnelles d'accès doivent être traitées confidentiellement par l'utilisateur et les tiers ne doivent pas être autorisés à y accéder ou les données d'accès ne doivent pas être transmises à des tiers. Informatio GmbH ne peut être tenue responsable de tout dommage résultant d'une mauvaise utilisation ou d'une divulgation non autorisée des données d'accès. Toute violation des présentes CGV peut entraîner la perte de l'accès à agricontrol.app et agricontrol.ch."
+        }
+      },
+      "fifth": {
+        "heading": "5. Responsabilité",
+        "paragraphs": {
+          "first": "La responsabilité de Informatio GmbH est exclue pour tous les dommages, y compris les pertes de chiffre d'affaires ou de bénéfice, les pertes d'utilisation ou les frais d'achat de services de remplacement, résultant de l'utilisation, de la mauvaise utilisation ou de la perte de performance des services de agricontrol.app ou agricontrol.ch. Dans tous les cas, l'utilisateur est lui-même responsable de la sécurité de ses données. Nous déclinons toute responsabilité en cas de perte de données.",
+          "second": "Informatio GmbH n'est pas responsable des informations incorrectes ou mal orthographiées, y compris l'adresse e-mail, le numéro de téléphone (mobile) incorrect et n'a aucune obligation de les vérifier. L'utilisateur est seul responsable de l'exactitude et de l'actualité des données clients.",
+          "third": "Bien que la mise à disposition de la plateforme ait été faite avec soin et attention, il n'est pas possible de vérifier et de garantir que toutes les informations sont correctes, exactes et complètes et Informatio GmbH ne peut être tenue responsable des erreurs (même des erreurs évidentes ou typographiques), interruptions (suite à une panne temporaire ou partielle, à des interventions de maintenance ou à la réalisation d'une actualisation ou de mise à jour de agricontrol.app ou agricontrol.ch ou pour quelque autre motif) ou des informations imprécises, erronées ou non correctes ou à la transmission de ces informations.",
+          "fourth": "La société Informatio GmbH décline toute responsabilité pour le contenu des sites Web externes et des sites liés. agricontrol.app et agricontrol.ch peuvent être temporairement indisponibles en raison de travaux de maintenance. Cela peut entraîner une perte de données. Dans ce contexte, Informatio GmbH n'est pas responsable."
+        }
+      },
+      "sixth": {
+        "heading": "6. Devoir d'information",
+        "paragraphs": {
+          "first": "Les parties informent le cocontractant en temps utile de tout empêchement remettant en cause l'exécution ou le paiement du contrat ou pouvant conduire à des solutions inappropriées."
+        }
+      },
+      "seventh": {
+        "heading": "7. Dispositions finales",
+        "paragraphs": {
+          "first": "Le lieu de juridiction est le siège social de Informatio GmbH. Le droit suisse est applicable."
+        }
+      }
+    }
+  },
+  "siteNotice": {
+    "heading": "Mentions légales",
+    "sections": {
+      "first": {
+        "heading": "Coordonnées",
+        "paragraphs": {
+          "first": "<address class='address'>Informatio S.A.R.L.<br>Parkterrasse 14<br>3012 Bern<br><a class='link' href='mailto:help@agricontrol.ch'>help@agricontrol.ch</a></address>"
+        }
+      },
+      "second": {
+        "heading": "Adresse de facturation et siège social",
+        "paragraphs": {
+          "first": "<address class='address'>Informatio S.A.R.L.<br>Brüelmattenweg 12<br>2577 Finsterhennen</address>"
+        }
+      },
+      "third": {
+        "heading": "Dénégation de responsabilité",
+        "paragraphs": {
+          "first": "L'auteur décline toute responsabilité quant à l'exactitude, la précision, l'actualité, la fiabilité et la complétude des informations mises à disposition.",
+          "second": "La responsabilité de l'auteur est exclue en cas de dommages matériels ou immatériels résultant de l'accès, de l'utilisation ou de la non-utilisation des informations publiées, d'une mauvaise utilisation de la connexion ou de défaillances techniques.",
+          "third": "Toutes les offres sont sans engagement. L'auteur se réserve explicitement le droit de modifier, de compléter ou d'effacer des parties des pages ou l'ensemble de l'offre sans avis préalable ou de cesser temporairement ou définitivement la publication."
+        }
+      },
+      "fourth": {
+        "heading": "Responsabilité pour les liens",
+        "paragraphs": {
+          "first": "Les références et les liens vers des sites Internet de tiers ne relèvent pas de notre responsabilité. Toute responsabilité pour ces sites Web est rejetée. L'accès à ces sites Web et leur utilisation se font aux risques et périls de l'utilisateur."
+        }
+      },
+      "fifth": {
+        "heading": "Réalisation technique",
+        "paragraphs": {
+          "first": "<a class='link' href='http://arnasoftech.com' target='_blank'>Arna Softech Private Limited</a>"
+        }
+      }
+    }
+  },
+  "privacy": {
+    "heading": "Déclaration de confidentialité",
+    "sections": {
+      "first": {
+        "heading": "Autorité responsable",
+        "paragraphs": {
+          "first": "L'autorité responsable au sens de la législation sur la protection des données, en particulier le règlement de base de l'UE sur la protection des données (RGPD), est:<address class='address'>Lukas Kocherhans<br>3084 Wabern</address><a class='link' href='mailto:help@agricontrol.app'>help@agricontrol.app</a> – <a class='link' href='//agricontrol.app'>agricontrol.app</a>"
+        }
+      },
+      "second": {
+        "heading": "Informations générales",
+        "paragraphs": {
+          "first": "En vertu de l'article 13 de la Constitution fédérale et des dispositions de la Confédération relatives à la protection des données (loi sur la protection des données, LPD), toute personne a droit à la protection de sa vie privée et à la protection contre l'utilisation abusive de ses données personnelles. Les opérateurs de ce site prennent très au sérieux la protection de vos données personnelles. Nous traitons vos données personnelles de manière confidentielle et conformément aux dispositions légales de protection des données et à la présente déclaration de protection des données.",
+          "second": "En collaboration avec nos hébergeurs, nous nous engageons à protéger au mieux les bases de données contre tout accès non autorisé, perte, abus ou falsification.",
+          "third": "Nous vous informons que la transmission de données sur Internet (p. ex. la communication par e-mail) peut présenter des failles de sécurité. Une protection complète des données contre l'accès par des tiers n'est pas possible.",
+          "fourth": "En utilisant ce site Web, vous consentez à la collecte, au traitement et à l'utilisation des données conformément à la description suivante. Ce site peut être visité sans inscription. Les données telles que les pages consultées ou les noms des fichiers consultés, la date et l'heure sont stockées sur le serveur à des buts statistiques sans que ces données ne soient directement liées à votre personne. Les données personnelles, en particulier le nom, l'adresse ou l'adresse e-mail sont collectées dans la mesure du possible sur une base volontaire. Les données ne seront pas transmises à des tiers sans votre consentement."
+        }
+      },
+      "third": {
+        "heading": "Déclaration de confidentialité pour les cookies",
+        "paragraphs": {
+          "first": "Ce site Web utilise des cookies. Il s'agit de petits fichiers texte qui permettent de stocker des informations spécifiques relatives à l'utilisateur sur le terminal de l'utilisateur pendant qu'il utilise le site Web. Les cookies permettent notamment de déterminer la fréquence d'utilisation et le nombre d'utilisateurs des pages, d'analyser leur utilisation, mais aussi de rendre notre offre plus adaptée au client. Les cookies restent stockés après la fin d'une session de navigation et peuvent être rappelés lorsqu'une nouvelle page est visitée. Si vous ne le souhaitez pas, vous devez configurer votre navigateur Internet pour qu'il refuse d'accepter les cookies.",
+          "second": "Une objection générale à l'utilisation des cookies à des buts de marketing en ligne peut être faite pour un grand nombre de services, en particulier dans le cas du tracking, via le site américain <a class='link' href='https://aboutads.info/choices/' target='_blank'>YourAdChoices</a> ou le site européen <a class='link' href='https://youronlinechoices.com/' target='_blank'>Your Online Choices</a>. En outre, il est possible d'enregistrer les cookies en les désactivant dans les paramètres du navigateur. Veuillez noter que dans ce cas, toutes les fonctions de cette offre en ligne ne peuvent pas être utilisées."
+
+        }
+      },
+      "fourth": {
+        "heading": "Politique de confidentialité pour le cryptage SSL",
+        "paragraphs": {
+          "first": "Ce site Web utilise le cryptage SSL pour des raisons de sécurité et pour protéger la transmission de contenu confidentiel, comme les demandes que vous nous envoyez en tant qu'exploitant du site. Vous reconnaissez une connexion cryptée au fait que la ligne d'adresse du navigateur passe de «http://» à «https://» et au symbole du cadenas sur la ligne de votre navigateur.",
+          "second": "Si le cryptage SSL est activé, les données que vous nous transmettez ne peuvent pas être lues par des tiers."
+        }
+      },
+      "fifth": {
+        "heading": "Règles de confidentialité pour Google Analytics",
+        "paragraphs": {
+          "first": "Ce site Web utilise Google Analytics, un service d'analyse Web fourni par: <address class='address'>Google Inc.<br>1600 Amphitheatre Parkway<br>Mountain View, CA 94043<br>USA</address> Pour désactiver Google Analytics, Google fournit un plug-in de navigateur sur <a class='link' href='https://tools.google.com/dlpage/gaoptout' target='_blank'>tools.google.com/dlpage/gaoptout</a>.",
+          "second": "Google Analytics utilise des cookies. Il s'agit de petits fichiers texte qui permettent de stocker des informations spécifiques relatives à l'utilisateur sur le terminal de l'utilisateur. Ceux-ci permettent à Google d'analyser l'utilisation de notre offre Internet. Les informations collectées par les cookies concernant l'utilisation de nos pages (y compris votre adresse IP) sont généralement transmises à un serveur Google aux Etats-Unis et y sont stockées. Nous attirons votre attention sur le fait que Google Analytics a été complété par le code «gat._anonymizeIp();» sur ce site web afin de garantir un enregistrement anonyme des adresses IP (appelé masquage IP).",
+          "third": "Si l'anonymisation est active, Google abrége les adresses IP dans les États membres de l'Union européenne ou dans d'autres États signataires de l'Accord sur l'Espace économique européen, ce qui signifie qu'aucune conclusion ne peut être tirée sur votre identité. Ce n'est que dans des cas exceptionnels que l'adresse IP complète est transmise à un serveur Google aux États-Unis et raccourcie à cet endroit. Google se conforme aux dispositions relatives à la protection de la vie privée de l'accord sur la protection de la vie privée et est enregistré auprès du programme de protection de la vie privée du ministère du commerce et utilise les informations qu'il collecte pour évaluer et signaler l'utilisation de nos sites Web et pour nous fournir d'autres services connexes. Pour en savoir plus, rendez-vous sur <a class='link' href='https://support.google.com/analytics/answer/6004245' target='_blank'>support.google.com/analytics/answer/6004245</a>."
+        }
+      },
+      "sixth": {
+        "heading": "Règles de confidentialité pour l'utilisation des caractères Google Web Fonts",
+        "paragraphs": {
+          "first": "Ce site Web utilise les polices Web fournies par Google pour l'affichage uniforme des polices. Lorsque vous accédez à une page, votre navigateur charge les polices Web requises dans le cache de votre navigateur afin d'afficher correctement les textes et les polices. Si votre navigateur ne supporte pas les polices Web, une police standard sera utilisée par votre ordinateur.",
+          "second": "Pour plus d'informations sur Google Web Fonts, consultez le site <a class='link' href='https://developers.google.com/fonts/faq' target='_blank'>developers.google.com/fonts/faq</a> et les règles de confidentialité de Google: <a class='link' href='https://policies.google.com/privacy' target='_blank'>policies.google.com/privacy</a>."
+        }
+      },
+      "seventh": {
+        "heading": "Modifications",
+        "paragraphs": {
+          "first": "Nous pouvons modifier cette déclaration de confidentialité à tout moment et sans préavis. La version actuellement publiée sur notre site Web est applicable. Si la déclaration de protection des données fait partie d'un accord avec vous, nous vous informerons de la modification par e-mail ou par tout autre moyen approprié en cas de mise à jour."
+        }
+      },
+      "eigth": {
+        "heading": "Questions au délégué à la protection des données",
+        "paragraphs": {
+          "first": "Si vous avez des questions concernant la protection des données, veuillez nous envoyer un e-mail ou contacter la personne responsable de la protection des données dans notre organisation mentionnée au début de la déclaration de protection des données.",
+          "second": "Wabern, 08.04.2019<br>Quelle: <a class='link' href='https://www.swissanwalt.ch/' target='_blank'>Générateur de protection de données de SwissAnwalt</a>"
+        }
+      }
+    }
+  },
+  "about": {
+    "heading": "Qui sommes-nous?",
+    "paragraphs": {
+      "first": "Agricontrol est né de la nécessité d'offrir aux agriculteurs suisses un moyen moderne de gestion des champs, indépendamment de l'emplacement et de l'équipement.",
+      "second": "Grâce au soutien et à l'expérience d'Informatio S.A.R.L., nous avons pu poursuivre cette idée et développer un concept avec tout notre cœur et toute notre âme. Le résultat est un produit qui répond aux besoins actuels des clients et qui est bien positionné pour l'avenir.",
+      "third": "Les champs, les cultures et les activités peuvent être enregistrés et traités de manière flexible sur l'ordinateur et sur le smartphone dans un minimum de temps. La paperasserie ennuyeuse devient superflue et à la fin un rapport complet peut être créé et imprimé en quelques clics.",
+      "fourth": "Nous – Robin Löffel, Lukas Kocherhans, Matthias Jakob et Holger Jakob – vous souhaitons beaucoup de plaisir avec notre produit!"
+    }
+  },
+  "cookies": {
+    "text": "Nous utilisons des cookies. Vous pouvez voir exactement ce que cela signifie dans notre <a class='link' href='datenschutz.html' target='_blank'>déclaration de protection des données</a>.",
+    "button": "Accepter"
+  }
 }

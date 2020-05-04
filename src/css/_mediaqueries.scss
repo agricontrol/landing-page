@@ -1,29 +1,25 @@
 @mixin mq-to-phone {
-    @media (max-width: $breakpoint-phone - 1) {
-        @content;
-    }
+  @media (max-width: $breakpoint-phone - 1) {
+    @content;
+  }
 }
-
 @mixin mq-to-tablet {
-    @media (max-width: $breakpoint-tablet - 1) {
-        @content;
-    }
+  @media (max-width: $breakpoint-tablet - 1) {
+    @content;
+  }
 }
-
 @mixin mq-phone-to-tablet {
-    @media (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet - 1) {
-        @content;
-    }
+  @media (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet - 1) {
+    @content;
+  }
 }
-
 @mixin mq-tablet-to-desktop {
-    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1) {
-        @content;
-    }
+  @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1) {
+    @content;
+  }
 }
-
 @mixin mq-from-tablet {
-    @media (min-width: $breakpoint-tablet) {
-        @content;
-    }
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
 }

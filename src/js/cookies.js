@@ -3,29 +3,29 @@ const banner = document.querySelector('.cookie-banner');
 const button = banner.querySelector('.button');
 
 const deleteBanner = () => {
-    banner.parentNode.removeChild(banner);
+  banner.remove();
 };
 
 const fadeOutBanner = event => {
-    event.preventDefault();
+  event.preventDefault();
 
-    banner.classList.add('cookie-banner--invisible');
-    banner.addEventListener('transitionend', () => {
-        deleteBanner();
-    });
+  banner.classList.add('cookie-banner--invisible');
+  banner.addEventListener('transitionend', () => {
+    deleteBanner();
+  });
 
-    localStorage.setItem('acceptsCookies', 'true');
+  localStorage.setItem('acceptsCookies', 'true');
 };
 
 const fadeInBanner = () => {
-    setTimeout(() => {
-        banner.classList.remove('cookie-banner--invisible');
-    }, 500);
+  setTimeout(() => {
+    banner.classList.remove('cookie-banner--invisible');
+  }, 500);
 };
 
 if (acceptsCookies) {
-    deleteBanner();
+  deleteBanner();
 } else {
-    button.addEventListener('click', fadeOutBanner);
-    fadeInBanner();
+  button.addEventListener('click', fadeOutBanner);
+  fadeInBanner();
 }

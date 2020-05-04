@@ -1,623 +1,616 @@
 html {
-    font-family: 'Source Sans Pro', system-ui, sans-serif;
-    font-size: 20px;
-    color: $color-grey;
-    line-height: $line-height-text;
+  font-family: 'Source Sans Pro', system-ui, sans-serif;
+  font-size: 20px;
+  color: $color-grey;
+  line-height: $line-height-text;
 
-    @include mq-to-tablet {
-        font-size: 18px;
-    }
+  @include mq-to-tablet {
+    font-size: 18px;
+  }
 }
 
 .title {
-    line-height: $line-height-heading;
-    margin-bottom: 0.6em;
+  line-height: $line-height-heading;
+  margin-bottom: 0.6em;
 
-    &--section {
-        display: block;
-        font-weight: 600;
-        margin-bottom: 1em;
-    }
+  &--section {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
 
-    &--full-width {
-        display: flex;
-        flex-basis: 100%;
-        justify-content: center;
-        margin: 0 10vw $space;
-    }
+  &--full-width {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 0 10vw $space;
+  }
 }
 
 .paragraph {
+  &:not(:last-child) {
+    margin-bottom: 0.8em;
+  }
+
+  &--footer {
+    text-align: center;
+    font-size: 85%;
+
     &:not(:last-child) {
-        margin-bottom: 0.8em;
+      margin-bottom: 0.6em;
     }
+  }
 
-    &--footer {
-        text-align: center;
-        font-size: 85%;
+  &--card-header {
+    border-bottom: 1px solid $color-lighter-black;
+    padding: $space-half $space;
+    font-weight: 400;
 
-        &:not(:last-child) {
-            margin-bottom: 0.6em;
-        }
+    @include mq-to-tablet {
+      text-align: center;
     }
+  }
 
-    &--card-header {
-        border-bottom: 1px solid $color-lighter-black;
-        padding: $space-half $space;
-        font-weight: 400;
+  &--card-price {
+    padding: $space-half $space 0;
+    font-size: 250%;
+  }
 
-        @include mq-to-tablet {
-            text-align: center;
-        }
-    }
-
-    &--card-price {
-        padding: $space-half $space 0;
-        font-size: 250%;
-    }
-
-    &--card-copy {
-        opacity: 0.5;
-        padding: 0 $space $space-half $space;
-    }
+  &--card-copy {
+    opacity: 0.5;
+    padding: 0 $space $space-half;
+  }
 }
 
 .button {
-    @include after-shadow;
-    padding: $space-fourth $space-half;
-    background-color: $color-light-maastricht-blue;
-    color: inherit;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: inline-block;
-    text-shadow: none;
+  @include after-shadow;
+  padding: $space-fourth $space-half;
+  background-color: $color-light-maastricht-blue;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  text-shadow: none;
 
-    &--section {
-        color: $color-white;
-        box-shadow: none;
+  &--section {
+    color: $color-white;
+    box-shadow: none;
+  }
+
+  &--primary {
+    color: $color-white;
+    background-color: $color-mantis;
+  }
+
+  &--ghost {
+    background-color: transparentize($color-mantis, 0.4);
+    box-shadow: none;
+    transition: background-color $transition-length $transition-easing;
+
+    &:hover {
+      background-color: $color-mantis;
     }
-
-    &--primary {
-        color: $color-white;
-        background-color: $color-mantis;
-    }
-
-    &--ghost {
-        background-color: transparentize($color-mantis, 0.4);
-        box-shadow: none;
-        transition: background-color $transition-length $transition-easing;
-
-        &:hover {
-            background-color: $color-mantis;
-        }
-    }
+  }
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  font-weight: 600;
+  color: $color-white;
+  text-shadow: $shadow;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30vh;
     width: 100%;
-    height: 110vh;
-    font-weight: 600;
-    color: $color-white;
-    text-shadow: $shadow;
+    background: linear-gradient(to bottom, transparent, $color-white);
+  }
+
+  &--compact {
+    height: $space-double;
+    margin-bottom: 0;
+
+    @include mq-to-tablet {
+      height: $space-two-and-a-half;
+    }
 
     &::after {
+      content: none;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__link {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    padding: $space 60px;
+    transition: padding $transition-length $transition-length;
+
+    @include mq-tablet-to-desktop {
+      padding: 45px;
+    }
+
+    @include mq-to-tablet {
+      flex: 1;
+      padding: 30px;
+      margin-right: 0;
+    }
+
+    @include mq-to-phone {
+      flex-basis: 100%;
+      border-bottom: 1px solid $color-lighter-black;
+    }
+
+    @include mq-from-tablet {
+      &::after {
         content: '';
         position: absolute;
-        left: 0;
+        bottom: 10%;
+        left: 10%;
+        width: 80%;
+        height: 3px;
+        background-color: $color-white;
+        box-shadow: $shadow;
+        transition: transform $transition-length $transition-easing;
+        transform-origin: bottom;
+        transform: scaleY(0);
+      }
+
+      &--logo::after {
+        content: none;
+      }
+    }
+
+    .header__navigation--white & {
+      padding: 40px;
+
+      &::after {
+        background-color: $color-grey;
+        box-shadow: none;
         bottom: 0;
-        height: 30vh;
-        width: 100%;
-        background: linear-gradient(to bottom, transparent, $color-white);
+      }
     }
 
-    &--compact {
-        height: $space-double;
-        margin-bottom: 0;
+    &--logo {
+      display: flex;
+      align-items: center;
+      margin-right: $space-triple;
 
-        @include mq-to-tablet {
-            height: $space-two-and-a-half;
-        }
+      @include mq-tablet-to-desktop {
+        margin-right: $space-double;
+      }
 
-        &::after {
-            content: none;
-        }
+      @include mq-to-tablet {
+        margin-right: 0;
+      }
     }
 
-    &__image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        object-position: top;
-        width: 100%;
-        height: 100%;
-    }
+    &--mobile-nav {
+      display: none;
 
-    &__link {
-        position: relative;
-        color: inherit;
-        text-decoration: none;
-        padding: $space 60px;
-        transition: padding $transition-length $transition-length;
-
-        @include mq-tablet-to-desktop {
-            padding: 45px;
-        }
-
-        @include mq-to-tablet {
-            flex: 1;
-            padding: 30px;
-            margin-right: 0;
-        }
-
-        @include mq-to-phone {
-            flex-basis: 100%;
-            border-bottom: 1px solid $color-lighter-black;
-        }
-
-        @include mq-from-tablet {
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: 10%;
-                left: 10%;
-                width: 80%;
-                height: 3px;
-                background-color: $color-white;
-                box-shadow: $shadow;
-                transition: transform $transition-length $transition-easing;
-                transform-origin: bottom;
-                transform: scaleY(0);
-            }
-
-            &--logo::after {
-                content: none;
-            }
-        }
-
-        .header__navigation--white & {
-            padding: 40px;
-
-            &::after {
-                background-color: $color-grey;
-                box-shadow: none;
-                bottom: 0;
-            }
-        }
-
-        &--logo {
-            display: flex;
-            align-items: center;
-            margin-right: $space-triple;
-
-            @include mq-tablet-to-desktop {
-                margin-right: $space-double;
-            }
-
-            @include mq-to-tablet {
-                margin-right: 0;
-            }
-        }
-
-        &--mobile-nav {
-            display: none;
-
-            @include mq-to-tablet {
-                display: flex;
-            }
-        }
-
-        &:hover {
-            &::after {
-                transform: scaleY(1);
-            }
-        }
-    }
-
-    &__navigation {
-        position: fixed;
-        z-index: 9;
-        top: 0;
-        left: 0;
-        width: 100%;
+      @include mq-to-tablet {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-color $transition-length $transition-easing,
-            color $transition-length $transition-easing,
-            box-shadow $transition-length $transition-easing,
-            text-shadow $transition-length $transition-easing;
-
-        @include mq-to-tablet {
-            flex-wrap: wrap;
-            transition: background-color $transition-length $transition-easing,
-                        color $transition-length $transition-easing,
-                        box-shadow $transition-length $transition-easing,
-                        text-shadow $transition-length $transition-easing,
-                        transform $transition-length $transition-easing;
-        }
-
-        @include mq-phone-to-tablet {
-            transform: translateY(-50%);
-        }
-
-        @include mq-to-phone {
-            transform: translateY(-80%);
-        }
-
-        &--white,
-        &--translated {
-            background-color: $color-navigation-white;
-            color: $color-grey;
-            text-shadow: none;
-            box-shadow: $shadow;
-        }
-
-        &--translated {
-            transform: translateY(0);
-        }
-
-        &--white .header__link {
-            @include mq-tablet-to-desktop {
-                padding: 35px;
-            }
-
-            @include mq-to-tablet {
-                padding: 30px;
-            }
-        }
+      }
     }
 
-    &__logo {
-        width: 24px;
-        height: 24px;
-        margin-right: 10px;
+    &:hover {
+      &::after {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  &__navigation {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color $transition-length $transition-easing, color $transition-length $transition-easing, box-shadow $transition-length $transition-easing, text-shadow $transition-length $transition-easing;
+
+    @include mq-to-tablet {
+      flex-wrap: wrap;
+      transition: background-color $transition-length $transition-easing, color $transition-length $transition-easing, box-shadow $transition-length $transition-easing, text-shadow $transition-length $transition-easing, transform $transition-length $transition-easing;
     }
 
-    &__text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80vw;
-        max-width: 600px;
-        z-index: 1;
-
-        .button {
-            margin: $space-eigth;
-        }
+    @include mq-phone-to-tablet {
+      transform: translateY(-50%);
     }
 
-    &__row-wrapper {
-        justify-content: space-between;
-
-        @include mq-to-tablet {
-            display: flex;
-            align-items: center;
-            flex: 1 0 100%;
-            order: 1;
-        }
-
-        .header__link {
-            flex: initial;
-            border: 0;
-        }
+    @include mq-to-phone {
+      transform: translateY(-80%);
     }
 
-    &--small {
-        height: 80vh;
-
-        &::after {
-            content: none;
-        }
+    &--translated,
+    &--white {
+      background-color: $color-navigation-white;
+      color: $color-grey;
+      text-shadow: none;
+      box-shadow: $shadow;
     }
+
+    &--translated {
+      transform: translateY(0);
+    }
+
+    &--white .header__link {
+      @include mq-tablet-to-desktop {
+        padding: 35px;
+      }
+
+      @include mq-to-tablet {
+        padding: 30px;
+      }
+    }
+  }
+
+  &__logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-width: 600px;
+    z-index: 1;
+
+    .button {
+      margin: $space-eigth;
+    }
+  }
+
+  &__row-wrapper {
+    justify-content: space-between;
+
+    @include mq-to-tablet {
+      display: flex;
+      align-items: center;
+      flex: 1 0 100%;
+      order: 1;
+    }
+
+    .header__link {
+      flex: initial;
+      border: 0;
+    }
+  }
+
+  &--small {
+    height: 80vh;
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: $space-double 5vw 0;
-    position: relative;
-    max-width: 1440px;
-    min-height: 1px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $space-double 5vw 0;
+  position: relative;
+  max-width: 1440px;
+  min-height: 1px;
+  width: 100%;
 
-    @include mq-to-tablet {
-        flex-direction: column;
-        padding: 0 0 $space-one-and-a-half;
+  @include mq-to-tablet {
+    flex-direction: column;
+    padding: 0 0 $space-one-and-a-half;
 
-        &--has-overlay {
-            &::before {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        &:first-child {
-            padding-top: $space-one-and-a-half;
-        }
-
-        &__child {
-            &:first-child:not(&--card) {
-                margin-right: 0;
-            }
-
-            &:last-child:not(&--card) {
-                margin-left: 0;
-            }
-
-            &:not(&--image):not(&--card) {
-                margin: 0 10vw;
-            }
-
-            &--image {
-                order: -1;
-                margin-bottom: $space;
-            }
-        }
+    &--has-overlay {
+      &::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     &:last-child {
-        margin-bottom: $space-double;
+      margin-bottom: 0;
     }
 
-    &:only-child {
-        padding: $space-double 0;
-    }
-
-    &--centered {
-        flex-wrap: wrap;
-    }
-
-    &--has-overlay {
-        &::before {
-            content: '';
-            top: $space-double;
-            left: $space-double;
-            width: calc(100% - #{2 * $space-double});
-            height: calc(100% - #{2 * $space-double});
-            position: absolute;
-            background-color: $color-black;
-            opacity: 0.25;
-        }
-    }
-
-    &--text-only {
-        display: block;
-        width: 75vw;
-        max-width: 700px;
-        padding: 100px 0;
+    &:first-child {
+      padding-top: $space-one-and-a-half;
     }
 
     &__child {
-        flex: 1;
+      &:first-child:not(&--card) {
+        margin-right: 0;
+      }
 
-        &--card {
-            @include after-shadow;
-            margin: 0;
-            flex: 0 0 75%;
-            min-width: 300px;
-            max-width: 700px;
-            padding: 0;
-            border: 1px solid $color-light-black;
-            border-radius: 10px;
+      &:last-child:not(&--card) {
+        margin-left: 0;
+      }
 
-            @include mq-to-tablet {
-                margin: 0 5vw;
-            }
+      &:not(&--image):not(&--card) {
+        margin: 0 10vw;
+      }
 
-            .paragraph {
-                display: flex;
-                align-content: center;
-                align-items: center;
-                justify-content: center;
-                margin: 0;
-            }
-        }
-
-        &--image {
-                &:first-child {
-                    margin-right: $space;
-                }
-
-                &:last-child {
-                    margin-left: $space;
-                }
-        }
+      &--image {
+        order: -1;
+        margin-bottom: $space;
+      }
     }
+  }
 
-    &__image {
-        width: 100%;
-        border-radius: 10px;
+  &:last-child {
+    margin-bottom: $space-double;
+  }
 
-        @include mq-to-tablet {
-            border-radius: initial;
-        }
+  &:only-child {
+    padding: $space-double 0;
+  }
+
+  &--centered {
+    flex-wrap: wrap;
+  }
+
+  &--has-overlay {
+    &::before {
+      content: '';
+      top: $space-double;
+      left: $space-double;
+      width: calc(100% - #{2 * $space-double});
+      height: calc(100% - #{2 * $space-double});
+      position: absolute;
+      background-color: $color-black;
+      opacity: 0.25;
     }
+  }
 
-    &__overlay-link {
-        position: absolute;
-        text-decoration: none;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  &--text-only {
+    display: block;
+    width: 75vw;
+    max-width: 700px;
+    padding: 100px 0;
+  }
 
-    &__overlay-title {
-        color: $color-white;
-        z-index: 1;
-    }
-}
+  &__child {
+    flex: 1;
 
-.footer {
-    padding: 0 $space $space;
-}
+    &--card {
+      @include after-shadow;
+      margin: 0;
+      flex: 0 0 75%;
+      min-width: 300px;
+      max-width: 700px;
+      padding: 0;
+      border: 1px solid $color-light-black;
+      border-radius: 10px;
 
-.link {
-    color: inherit;
+      @include mq-to-tablet {
+        margin: 0 5vw;
+      }
 
-    &--card-footer {
-        position: relative;
+      .paragraph {
         display: flex;
         align-content: center;
         align-items: center;
         justify-content: center;
-        padding: $space-half;
-        overflow: hidden;
-        text-decoration: none;
-        background-color: $color-lightest-black;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-
-        &::after {
-            content: '';
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $color-light-charlotte;
-            border-top: 1px solid $color-charlotte;
-            transition: transform $transition-length $transition-easing;
-            transform-origin: right;
-            transform: scaleX(0);
-        }
-
-        &:hover {
-            &::after {
-                transform-origin: left;
-                transform: scaleX(1);
-            }
-        }
-    }
-}
-
-.periodicity {
-    font-size: 40%;
-    margin-left: 10px;
-    opacity: 0.5;
-}
-
-.price-list {
-    padding: $space-half $space-double $space;
-
-    @include mq-to-tablet {
-        padding: $space-half 10vw $space;
+        margin: 0;
+      }
     }
 
-    &__item {
-        display: flex;
-        align-items: center;
+    &--image {
+      &:first-child {
+        margin-right: $space;
+      }
 
-        &:not(:last-child) {
-            margin-bottom: $space-fourth;
-        }
+      &:last-child {
+        margin-left: $space;
+      }
     }
-}
+  }
 
-.feather {
-    width: $space-half;
-    height: $space-half;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-
-    &--before-text {
-        margin-right: $space-fourth;
-    }
-
-    &--after-text {
-        margin-left: $space-fourth;
-    }
-
-    &--shadow {
-        filter: drop-shadow($shadow);
-        transition: filter $transition-length $transition-easing;
-
-        .header__navigation--white & {
-            filter: drop-shadow(0 2px 5px transparent);
-        }
-    }
-}
-
-.address {
-    font-style: normal;
-    margin: $space-eigth 0;
-}
-
-.image-article {
-    @include after-shadow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+  &__image {
+    width: 100%;
     border-radius: 10px;
 
     @include mq-to-tablet {
-        width: 90%;
-        margin-bottom: 0;
+      border-radius: initial;
+    }
+  }
+
+  &__overlay-link {
+    position: absolute;
+    text-decoration: none;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__overlay-title {
+    color: $color-white;
+    z-index: 1;
+  }
+}
+
+.footer {
+  padding: 0 $space $space;
+}
+
+.link {
+  color: inherit;
+
+  &--card-footer {
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: $space-half;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: $color-lightest-black;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-light-charlotte;
+      border-top: 1px solid $color-charlotte;
+      transition: transform $transition-length $transition-easing;
+      transform-origin: right;
+      transform: scaleX(0);
     }
 
-    &--picture {
-        width: 100%;
-        border-radius: inherit;
+    &:hover {
+      &::after {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.periodicity {
+  font-size: 40%;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+.price-list {
+  padding: $space-half $space-double $space;
+
+  @include mq-to-tablet {
+    padding: $space-half 10vw $space;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: $space-fourth;
+    }
+  }
+}
+
+.feather {
+  width: $space-half;
+  height: $space-half;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+
+  &--before-text {
+    margin-right: $space-fourth;
+  }
+
+  &--after-text {
+    margin-left: $space-fourth;
+  }
+
+  &--shadow {
+    filter: drop-shadow($shadow);
+    transition: filter $transition-length $transition-easing;
+
+    .header__navigation--white & {
+      filter: drop-shadow(0 2px 5px transparent);
+    }
+  }
+}
+
+.address {
+  font-style: normal;
+  margin: $space-eigth 0;
+}
+
+.image-article {
+  @include after-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border-radius: 10px;
+
+  @include mq-to-tablet {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  &--picture {
+    width: 100%;
+    border-radius: inherit;
+  }
+
+  &--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background-color: transparentize($color-light-grey, 0.2);
+      backdrop-filter: blur(5px);
+      transition: opacity $transition-length $transition-easing;
     }
 
-    &--link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: inherit;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: inherit;
-            background-color: transparentize($color-light-grey, 0.2);
-            backdrop-filter: blur(5px);
-            transition: opacity $transition-length $transition-easing;
-        }
-
-        &:hover {
-            &::after {
-                opacity: 0;
-            }
-        }
+    &:hover {
+      &::after {
+        opacity: 0;
+      }
     }
+  }
 }
 
 .picture {
-    border-radius: inherit;
-    font-size: 0;
+  border-radius: inherit;
+  font-size: 0;
 }

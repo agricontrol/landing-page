@@ -14,7 +14,7 @@ const cssnano = require('cssnano');
 const cssEnv = require('postcss-preset-env');
 const reporter = require('postcss-reporter');
 const { rollup } = require('rollup');
-const babel = require('rollup-plugin-babel');
+const buble = require('@rollup/plugin-buble');
 const resolve = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const { terser } = require('rollup-plugin-terser');
@@ -28,119 +28,125 @@ gulp.task('open:browser', () => open('http://localhost:8080'));
 gulp.task('open:dist', () => open('dist'));
 
 gulp.task('serve', done => {
-    connect.server({
-        port: 8080,
-        livereload: true,
-        root: 'dist'
-    });
-    done();
+  connect.server({
+    port: 8080,
+    livereload: true,
+    root: 'dist'
+  });
+  done();
 });
 
-gulp.task('css', () => {
-    return gulp.src('src/css/*', { sourcemaps: development })
-        .pipe(plumber())
-        .pipe(postcss([
-            stylelint(),
-            reporter({ clearReportedMessages: true })
-        ]))
-        .pipe(sass.sync())
-        .pipe(postcss([
-            cssEnv(),
-            !development && autoprefixer(),
-            !development && cssnano()
-        ].filter(p => p)))
-        .pipe(gulp.dest('dist/css', { sourcemaps: '.' }))
-        .pipe(connect.reload());
-});
+gulp.task('css', () => gulp.src('src/css/*', {
+    sourcemaps: development
+  })
+  .pipe(plumber())
+  .pipe(postcss([
+    stylelint(),
+    reporter({
+      clearReportedMessages: true
+    })
+  ]))
+  .pipe(sass.sync())
+  .pipe(postcss([
+    cssEnv(),
+    !development && autoprefixer(),
+    !development && cssnano()
+  ].filter(p => p)))
+  .pipe(gulp.dest('dist/css', {
+    sourcemaps: '.'
+  }))
+  .pipe(connect.reload()));
 
 gulp.task('js', async () => {
-    const bundle = await rollup({
-        input: 'src/js/main.js',
-        plugins: [
-            eslint(),
-            resolve(),
-            commonjs(),
-            !development && babel(),
-            !development && terser({
-                output: { comments: false }
-            })
-        ].filter(p => p)
-    });
+  const bundle = await rollup({
+    input: 'src/js/main.js',
+    plugins: [
+      eslint(),
+      resolve(),
+      commonjs(),
+      !development && buble(),
+      !development && terser({
+        output: {
+          comments: false
+        }
+      })
+    ].filter(p => p)
+  });
 
-    await bundle.write({
-        sourcemap: development,
-        file: 'dist/js/bundle.js',
-        format: 'iife'
-    });
+  await bundle.write({
+    sourcemap: development,
+    file: 'dist/js/bundle.js',
+    format: 'iife'
+  });
 });
 
-gulp.task('img:minimize', () => {
-    return gulp.src([
-            'src/img/favicon.png',
-            'src/img/logo.svg',
-            'src/img/open-graph.jpg',
-            'node_modules/feather-icons/dist/feather-sprite.svg'
-        ])
-        .pipe(plumber())
-        .pipe(imagemin({ verbose: true }))
-        .pipe(gulp.dest('dist/img'))
-        .pipe(connect.reload());
-});
+gulp.task('img:minimize', () => gulp.src([
+    'src/img/favicon.png',
+    'src/img/logo.svg',
+    'src/img/open-graph.jpg',
+    'node_modules/feather-icons/dist/feather-sprite.svg'
+  ])
+  .pipe(plumber())
+  .pipe(imagemin({
+    verbose: development
+  }))
+  .pipe(gulp.dest('dist/img'))
+  .pipe(connect.reload()));
 
-gulp.task('img:optimize', () => {
-    return gulp.src([
-        'src/img/about.jpg',
-        'src/img/funktionsweise.jpg',
-        'src/img/header.jpg',
-        'src/img/vorteil.jpg'
-    ])
-    .pipe(plumber())
-    .pipe(rezzy([{
-        width: 1920,
-        height: 1440,
-        suffix: '-1920w'
-    }, {
-        width: 1280,
-        height: 960,
-        suffix: '-1280w'
-    }, {
-        width: 640,
-        height: 480,
-        suffix: '-640w'
-    }]))
-    .pipe(imagemin({ verbose: development }))
-    .pipe(gulp.dest('dist/img'))
-    .pipe(webp())
-    .pipe(gulp.dest('dist/img'))
-    .pipe(connect.reload());
-});
+gulp.task('img:optimize', () => gulp.src([
+    'src/img/about.jpg',
+    'src/img/funktionsweise.jpg',
+    'src/img/header.jpg',
+    'src/img/vorteil.jpg'
+  ])
+  .pipe(plumber())
+  .pipe(rezzy([{
+    width: 1920,
+    height: 1440,
+    suffix: '-1920w'
+  }, {
+    width: 1280,
+    height: 960,
+    suffix: '-1280w'
+  }, {
+    width: 640,
+    height: 480,
+    suffix: '-640w'
+  }]))
+  .pipe(imagemin({
+    verbose: development
+  }))
+  .pipe(gulp.dest('dist/img'))
+  .pipe(webp())
+  .pipe(gulp.dest('dist/img'))
+  .pipe(connect.reload()));
 
-gulp.task('copy', () => {
-    return gulp.src([ 'src/{*,}.*', 'src/data/*' ], { base: 'src' })
-        .pipe(plumber())
-        .pipe(gulp.dest('dist'))
-        .pipe(connect.reload());
-});
+gulp.task('copy', () => gulp.src([ 'src/{*,}.*', 'src/data/*' ], {
+    base: 'src'
+  })
+  .pipe(plumber())
+  .pipe(gulp.dest('dist'))
+  .pipe(connect.reload()));
 
 
 gulp.task('watch:img', done => {
-    gulp.watch('src/img/*', gulp.parallel('img:minimize', 'img:optimize'));
-    done();
+  gulp.watch('src/img/*', gulp.parallel('img:minimize', 'img:optimize'));
+  done();
 });
 
 gulp.task('watch:js', done => {
-    gulp.watch('src/js/*', gulp.parallel('js'));
-    done();
+  gulp.watch('src/js/*', gulp.parallel('js'));
+  done();
 });
 
 gulp.task('watch:css', done => {
-    gulp.watch('src/css/*', gulp.parallel('css'));
-    done();
+  gulp.watch('src/css/*', gulp.parallel('css'));
+  done();
 });
 
 gulp.task('watch:root', done => {
-    gulp.watch([ 'src/{*,}.*', 'src/data/*' ], gulp.parallel('copy'));
-    done();
+  gulp.watch([ 'src/{*,}.*', 'src/data/*' ], gulp.parallel('copy'));
+  done();
 });
 
 

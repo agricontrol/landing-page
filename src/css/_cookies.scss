@@ -1,22 +1,22 @@
 .cookie-banner {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: $space-half;
-    background-color: $color-white;
-    box-shadow: $shadow-up;
-    transition: opacity $transition-length $transition-easing;
-    z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: $space-half;
+  background-color: $color-white;
+  box-shadow: $shadow-up;
+  transition: opacity $transition-length $transition-easing;
+  z-index: 1;
 
-    .button {
-        margin-left: $space-fourth;
-    }
+  .button {
+    margin-left: $space-fourth;
+  }
 
-    &--invisible {
-        opacity: 0;
-    }
+  &--invisible {
+    opacity: 0;
+  }
 }

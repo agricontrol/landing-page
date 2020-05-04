@@ -1,247 +1,247 @@
 {
-    "meta": {
-        "titles": {
-            "home": "Agricontrol – Ihr neuer Standard zur Feldverwaltung",
-            "about": "Agricontrol – Über uns",
-            "termsAndConditions": "Agricontrol – Nutzungsbedingungen",
-            "siteNotice": "Agricontrol – Impressum",
-            "privacy": "Agricontrol – Datenschutz"
-        },
-        "description": "Agricontrol hilft Ihnen, mit wenig Aufwand den Überblick zu behalten. Auf einfache Art und Weise verwalten Sie ihre Felder und können sich auf das Wichtige konzentrieren."
+  "meta": {
+    "titles": {
+      "home": "Agricontrol – Ihr neuer Standard zur Feldverwaltung",
+      "about": "Agricontrol – Über uns",
+      "termsAndConditions": "Agricontrol – Nutzungsbedingungen",
+      "siteNotice": "Agricontrol – Impressum",
+      "privacy": "Agricontrol – Datenschutz"
     },
-    "navigation": {
-        "logo": "Logo von Agricontrol",
-        "advantages": "Vorteile",
-        "offer": "Angebot",
-        "functionality": "Funktionen",
-        "about": "Über uns"
+    "description": "Agricontrol hilft Ihnen, mit wenig Aufwand den Überblick zu behalten. Auf einfache Art und Weise verwalten Sie ihre Felder und können sich auf das Wichtige konzentrieren."
+  },
+  "navigation": {
+    "logo": "Logo von Agricontrol",
+    "advantages": "Vorteile",
+    "offer": "Angebot",
+    "functionality": "Funktionen",
+    "about": "Über uns"
+  },
+  "header": {
+    "hero": "Ein Mann in einem John-Deere-Traktor",
+    "heading": "Ihr neuer Standard zur Feldverwaltung",
+    "paragraph": "Agricontrol hilft Ihnen, mit wenig Aufwand den Überblick zu behalten. Auf einfache Art und Weise verwalten Sie ihre Felder und können sich auf das Wichtige konzentrieren."
+  },
+  "sections": {
+    "advantages": {
+      "heading": "Ihr Vorteil",
+      "paragraph": "Mit Agricontrol verwalten Sie Ihre Felder und Tätigkeiten wo immer Sie gerade sind. Die Applikation ist auf Ihrem Smartphone verfügbar und Sie können neue Tätigkeiten direkt auf dem Traktor erfassen. Mühsame Papierarbeit wird Ihnen erspart und zum Schluss können Sie mit wenigen Klicks einen Export für Ihren Kontrolleur erstellen.",
+      "image": "Ein Mann in einem Massey-Fergusson-Traktor"
     },
-    "header": {
-        "hero": "Ein Mann in einem John-Deere-Traktor",
-        "heading": "Ihr neuer Standard zur Feldverwaltung",
-        "paragraph": "Agricontrol hilft Ihnen, mit wenig Aufwand den Überblick zu behalten. Auf einfache Art und Weise verwalten Sie ihre Felder und können sich auf das Wichtige konzentrieren."
+    "functionality": {
+      "heading": "Wie es funktioniert",
+      "paragraphs": {
+        "first": "Agricontrol ist eine Applikation, welche Ihnen die Feldverwaltung erleichtert. Sowohl auf dem Computer wie auch auf dem Smartphone erfassen und ändern Sie Felder, Kulturen und Tätigkeiten auf dem Feld innert kürzester Zeit.",
+        "second": "Mit einem Login bei Agricontrol erfassen Sie ihre Felder und können dann unkompliziert Ihre Kulturen erfassen. Agricontrol macht Sie darauf aufmerksam wenn eine neu erfasste Kultur die Regeln der Fruchtfolge nicht berücksichtigt und stellt Ihnen Ihre Felder und Kulturen übersichtlich dar. Sie haben eigene Listen, in welchen Sie Ihre Maschinen, Dünge- und Pflanzenschutzmittel, Bodenbearbeitungsmassnahmen und Krankheiten/Schädlinge erfassen können. Einmal erfasst stehen Ihnen diese zur Verfügung wenn Sie mit wenigen Klicks auf den jeweiligen Kulturen neue Tätigkeiten erfassen oder erfasste bearbeiten wollen."
+      },
+      "image": "Ein Mann auf einem Feld zeigt auf Heuballen"
     },
-    "sections": {
-        "advantages": {
-            "heading": "Ihr Vorteil",
-            "paragraph": "Mit Agricontrol verwalten Sie Ihre Felder und Tätigkeiten wo immer Sie gerade sind. Die Applikation ist auf Ihrem Smartphone verfügbar und Sie können neue Tätigkeiten direkt auf dem Traktor erfassen. Mühsame Papierarbeit wird Ihnen erspart und zum Schluss können Sie mit wenigen Klicks einen Export für Ihren Kontrolleur erstellen.",
-            "image": "Ein Mann in einem Massey-Fergusson-Traktor"
-        },
-        "functionality": {
-            "heading": "Wie es funktioniert",
-            "paragraphs": {
-                "first": "Agricontrol ist eine Applikation, welche Ihnen die Feldverwaltung erleichtert. Sowohl auf dem Computer wie auch auf dem Smartphone erfassen und ändern Sie Felder, Kulturen und Tätigkeiten auf dem Feld innert kürzester Zeit.",
-                "second": "Mit einem Login bei Agricontrol erfassen Sie ihre Felder und können dann unkompliziert Ihre Kulturen erfassen. Agricontrol macht Sie darauf aufmerksam wenn eine neu erfasste Kultur die Regeln der Fruchtfolge nicht berücksichtigt und stellt Ihnen Ihre Felder und Kulturen übersichtlich dar. Sie haben eigene Listen, in welchen Sie Ihre Maschinen, Dünge- und Pflanzenschutzmittel, Bodenbearbeitungsmassnahmen und Krankheiten/Schädlinge erfassen können. Einmal erfasst stehen Ihnen diese zur Verfügung wenn Sie mit wenigen Klicks auf den jeweiligen Kulturen neue Tätigkeiten erfassen oder erfasste bearbeiten wollen."
-            },
-            "image": "Ein Mann auf einem Feld zeigt auf Heuballen"
-        },
-        "offer": {
-            "heading": "Machen Sie das Meiste aus Ihrer Zeit",
-            "card": {
-                "header": "Gratis Probeperiode + Frühkundenrabatt",
-                "specialPrice": "399.–",
-                "periodicity": "pro Jahr",
-                "regularPrice": "nach Ablauf der Testphase, statt 499.—",
-                "sellingPoints": {
-                    "testPeriod": "Zwei Monate uneingeschränkte Testperiode",
-                    "paymentInfo": "Keine Zahlungsinformationen beim Anmelden",
-                    "hiddenFees": "Keinerlei versteckte Kosten oder Gebühren",
-                    "whereverYouAre": "Ihre Informationen einsehen, wo immer Sie sind",
-                    "moreTime": "Mehr Zeit für Sie und Ihr Leben",
-                    "usersIncluded": "Bis zu 3 Benutzer im Preis inbegriffen"
-                }
-            }
-        },
-        "about": {
-            "heading": "Über uns",
-            "image": "Teamwork ist unsere Stärke"
+    "offer": {
+      "heading": "Machen Sie das Meiste aus Ihrer Zeit",
+      "card": {
+        "header": "Gratis Probeperiode + Frühkundenrabatt",
+        "specialPrice": "399.–",
+        "periodicity": "pro Jahr",
+        "regularPrice": "nach Ablauf der Testphase, statt 499.—",
+        "sellingPoints": {
+          "testPeriod": "Zwei Monate uneingeschränkte Testperiode",
+          "paymentInfo": "Keine Zahlungsinformationen beim Anmelden",
+          "hiddenFees": "Keinerlei versteckte Kosten oder Gebühren",
+          "whereverYouAre": "Ihre Informationen einsehen, wo immer Sie sind",
+          "moreTime": "Mehr Zeit für Sie und Ihr Leben",
+          "usersIncluded": "Bis zu 3 Benutzer im Preis inbegriffen"
         }
-    },
-    "footer": {
-        "termsAndConditions": "Nutzungsbedingungen",
-        "faq": "Häufig gestellte Fragen",
-        "siteNotice": "Impressum",
-        "privacy": "Datenschutz",
-        "footNote": "Gemacht mit Liebe und einer Prise Sonnenschein"
-    },
-    "commons": {
-        "ctas": {
-            "explore": "Agricontrol entdecken",
-            "start": "Mit Agricontrol durchstarten",
-            "startNow": "Jetzt mit Agricontrol durchstarten",
-            "createAccount": "Jetzt kostenlos ausprobieren",
-            "logIn": "Einloggen"
-        },
-        "languages": {
-            "german": "Deutsch",
-            "french": "Französisch",
-            "italian": "Italienisch",
-            "english": "Englisch"
-        }
-    },
-    "termsAndConditions": {
-        "heading": "Allgemeine Geschäftsbedingungen (AGB) für «agricontrol.app» und «agricontrol.ch»",
-        "sections": {
-            "first": {
-                "heading": "1. Geltungsbereich",
-                "paragraphs": {
-                    "first": "«agricontrol.app» und «agricontrol.ch» ist eine Plattform und ein Angebot der Informatio GmbH und erbringt Dienstleistungen ausschliesslich zu den nachstehenden Bedingungen (AGB). Von den AGB abweichende Vereinbarungen bedürfen der Schriftform.",
-                    "second": "Als «Plattform» wird die Webseite und die mobile Applikation bezeichnet, die im Eigentum der Informatio GmbH ist. Die AGB bilden Bestandteil des Angebots von «agricontrol.app» und «agricontrol.ch» und mit dem Zugriff auf die Plattform und/oder der Nutzung der Dienste der Plattform bestätigt der Nutzer, die vorliegenden AGB gelesen und verstanden zu haben und diesen zuzustimmen."
-                }
-            },
-            "second": {
-                "heading": "2. Angebot und Preise",
-                "paragraphs": {
-                    "first": "Sämtliche Angebote auf «agricontrol.app» und «agricontrol.ch» sind unverbindlich. Informatio GmbH steht es frei, Angebot und Preise ohne Vorankündigung zu ändern. Es gelten die jeweils aktuellen Angebote und Preise zum Zeitpunkt der Registrierung. Der Umfang und die Funktionalitäten der Plattform kann jederzeit ändern, erweitert, eingeschränkt oder eingestellt werden. Preisänderungen, die nach der Registrierung erfolgen, gelten nur für neue Registrierungen. Die Preise sind in Schweizer Franken (CHF) und inkl. gesetzlicher Mehrwertsteuer angegeben."
-                }
-            },
-            "third": {
-                "heading": "3. Zahlungsbedingungen",
-                "paragraphs": {
-                    "first": "Der Rechnungsbetrag wird mit Zustellung der Rechnung fällig und ist innerhalb von 30 Tagen zu begleichen."
-                }
-            },
-            "fourth": {
-                "heading": "4. Registrierung",
-                "paragraphs": {
-                    "first": "Um das Angebot von «agricontrol.app» oder «agricontrol.ch» nutzen zu können, muss sich der Nutzer registrieren und ein Kundenkonto anlegen. Bei der Registrierung sind Name, Vorname, E-Mail-Adresse und eine Rechnungsadresse anzugeben. Diese Angaben können im Profil jederzeit eingesehen und angepasst werden und müssen wahr und vollständig sein.",
-                    "second": "Persönliche Zugangsdaten sind durch den Nutzer vertraulich zu behandeln und Dritten darf kein Zugang gewährt werden bzw. die Zugangsdaten dürfen nicht an Dritte weitergegeben werden. Sollten sich aus einer missbräuchlichen Verwendung oder unerlaubten Weitergabe von Zugangsdaten Schäden ergeben, kann die Informatio GmbH nicht haftbar gemacht werden. Ein Verstoss gegen diese AGB kann zum Verlust des Zugangs zu «agricontrol.app» und «agricontrol.ch» führen."
-                }
-            },
-            "fifth": {
-                "heading": "5. Haftung",
-                "paragraphs": {
-                    "first": "Die Haftung der Informatio GmbH ist ausgeschlossen für alle Schäden, inklusive entgangenem Umsatz oder Gewinn, Nutzungsausfall oder Kosten für den Erwerb von Ersatzdienstleistungen, die sich aus dem Gebrauch, durch Fehlleistung oder Leistungsausfall der Dienstleistungen von «agricontrol.app» oder «agricontrol.ch» ergeben. Der Nutzer ist in jedem Fall selber für die Sicherung seiner Daten verantwortlich. Für verlorene Daten wird jede Haftung abgelehnt.",
-                    "second": "Informatio GmbH ist nicht verantwortlich oder haftbar für jegliche falsche oder falsch geschriebene Angaben inkl. E-Mail-Adresse, falsche (Mobil-) Telefonnummer und hat keine Verpflichtung, diese zu überprüfen. Für die Richtigkeit und Aktualität der Kundendaten ist alleine der Nutzer verantwortlich.",
-                    "third": "Obwohl bei der Bereitstellung der Plattform sorgfältig und gewissenhaft vorgegangen wird, kann weder überprüft und garantiert werden, dass alle Informationen genau, richtig und vollständig sind, noch kann die Informatio GmbH für Fehler (einschliesslich offenkundiger Fehler oder Druckfehler), Unterbrechungen (durch einen zeitlich begrenzten und/oder einen teilweisen Ausfall, Aktualisierungs- oder Instandhaltungsarbeiten auf «agricontrol.app» oder «agricontrol.ch» oder einen anderen Grund), ungenaue, fehlleitende oder unwahre Informationen oder Nichtübermittlung der Informationen verantwortlich gemacht werden.",
-                    "fourth": "Informatio GmbH übernimmt für die Inhalte externer und verlinkter Webseiten keine Haftung. «agricontrol.app» und «agricontrol.ch» kann durch Wartungsarbeiten zeitweise nicht verfügbar sein. Es kann dabei zu Datenverlusten kommen. In diesem Zusammenhang trifft Informatio GmbH keinerlei Haftung."
-                }
-            },
-            "sixth": {
-                "heading": "6. Informationspflicht",
-                "paragraphs": {
-                    "first": "Die Parteien informieren rechtzeitig über Hindernisse, welche die vertragsmässige Erfüllung oder Bezahlung in Frage stellen oder zu unzweckmässigen Lösungen führen können."
-                }
-            },
-            "seventh": {
-                "heading": "7. Schlussbestimmungen",
-                "paragraphs": {
-                    "first": "Gerichtsstand ist der Sitz von Informatio GmbH. Anwendbar ist Schweizerisches Recht."
-                }
-            }
-        }
-    },
-    "siteNotice": {
-        "heading": "Impressum",
-        "sections": {
-            "first": {
-                "heading": "Kontaktadresse",
-                "paragraphs": {
-                    "first": "<address class='address'>Informatio GmbH<br>Parkterrasse 14<br>3012 Bern<br><a class='link' href='mailto:help@agricontrol.ch'>help@agricontrol.ch</a></address>"
-                }
-            },
-            "second": {
-                "heading": "Rechnungsadresse & Hauptsitz",
-                "paragraphs": {
-                    "first": "<address class='address'>Informatio GmbH<br>Brüelmattenweg 12<br>2577 Finsterhennen</address>"
-                }
-            },
-            "third": {
-                "heading": "Haftungsausschluss",
-                "paragraphs": {
-                    "first": "Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen.",
-                    "second": "Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen.",
-                    "third": "Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen."
-                }
-            },
-            "fourth": {
-                "heading": "Haftung für Links",
-                "paragraphs": {
-                    "first": "Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des Nutzers oder der Nutzerin."
-                }
-            },
-            "fifth": {
-                "heading": "Technische Umsetzung",
-                "paragraphs": {
-                    "first": "<a class='link' href='http://arnasoftech.com' target='_blank'>Arna Softech Private Limited</a>"
-                }
-            }
-        }
-    },
-    "privacy": {
-        "heading": "Datenschutzerklärung",
-        "sections": {
-            "first": {
-                "heading": "Verantwortliche Stelle",
-                "paragraphs": {
-                    "first": "Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:<address class='address'>Lukas Kocherhans<br>3084 Wabern</address><a class='link' href='mailto:help@agricontrol.app'>help@agricontrol.app</a> – <a class='link' href='//agricontrol.app'>agricontrol.app</a>"
-                }
-            },
-            "second": {
-                "heading": "Allgemeiner Hinweis",
-                "paragraphs": {
-                    "first": "Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
-                    "second": "In Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen.",
-                    "third": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
-                    "fourth": "Durch die Nutzung dieser Website erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäss der nachfolgenden Beschreibung einverstanden. Diese Website kann grundsätzlich ohne Registrierung besucht werden. Dabei werden Daten wie beispielsweise aufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit zu statistischen Zwecken auf dem Server gespeichert, ohne dass diese Daten unmittelbar auf Ihre Person bezogen werden. Personenbezogene Daten, insbesondere Name, Adresse oder E-Mail-Adresse werden soweit möglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt keine Weitergabe der Daten an Dritte."
-                }
-            },
-            "third": {
-                "heading": "Datenschutzerklärung für Cookies",
-                "paragraphs": {
-                    "first": "Diese Website verwendet Cookies. Das sind kleine Textdateien, die es möglich machen, auf dem Endgerät des Nutzers spezifische, auf den Nutzer bezogene Informationen zu speichern, während er die Website nutzt. Cookies ermöglichen es, insbesondere Nutzungshäufigkeit und Nutzeranzahl der Seiten zu ermitteln, Verhaltensweisen der Seitennutzung zu analysieren, aber auch unser Angebot kundenfreundlicher zu gestalten. Cookies bleiben über das Ende einer Browser-Sitzung gespeichert und können bei einem erneuten Seitenbesuch wieder aufgerufen werden. Wenn Sie das nicht wünschen, sollten Sie Ihren Internetbrowser so einstellen, dass er die Annahme von Cookies verweigert.",
-                    "second": "Ein genereller Widerspruch gegen den Einsatz der zu Zwecken des Onlinemarketing eingesetzten Cookies kann bei einer Vielzahl der Dienste, vor allem im Fall des Trackings, über die US-amerikanische Seite <a class='link' href='https://aboutads.info/choices/' target='_blank'>YourAdChoices</a> oder die EU-Seite <a class='link' href='https://youronlinechoices.com/' target='_blank'>Your Online Choices</a> erklärt werden. Des Weiteren kann die Speicherung von Cookies mittels deren Abschaltung in den Einstellungen des Browsers erreicht werden. Bitte beachten Sie, dass dann gegebenenfalls nicht alle Funktionen dieses Onlineangebotes genutzt werden können."
-
-                }
-            },
-            "fourth": {
-                "heading": "Datenschutzerklärung für SSL-Verschlüsselung",
-                "paragraphs": {
-                    "first": "Diese Website nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von \"http://\" auf \"https://\" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
-                    "second": "Wenn die SSL-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden."
-                }
-            },
-            "fifth": {
-                "heading": "Datenschutzerklärung für Google Analytics",
-                "paragraphs": {
-                    "first": "Diese Website verwendet Google Analytics, einen Webanalysedienst von <address class='address'>Google Inc.<br>1600 Amphitheatre Parkway<br>Mountain View, CA 94043<br>USA</address> Zur Deaktivierung von Google Analytiscs stellt Google unter <a class='link' href='https://tools.google.com/dlpage/gaoptout' target='_blank'>tools.google.com/dlpage/gaoptout</a> ein Browser-Plug-In zur Verfügung.",
-                    "second": "Google Analytics verwendet Cookies. Das sind kleine Textdateien, die es möglich machen, auf dem Endgerät des Nutzers spezifische, auf den Nutzer bezogene Informationen zu speichern. Diese ermöglichen eine Analyse der Nutzung unseres Websiteangebotes durch Google. Die durch den Cookie erfassten Informationen über die Nutzung unserer Seiten (einschliesslich Ihrer IP-Adresse) werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Wir weisen darauf hin, dass auf dieser Website Google Analytics um den Code „gat._anonymizeIp();“ erweitert wurde, um eine anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten. Ist die Anonymisierung aktiv, kürzt Google IP-Adressen innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum, weswegen keine Rückschlüsse auf Ihre Identität möglich sind.",
-                    "third": "Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Google beachtet die Datenschutzbestimmungen des „Privacy Shield“-Abkommens und ist beim „Privacy Shield“-Programm des US-Handelsministeriums registriert und nutzt die gesammelten Informationen, um die Nutzung unserer Websites auszuwerten, Berichte für uns diesbezüglich zu verfassen und andere diesbezügliche Dienstleistungen an uns zu erbringen. Mehr erfahren Sie unter <a class='link' href='https://support.google.com/analytics/answer/6004245' target='_blank'>support.google.com/analytics/answer/6004245</a>."
-                }
-            },
-            "sixth": {
-                "heading": "Datenschutzerklärung für die Nutzung von Google Web Fonts",
-                "paragraphs": {
-                    "first": "Diese Website nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen. Wenn Ihr Browser Web Fonts nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt.",
-                    "second": "Weitere Informationen zu Google Web Fonts finden Sie unter <a class='link' href='https://developers.google.com/fonts/faq' target='_blank'>developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von Google: <a class='link' href='https://policies.google.com/privacy' target='_blank'>policies.google.com/privacy</a>."
-                }
-            },
-            "seventh": {
-                "heading": "Änderungen",
-                "paragraphs": {
-                    "first": "Wir können diese Datenschutzerklärung jederzeit ohne Vorankündigung anpassen. Es gilt die jeweils aktuelle, auf unserer Website publizierte Fassung. Soweit die Datenschutzerklärung Teil einer Vereinbarung mit Ihnen ist, werden wir Sie im Falle einer Aktualisierung über die Änderung per E-Mail oder auf andere geeignete Weise informieren."
-                }
-            },
-            "eigth": {
-                "heading": "Fragen an den Datenschutzbeauftragten",
-                "paragraphs": {
-                    "first": "Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz zu Beginn der Datenschutzerklärung aufgeführten, verantwortlichen Person in unserer Organisation.",
-                    "second": "Wabern, 08.04.2019<br>Quelle: <a class='link' href='https://www.swissanwalt.ch/' target='_blank'>Datenschutz-Generator von SwissAnwalt</a>"
-                }
-            }
-        }
+      }
     },
     "about": {
-        "heading": "Über uns",
-        "paragraphs": {
-            "first": "Agricontrol ist aus dem Bedürfnis entstanden, den Bauern und Bäuerinnen in der Schweiz orts- und geräteunabhängig eine zeitgemässe Möglichkeit zur Feldverwaltung bieten zu können.",
-            "second": "Dank der Unterstützung und Erfahrung der Informatio GmbH konnten wir diese Idee verfolgen und mit viel Herzblut ein Konzept ausarbeiten. Daraus entstanden ist ein Produkt, welches die aktuellen Kundenbedürfnisse abdeckt und auch für die Zukunft gut positioniert ist.",
-            "third": "Flexibel können auf dem Computer wie auch auf dem Smartphone Felder, Kulturen und Tätigkeiten innert kürzester Zeit erfasst und bearbeitet werden. Mühsame Papierarbeit wird überflüssig und am Schluss kann mit wenigen Klicks ein Gesamtreport erstellt und ausgedruckt werden.",
-            "fourth": "Wir – das sind Robin Löffel, Lukas Kocherhans, Matthias Jakob und Holger Jakob – wünschen viel Spass mit unserem Produkt!"
-        }
-    },
-    "cookies": {
-        "text": "Wir verwenden Cookies. Was genau das bedeutet, können Sie in unserer <a class='link' href='datenschutz.html' target='_blank'>Datenschutzerklärung</a> einsehen.",
-        "button": "Akzeptieren"
+      "heading": "Über uns",
+      "image": "Teamwork ist unsere Stärke"
     }
+  },
+  "footer": {
+    "termsAndConditions": "Nutzungsbedingungen",
+    "faq": "Häufig gestellte Fragen",
+    "siteNotice": "Impressum",
+    "privacy": "Datenschutz",
+    "footNote": "Gemacht mit Liebe und einer Prise Sonnenschein"
+  },
+  "commons": {
+    "ctas": {
+      "explore": "Agricontrol entdecken",
+      "start": "Mit Agricontrol durchstarten",
+      "startNow": "Jetzt mit Agricontrol durchstarten",
+      "createAccount": "Jetzt kostenlos ausprobieren",
+      "logIn": "Einloggen"
+    },
+    "languages": {
+      "german": "Deutsch",
+      "french": "Französisch",
+      "italian": "Italienisch",
+      "english": "Englisch"
+    }
+  },
+  "termsAndConditions": {
+    "heading": "Allgemeine Geschäftsbedingungen (AGB) für «agricontrol.app» und «agricontrol.ch»",
+    "sections": {
+      "first": {
+        "heading": "1. Geltungsbereich",
+        "paragraphs": {
+          "first": "«agricontrol.app» und «agricontrol.ch» ist eine Plattform und ein Angebot der Informatio GmbH und erbringt Dienstleistungen ausschliesslich zu den nachstehenden Bedingungen (AGB). Von den AGB abweichende Vereinbarungen bedürfen der Schriftform.",
+          "second": "Als «Plattform» wird die Webseite und die mobile Applikation bezeichnet, die im Eigentum der Informatio GmbH ist. Die AGB bilden Bestandteil des Angebots von «agricontrol.app» und «agricontrol.ch» und mit dem Zugriff auf die Plattform und/oder der Nutzung der Dienste der Plattform bestätigt der Nutzer, die vorliegenden AGB gelesen und verstanden zu haben und diesen zuzustimmen."
+        }
+      },
+      "second": {
+        "heading": "2. Angebot und Preise",
+        "paragraphs": {
+          "first": "Sämtliche Angebote auf «agricontrol.app» und «agricontrol.ch» sind unverbindlich. Informatio GmbH steht es frei, Angebot und Preise ohne Vorankündigung zu ändern. Es gelten die jeweils aktuellen Angebote und Preise zum Zeitpunkt der Registrierung. Der Umfang und die Funktionalitäten der Plattform kann jederzeit ändern, erweitert, eingeschränkt oder eingestellt werden. Preisänderungen, die nach der Registrierung erfolgen, gelten nur für neue Registrierungen. Die Preise sind in Schweizer Franken (CHF) und inkl. gesetzlicher Mehrwertsteuer angegeben."
+        }
+      },
+      "third": {
+        "heading": "3. Zahlungsbedingungen",
+        "paragraphs": {
+          "first": "Der Rechnungsbetrag wird mit Zustellung der Rechnung fällig und ist innerhalb von 30 Tagen zu begleichen."
+        }
+      },
+      "fourth": {
+        "heading": "4. Registrierung",
+        "paragraphs": {
+          "first": "Um das Angebot von «agricontrol.app» oder «agricontrol.ch» nutzen zu können, muss sich der Nutzer registrieren und ein Kundenkonto anlegen. Bei der Registrierung sind Name, Vorname, E-Mail-Adresse und eine Rechnungsadresse anzugeben. Diese Angaben können im Profil jederzeit eingesehen und angepasst werden und müssen wahr und vollständig sein.",
+          "second": "Persönliche Zugangsdaten sind durch den Nutzer vertraulich zu behandeln und Dritten darf kein Zugang gewährt werden bzw. die Zugangsdaten dürfen nicht an Dritte weitergegeben werden. Sollten sich aus einer missbräuchlichen Verwendung oder unerlaubten Weitergabe von Zugangsdaten Schäden ergeben, kann die Informatio GmbH nicht haftbar gemacht werden. Ein Verstoss gegen diese AGB kann zum Verlust des Zugangs zu «agricontrol.app» und «agricontrol.ch» führen."
+        }
+      },
+      "fifth": {
+        "heading": "5. Haftung",
+        "paragraphs": {
+          "first": "Die Haftung der Informatio GmbH ist ausgeschlossen für alle Schäden, inklusive entgangenem Umsatz oder Gewinn, Nutzungsausfall oder Kosten für den Erwerb von Ersatzdienstleistungen, die sich aus dem Gebrauch, durch Fehlleistung oder Leistungsausfall der Dienstleistungen von «agricontrol.app» oder «agricontrol.ch» ergeben. Der Nutzer ist in jedem Fall selber für die Sicherung seiner Daten verantwortlich. Für verlorene Daten wird jede Haftung abgelehnt.",
+          "second": "Informatio GmbH ist nicht verantwortlich oder haftbar für jegliche falsche oder falsch geschriebene Angaben inkl. E-Mail-Adresse, falsche (Mobil-) Telefonnummer und hat keine Verpflichtung, diese zu überprüfen. Für die Richtigkeit und Aktualität der Kundendaten ist alleine der Nutzer verantwortlich.",
+          "third": "Obwohl bei der Bereitstellung der Plattform sorgfältig und gewissenhaft vorgegangen wird, kann weder überprüft und garantiert werden, dass alle Informationen genau, richtig und vollständig sind, noch kann die Informatio GmbH für Fehler (einschliesslich offenkundiger Fehler oder Druckfehler), Unterbrechungen (durch einen zeitlich begrenzten und/oder einen teilweisen Ausfall, Aktualisierungs- oder Instandhaltungsarbeiten auf «agricontrol.app» oder «agricontrol.ch» oder einen anderen Grund), ungenaue, fehlleitende oder unwahre Informationen oder Nichtübermittlung der Informationen verantwortlich gemacht werden.",
+          "fourth": "Informatio GmbH übernimmt für die Inhalte externer und verlinkter Webseiten keine Haftung. «agricontrol.app» und «agricontrol.ch» kann durch Wartungsarbeiten zeitweise nicht verfügbar sein. Es kann dabei zu Datenverlusten kommen. In diesem Zusammenhang trifft Informatio GmbH keinerlei Haftung."
+        }
+      },
+      "sixth": {
+        "heading": "6. Informationspflicht",
+        "paragraphs": {
+          "first": "Die Parteien informieren rechtzeitig über Hindernisse, welche die vertragsmässige Erfüllung oder Bezahlung in Frage stellen oder zu unzweckmässigen Lösungen führen können."
+        }
+      },
+      "seventh": {
+        "heading": "7. Schlussbestimmungen",
+        "paragraphs": {
+          "first": "Gerichtsstand ist der Sitz von Informatio GmbH. Anwendbar ist Schweizerisches Recht."
+        }
+      }
+    }
+  },
+  "siteNotice": {
+    "heading": "Impressum",
+    "sections": {
+      "first": {
+        "heading": "Kontaktadresse",
+        "paragraphs": {
+          "first": "<address class='address'>Informatio GmbH<br>Parkterrasse 14<br>3012 Bern<br><a class='link' href='mailto:help@agricontrol.ch'>help@agricontrol.ch</a></address>"
+        }
+      },
+      "second": {
+        "heading": "Rechnungsadresse & Hauptsitz",
+        "paragraphs": {
+          "first": "<address class='address'>Informatio GmbH<br>Brüelmattenweg 12<br>2577 Finsterhennen</address>"
+        }
+      },
+      "third": {
+        "heading": "Haftungsausschluss",
+        "paragraphs": {
+          "first": "Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen.",
+          "second": "Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen.",
+          "third": "Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen."
+        }
+      },
+      "fourth": {
+        "heading": "Haftung für Links",
+        "paragraphs": {
+          "first": "Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des Nutzers oder der Nutzerin."
+        }
+      },
+      "fifth": {
+        "heading": "Technische Umsetzung",
+        "paragraphs": {
+          "first": "<a class='link' href='http://arnasoftech.com' target='_blank'>Arna Softech Private Limited</a>"
+        }
+      }
+    }
+  },
+  "privacy": {
+    "heading": "Datenschutzerklärung",
+    "sections": {
+      "first": {
+        "heading": "Verantwortliche Stelle",
+        "paragraphs": {
+          "first": "Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:<address class='address'>Lukas Kocherhans<br>3084 Wabern</address><a class='link' href='mailto:help@agricontrol.app'>help@agricontrol.app</a> – <a class='link' href='//agricontrol.app'>agricontrol.app</a>"
+        }
+      },
+      "second": {
+        "heading": "Allgemeiner Hinweis",
+        "paragraphs": {
+          "first": "Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+          "second": "In Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen.",
+          "third": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+          "fourth": "Durch die Nutzung dieser Website erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäss der nachfolgenden Beschreibung einverstanden. Diese Website kann grundsätzlich ohne Registrierung besucht werden. Dabei werden Daten wie beispielsweise aufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit zu statistischen Zwecken auf dem Server gespeichert, ohne dass diese Daten unmittelbar auf Ihre Person bezogen werden. Personenbezogene Daten, insbesondere Name, Adresse oder E-Mail-Adresse werden soweit möglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt keine Weitergabe der Daten an Dritte."
+        }
+      },
+      "third": {
+        "heading": "Datenschutzerklärung für Cookies",
+        "paragraphs": {
+          "first": "Diese Website verwendet Cookies. Das sind kleine Textdateien, die es möglich machen, auf dem Endgerät des Nutzers spezifische, auf den Nutzer bezogene Informationen zu speichern, während er die Website nutzt. Cookies ermöglichen es, insbesondere Nutzungshäufigkeit und Nutzeranzahl der Seiten zu ermitteln, Verhaltensweisen der Seitennutzung zu analysieren, aber auch unser Angebot kundenfreundlicher zu gestalten. Cookies bleiben über das Ende einer Browser-Sitzung gespeichert und können bei einem erneuten Seitenbesuch wieder aufgerufen werden. Wenn Sie das nicht wünschen, sollten Sie Ihren Internetbrowser so einstellen, dass er die Annahme von Cookies verweigert.",
+          "second": "Ein genereller Widerspruch gegen den Einsatz der zu Zwecken des Onlinemarketing eingesetzten Cookies kann bei einer Vielzahl der Dienste, vor allem im Fall des Trackings, über die US-amerikanische Seite <a class='link' href='https://aboutads.info/choices/' target='_blank'>YourAdChoices</a> oder die EU-Seite <a class='link' href='https://youronlinechoices.com/' target='_blank'>Your Online Choices</a> erklärt werden. Des Weiteren kann die Speicherung von Cookies mittels deren Abschaltung in den Einstellungen des Browsers erreicht werden. Bitte beachten Sie, dass dann gegebenenfalls nicht alle Funktionen dieses Onlineangebotes genutzt werden können."
+
+        }
+      },
+      "fourth": {
+        "heading": "Datenschutzerklärung für SSL-Verschlüsselung",
+        "paragraphs": {
+          "first": "Diese Website nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von \"http://\" auf \"https://\" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
+          "second": "Wenn die SSL-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden."
+        }
+      },
+      "fifth": {
+        "heading": "Datenschutzerklärung für Google Analytics",
+        "paragraphs": {
+          "first": "Diese Website verwendet Google Analytics, einen Webanalysedienst von <address class='address'>Google Inc.<br>1600 Amphitheatre Parkway<br>Mountain View, CA 94043<br>USA</address> Zur Deaktivierung von Google Analytiscs stellt Google unter <a class='link' href='https://tools.google.com/dlpage/gaoptout' target='_blank'>tools.google.com/dlpage/gaoptout</a> ein Browser-Plug-In zur Verfügung.",
+          "second": "Google Analytics verwendet Cookies. Das sind kleine Textdateien, die es möglich machen, auf dem Endgerät des Nutzers spezifische, auf den Nutzer bezogene Informationen zu speichern. Diese ermöglichen eine Analyse der Nutzung unseres Websiteangebotes durch Google. Die durch den Cookie erfassten Informationen über die Nutzung unserer Seiten (einschliesslich Ihrer IP-Adresse) werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Wir weisen darauf hin, dass auf dieser Website Google Analytics um den Code „gat._anonymizeIp();“ erweitert wurde, um eine anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten. Ist die Anonymisierung aktiv, kürzt Google IP-Adressen innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum, weswegen keine Rückschlüsse auf Ihre Identität möglich sind.",
+          "third": "Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Google beachtet die Datenschutzbestimmungen des „Privacy Shield“-Abkommens und ist beim „Privacy Shield“-Programm des US-Handelsministeriums registriert und nutzt die gesammelten Informationen, um die Nutzung unserer Websites auszuwerten, Berichte für uns diesbezüglich zu verfassen und andere diesbezügliche Dienstleistungen an uns zu erbringen. Mehr erfahren Sie unter <a class='link' href='https://support.google.com/analytics/answer/6004245' target='_blank'>support.google.com/analytics/answer/6004245</a>."
+        }
+      },
+      "sixth": {
+        "heading": "Datenschutzerklärung für die Nutzung von Google Web Fonts",
+        "paragraphs": {
+          "first": "Diese Website nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen. Wenn Ihr Browser Web Fonts nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt.",
+          "second": "Weitere Informationen zu Google Web Fonts finden Sie unter <a class='link' href='https://developers.google.com/fonts/faq' target='_blank'>developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von Google: <a class='link' href='https://policies.google.com/privacy' target='_blank'>policies.google.com/privacy</a>."
+        }
+      },
+      "seventh": {
+        "heading": "Änderungen",
+        "paragraphs": {
+          "first": "Wir können diese Datenschutzerklärung jederzeit ohne Vorankündigung anpassen. Es gilt die jeweils aktuelle, auf unserer Website publizierte Fassung. Soweit die Datenschutzerklärung Teil einer Vereinbarung mit Ihnen ist, werden wir Sie im Falle einer Aktualisierung über die Änderung per E-Mail oder auf andere geeignete Weise informieren."
+        }
+      },
+      "eigth": {
+        "heading": "Fragen an den Datenschutzbeauftragten",
+        "paragraphs": {
+          "first": "Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz zu Beginn der Datenschutzerklärung aufgeführten, verantwortlichen Person in unserer Organisation.",
+          "second": "Wabern, 08.04.2019<br>Quelle: <a class='link' href='https://www.swissanwalt.ch/' target='_blank'>Datenschutz-Generator von SwissAnwalt</a>"
+        }
+      }
+    }
+  },
+  "about": {
+    "heading": "Über uns",
+    "paragraphs": {
+      "first": "Agricontrol ist aus dem Bedürfnis entstanden, den Bauern und Bäuerinnen in der Schweiz orts- und geräteunabhängig eine zeitgemässe Möglichkeit zur Feldverwaltung bieten zu können.",
+      "second": "Dank der Unterstützung und Erfahrung der Informatio GmbH konnten wir diese Idee verfolgen und mit viel Herzblut ein Konzept ausarbeiten. Daraus entstanden ist ein Produkt, welches die aktuellen Kundenbedürfnisse abdeckt und auch für die Zukunft gut positioniert ist.",
+      "third": "Flexibel können auf dem Computer wie auch auf dem Smartphone Felder, Kulturen und Tätigkeiten innert kürzester Zeit erfasst und bearbeitet werden. Mühsame Papierarbeit wird überflüssig und am Schluss kann mit wenigen Klicks ein Gesamtreport erstellt und ausgedruckt werden.",
+      "fourth": "Wir – das sind Robin Löffel, Lukas Kocherhans, Matthias Jakob und Holger Jakob – wünschen viel Spass mit unserem Produkt!"
+    }
+  },
+  "cookies": {
+    "text": "Wir verwenden Cookies. Was genau das bedeutet, können Sie in unserer <a class='link' href='datenschutz.html' target='_blank'>Datenschutzerklärung</a> einsehen.",
+    "button": "Akzeptieren"
+  }
 }
