@@ -69,10 +69,12 @@ html {
   color: inherit;
   text-decoration: none;
   border-radius: 10px;
+  border: 0;
   font-size: 0.8rem;
   font-weight: 600;
   display: inline-block;
   text-shadow: none;
+  cursor: pointer;
 
   &--section {
     color: $color-white;

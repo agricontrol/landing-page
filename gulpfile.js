@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 const gulp = require('gulp');
 const open = require('open');
 const del = require('del');
@@ -15,10 +17,10 @@ const cssEnv = require('postcss-preset-env');
 const reporter = require('postcss-reporter');
 const { rollup } = require('rollup');
 const buble = require('@rollup/plugin-buble');
-const resolve = require('@rollup/plugin-node-resolve');
+const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const { terser } = require('rollup-plugin-terser');
-const { eslint } = require('rollup-plugin-eslint');
+const eslint = require('@rbnlffl/rollup-plugin-eslint');
 
 const development = process.argv.includes('--dev');
 
@@ -51,7 +53,7 @@ gulp.task('css', () => gulp.src('src/css/*', {
     cssEnv(),
     !development && autoprefixer(),
     !development && cssnano()
-  ].filter(p => p)))
+  ].filter(plugin => plugin)))
   .pipe(gulp.dest('dist/css', {
     sourcemaps: '.'
   }))
@@ -62,7 +64,7 @@ gulp.task('js', async () => {
     input: 'src/js/main.js',
     plugins: [
       eslint(),
-      resolve(),
+      nodeResolve(),
       commonjs(),
       !development && buble(),
       !development && terser({
@@ -70,7 +72,7 @@ gulp.task('js', async () => {
           comments: false
         }
       })
-    ].filter(p => p)
+    ].filter(plugin => plugin)
   });
 
   await bundle.write({
