@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 const gulp = require('gulp');
 const open = require('open');
 const del = require('del');
@@ -10,7 +8,6 @@ const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
 const rezzy = require('gulp-rezzy');
 const webp = require('gulp-webp');
-const autoprefixer = require('autoprefixer');
 const stylelint = require('stylelint');
 const cssnano = require('cssnano');
 const cssEnv = require('postcss-preset-env');
@@ -51,7 +48,6 @@ gulp.task('css', () => gulp.src('src/css/*', {
   .pipe(sass.sync())
   .pipe(postcss([
     cssEnv(),
-    !development && autoprefixer(),
     !development && cssnano()
   ].filter(plugin => plugin)))
   .pipe(gulp.dest('dist/css', {
@@ -153,6 +149,7 @@ gulp.task('watch:root', done => {
 
 
 gulp.task('watch', gulp.parallel('watch:img', 'watch:js', 'watch:css', 'watch:root'));
-gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img:minimize', 'img:optimize', 'copy')));
+gulp.task('img', gulp.parallel('img:minimize', 'img:optimize'));
+gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img', 'copy')));
 gulp.task('dist', gulp.series('build', 'open:dist'));
 gulp.task('default', gulp.series('build', 'serve', 'open:browser', 'watch'));

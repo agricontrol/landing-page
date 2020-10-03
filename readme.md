@@ -1,1 +1,1 @@
-[![agricontrol.app](src/img/open-graph.jpg)](http://agricontrol.app)
+[![agricontrol.app](src/img/open-graph.jpg)](https://agricontrol.app)
