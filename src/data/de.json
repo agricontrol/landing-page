@@ -240,6 +240,9 @@
       "fourth": "Wir – das sind Robin Löffel, Lukas Kocherhans, Matthias Jakob und Holger Jakob – wünschen viel Spass mit unserem Produkt!"
     }
   },
+  "faq": {
+    "heading": "Häufig gestellte Fragen"
+  },
   "cookies": {
     "text": "Wir verwenden Cookies. Was genau das bedeutet, können Sie in unserer <a class='link' href='datenschutz.html' target='_blank'>Datenschutzerklärung</a> einsehen.",
     "button": "Akzeptieren"

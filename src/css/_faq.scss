@@ -1,0 +1,54 @@
+// * faq page
+
+.sidebar,
+.content {
+  padding: $space-half $space;
+}
+
+.sidebar {
+  position: sticky;
+  top: 120px;
+  flex: 0 0 33%;
+  border-right: 2px solid $color-light-black;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+
+  &-link {
+    display: block;
+  }
+}
+
+.content {
+  flex: 0 0 66%;
+
+  .title {
+    margin: 2em 0 1.25em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: calc(9/16 * 100%);
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.separator {
+  width: 75%;
+  margin: $space auto;
+  border: 0;
+  background-color: $color-light-black;
+  height: 2px;
+}

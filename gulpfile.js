@@ -12,6 +12,7 @@ const stylelint = require('stylelint');
 const cssnano = require('cssnano');
 const cssEnv = require('postcss-preset-env');
 const reporter = require('postcss-reporter');
+const scssParser = require('postcss-scss');
 const { rollup } = require('rollup');
 const buble = require('@rollup/plugin-buble');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
@@ -44,7 +45,9 @@ gulp.task('css', () => gulp.src('src/css/*', {
     reporter({
       clearReportedMessages: true
     })
-  ]))
+  ], {
+    parser: scssParser
+  }))
   .pipe(sass.sync())
   .pipe(postcss([
     cssEnv(),
@@ -95,7 +98,8 @@ gulp.task('img:optimize', () => gulp.src([
     'src/img/about.jpg',
     'src/img/funktionsweise.jpg',
     'src/img/header.jpg',
-    'src/img/vorteil.jpg'
+    'src/img/vorteil.jpg',
+    'src/img/faqs.jpg'
   ])
   .pipe(plumber())
   .pipe(rezzy([{

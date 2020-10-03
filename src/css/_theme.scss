@@ -1,6 +1,6 @@
 html {
   font-family: 'Source Sans Pro', system-ui, sans-serif;
-  font-size: 20px;
+  font-size: 120%;
   color: $color-grey;
   line-height: $line-height-text;
 
@@ -24,6 +24,18 @@ html {
     flex-basis: 100%;
     justify-content: center;
     margin: 0 10vw $space;
+  }
+
+  &--no-margin {
+    margin: 0;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--header {
+    z-index: 1;
   }
 }
 
@@ -375,7 +387,7 @@ html {
     margin-bottom: $space-double;
   }
 
-  &:only-child {
+  &:only-child:not(&--sidebar) {
     padding: $space-double 0;
   }
 
@@ -459,6 +471,11 @@ html {
   &__overlay-title {
     color: $color-white;
     z-index: 1;
+  }
+
+  &--sidebar {
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }
 
