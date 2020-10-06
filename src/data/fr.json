@@ -240,6 +240,29 @@
       "fourth": "Nous – Robin Löffel, Lukas Kocherhans, Matthias Jakob et Holger Jakob – vous souhaitons beaucoup de plaisir avec notre produit!"
     }
   },
+  "faq": {
+    "heading": "Questions fréquemment posées",
+    "questions": {
+      "videos": {
+        "general": {
+          "title": "1. Tutoriels vidéo",
+          "text": "Afin de vous faciliter au maximum la tâche, nous avons créé quelques vidéos pour vous expliquer les fonctions de base d'Agricontrol."
+        },
+        "createFieldsCultures": {
+          "title": "1.1. Créer et éditer des champs et des cultures",
+          "youtubeLink": "https://www.youtube.com/embed/WVSJVEa2I68"
+        },
+        "masterListFieldActivities": {
+          "title": "1.2 Listes maîtresses et activités de terrain",
+          "youtubeLink": "https://youtube.com/embed/twzhz-FHHas"
+        },
+        "profile": {
+          "title": "1.3. Profil utilisateur et société ou sous-utilisateur",
+          "youtubeLink": "https://youtube.com/embed/Bvec6Nz_vR0"
+        }
+      }
+    }
+  },
   "cookies": {
     "text": "Nous utilisons des cookies. Vous pouvez voir exactement ce que cela signifie dans notre <a class='link' href='datenschutz.html' target='_blank'>déclaration de protection des données</a>.",
     "button": "Accepter"

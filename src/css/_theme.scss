@@ -36,6 +36,7 @@ html {
 
   &--header {
     z-index: 1;
+    margin: 0;
   }
 }
 
@@ -322,6 +323,22 @@ html {
 
     &::after {
       content: none;
+    }
+  }
+
+  &--darken {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-light-grey;
+      border-bottom: 2px solid $color-grey;
+      z-index: 1;
     }
   }
 }

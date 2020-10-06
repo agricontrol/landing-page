@@ -35,7 +35,7 @@
     "gulp-webp": "^4.0.1",
     "jump.js": "^1.0.2",
     "mdn-polyfills": "^5.20.0",
-    "mehrsprachig": "^0.6.1",
+    "mehrsprachig": "^0.7.0",
     "open": "^7.3.0",
     "postcss": "^8.1.1",
     "postcss-preset-env": "^6.7.0",
