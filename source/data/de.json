@@ -246,36 +246,124 @@
     "questions": {
       "videos": {
         "general": {
-          "title": "1. Video-Anleitungen",
-          "text": "Um Ihnen den Einstieg so einfach wie möglich zu gestalten, haben wir einige Videos für Sie gestaltet, welche Ihnen die Grundfunktionalitäten von Agricontrol erklären."
+          "question": "1. Video-Anleitungen",
+          "answer": "Um Ihnen den Einstieg so einfach wie möglich zu gestalten, haben wir einige Videos für Sie gestaltet, welche Ihnen die Grundfunktionalitäten von Agricontrol erklären."
         },
         "createFieldsCultures": {
-          "title": "1.1. Erstellen und bearbeiten von Feldern und Kulturen",
+          "question": "1.1. Erstellen und bearbeiten von Feldern und Kulturen",
           "youtubeLink": "https://youtube.com/embed/oHMHVfXVt9A"
         },
         "masterListFieldActivities": {
-          "title": "1.2. Masterlisten und Feldaktivitäten",
+          "question": "1.2. Masterlisten und Feldaktivitäten",
           "youtubeLink": "https://youtube.com/embed/ZXVRQeS-4gw"
         },
         "profile": {
-          "title": "1.3. Benutzerprofil und Firmen- bzw. Unterbenutzer",
+          "question": "1.3. Benutzerprofil und Firmen- bzw. Unterbenutzer",
           "youtubeLink": "https://youtube.com/embed/x-9SvWlkciI"
         }
       },
       "product": {
         "general": {
-          "title": "2. Unser Produkt",
-          "text": "Agricontrol bietet den Bauern und Bäuerinnen in der Schweiz orts- und geräteunabhängig eine zeitgemässe Möglichkeit zur Feldverwaltung. Flexibel können auf dem Computer wie auch auf dem Smartphone Felder, Kulturen und Tätigkeiten innert kürzester Zeit erfasst und bearbeitet werden. Mühsame Papierarbeit wird überflüssig und am Schluss kann mit wenigen Klicks ein Gesamtreport erstellt und ausgedruckt werden."
+          "question": "2. Unser Produkt",
+          "answer": "Agricontrol bietet den Bauern und Bäuerinnen in der Schweiz orts- und geräteunabhängig eine zeitgemässe Möglichkeit zur Feldverwaltung. Flexibel können auf dem Computer wie auch auf dem Smartphone Felder, Kulturen und Tätigkeiten innert kürzester Zeit erfasst und bearbeitet werden. Mühsame Papierarbeit wird überflüssig und am Schluss kann mit wenigen Klicks ein Gesamtreport erstellt und ausgedruckt werden."
         },
         "plans": {
-          "title": "2.1. Gibt es bei Agricontrol verschiedene Module und Preise?",
-          "text": "Nein, es gibt nur ein Standardpaket. Es ist möglich, dass zu einem späteren Zeitpunkt kostenpflichtige Zusatzfunktionen dazukommen."
+          "question": "2.1. Gibt es bei Agricontrol verschiedene Module und Preise?",
+          "answer": "Nein, es gibt nur ein Standardpaket. Es ist möglich, dass zu einem späteren Zeitpunkt kostenpflichtige Zusatzfunktionen dazukommen."
         }
       },
       "subscription": {
         "general": {
-          "title": "3. Das Abonnement",
-          "text": "Die Plattform von Agricontrol kann genutzt werden sobald man sich unverbindlich registriert hat."
+          "question": "3. Das Abonnement",
+          "answer": "Die Plattform von Agricontrol kann genutzt werden sobald man sich unverbindlich registriert hat."
+        },
+        "registration": {
+          "question": "3.1. Wie kann ich mich registrieren?",
+          "answer": "Mit wenigen Klicks kann unter <a class=\"link\" href=\"https://agricontrol.app/dashboard/register\">agricontrol.app/dashboard/register</a> ein Benutzer erstellt werden."
+        },
+        "testPhase": {
+          "question": "3.2. Gibt es eine Testphase?",
+          "answer": "Ja, ab dem Zeitpunkt der Registration kann die Plattform ohne Einschränkungen während 2 Monaten kostenlos genutzt werden."
+        },
+        "length": {
+          "question": "3.3. Wie lange ist die Vertragsdauer?",
+          "answer": "Wer das Angebot von Agricontrol auch nach der Testphase nutzen will kann ein Abonnement für 1 Jahr abschliessen."
+        },
+        "renewal": {
+          "question": "3.4. Gibt es eine automatische Verlängerung des Abonnements?",
+          "answer": "Nein! Ihre Zustimmung ist nötig, falls Sie die Plattform von Agricontrol nach Ablauf des Abonnements weiternutzen wollen."
+        },
+        "paymentOptions": {
+          "question": "3.5. Welche Zahlungsarten sind möglich?",
+          "answer": "Sie entscheiden selbst, ob Sie die Rechung als PDF per E-Mail oder in Papierform als Brief erhalten."
+        },
+        "paymentDeadline": {
+          "question": "3.6. Wie lange habe ich Zeit um eine Rechnung von Agricontrol zu bezahlen?",
+          "answer": "Die Rechnung ist innert 30 Tage nach Erhalt zu bezahlen."
+        }
+      },
+      "platform": {
+        "general": {
+          "question": "4. Nutzung der Plattform",
+          "answer": "Die Plattform kann auf dem Mobiltelefon, auf dem Tablet oder auf Ihrem Computer benutzt werden."
+        },
+        "signIn": {
+          "question": "4.1. Wo muss ich mich anmelden?",
+          "answer": "Unter dem Link <a class=\"link\" href=\"https://agricontrol.app/dashboard/login\">agricontrol.app/dashboard/login</a> kann man sich anmelden und auf die Plattform zugreifen."
+        },
+        "changePassword": {
+          "question": "4.2. Wie und wo kann ich mein Passwort ändern?",
+          "answer": "In der Plattform kann man das Passwort im Profil ändern. Dazu einfach auf den Namen oder das Menü in der Ecke oben rechts klicken oder den Link <a class=\"link\" href=\"https://agricontrol.app/dashboard/settings\">agricontrol.app/dashboard/settings</a> nutzen."
+        },
+        "changeProfile": {
+          "question": "4.3. Wo können Änderungen im Profil vorgenommen werden?",
+          "answer": "In der Plattform kann man das Profil ändern. Dazu einfach auf den Namen oder das Menü in der Ecke oben rechts klicken oder den Link <a class=\"link\" href=\"https://agricontrol.app/dashboard/settings\">agricontrol.app/dashboard/settings</a> nutzen."
+        },
+        "colorMaster": {
+          "question": "4.4. Wozu dient der Farbmaster?",
+          "answer": "Im Farbmaster können sie die Farben, die in der Plattform für die jeweiligen Kulturen angezeigt werden, individuell nach Ihrem Geschmack anpassen."
+        },
+        "lists": {
+          "question": "4.5. Für was habe ich Listen?",
+          "answer": "<p class=\"paragraph\">In der Plattform finden Sie die Listen im Menü, in der Ecke oben rechts. Es gibt jeweils eine Liste für die Farben der Kulturen, die Düngemittel, die Pflanzenschutzmittel, die Maschinen und die Bodenbearbeitungsmassnahmen.</p><p class=\"paragraph\">Einmal definiert stehen die Werte aus dieser Liste in der Plattform zur Verfügung. Diese Erfassung ist nötig wenn man die Funktionen rund um die Kulturenblätter nutzen möchte. Neue Einträge oder Anpassungen einer Liste können jederzeit vorgenommen werden.</p>"
+        },
+        "overview": {
+          "question": "4.6. Welche Informationen sehe ich in der Übersicht?",
+          "answer": "<p class=\"paragraph\">In der Übersicht sieht man alle erfassten Felder inklusive Grösse und Ökofläche. Ebenfalls sieht man die Kulturen auf den jeweiligen Felder, dies für den Zeitraum von einem Jahr. Mit einem Schiebebalken kann man diesen Zeitraum in die Zukunft oder in die Vergangenheit schieben. Fährt man mit der Maus über eine Kultur werden dazu weitere Informationen angezeigt.</p><p class=\"paragraph\">Bei jedem Feld gibt es drei runde Symbole. Mit dem ersten Symbol kann man das bestehende Feld anpassen (z.B. den Namen), mit dem zweiten gelangt man auf die Feldinformationen und mit einem Klick auf das letzte erhält man die Möglichkeit das Feld zu archivieren.</p><p class=\"paragraph\">Ein archiviertes Feld kann wieder angezeigt werden wenn man die Checkbox \"archvierte Felder anzeigen\" auswählt und bei Bedarf aktiviert werden wenn man erneut das dritte Symbol auswählt. Mit einem Klick hinter dem gewünschten Feld kann man eine neue Kultur erfassen.</p><p class=\"paragraph\"> Am Ende des Dashboards werden Kennzahlen zu Gesamtgrösse aller Felder, Anzahl Felder und Anzahl aktuell abgetauschter Kulturen angezeigt. Ebenfalls ist ersichtlich auf welcher Feldgrösse eine Kultur pro Jahr angepflanzt.</p>"
+        },
+        "newField": {
+          "question": "4.7. Wie erfasse ich ein neues Feld?",
+          "answer": "Mit einem Klick auf den + Knopf oben links kann ein neues Feld erstellt werden. Dazu sind einige Angaben erforderlich, die im aufgehenden Fenster eingegeben werden müssen."
+        },
+        "deleteField": {
+          "question": "4.8. Wie kann ich ein Feld löschen?",
+          "answer": "<p class=\"paragraph\">Wenn Sie ein Feld aus Ihrer Übersicht löschen möchten, so können Sie dies tun, indem Sie das zu löschende Feld zunächst archivieren. Dies tun Sie in der Übersicht über einen Klick auf den Archivieren-Knopf ganz rechts, links neben «Neue Kultur».</p><p class=\"paragraph\">Ist das getan, so aktivieren Sie das Häkchen «Archivierte Felder anzeigen». Sie sehen alle zuvor archivierten Felder nun wieder. Um ein Feld zu löschen, drücken Sie auf «Feld bearbeiten» und scrollen Sie im Dialog ganz nach unten. Dort finden Sie nun einen roten Knopf «Feld löschen».</p>"
+        },
+        "cultures": {
+          "question": "4.9. Wie erfasse ich Kulturen und wie kann ich Änderungen vornehmen?",
+          "answer": "<p class=\"paragraph\">Mit einem Klick auf den Knopf «Neue Kultur» wird eine neue Kultur erstellt. Die benötigten Informationen werden im aufgehenden Fenster eingegeben und können später bei Bedarf angepasst werden. Dazu fährt man mit der Maus in der Übersicht über die Kultur und klickt Bleistift-Symbol.</p><p class=\"paragraph\">Wenn man in der Übersicht über die Kultur fährt werden zusätzliche Informationen angezeigt, wie zum Beispiel mit wem das Feld abgetauscht ist und in welchem Zeitraum dieselbe Kultur schon einmal auf diesem Feld angepflanzt war.</p><p class=\"paragraph\">Mit einem Symbol wird darauf hingewiesen, falls die aktuelle Planung nicht der Fruchtfolgeplanung entspricht oder dass das Feld abgetauscht ist.</p>"
+        },
+        "fieldInfos": {
+          "question": "4.10. Was sehe ich in den Feldinformationen?",
+          "answer": "Mit einem Klick auf das mittlere runde Symbol, hinter dem Feld in der Übersicht, gelangt man zu den Feldinformationen wo die Kulturen detaillierter und grösser dargestellt sind als in der Übersicht. Der angezeigt Zeitraum kann angepasst werden. Ebenfalls kann man hier mit einem Klick auf Export ein PDF in grafischer oder tabellarischer Form erstellen lassen."
+        },
+        "cultureSheets": {
+          "question": "4.11. Was sind Kulturenblätter?",
+          "answer": "Die Kulturenblätter sind aktuell in Entwicklung und werden etwa Anfang August verfügbar sein. Dort wird man die Möglichkeit haben alle Tätigkeiten (Düngen, Bodenbearbeitung, Pflanzenschutz etc.) auf dem Feld zu erfassen und zu exportieren, welche für die Kontrolle und Planung nötig sind."
+        },
+        "exports": {
+          "question": "4.12. Wo kann ich Exporte erstellen und was sehe ich dort?",
+          "answer": "<p class=\"paragraph\">Exports können entweder in den Feldinformationen mit einem Klick auf den Export-Knopf oder mit einem Klick auf Exporte in der Top-Navigation erstellt werden. Vor dem Export kann man auswählen, ob der Export in grafischer oder tabellarischer Form erstellt werden.</p><p class=\"paragraph\">Auch wählen kann man den Zeitraum und welche Felder man im Export sehen will. Um einen Gesamtexport erstellen zu können, der für die Kontrolle ausreicht, muss man die 7 letzten Jahre nacherfassen. Auf beiden Exporten ist die Kultur, die Kulturendauer, die bepflanzte Grösse, Feldname und weiteres ersichtlich.</p>"
+        }
+      },
+      "help": {
+        "contact": {
+          "question": "5. Welche Hilfe kann ich beanspruchen?",
+          "answer": "<p class=\"paragraph\">Als Hilfe steht den Nutzern der Agricontrol Plattform zur Verfügung:</p><ul><li>Die FAQs</li><li>Mailsupport via <a class=\"link\" href=\"mailto:help@agricontrol.app\">help@agricontrol.app</a></li></ul><p class=\"paragraph\">Per Mail erhalten Sie an Werktagen innert 24 Stunden eine Antwort und via Mail kann telefonischer Support angefragt werden.</p><p class=\"paragraph\">Telefonischer Support ist grundsätzlich für kleine Anliegen kostenfrei aber Agricontrol behält es sich vor, für zeitintensive Support-Anfragen eine Kostenschätzung zu machen und Ihnen per Mail zuzustellen.</p>"
+        },
+        "feedback": {
+          "question": "5.1. Wie kann ich eine Rückmeldung geben?",
+          "answer": "Wir sind dankbar für jegliche Rückmeldungen und Ideen zur Verbesserung der Plattform. Bitte senden Sie uns Ihr Feedback per E-Mail an <a class=\"link\" href=\"mailto:help@agricontrol.app\">help@agricontrol.app</a>. Vielen Dank!"
         }
       }
     }
