@@ -36,7 +36,7 @@ gulp.task('serve', done => {
   done();
 });
 
-gulp.task('css', () => gulp.src('src/css/*', {
+gulp.task('css', () => gulp.src('source/css/*', {
     sourcemaps: development
   })
   .pipe(plumber())
@@ -60,7 +60,7 @@ gulp.task('css', () => gulp.src('src/css/*', {
 
 gulp.task('js', async () => {
   const bundle = await rollup({
-    input: 'src/js/main.js',
+    input: 'source/js',
     plugins: [
       eslint(),
       nodeResolve(),
@@ -82,9 +82,9 @@ gulp.task('js', async () => {
 });
 
 gulp.task('img:minimize', () => gulp.src([
-    'src/img/favicon.png',
-    'src/img/logo.svg',
-    'src/img/open-graph.jpg',
+    'source/img/favicon.png',
+    'source/img/logo.svg',
+    'source/img/open-graph.jpg',
     'node_modules/feather-icons/dist/feather-sprite.svg'
   ])
   .pipe(plumber())
@@ -95,11 +95,11 @@ gulp.task('img:minimize', () => gulp.src([
   .pipe(connect.reload()));
 
 gulp.task('img:optimize', () => gulp.src([
-    'src/img/about.jpg',
-    'src/img/funktionsweise.jpg',
-    'src/img/header.jpg',
-    'src/img/vorteil.jpg',
-    'src/img/faqs.jpg'
+    'source/img/about.jpg',
+    'source/img/funktionsweise.jpg',
+    'source/img/header.jpg',
+    'source/img/vorteil.jpg',
+    'source/img/faqs.jpg'
   ])
   .pipe(plumber())
   .pipe(rezzy([{
@@ -123,8 +123,8 @@ gulp.task('img:optimize', () => gulp.src([
   .pipe(gulp.dest('dist/img'))
   .pipe(connect.reload()));
 
-gulp.task('copy', () => gulp.src([ 'src/{*,}.*', 'src/data/*' ], {
-    base: 'src'
+gulp.task('copy', () => gulp.src([ 'source/{*,}.*', 'source/data/*' ], {
+    base: 'source'
   })
   .pipe(plumber())
   .pipe(gulp.dest('dist'))
@@ -132,22 +132,22 @@ gulp.task('copy', () => gulp.src([ 'src/{*,}.*', 'src/data/*' ], {
 
 
 gulp.task('watch:img', done => {
-  gulp.watch('src/img/*', gulp.parallel('img:minimize', 'img:optimize'));
+  gulp.watch('source/img/*', gulp.parallel('img:minimize', 'img:optimize'));
   done();
 });
 
 gulp.task('watch:js', done => {
-  gulp.watch('src/js/*', gulp.parallel('js'));
+  gulp.watch('source/js/*', gulp.parallel('js'));
   done();
 });
 
 gulp.task('watch:css', done => {
-  gulp.watch('src/css/*', gulp.parallel('css'));
+  gulp.watch('source/css/*', gulp.parallel('css'));
   done();
 });
 
 gulp.task('watch:root', done => {
-  gulp.watch([ 'src/{*,}.*', 'src/data/*' ], gulp.parallel('copy'));
+  gulp.watch([ 'source/{*,}.*', 'source/data/*' ], gulp.parallel('copy'));
   done();
 });
 

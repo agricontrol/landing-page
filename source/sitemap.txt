@@ -2,7 +2,7 @@ https://agricontrol.app
 https://agricontrol.app/dashboard
 https://agricontrol.app/dashboard/login
 https://agricontrol.app/dashboard/register
-https://agricontrol.app/dashboard/faq
+https://agricontrol.app/faq.html
 https://agricontrol.app/ueber-uns.html
 https://agricontrol.app/nutzungsbedingungen.html
 https://agricontrol.app/impressum.html
