@@ -3,7 +3,7 @@ const open = require('open');
 const del = require('del');
 const plumber = require('gulp-plumber');
 const connect = require('gulp-connect');
-const sass = require('gulp-sass');
+const sass = require('@rbnlffl/gulp-sass');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
 const rezzy = require('gulp-rezzy');
@@ -48,7 +48,7 @@ gulp.task('css', () => gulp.src('source/css/*', {
   ], {
     parser: scssParser
   }))
-  .pipe(sass.sync())
+  .pipe(sass())
   .pipe(postcss([
     cssEnv(),
     !development && cssnano()
