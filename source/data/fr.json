@@ -5,7 +5,8 @@
       "about": "Agricontrol – Qui sommes-nous?",
       "termsAndConditions": "Agricontrol – Conditions d'utilisations",
       "siteNotice": "Agricontrol – Mentions légales",
-      "privacy": "Agricontrol – Protection des données"
+      "privacy": "Agricontrol – Protection des données",
+      "faq": "Agricontrol – Questions fréquemment posées"
     },
     "description": "Agricontrol est le moyen le plus facile de ne jamais perdre le fil. Gardez la tête froide et concentrez-vous sur ce qui est important."
   },
@@ -245,20 +246,124 @@
     "questions": {
       "videos": {
         "general": {
-          "title": "1. Tutoriels vidéo",
-          "text": "Afin de vous faciliter au maximum la tâche, nous avons créé quelques vidéos pour vous expliquer les fonctions de base d'Agricontrol."
+          "question": "1. Tutoriels vidéo",
+          "answer": "Afin de vous faciliter au maximum la tâche, nous avons créé quelques vidéos pour vous expliquer les fonctions de base d'Agricontrol."
         },
         "createFieldsCultures": {
-          "title": "1.1. Créer et éditer des champs et des cultures",
-          "youtubeLink": "https://www.youtube.com/embed/WVSJVEa2I68"
+          "question": "1.1. Créer et éditer des champs et des cultures",
+          "youtubeLink": "https://www.youtube-nocookie.com/embed/WVSJVEa2I68"
         },
         "masterListFieldActivities": {
-          "title": "1.2 Listes maîtresses et activités de terrain",
-          "youtubeLink": "https://youtube.com/embed/twzhz-FHHas"
+          "question": "1.2. Listes maîtresses et activités de terrain",
+          "youtubeLink": "https://www.youtube-nocookie.com/embed/twzhz-FHHas"
         },
         "profile": {
-          "title": "1.3. Profil utilisateur et société ou sous-utilisateur",
-          "youtubeLink": "https://youtube.com/embed/Bvec6Nz_vR0"
+          "question": "1.3. Profil utilisateur et société ou sous-utilisateur",
+          "youtubeLink": "https://www.youtube-nocookie.com/embed/Bvec6Nz_vR0"
+        }
+      },
+      "product": {
+        "general": {
+          "question": "2. Notre produit",
+          "answer": "Agricontrol offre aux agriculteurs suisses un mode moderne de gestion des champs indépendant de l'emplacement et de l'équipement. Les champs, les cultures et les activités peuvent être enregistrés et traités de manière flexible sur l'ordinateur ou le smartphone dans un délai très court. La Paperasse ennuyeuse n'est plus nécessaire et à la fin un rapport complet peut être créé et imprimé en quelques clics."
+        },
+        "plans": {
+          "question": "2.1. Existe-t-il différents forfaits et prix chez Agricontrol ?",
+          "answer": "Non, il existe un seul forfait standard. Il est possible que des fonctions supplémentaires soient ajoutées par la suite."
+        }
+      },
+      "subscription": {
+        "general": {
+          "question": "3. L'abonnement ",
+          "answer": "La plateforme d'Agricontrol peut être utilisée dès que vous vous êtes inscrit sans engagement."
+        },
+        "registration": {
+          "question": "3.1. Comment puis je m'inscrire ?",
+          "answer": "Un compte utilisateur peut être créé sur <a class=\"link\" href=\"https://agricontrol.app/dashboard/register\">agricontrol.app/dashboard/register</a> en quelques clics."
+        },
+        "testPhase": {
+          "question": "3.2. Existe-t-il une période d'essai ?",
+          "answer": "Oui, à partir du moment de l'enregistrement, la plateforme peut être utilisée gratuitement pendant 2 mois sans aucune restriction."
+        },
+        "length": {
+          "question": "3.3. Quelle est la durée du contrat ?",
+          "answer": "Si vous souhaitez utiliser le service Agricontrol après la période d'essai, vous pouvez vous abonner pour 1 an."
+        },
+        "renewal": {
+          "question": "3.4. Le renouvellement de l'abonnement est-il automatique ?",
+          "answer": "Non ! Votre accord est nécessaire si vous souhaitez continuer à utiliser la plateforme Agricontrol après l'expiration de votre abonnement."
+        },
+        "paymentOptions": {
+          "question": "3.5. Quels sont les modes de paiement possibles ?",
+          "answer": "Vous décidez vous-même si vous recevez la facture au format PDF par e-mail ou sur papier sous forme de lettre."
+        },
+        "paymentDeadline": {
+          "question": "3.6. Dans quel délai dois-je payer une facture d'Agricontrol ?",
+          "answer": "La facture doit être payée dans les 30 jours suivant sa réception."
+        }
+      },
+      "platform": {
+        "general": {
+          "question": "4. Utilisation de la plateforme",
+          "answer": "La plateforme peut être utilisée sur un téléphone portable, sur une tablette ou sur votre ordinateur."
+        },
+        "signIn": {
+          "question": "4.1. Où dois-je me connecter ?",
+          "answer": "Sous le lien <a class=\"link\" href=\"https://agricontrol.app/dashboard/login\">agricontrol.app/dashboard/login</a> vous pouvez vous connecter et accéder à la plateforme."
+        },
+        "changePassword": {
+          "question": "4.2. Comment et où puis-je changer mon mot de passe ?",
+          "answer": "Dans la plateforme, vous pouvez changer votre mot de passe dans votre profil. Cliquez simplement sur le nom ou le menu dans le coin en haut à droite ou utilisez le lien <a class=\"link\" href=\"https://agricontrol.app/dashboard/settings\">agricontrol.app/dashboard/settings</a>."
+        },
+        "changeProfile": {
+          "question": "4.3. Où peut-on faire des modifications au profil ?",
+          "answer": "Dans la plateforme, vous pouvez modifier le profil. Cliquez simplement sur le nom ou le menu dans le coin en haut à droite ou utilisez le lien <a class=\"link\" href=\"https://agricontrol.app/dashboard/settings\">agricontrol.app/dashboard/settings</a>."
+        },
+        "colorMaster": {
+          "question": "4.4. Quel est le but de la maquette de couleur ?",
+          "answer": "Dans la maquette de couleur vous pouvez personnaliser les couleurs affichées dans la plateforme pour les cultures respectives selon vos goûts."
+        },
+        "lists": {
+          "question": "4.5. Pourquoi ai-je des listes ?",
+          "answer": "<p class=\"paragraph\">Dans la plateforme, vous trouverez les listes dans le menu, en haut à droite. Il y a une liste pour les couleurs des cultures, les engrais, les phytosanitaires, les machines et les mesures de travail du sol. Une fois définies, les valeurs de cette liste sont disponibles dans la plateforme.</p><p class=\"paragraph\">Cet enregistrement est nécessaire si vous voulez utiliser les fonctions liées aux feuilles de la culture. De nouvelles entrées ou des modifications à une liste peuvent être effectuées à tout moment.</p>"
+        },
+        "overview": {
+          "question": "4.6. Quelles sont les informations que je vois dans l'aperçu ?",
+          "answer": "<p class=\"paragraph\">Dans la vue d'ensemble, vous pouvez voir tous les champs enregistrés, y compris la taille et la zone écologique. Vous pouvez également voir les cultures sur les parcelles respectives pour la période d'un an. Avec une barre coulissante, vous pouvez décaler cette période dans le futur ou dans le passé.</p><p class=\"paragraph\">Si vous placez la souris sur une culture, d'autres informations s'affichent. Chaque champ comporte trois symboles ronds. Avec le premier symbole, vous pouvez ajuster le champ existant (par exemple le nom), avec le second vous accédez aux informations du champ et avec un clic sur le dernier vous avez la possibilité d'archiver le champ.</p><p class=\"paragraph\">Une parcelle archivée peut être à nouveau affichée si vous cochez la case \"Afficher les parcelles archivées\" et activée si nécessaire si vous cochez à nouveau le troisième symbole. Un clic derrière la parcelle désirée vous permet d'entrer une nouvelle culture.</p><p class=\"paragraph\">A la fin du tableau de bord, les chiffres clés pour la taille totale de tous les parcelles, le nombre de parcelles et le nombre de cultures actuellement échangées s'affichent. Vous pouvez également voir sur quelle taille de.</p>"
+        },
+        "newField": {
+          "question": "4.7. Comment saisir ue nouvelle parcelle?",
+          "answer": "En cliquant sur le bouton + en haut à gauche, un nouveau champ peut être créé. Pour cela, vous avez besoin d'informations que vous devez entrer dans la case de saisie qui s'ouvre."
+        },
+        "deleteField": {
+          "question": "4.8. Comment puis-je effacer un champ?",
+          "answer": "<p class=\"paragraph\">Si vous souhaitez effacer une zone de votre synthèse, vous pouvez le faire en archivant d'abord la zone à effacer. Vous pouvez le faire dans la vue d'ensemble en cliquant sur le bouton Archive à l'extrême droite, à gauche de \"Nouvelle culture\".</p><p class=\"paragraph\">Dans ce cas, cochez la case \"Afficher les champs archivés\". Vous verrez à nouveau tous les champs précédemment archivés. Pour supprimer un champ, appuyez sur \"Editer champ\" et faites défiler la boîte de dialogue vers le bas. Vous y trouverez un bouton rouge \"Supprimer champ\".</p>"
+        },
+        "cultures": {
+          "question": "4.9. Comment puis-je saisir des cultures et comment puis-je faire des ajustements ?",
+          "answer": "<p class=\"paragraph\">En cliquant sur le bouton \"Nouvelle culture\", une nouvelle culture est crée. Les informations requises sont saisies dans la fenêtre qui s'ouvre et peuvent être adaptées ultérieurement si nécessaire. Il suffit de passer la souris sur la culture et de cliquer sur le symbole du crayon.</p><p class=\"paragraph\">Si vous vous déplacez dans la synthèse de la culture, des informations supplémentaires s'affichent, telles que les personnes avec lesquelles le champ est échangé et la période pendant laquelle la même culture a déjà été plantée sur ce champ.</p><p class=\"paragraph\">Un symbole indique si la planification actuelle ne correspond pas à la planification de la rotation des cultures ou si le champ a été échangé.</p>"
+        },
+        "fieldInfos": {
+          "question": "4.10. Qu'est-ce que je vois dans les données de la parcelle ?",
+          "answer": "En cliquant sur le symbole rond du milieu, derrière le champ de la vue d'ensemble, vous accédez aux informations de la parcelle où les cultures sont affichées de manière plus detaillée et plus grande que dans l'aperçu. La période affichée peut être adaptée. Vous pouvez également créer un PDF sous forme graphique ou tabulaire en cliquant sur Exporter."
+        },
+        "cultureSheets": {
+          "question": "4.11. Que sont les feuilles de culture ?",
+          "answer": "Les fiches de culture sont en cours de réalisation et seront disponibles vers le début du mois d'août. Vous aurez la possibilité de saisir et d'exporter toutes les activités sur le champ (fertilisation, culture du sol, protection des plantes, etc.) qui sont nécessaires au contrôle et à la planification."
+        },
+        "exports": {
+          "question": "4.12. Où puis-je exporter mes données et que puisje y voir ?",
+          "answer": "<p class=\"paragraph\">Les exportations peuvent être créées soit dans les informations du champ en cliquant sur le bouton Exporter, ou par un clic sur Exporter dans la navigation du haut. Avant d'exporter, vous pouvez choisir si l'exportation doit être créée sous forme graphique ou tabulaire.</p><p class=\"paragraph\">Vous pouvez également sélectionner la période et les zones à afficher dans les exports. Afin de pouvoir créer une exportation totale suffisante pour le contrôle, vous devez enregistrer les 7 dernières années. Sur les deux exportations, la culture, la durée de la culture, la surface plantée, le nom du champ et plus encore sont visibles.</p>"
+        }
+      },
+      "help": {
+        "contact": {
+          "question": "5. Quelle aide puis-je demander ?",
+          "answer": "<p class=\"paragraph\">Les utilisateurs de la plate-forme Agricontrol bénéficient d'une assistance :</p><ul><li>La FAQ</li><li>Assistance par <a class=\"link\" href=\"mailto:help@agricontrol.app\">help@agricontrol.app</a></li></ul><p class=\"paragraph\">Vous recevrez une réponse par e-mail dans les 24 heures les jours ouvrables et un support téléphonique peut être demandé par e-mail.</p><p class=\"paragraph\"> L'assistance téléphonique est généralement gratuite pour les petites demandes, mais Agricontrol se réserve le droit d'établir un devis pour les demandes d'assistance longues et de vous l'envoyer par e-mail.</p>"
+        },
+        "feedback": {
+          "question": "5.1. Comment puis-je faire part de mes commentaires ?",
+          "answer": "Nous sommes reconnaissants de toute remarque ou idée visant à améliorer la plateforme. Veuillez nous faire parvenir vos commentaires par courriel à <a class=\"link\" href=\"mailto:help@agricontrol.app\">help@agricontrol.app</a>. Nous vous remercions!"
         }
       }
     }
