@@ -5,7 +5,8 @@
       "about": "Agricontrol — About us",
       "termsAndConditions": "Agricontrol — Terms and conditions",
       "siteNotice": "Agricontrol — Legal notice",
-      "privacy": "Agricontrol — Privacy policy"
+      "privacy": "Agricontrol — Privacy policy",
+      "faq": "Agricontrol – Frequently asked questions"
     },
     "description": "Agricontrol is the easiest way to never lose track. Keep a cool head and concentrate on what's important."
   },
@@ -238,6 +239,133 @@
       "second": "Thanks to the support and experience of Informatio Ltd., we were able to pursue this idea and develop a concept with all our heart and soul. The result is a product that meets current customer needs and is well positioned for the future. ",
       "third": "Fields, cultures and activities can be recorded and processed flexibly on the computer as well as on the smartphone within a very short time. Tedious paperwork becomes a thing of the past and eventually, a complete report can be created and printed out within just a few clicks.",
       "fourth": "We—Robin Löffel, Lukas Kocherhans, Matthias Jakob and Holger Jakob—wish you lots of fun with our product!"
+    }
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "questions": {
+      "videos": {
+        "general": {
+          "question": "1. Video tutorials",
+          "answer": "To make it as easy as possible for you to get started, we have created some videos that explain the basic functions of Agricontrol."
+        },
+        "createFieldsCultures": {
+          "question": "1.1. Create and edit fields and cultures",
+          "youtubeLink": "https://www.youtube-nocookie.com/embed/24odJbuHw1o"
+        },
+        "masterListFieldActivities": {
+          "question": "1.2. Masterlists and field activities",
+          "youtubeLink": "https://www.youtube-nocookie.com/embed/cLo_KXD1LAw"
+        },
+        "profile": {
+          "question": "1.3. User profile and company- or sub-users",
+          "youtubeLink": "https://www.youtube-nocookie.com/embed/yrp-6YD8cSk"
+        }
+      },
+      "product": {
+        "general": {
+          "question": "2. Our product",
+          "answer": "Agricontrol offers farmers in Switzerland a modern way to manage their fields, independent of location and equipment. Fields, crops and activities can be flexibly tracked and managed on a computer or smartphone within a very short timeframe. Tedious paperwork becomes unnecessary and ultimately a complete report can be created and printed out in just a few clicks."
+        },
+        "plans": {
+          "question": "2.1. Are there different packages to chose from at Agricontrol?",
+          "answer": "No, there's only one standard package. It's possible that additional functions will be added at a later date."
+        }
+      },
+      "subscription": {
+        "general": {
+          "question": "3. Your subscription",
+          "answer": "The platform of Agricontrol can be used as soon as you have registered."
+        },
+        "registration": {
+          "question": "3.1. How can I sign up?",
+          "answer": "In just a few clicks you can create an account at: <a class=\"link\" href=\"https://agricontrol.app/dashboard/register\">agricontrol.app/dashboard/register</a>."
+        },
+        "testPhase": {
+          "question": "3.2. Is there a testing period?",
+          "answer": "Yes! As soon as you've created an account, you can use the platform free of charge for two months."
+        },
+        "length": {
+          "question": "3.3. How long is the contract duration?",
+          "answer": "Whoever wants to use Agricontrol after the trial period can opt-in to a one-year subscription of this service."
+        },
+        "renewal": {
+          "question": "3.4. Is the subscription renewed automatically?",
+          "answer": "No! Your explicit agreement is necessary if you want to continue using Agricontrol after your subscription has run out."
+        },
+        "paymentOptions": {
+          "question": "3.5. What payment methods are supported?",
+          "answer": "You can choose to get your invoice as a PDF via e-mail or the old-fashioned way via letter."
+        },
+        "paymentDeadline": {
+          "question": "3.6 In how many days do I have to pay my invoices?",
+          "answer": "You should pay your invoice within 30 days."
+        }
+      },
+      "platform": {
+        "general": {
+          "question": "4. How to use",
+          "answer": "The platform can be used via smartphone, tablet or computer."
+        },
+        "signIn": {
+          "question": "4.1. Where do I log in?",
+          "answer": "You can log in here: <a class=\"link\" href=\"https://agricontrol.app/dashboard/login\">agricontrol.app/dashboard/login</a>."
+        },
+        "changePassword": {
+          "question": "4.2. How and where can I change my password?",
+          "answer": "You can change your password on your profile page. To get there, just click on your name in the upper-right corner, and then on Profile. Or just go here: <a class=\"link\" href=\"https://agricontrol.app/dashboard/settings\">agricontrol.app/dashboard/settings</a>."
+        },
+        "changeProfile": {
+          "question": "4.3. Where can I make changes to my profile?",
+          "answer": "You can change that within the app! Just go to your profile page by clicking your name in the upper-right corner."
+        },
+        "colorMaster": {
+          "question": "4.4. What is the color master for?",
+          "answer": "In the color master you can assign colors to every every crop in your application."
+        },
+        "lists": {
+          "question": "4.5. What do I have lists for?",
+          "answer": "<p class=\"paragraph\">You can find a lot of lists in the app. There's one for crop colors, your machines, your fertilizers, your pesticides and your tillages. Once defined, you can use them all across the application.</p><p class=\"paragraph\">The initial compilation of these lists are integral if you want to use the field sheet functionality. Entries can always be added, removed or edited.</p>"
+        },
+        "overview": {
+          "question": "4.6. What informations can I see on the dashboard?",
+          "answer": "<p class=\"paragraph\">In the overview you can see all fields including size and ecological area. You can also see the crops on the respective fields for the period of one year. With a slider you can move this period into the future or into the past. If you move the mouse over a culture, further information will be shown.</p><p class=\"paragraph\">Each field has three round symbols. Use the first icon to adjust an existing field (e.g. its name), the second icon to access the field information and click on the last icon to archive the field.</p><p class=\"paragraph\">An archived field can be displayed again if you select the checkbox \"Show archived fields\" and be activated if necessary by clicking the third symbol again. With a click behind the desired field you can enter a new culture.</p><p class=\"paragraph\">At the bottom of the dashboard you can see the total size of all fields, the number of fields and the number of currently exchanged crops. You can also see on which field size a crop was planted during the year (start or end date).</p>"
+        },
+        "newField": {
+          "question": "4.7. How do I add a new field?",
+          "answer": "Click the plus icon on the top left to create a new field. A new window will pop up, asking you to enter all the required information."
+        },
+        "deleteField": {
+          "question": "4.8. How can I delete a field?",
+          "answer": "<p class=\"paragraph\">If you want to delete a field from your overview, you can do this by first archiving it. To do this, click on the Archive button on the far right of the overview, to the left of \"New Culture\". If this is done, activate the checkbox \"Show archived fields\".</p><p class=\"paragraph\">You will now see all previously archived fields again. To delete a field, press \"Edit field\" and scroll down in the dialog. There you will find a red button \"Delete field\".</p>"
+        },
+        "cultures": {
+          "question": "4.9. How do I add cultures and how do I make changes to them?",
+          "answer": "<p class=\"paragraph\">With a click on the button \"New Culture\" a new culture is created. The required information is entered in the window that opens up and can be edited later on if necessary. Move the mouse over the culture and click on the pencil symbol.</p><p class=\"paragraph\">If you hover over a culture in the overview, additional information is displayed, such as with whom the field is exchanged and in which period the same culture has already been planted on this field. A symbol indicates if the current planning does not correspond to the crop rotation planning or if the field has been swapped.</p>"
+        },
+        "fieldInfos": {
+          "question": "4.10. What can I see in the field information?",
+          "answer": "With a click on the middle icon, behind the field in the overview, you get to the field information where the cultures are displayed more in detail and larger than in the overview. The displayed period can be adjusted. You can also create a PDF in graphical or tabular form by clicking on Export."
+        },
+        "cultureSheets": {
+          "question": "4.11. What are field sheets?",
+          "answer": "Field sheets are in development right now and will be available around the beginning of August. There, you will be able to add all tillages to a field, and to export them. This is necessary for controlling."
+        },
+        "exports": {
+          "question": "4.12. How can I create exports and what do I see there?",
+          "answer": "<p class=\"paragraph\">Exports can be created either in the field information with a click on the Export button or with a click on Export in the top navigation. Before exporting, you can select whether the export is to be created in graphical or tabular form.</p><p class=\"paragraph\">You can also choose the time period and which fields you want to see in the export. In order to be able to create a total export that is sufficient for the controlling, you have to record the last 7 years. On both exports the culture, the culture duration, the planted size, field name and more are visible.</p>"
+        }
+      },
+      "help": {
+        "contact": {
+          "question": "5. How can I get additional support?",
+          "answer": "<p class=\"paragraph\">The users of Agricontrol are provided with assistance via the platform:</p><ul><li>The FAQs</li><li>Mail support via <a class=\"link\" href=\"mailto:help@agricontrol.app\">help@agricontrol.app</a></li></ul><p class=\"paragraph\">You will receive an answer by e-mail within 24 hours on workdays and telephone support can be requested by e-mail.</p><p class=\"paragraph\">Telephone support is basically free of charge for small requests, but Agricontrol reserves the right to make a cost estimate for time-consuming support requests and send it to you by e-mail.</p>"
+        },
+        "feedback": {
+          "question": "5.1. How can I give feedback?",
+          "answer": "We're thankful for every kind of feedback or ideas on how we could improve our product! Please send us your feedback via <a class=\"link\" href=\"mailto:help@agricontrol.app\">help@agricontrol.app</a>. We appreciate it!"
+        }
+      }
     }
   },
   "cookies": {
