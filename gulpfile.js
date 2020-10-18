@@ -85,6 +85,7 @@ gulp.task('img:minimize', () => gulp.src([
     'source/img/favicon.png',
     'source/img/logo.svg',
     'source/img/open-graph.jpg',
+    'source/img/reto-feissli.jpg',
     'node_modules/feather-icons/dist/feather-sprite.svg'
   ])
   .pipe(plumber())

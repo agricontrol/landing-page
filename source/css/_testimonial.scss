@@ -1,0 +1,39 @@
+.testimonial {
+  @include after-shadow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: $space;
+  border: 1px solid $color-light-black;
+  border-radius: 10px;
+
+  @include mq-to-tablet {
+    padding: $space $space-half $space-half;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 75px;
+    display: block;
+    border-radius: 100%;
+    border: 1px solid $color-light-grey;
+  }
+
+  &__quotee,
+  &__company {
+    display: block;
+  }
+
+  &__quotee {
+    font-weight: 700;
+  }
+
+  &__company {
+    font-size: 0.8rem;
+  }
+}
