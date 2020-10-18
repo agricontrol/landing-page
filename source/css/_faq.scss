@@ -13,6 +13,10 @@
   max-height: calc(100vh - 150px);
   overflow-y: auto;
 
+  @include mq-to-tablet() {
+    display: none;
+  }
+
   &-link {
     position: relative;
     display: block;
