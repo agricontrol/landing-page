@@ -37,7 +37,7 @@
     "mdn-polyfills": "^5.20.0",
     "mehrsprachig": "^0.7.0",
     "open": "^7.3.0",
-    "postcss": "^8.1.1",
+    "postcss": "^8.1.2",
     "postcss-preset-env": "^6.7.0",
     "postcss-reporter": "^7.0.1",
     "postcss-scss": "^3.0.2",
