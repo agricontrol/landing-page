@@ -371,5 +371,13 @@
   "cookies": {
     "text": "Nous utilisons des cookies. Vous pouvez voir exactement ce que cela signifie dans notre <a class='link' href='datenschutz.html' target='_blank'>déclaration de protection des données</a>.",
     "button": "Accepter"
+  },
+  "testimonials": {
+    "retoFeissli": {
+      "quotee": "Reto Feissli",
+      "imageLink": "img/reto-feissli.jpg",
+      "company": "BG Feissli, Anet",
+      "quote": "« Agricontrol facilite mon travail de saisie. Je gagne beaucoup de temps grâce à la simplicité de l'interface utilisateurb graphique, à la possibilité de saisir des données pour plusieurs séries à la fois et aux calculs automatisés. »"
+    }
   }
 }

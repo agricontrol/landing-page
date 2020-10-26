@@ -371,5 +371,13 @@
   "cookies": {
     "text": "We use cookies. You can look at what exactly that means in our <a class='link' href='datenschutz.html' target='_blank'>Privacy policy</a>.",
     "button": "Accept"
+  },
+  "testimonials": {
+    "retoFeissli": {
+      "quotee": "Reto Feissli",
+      "imageLink": "img/reto-feissli.jpg",
+      "company": "BG Feissli, Ins",
+      "quote": "\"Agricontrol makes my recording work much easier. I save a lot of time thanks to the simple user interface, the ability to record activities for several records at once and automated calculations.\""
+    }
   }
 }
