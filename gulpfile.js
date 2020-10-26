@@ -1,19 +1,22 @@
 const gulp = require('gulp');
-const open = require('open');
-const del = require('del');
+const { execSync } = require('child_process');
+
 const plumber = require('gulp-plumber');
 const connect = require('gulp-connect');
-const sass = require('@rbnlffl/gulp-sass');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
 const rezzy = require('gulp-rezzy');
 const webp = require('gulp-webp');
+const rename = require('gulp-rename');
+const sass = require('@rbnlffl/gulp-sass');
+const rollup = require('@rbnlffl/gulp-rollup');
+
 const stylelint = require('stylelint');
 const cssnano = require('cssnano');
 const cssEnv = require('postcss-preset-env');
 const reporter = require('postcss-reporter');
 const scssParser = require('postcss-scss');
-const { rollup } = require('rollup');
+
 const buble = require('@rollup/plugin-buble');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
@@ -22,14 +25,23 @@ const eslint = require('@rbnlffl/rollup-plugin-eslint');
 
 const development = process.argv.includes('--dev');
 
+gulp.task('clean', done => {
+  execSync('rm -rf dist');
+  done();
+});
 
-gulp.task('clean', () => del('dist'));
-gulp.task('open:browser', () => open('http://localhost:8080'));
-gulp.task('open:dist', () => open('dist'));
+gulp.task('open:browser', done => {
+  execSync('open http://localhost:8080');
+  done();
+});
+
+gulp.task('open:dist', done => {
+  execSync('open dist');
+  done();
+});
 
 gulp.task('serve', done => {
   connect.server({
-    port: 8080,
     livereload: true,
     root: 'dist'
   });
@@ -58,28 +70,28 @@ gulp.task('css', () => gulp.src('source/css/*', {
   }))
   .pipe(connect.reload()));
 
-gulp.task('js', async () => {
-  const bundle = await rollup({
-    input: 'source/js',
+gulp.task('js', () => gulp.src('source/js/index.js', {
+    sourcemaps: development
+  })
+  .pipe(plumber())
+  .pipe(rollup({
     plugins: [
       eslint(),
       nodeResolve(),
       commonjs(),
       !development && buble(),
       !development && terser({
-        output: {
+        format: {
           comments: false
         }
       })
     ].filter(plugin => plugin)
-  });
-
-  await bundle.write({
-    sourcemap: development,
-    file: 'dist/js/bundle.js',
+  }, {
     format: 'iife'
-  });
-});
+  }))
+  .pipe(rename('bundle.js'))
+  .pipe(gulp.dest('dist/js'))
+  .pipe(connect.reload()));
 
 gulp.task('img:minimize', () => gulp.src([
     'source/img/favicon.png',
