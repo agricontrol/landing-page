@@ -9,3 +9,7 @@ mehrsprachig({
     en: '/data/en.json'
   }
 });
+
+document.addEventListener('mehrsprachigTranslated', event => {
+  document.documentElement.lang = event.detail;
+});
