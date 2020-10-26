@@ -115,15 +115,15 @@ gulp.task('img:optimize', () => gulp.src([
   .pipe(plumber())
   .pipe(rezzy([{
     width: 1920,
-    height: 1440,
+    height: 1200,
     suffix: '-1920w'
   }, {
     width: 1280,
-    height: 960,
+    height: 800,
     suffix: '-1280w'
   }, {
     width: 640,
-    height: 480,
+    height: 400,
     suffix: '-640w'
   }]))
   .pipe(imagemin({
