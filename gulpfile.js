@@ -43,7 +43,7 @@ gulp.task('serve', done => {
   done();
 });
 
-gulp.task('css', () => gulp.src('source/css/*', {
+gulp.task('css', () => gulp.src('source/css/index.scss', {
     sourcemaps: development
   })
   .pipe(plumber())
@@ -60,6 +60,7 @@ gulp.task('css', () => gulp.src('source/css/*', {
     cssEnv(),
     !development && cssnano()
   ].filter(plugin => plugin)))
+  .pipe(rename('agricontrol.css'))
   .pipe(gulp.dest('public/css', {
     sourcemaps: '.'
   }))
@@ -84,8 +85,10 @@ gulp.task('js', () => gulp.src('source/js/index.js', {
   }, {
     format: 'iife'
   }))
-  .pipe(rename('bundle.js'))
-  .pipe(gulp.dest('public/js'))
+  .pipe(rename('agricontrol.js'))
+  .pipe(gulp.dest('public/js', {
+    sourcemaps: '.'
+  }))
   .pipe(connect.reload()));
 
 gulp.task('img:minimize', () => gulp.src([
