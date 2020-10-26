@@ -26,7 +26,7 @@ const eslint = require('@rbnlffl/rollup-plugin-eslint');
 const development = process.argv.includes('--dev');
 
 gulp.task('clean', done => {
-  execSync('rm -rf dist');
+  execSync('rm -rf public');
   done();
 });
 
@@ -35,15 +35,10 @@ gulp.task('open:browser', done => {
   done();
 });
 
-gulp.task('open:dist', done => {
-  execSync('open dist');
-  done();
-});
-
 gulp.task('serve', done => {
   connect.server({
     livereload: true,
-    root: 'dist'
+    root: 'public'
   });
   done();
 });
@@ -65,7 +60,7 @@ gulp.task('css', () => gulp.src('source/css/*', {
     cssEnv(),
     !development && cssnano()
   ].filter(plugin => plugin)))
-  .pipe(gulp.dest('dist/css', {
+  .pipe(gulp.dest('public/css', {
     sourcemaps: '.'
   }))
   .pipe(connect.reload()));
@@ -90,7 +85,7 @@ gulp.task('js', () => gulp.src('source/js/index.js', {
     format: 'iife'
   }))
   .pipe(rename('bundle.js'))
-  .pipe(gulp.dest('dist/js'))
+  .pipe(gulp.dest('public/js'))
   .pipe(connect.reload()));
 
 gulp.task('img:minimize', () => gulp.src([
@@ -104,7 +99,7 @@ gulp.task('img:minimize', () => gulp.src([
   .pipe(imagemin({
     verbose: development
   }))
-  .pipe(gulp.dest('dist/img'))
+  .pipe(gulp.dest('public/img'))
   .pipe(connect.reload()));
 
 gulp.task('img:optimize', () => gulp.src([
@@ -131,16 +126,16 @@ gulp.task('img:optimize', () => gulp.src([
   .pipe(imagemin({
     verbose: development
   }))
-  .pipe(gulp.dest('dist/img'))
+  .pipe(gulp.dest('public/img'))
   .pipe(webp())
-  .pipe(gulp.dest('dist/img'))
+  .pipe(gulp.dest('public/img'))
   .pipe(connect.reload()));
 
 gulp.task('copy', () => gulp.src([ 'source/{*,}.*', 'source/data/*' ], {
     base: 'source'
   })
   .pipe(plumber())
-  .pipe(gulp.dest('dist'))
+  .pipe(gulp.dest('public'))
   .pipe(connect.reload()));
 
 
@@ -168,5 +163,4 @@ gulp.task('watch:root', done => {
 gulp.task('watch', gulp.parallel('watch:img', 'watch:js', 'watch:css', 'watch:root'));
 gulp.task('img', gulp.parallel('img:minimize', 'img:optimize'));
 gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img', 'copy')));
-gulp.task('dist', gulp.series('build', 'open:dist'));
 gulp.task('default', gulp.series('build', 'serve', 'open:browser', 'watch'));

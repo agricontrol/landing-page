@@ -9,8 +9,7 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp --dev",
-    "prod": "gulp",
-    "dist": "gulp dist"
+    "prod": "gulp"
   },
   "devDependencies": {
     "@rbnlffl/gulp-rollup": "^0.1.0",
