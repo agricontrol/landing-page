@@ -1,8 +1,8 @@
-const gulp = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 const { execSync } = require('child_process');
 
 const plumber = require('gulp-plumber');
-const connect = require('gulp-connect');
+const { server, reload } = require('gulp-connect');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
 const rezzy = require('gulp-rezzy');
@@ -25,145 +25,136 @@ const eslint = require('@rbnlffl/rollup-plugin-eslint');
 
 const development = process.argv.includes('--dev');
 
-gulp.task('clean', done => {
+const clean = done => {
   execSync('rm -rf public');
   done();
-});
+};
 
-gulp.task('open:browser', done => {
+const open = done => {
   execSync('open http://localhost:8080');
   done();
-});
+};
 
-gulp.task('serve', done => {
-  connect.server({
+const serve = done => {
+  server({
     livereload: true,
     root: 'public'
   });
   done();
-});
+};
 
-gulp.task('css', () => gulp.src('source/css/index.scss', {
-    sourcemaps: development
+const css = () => src('source/css/index.scss', {
+  sourcemaps: development
+})
+.pipe(plumber())
+.pipe(postcss([
+  stylelint(),
+  reporter({
+    clearReportedMessages: true
   })
-  .pipe(plumber())
-  .pipe(postcss([
-    stylelint(),
-    reporter({
-      clearReportedMessages: true
+], {
+  parser: scssParser
+}))
+.pipe(sass())
+.pipe(postcss([
+  cssEnv(),
+  !development && cssnano()
+].filter(plugin => plugin)))
+.pipe(rename('agricontrol.css'))
+.pipe(dest('public/css', {
+  sourcemaps: '.'
+}))
+.pipe(reload());
+
+const js = () => src('source/js/index.js', {
+  sourcemaps: development
+})
+.pipe(plumber())
+.pipe(rollup({
+  plugins: [
+    eslint(),
+    nodeResolve(),
+    commonjs(),
+    !development && buble(),
+    !development && terser({
+      format: {
+        comments: false
+      }
     })
-  ], {
-    parser: scssParser
-  }))
-  .pipe(sass())
-  .pipe(postcss([
-    cssEnv(),
-    !development && cssnano()
-  ].filter(plugin => plugin)))
-  .pipe(rename('agricontrol.css'))
-  .pipe(gulp.dest('public/css', {
-    sourcemaps: '.'
-  }))
-  .pipe(connect.reload()));
+  ].filter(plugin => plugin)
+}, {
+  format: 'iife'
+}))
+.pipe(rename('agricontrol.js'))
+.pipe(dest('public/js', {
+  sourcemaps: '.'
+}))
+.pipe(reload());
 
-gulp.task('js', () => gulp.src('source/js/index.js', {
-    sourcemaps: development
-  })
-  .pipe(plumber())
-  .pipe(rollup({
-    plugins: [
-      eslint(),
-      nodeResolve(),
-      commonjs(),
-      !development && buble(),
-      !development && terser({
-        format: {
-          comments: false
-        }
-      })
-    ].filter(plugin => plugin)
-  }, {
-    format: 'iife'
-  }))
-  .pipe(rename('agricontrol.js'))
-  .pipe(gulp.dest('public/js', {
-    sourcemaps: '.'
-  }))
-  .pipe(connect.reload()));
+const imgMinimize = () => src([
+  'source/img/favicon.png',
+  'source/img/logo.svg',
+  'source/img/open-graph.jpg',
+  'source/img/reto-feissli.jpg',
+  'node_modules/feather-icons/dist/feather-sprite.svg'
+])
+.pipe(plumber())
+.pipe(imagemin())
+.pipe(dest('public/img'))
+.pipe(reload());
 
-gulp.task('img:minimize', () => gulp.src([
-    'source/img/favicon.png',
-    'source/img/logo.svg',
-    'source/img/open-graph.jpg',
-    'source/img/reto-feissli.jpg',
-    'node_modules/feather-icons/dist/feather-sprite.svg'
-  ])
-  .pipe(plumber())
-  .pipe(imagemin({
-    verbose: development
-  }))
-  .pipe(gulp.dest('public/img'))
-  .pipe(connect.reload()));
+const imgOptimize = () => src([
+  'source/img/about.jpg',
+  'source/img/funktionsweise.jpg',
+  'source/img/header.jpg',
+  'source/img/vorteil.jpg',
+  'source/img/faqs.jpg'
+])
+.pipe(plumber())
+.pipe(rezzy([{
+  width: 1920,
+  height: 1200,
+  suffix: '-1920w'
+}, {
+  width: 1280,
+  height: 800,
+  suffix: '-1280w'
+}, {
+  width: 640,
+  height: 400,
+  suffix: '-640w'
+}]))
+.pipe(imagemin())
+.pipe(dest('public/img'))
+.pipe(webp())
+.pipe(dest('public/img'))
+.pipe(reload());
 
-gulp.task('img:optimize', () => gulp.src([
-    'source/img/about.jpg',
-    'source/img/funktionsweise.jpg',
-    'source/img/header.jpg',
-    'source/img/vorteil.jpg',
-    'source/img/faqs.jpg'
-  ])
-  .pipe(plumber())
-  .pipe(rezzy([{
-    width: 1920,
-    height: 1200,
-    suffix: '-1920w'
-  }, {
-    width: 1280,
-    height: 800,
-    suffix: '-1280w'
-  }, {
-    width: 640,
-    height: 400,
-    suffix: '-640w'
-  }]))
-  .pipe(imagemin({
-    verbose: development
-  }))
-  .pipe(gulp.dest('public/img'))
-  .pipe(webp())
-  .pipe(gulp.dest('public/img'))
-  .pipe(connect.reload()));
+const copy = () => src([
+  'source/{*,}.*',
+  'source/**/*.json'
+], {
+  base: 'source'
+})
+.pipe(plumber())
+.pipe(dest('public'))
+.pipe(reload());
 
-gulp.task('copy', () => gulp.src([ 'source/{*,}.*', 'source/data/*' ], {
-    base: 'source'
-  })
-  .pipe(plumber())
-  .pipe(gulp.dest('public'))
-  .pipe(connect.reload()));
+const img = parallel(imgMinimize, imgOptimize);
+const build = parallel(copy, js, css, img);
 
-
-gulp.task('watch:img', done => {
-  gulp.watch('source/img/*', gulp.parallel('img:minimize', 'img:optimize'));
+const watchAll = done => {
+  watch('source/img/**/*', img);
+  watch('source/**/*.scss', css);
+  watch('source/**/*.js', js);
+  watch([
+    'source/{*,}.*',
+    'source/**/*.json'
+  ], copy);
   done();
-});
+};
 
-gulp.task('watch:js', done => {
-  gulp.watch('source/js/*', gulp.parallel('js'));
-  done();
-});
-
-gulp.task('watch:css', done => {
-  gulp.watch('source/css/*', gulp.parallel('css'));
-  done();
-});
-
-gulp.task('watch:root', done => {
-  gulp.watch([ 'source/{*,}.*', 'source/data/*' ], gulp.parallel('copy'));
-  done();
-});
-
-
-gulp.task('watch', gulp.parallel('watch:img', 'watch:js', 'watch:css', 'watch:root'));
-gulp.task('img', gulp.parallel('img:minimize', 'img:optimize'));
-gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'img', 'copy')));
-gulp.task('default', gulp.series('build', 'serve', 'open:browser', 'watch'));
+module.exports = {
+  default: series(clean, build, serve, open, watchAll),
+  build
+};
