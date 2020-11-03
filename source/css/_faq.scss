@@ -1,5 +1,3 @@
-// * faq page
-
 .sidebar,
 .content {
   padding: $space-half $space;
@@ -20,8 +18,19 @@
   &-link {
     position: relative;
     display: block;
+    margin: $space-eigth 0;
+    text-decoration: none;
 
-    &--visible {
+    &-h2 {
+      font-weight: 700;
+      margin: $space-fourth 0;
+    }
+
+    &-h3 {
+      margin-left: $space-eigth;
+    }
+
+    &-visible {
       &::after {
         content: '»';
         position: absolute;

@@ -13,9 +13,9 @@ if (aside && content) {
         const navItem = aside.querySelector(`[data-sidebar-nav-target='${entry.target.dataset.sidebarNavId}'`);
 
         if (entry.isIntersecting) {
-          navItem.classList.add('sidebar-link--visible');
+          navItem.classList.add('sidebar-link-visible');
         } else {
-          navItem.classList.remove('sidebar-link--visible');
+          navItem.classList.remove('sidebar-link-visible');
         }
       });
     });
@@ -34,6 +34,7 @@ if (aside && content) {
       anchor.textContent = heading.textContent;
       anchor.classList.add('link');
       anchor.classList.add('sidebar-link');
+      anchor.classList.add(`sidebar-link-${heading.tagName.toLowerCase()}`);
       anchor.href = '#';
       anchor.dataset.sidebarNavTarget = index;
       anchor.addEventListener('click', smoothScroll);

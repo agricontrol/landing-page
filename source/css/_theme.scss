@@ -3,7 +3,6 @@ html {
   font-size: 120%;
   color: $color-grey;
   line-height: $line-height-text;
-  hyphens: auto;
 
   @include mq-to-tablet {
     font-size: 18px;
