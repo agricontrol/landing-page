@@ -272,9 +272,9 @@
           "answer": "No, there's only one standard package. It's possible that additional functions will be added at a later date."
         }
       },
-      "subscription": {
+      "subscriptionAndPrice": {
         "general": {
-          "question": "3. Your subscription",
+          "question": "3. Your subscriptionAndPrice",
           "answer": "The platform of Agricontrol can be used as soon as you have registered."
         },
         "registration": {
@@ -287,11 +287,11 @@
         },
         "length": {
           "question": "3.3. How long is the contract duration?",
-          "answer": "Whoever wants to use Agricontrol after the trial period can opt-in to a one-year subscription of this service."
+          "answer": "Whoever wants to use Agricontrol after the trial period can opt-in to a one-year subscriptionAndPrice of this service."
         },
         "renewal": {
-          "question": "3.4. Is the subscription renewed automatically?",
-          "answer": "No! Your explicit agreement is necessary if you want to continue using Agricontrol after your subscription has run out."
+          "question": "3.4. Is the subscriptionAndPrice renewed automatically?",
+          "answer": "No! Your explicit agreement is necessary if you want to continue using Agricontrol after your subscriptionAndPrice has run out."
         },
         "paymentOptions": {
           "question": "3.5. What payment methods are supported?",

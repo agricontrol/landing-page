@@ -272,7 +272,7 @@
           "answer": "Non, il existe un seul forfait standard. Il est possible que des fonctions supplémentaires soient ajoutées par la suite."
         }
       },
-      "subscription": {
+      "subscriptionAndPrice": {
         "general": {
           "question": "3. L'abonnement ",
           "answer": "La plateforme d'Agricontrol peut être utilisée dès que vous vous êtes inscrit sans engagement."
