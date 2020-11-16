@@ -84,33 +84,33 @@
     "heading": "Allgemeine Geschäftsbedingungen (AGB) für «agricontrol.app» und «agricontrol.ch»",
     "sections": {
       "first": {
-        "heading": "1. Geltungsbereich",
+        "heading": "Geltungsbereich",
         "paragraphs": {
           "first": "«agricontrol.app» und «agricontrol.ch» ist eine Plattform und ein Angebot der Informatio GmbH und erbringt Dienstleistungen ausschliesslich zu den nachstehenden Bedingungen (AGB). Von den AGB abweichende Vereinbarungen bedürfen der Schriftform.",
           "second": "Als «Plattform» wird die Webseite und die mobile Applikation bezeichnet, die im Eigentum der Informatio GmbH ist. Die AGB bilden Bestandteil des Angebots von «agricontrol.app» und «agricontrol.ch» und mit dem Zugriff auf die Plattform und/oder der Nutzung der Dienste der Plattform bestätigt der Nutzer, die vorliegenden AGB gelesen und verstanden zu haben und diesen zuzustimmen."
         }
       },
       "second": {
-        "heading": "2. Angebot und Preise",
+        "heading": "Angebot und Preise",
         "paragraphs": {
           "first": "Sämtliche Angebote auf «agricontrol.app» und «agricontrol.ch» sind unverbindlich. Informatio GmbH steht es frei, Angebot und Preise ohne Vorankündigung zu ändern. Es gelten die jeweils aktuellen Angebote und Preise zum Zeitpunkt der Registrierung. Der Umfang und die Funktionalitäten der Plattform kann jederzeit ändern, erweitert, eingeschränkt oder eingestellt werden. Preisänderungen, die nach der Registrierung erfolgen, gelten nur für neue Registrierungen. Die Preise sind in Schweizer Franken (CHF) und inkl. gesetzlicher Mehrwertsteuer angegeben."
         }
       },
       "third": {
-        "heading": "3. Zahlungsbedingungen",
+        "heading": "Zahlungsbedingungen",
         "paragraphs": {
           "first": "Der Rechnungsbetrag wird mit Zustellung der Rechnung fällig und ist innerhalb von 30 Tagen zu begleichen."
         }
       },
       "fourth": {
-        "heading": "4. Registrierung",
+        "heading": "Registrierung",
         "paragraphs": {
           "first": "Um das Angebot von «agricontrol.app» oder «agricontrol.ch» nutzen zu können, muss sich der Nutzer registrieren und ein Kundenkonto anlegen. Bei der Registrierung sind Name, Vorname, E-Mail-Adresse und eine Rechnungsadresse anzugeben. Diese Angaben können im Profil jederzeit eingesehen und angepasst werden und müssen wahr und vollständig sein.",
           "second": "Persönliche Zugangsdaten sind durch den Nutzer vertraulich zu behandeln und Dritten darf kein Zugang gewährt werden bzw. die Zugangsdaten dürfen nicht an Dritte weitergegeben werden. Sollten sich aus einer missbräuchlichen Verwendung oder unerlaubten Weitergabe von Zugangsdaten Schäden ergeben, kann die Informatio GmbH nicht haftbar gemacht werden. Ein Verstoss gegen diese AGB kann zum Verlust des Zugangs zu «agricontrol.app» und «agricontrol.ch» führen."
         }
       },
       "fifth": {
-        "heading": "5. Haftung",
+        "heading": "Haftung",
         "paragraphs": {
           "first": "Die Haftung der Informatio GmbH ist ausgeschlossen für alle Schäden, inklusive entgangenem Umsatz oder Gewinn, Nutzungsausfall oder Kosten für den Erwerb von Ersatzdienstleistungen, die sich aus dem Gebrauch, durch Fehlleistung oder Leistungsausfall der Dienstleistungen von «agricontrol.app» oder «agricontrol.ch» ergeben. Der Nutzer ist in jedem Fall selber für die Sicherung seiner Daten verantwortlich. Für verlorene Daten wird jede Haftung abgelehnt.",
           "second": "Informatio GmbH ist nicht verantwortlich oder haftbar für jegliche falsche oder falsch geschriebene Angaben inkl. E-Mail-Adresse, falsche (Mobil-) Telefonnummer und hat keine Verpflichtung, diese zu überprüfen. Für die Richtigkeit und Aktualität der Kundendaten ist alleine der Nutzer verantwortlich.",
@@ -119,13 +119,13 @@
         }
       },
       "sixth": {
-        "heading": "6. Informationspflicht",
+        "heading": "Informationspflicht",
         "paragraphs": {
           "first": "Die Parteien informieren rechtzeitig über Hindernisse, welche die vertragsmässige Erfüllung oder Bezahlung in Frage stellen oder zu unzweckmässigen Lösungen führen können."
         }
       },
       "seventh": {
-        "heading": "7. Schlussbestimmungen",
+        "heading": "Schlussbestimmungen",
         "paragraphs": {
           "first": "Gerichtsstand ist der Sitz von Informatio GmbH. Anwendbar ist Schweizerisches Recht."
         }
@@ -246,147 +246,147 @@
     "questions": {
       "videos": {
         "general": {
-          "question": "1. Video-Anleitungen",
+          "question": "Video-Anleitungen",
           "answer": "Um Ihnen den Einstieg so einfach wie möglich zu gestalten, haben wir einige Videos für Sie gestaltet, welche Ihnen die Grundfunktionalitäten von Agricontrol erklären."
         },
         "createFieldsCultures": {
-          "question": "1.1. Erstellen und bearbeiten von Feldern und Kulturen",
+          "question": "Erstellen und bearbeiten von Feldern und Kulturen",
           "youtubeLink": "https://www.youtube-nocookie.com/embed/oHMHVfXVt9A"
         },
         "masterListFieldActivities": {
-          "question": "1.2. Masterlisten und Feldaktivitäten",
+          "question": "Masterlisten und Feldaktivitäten",
           "youtubeLink": "https://www.youtube-nocookie.com/embed/ZXVRQeS-4gw"
         },
         "profile": {
-          "question": "1.3. Benutzerprofil und Firmen- bzw. Unterbenutzer",
+          "question": "Benutzerprofil und Firmen- bzw. Unterbenutzer",
           "youtubeLink": "https://www.youtube-nocookie.com/embed/x-9SvWlkciI"
         }
       },
       "product": {
         "general": {
-          "question": "2. Unser Produkt",
+          "question": "Unser Produkt",
           "answer": "<p class='paragraph'>Agricontrol bietet den Bauern und Bäuerinnen in der Schweiz orts- und geräteunabhängig eine zeitgemässe Möglichkeit zur Feldverwaltung.</p><p class='paragraph'>Flexibel können auf dem Computer wie auch auf dem Smartphone Felder, Kulturen und Tätigkeiten innert kürzester Zeit erfasst und bearbeitet werden. Mühsame Papierarbeit wird überflüssig und am Schluss kann mit wenigen Klicks der gewünschte Export erstellt und ausgedruckt werden.<p>"
         },
         "plans": {
-          "question": "2.1. Gibt es bei Agricontrol verschiedene Module und Preise?",
+          "question": "Gibt es bei Agricontrol verschiedene Module und Preise?",
           "answer": "Nein, es gibt nur ein Standardpaket."
         }
       },
       "subscriptionAndPrice": {
         "general": {
-          "question": "3. Abonnement & Preis",
+          "question": "Abonnement & Preis",
           "answer": "Die Plattform von Agricontrol kann genutzt werden sobald man sich unverbindlich registriert hat."
         },
         "registration": {
-          "question": "3.1. Wie kann ich mich registrieren?",
+          "question": "Wie kann ich mich registrieren?",
           "answer": "Mit wenigen Klicks kann unter <a class=\"link\" href=\"https://agricontrol.app/dashboard/register\">agricontrol.app/dashboard/register</a> ein Benutzer erstellt werden."
         },
         "login": {
-          "question": "3.2. Wo muss ich mich anmelden?",
+          "question": "Wo muss ich mich anmelden?",
           "answer": "Unter dem Link <a class='link' href='https://agricontrol.app/dashboard/login'>agricontrol.app/dashboard/login</a> kann man sich anmelden und auf die Plattform zugreifen."
         },
         "loginShare": {
-          "question": "3.3. Kann ich meine Logindaten weitergeben?",
+          "question": "Kann ich meine Logindaten weitergeben?",
           "answer": "Im Abo ist ein Hauptnutzer inbegriffen. Die Weitergabe der Logindaten ist nicht erlaubt. Sie können aber bis zu 3 Unterbenutzer zu Ihrem Konto einladen."
         },
         "addingSubUsers": {
-          "question": "3.4. Wie kann ich weitere Unterbenutzer zu meinem Konto hinzufügen?",
+          "question": "Wie kann ich weitere Unterbenutzer zu meinem Konto hinzufügen?",
           "answer": "<p class='paragraph'>Sie haben die Möglichkeit kostenlos bis zu 3 Benutzer zu Ihrem Konto hinzuzufügen. Nach dem hinzufügen eines zusätzlichen Benutzers, wird die angegebene Mailadresse eine E-Mail mit einem Link zur Plattform erhalten, wo nun ein Passwort definiert werden kann.</p><p class='paragraph'>So können Sie mit Ihren Mitarbeitenden zusammenarbeiten und bei Bedarf den Zugang wieder löschen. Die eingeladenen haben die gleichen Möglichkeiten wie der Hauptnutzer, sehen jedoch nicht das Profil und können auch das Abo nicht verlängern.</p>"
         },
         "testPhase": {
-          "question": "3.5. Gibt es eine Testphase?",
+          "question": "Gibt es eine Testphase?",
           "answer": "Ja, ab dem Zeitpunkt der Registration kann die Plattform ohne Einschränkungen während 2 Monaten kostenlos genutzt werden."
         },
         "length": {
-          "question": "3.6. Wie lange ist die Vertragsdauer?",
+          "question": "Wie lange ist die Vertragsdauer?",
           "answer": "Wer das Angebot von Agricontrol auch nach der Testphase nutzen will kann ein Abonnement für 1 Jahr abschliessen."
         },
         "purchase": {
-          "question": "3.7. Wie schliesse ich ein Abonnement ab?",
+          "question": "Wie schliesse ich ein Abonnement ab?",
           "answer": "Im Dashboard gibt es oben einen Knopf «Jetzt Abo abschliessen» um das Abo abzuschliessen. Danach werden Sie durch die nötigen Schritte geführt."
         },
         "renewal": {
-          "question": "3.8. Gibt es eine automatische Verlängerung des Abonnements?",
+          "question": "Gibt es eine automatische Verlängerung des Abonnements?",
           "answer": "Nein! Ihre Zustimmung ist nötig, falls Sie die Plattform von Agricontrol nach Ablauf des Abonnements weiternutzen wollen."
         },
         "cancellation": {
-          "question": "3.9. Wie und wo kann ich mein Konto/mein Abo künden und löschen?",
+          "question": "Wie und wo kann ich mein Konto/mein Abo künden und löschen?",
           "answer": "Wenn Sie angemeldet sind können Sie Ihr Konto löschen indem Sie via Menü auf Ihrem Profil ganz unten auf der Seite «Konto löschen» auswählen. Dieser Schritt kann nicht rückgängig gemacht werden."
         },
         "paymentOptions": {
-          "question": "3.10. Welche Zahlungsarten sind möglich?",
+          "question": "Welche Zahlungsarten sind möglich?",
           "answer": "Beim Abschluss des Abos entscheiden sie selbst, ob Sie die Rechung als PDF per E-Mail oder in Papierform als Brief erhalten."
         },
         "paymentDeadline": {
-          "question": "3.11. Wie lange habe ich Zeit um eine Rechnung von Agricontrol zu bezahlen?",
+          "question": "Wie lange habe ich Zeit um eine Rechnung von Agricontrol zu bezahlen?",
           "answer": "Die Rechnung ist innert 30 Tagen nach Erhalt zu bezahlen."
         },
         "prices": {
-          "question": "3.12. Was sind die Preise?",
+          "question": "Was sind die Preise?",
           "answer": "<p class='paragraph'>Nach dem Ablauf der kostenlosen Testphase kostet ein Abonnement pro Jahr 499.- CHF inkl. Gesetzlicher MwSt. Wird das Abonnement vor Ende Dezember 2020 abgeschlossen, gibt es einen Rabatt von 100.- CHF auf das erste Jahr.</p><p class='paragraph'>Kosten für aussergewöhnlichen Support werden individuell geschätzt und nach Zustimmung des Nutzers effektiv (im Rahmen +-10% der Schätzung) verrechnet.</p><p class='paragraph'>Agricontrol bietet auf Anfrage verschiedene kostenpflichtige Dienstleistungen wie z.B. Nacherfassung Ihrer letzten Fruchtfolgeplanungen an. Anfragen sind an <a class='link' href='mailto:help@agricontrol.app'>help@agricontrol.app</a> zu richten. Verrechnet wird pro angefangene 30 Minuten zum Preis von 50.- CHF exkl. gesetzlicher MwSt.</p><p class='paragraph'>Datenkosten (Internet) für die Nutzung von Agricontrol gehen komplett zu Lasten des Kunden.</p>"
         }
       },
       "platform": {
         "general": {
-          "question": "4. Nutzung der Plattform",
+          "question": "Nutzung der Plattform",
           "answer": "Die Plattform kann auf dem Mobiltelefon, auf dem Tablet oder auf Ihrem Computer benutzt werden."
         },
         "signIn": {
-          "question": "4.1. Wo muss ich mich anmelden?",
+          "question": "Wo muss ich mich anmelden?",
           "answer": "Unter dem Link <a class=\"link\" href=\"https://agricontrol.app/dashboard/login\">agricontrol.app/dashboard/login</a> kann man sich anmelden und auf die Plattform zugreifen."
         },
         "changePassword": {
-          "question": "4.2. Wie und wo kann ich mein Passwort ändern?",
+          "question": "Wie und wo kann ich mein Passwort ändern?",
           "answer": "In der Plattform kann man das Passwort im Profil ändern. Dazu einfach auf den Namen oder das Menü in der Ecke oben rechts klicken oder den Link <a class=\"link\" href=\"https://agricontrol.app/dashboard/settings\">agricontrol.app/dashboard/settings</a> nutzen."
         },
         "changeProfile": {
-          "question": "4.3. Wo können Änderungen im Profil vorgenommen werden?",
+          "question": "Wo können Änderungen im Profil vorgenommen werden?",
           "answer": "In der Plattform kann man das Profil ändern. Dazu einfach auf den Namen oder das Menü in der Ecke oben rechts klicken oder den Link <a class=\"link\" href=\"https://agricontrol.app/dashboard/settings\">agricontrol.app/dashboard/settings</a> nutzen."
         },
         "colorMaster": {
-          "question": "4.4. Wozu dient der Farbmaster?",
+          "question": "Wozu dient der Farbmaster?",
           "answer": "Im Farbmaster können sie die Farben, die in der Plattform für die jeweiligen Kulturen angezeigt werden, individuell nach Ihrem Geschmack anpassen."
         },
         "lists": {
-          "question": "4.5. Für was habe ich Listen?",
+          "question": "Für was habe ich Listen?",
           "answer": "<p class=\"paragraph\">In der Plattform finden Sie die Listen im Menü, in der Ecke oben rechts. Es gibt jeweils eine Liste für die Farben der Kulturen, die Düngemittel, die Pflanzenschutzmittel, die Maschinen und die Bodenbearbeitungsmassnahmen.</p><p class=\"paragraph\">Einmal definiert stehen die Werte aus dieser Liste in der Plattform zur Verfügung. Diese Erfassung ist nötig wenn man die Funktionen rund um die Kulturenblätter nutzen möchte. Neue Einträge oder Anpassungen einer Liste können jederzeit vorgenommen werden.</p>"
         },
         "overview": {
-          "question": "4.6. Welche Informationen sehe ich in der Übersicht?",
+          "question": "Welche Informationen sehe ich in der Übersicht?",
           "answer": "<p class=\"paragraph\">In der Übersicht sieht man alle erfassten Felder inklusive Grösse und Ökofläche. Ebenfalls sieht man die Kulturen auf den jeweiligen Felder, dies für den Zeitraum von einem Jahr. Mit einem Schiebebalken kann man diesen Zeitraum in die Zukunft oder in die Vergangenheit schieben. Fährt man mit der Maus über eine Kultur werden dazu weitere Informationen angezeigt.</p><p class=\"paragraph\">Bei jedem Feld gibt es drei runde Symbole. Mit dem ersten Symbol kann man das bestehende Feld anpassen (z.B. den Namen), mit dem zweiten gelangt man auf die Feldinformationen und mit einem Klick auf das letzte erhält man die Möglichkeit das Feld zu archivieren.</p><p class=\"paragraph\">Ein archiviertes Feld kann wieder angezeigt werden wenn man die Checkbox \"archvierte Felder anzeigen\" auswählt und bei Bedarf aktiviert werden wenn man erneut das dritte Symbol auswählt. Mit einem Klick hinter dem gewünschten Feld kann man eine neue Kultur erfassen.</p><p class=\"paragraph\"> Am Ende des Dashboards werden Kennzahlen zu Gesamtgrösse aller Felder, Anzahl Felder und Anzahl aktuell abgetauschter Kulturen angezeigt. Ebenfalls ist ersichtlich auf welcher Feldgrösse eine Kultur pro Jahr angepflanzt.</p>"
         },
         "newField": {
-          "question": "4.7. Wie erfasse ich ein neues Feld?",
+          "question": "Wie erfasse ich ein neues Feld?",
           "answer": "Mit einem Klick auf den + Knopf oben links kann ein neues Feld erstellt werden. Dazu sind einige Angaben erforderlich, die im aufgehenden Fenster eingegeben werden müssen."
         },
         "deleteField": {
-          "question": "4.8. Wie kann ich ein Feld löschen?",
+          "question": "Wie kann ich ein Feld löschen?",
           "answer": "<p class=\"paragraph\">Wenn Sie ein Feld aus Ihrer Übersicht löschen möchten, so können Sie dies tun, indem Sie das zu löschende Feld zunächst archivieren. Dies tun Sie in der Übersicht über einen Klick auf den Archivieren-Knopf ganz rechts, links neben «Neue Kultur».</p><p class=\"paragraph\">Ist das getan, so aktivieren Sie das Häkchen «Archivierte Felder anzeigen». Sie sehen alle zuvor archivierten Felder nun wieder. Um ein Feld zu löschen, drücken Sie auf «Feld bearbeiten» und scrollen Sie im Dialog ganz nach unten. Dort finden Sie nun einen roten Knopf «Feld löschen».</p>"
         },
         "cultures": {
-          "question": "4.9. Wie erfasse ich Kulturen und wie kann ich Änderungen vornehmen?",
+          "question": "Wie erfasse ich Kulturen und wie kann ich Änderungen vornehmen?",
           "answer": "<p class=\"paragraph\">Mit einem Klick auf den Knopf «Neue Kultur» wird eine neue Kultur erstellt. Die benötigten Informationen werden im aufgehenden Fenster eingegeben und können später bei Bedarf angepasst werden. Dazu fährt man mit der Maus in der Übersicht über die Kultur und klickt Bleistift-Symbol.</p><p class=\"paragraph\">Wenn man in der Übersicht über die Kultur fährt werden zusätzliche Informationen angezeigt, wie zum Beispiel mit wem das Feld abgetauscht ist und in welchem Zeitraum dieselbe Kultur schon einmal auf diesem Feld angepflanzt war.</p><p class=\"paragraph\">Mit einem Symbol wird darauf hingewiesen, falls die aktuelle Planung nicht der Fruchtfolgeplanung entspricht oder dass das Feld abgetauscht ist.</p>"
         },
         "fieldInfos": {
-          "question": "4.10. Was sehe ich in den Feldinformationen?",
+          "question": "Was sehe ich in den Feldinformationen?",
           "answer": "Mit einem Klick auf das mittlere runde Symbol, hinter dem Feld in der Übersicht, gelangt man zu den Feldinformationen wo die Kulturen detaillierter und grösser dargestellt sind als in der Übersicht. Der angezeigt Zeitraum kann angepasst werden. Ebenfalls kann man hier mit einem Klick auf Export ein PDF in grafischer oder tabellarischer Form erstellen lassen."
         },
         "cultureSheets": {
-          "question": "4.11. Was sind Kulturenblätter?",
+          "question": "Was sind Kulturenblätter?",
           "answer": "Die Kulturenblätter sind aktuell in Entwicklung und werden etwa Anfang August verfügbar sein. Dort wird man die Möglichkeit haben alle Tätigkeiten (Düngen, Bodenbearbeitung, Pflanzenschutz etc.) auf dem Feld zu erfassen und zu exportieren, welche für die Kontrolle und Planung nötig sind."
         },
         "exports": {
-          "question": "4.12. Wo kann ich Exporte erstellen und was sehe ich dort?",
+          "question": "Wo kann ich Exporte erstellen und was sehe ich dort?",
           "answer": "<p class=\"paragraph\">Exports können entweder in den Feldinformationen mit einem Klick auf den Export-Knopf oder mit einem Klick auf Exporte in der Top-Navigation erstellt werden. Vor dem Export kann man auswählen, ob der Export in grafischer oder tabellarischer Form erstellt werden.</p><p class=\"paragraph\">Auch wählen kann man den Zeitraum und welche Felder man im Export sehen will. Um einen Gesamtexport erstellen zu können, der für die Kontrolle ausreicht, muss man die 7 letzten Jahre nacherfassen. Auf beiden Exporten ist die Kultur, die Kulturendauer, die bepflanzte Grösse, Feldname und weiteres ersichtlich.</p>"
         }
       },
       "help": {
         "contact": {
-          "question": "5. Welche Hilfe kann ich beanspruchen?",
+          "question": "Welche Hilfe kann ich beanspruchen?",
           "answer": "<p class=\"paragraph\">Als Hilfe steht den Nutzern der Agricontrol Plattform zur Verfügung:</p><ul><li>Die FAQs</li><li>Mailsupport via <a class=\"link\" href=\"mailto:help@agricontrol.app\">help@agricontrol.app</a></li></ul><p class=\"paragraph\">Per Mail erhalten Sie an Werktagen innert 24 Stunden eine Antwort und via Mail kann telefonischer Support angefragt werden.</p><p class=\"paragraph\">Telefonischer Support ist grundsätzlich für kleine Anliegen kostenfrei aber Agricontrol behält es sich vor, für zeitintensive Support-Anfragen eine Kostenschätzung zu machen und Ihnen per Mail zuzustellen.</p>"
         },
         "feedback": {
-          "question": "5.1. Wie kann ich eine Rückmeldung geben?",
+          "question": "Wie kann ich eine Rückmeldung geben?",
           "answer": "Wir sind dankbar für jegliche Rückmeldungen und Ideen zur Verbesserung der Plattform. Bitte senden Sie uns Ihr Feedback per E-Mail an <a class=\"link\" href=\"mailto:help@agricontrol.app\">help@agricontrol.app</a>. Vielen Dank!"
         }
       }
