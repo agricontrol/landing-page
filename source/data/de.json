@@ -244,24 +244,6 @@
   "faq": {
     "heading": "Häufig gestellte Fragen",
     "questions": {
-      "videos": {
-        "general": {
-          "question": "Video-Anleitungen",
-          "answer": "Um Ihnen den Einstieg so einfach wie möglich zu gestalten, haben wir einige Videos für Sie gestaltet, welche Ihnen die Grundfunktionalitäten von Agricontrol erklären."
-        },
-        "createFieldsCultures": {
-          "question": "Erstellen und bearbeiten von Feldern und Kulturen",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/oHMHVfXVt9A"
-        },
-        "masterListFieldActivities": {
-          "question": "Masterlisten und Feldaktivitäten",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/ZXVRQeS-4gw"
-        },
-        "profile": {
-          "question": "Benutzerprofil und Firmen- bzw. Unterbenutzer",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/x-9SvWlkciI"
-        }
-      },
       "product": {
         "general": {
           "question": "Unser Produkt",
@@ -291,7 +273,8 @@
         },
         "addingSubUsers": {
           "question": "Wie kann ich weitere Unterbenutzer zu meinem Konto hinzufügen?",
-          "answer": "<p class='paragraph'>Sie haben die Möglichkeit kostenlos bis zu 3 Benutzer zu Ihrem Konto hinzuzufügen. Nach dem hinzufügen eines zusätzlichen Benutzers, wird die angegebene Mailadresse eine E-Mail mit einem Link zur Plattform erhalten, wo nun ein Passwort definiert werden kann.</p><p class='paragraph'>So können Sie mit Ihren Mitarbeitenden zusammenarbeiten und bei Bedarf den Zugang wieder löschen. Die eingeladenen haben die gleichen Möglichkeiten wie der Hauptnutzer, sehen jedoch nicht das Profil und können auch das Abo nicht verlängern.</p>"
+          "answer": "<p class='paragraph'>Sie haben die Möglichkeit kostenlos bis zu 3 Benutzer zu Ihrem Konto hinzuzufügen. Nach dem hinzufügen eines zusätzlichen Benutzers, wird die angegebene Mailadresse eine E-Mail mit einem Link zur Plattform erhalten, wo nun ein Passwort definiert werden kann.</p><p class='paragraph'>So können Sie mit Ihren Mitarbeitenden zusammenarbeiten und bei Bedarf den Zugang wieder löschen. Die eingeladenen haben die gleichen Möglichkeiten wie der Hauptnutzer, sehen jedoch nicht das Profil und können auch das Abo nicht verlängern.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/_sGpF136VSk"
         },
         "testPhase": {
           "question": "Gibt es eine Testphase?",
@@ -303,7 +286,8 @@
         },
         "purchase": {
           "question": "Wie schliesse ich ein Abonnement ab?",
-          "answer": "Im Dashboard gibt es oben einen Knopf «Jetzt Abo abschliessen» um das Abo abzuschliessen. Danach werden Sie durch die nötigen Schritte geführt."
+          "answer": "Im Dashboard gibt es oben einen Knopf «Jetzt Abo abschliessen» um das Abo abzuschliessen. Danach werden Sie durch die nötigen Schritte geführt.",
+          "video": "https://www.youtube-nocookie.com/embed/QEDWh4mfd_s"
         },
         "renewal": {
           "question": "Gibt es eine automatische Verlängerung des Abonnements?",
@@ -311,7 +295,9 @@
         },
         "cancellation": {
           "question": "Wie und wo kann ich mein Konto/mein Abo künden und löschen?",
-          "answer": "Wenn Sie angemeldet sind können Sie Ihr Konto löschen indem Sie via Menü auf Ihrem Profil ganz unten auf der Seite «Konto löschen» auswählen. Dieser Schritt kann nicht rückgängig gemacht werden."
+          "answer": "Wenn Sie angemeldet sind können Sie Ihr Konto löschen indem Sie via Menü auf Ihrem Profil ganz unten auf der Seite «Konto löschen» auswählen. Dieser Schritt kann nicht rückgängig gemacht werden.",
+          "video": "https://www.youtube-nocookie.com/embed/oN4uhP2us9w"
+
         },
         "paymentOptions": {
           "question": "Welche Zahlungsarten sind möglich?",
@@ -337,7 +323,7 @@
         },
         "changePassword": {
           "question": "Wie und wo kann ich mein Passwort ändern?",
-          "answer": "In der Plattform kann man das Passwort im Profil ändern. Dazu einfach auf den Namen oder das Menü in der Ecke oben rechts klicken oder den Link <a class=\"link\" href=\"https://agricontrol.app/dashboard/settings\">agricontrol.app/dashboard/settings</a> nutzen."
+          "answer": "In der Plattform kann man das Passwort im Profil ändern. Dazu einfach auf den Namen oder das Menü in der Ecke oben rechts klicken oder den Link <a class='link' href='https://agricontrol.app/dashboard/settings'>agricontrol.app/dashboard/settings</a> nutzen. Nun kann im zweiten Bereich das Passwort geändert werden."
         },
         "changeProfile": {
           "question": "Wo können Änderungen im Profil vorgenommen werden?",
@@ -345,39 +331,66 @@
         },
         "colorMaster": {
           "question": "Wozu dient der Farbmaster?",
-          "answer": "Im Farbmaster können sie die Farben, die in der Plattform für die jeweiligen Kulturen angezeigt werden, individuell nach Ihrem Geschmack anpassen."
+          "answer": "Im Farbmaster können sie die Farben, die in der Plattform für die jeweiligen Kulturen angezeigt werden, individuell nach Ihrem Geschmack anpassen.",
+          "video": "https://www.youtube-nocookie.com/embed/9nQHdL51USU"
+
         },
         "lists": {
-          "question": "Für was habe ich Listen?",
-          "answer": "<p class=\"paragraph\">In der Plattform finden Sie die Listen im Menü, in der Ecke oben rechts. Es gibt jeweils eine Liste für die Farben der Kulturen, die Düngemittel, die Pflanzenschutzmittel, die Maschinen und die Bodenbearbeitungsmassnahmen.</p><p class=\"paragraph\">Einmal definiert stehen die Werte aus dieser Liste in der Plattform zur Verfügung. Diese Erfassung ist nötig wenn man die Funktionen rund um die Kulturenblätter nutzen möchte. Neue Einträge oder Anpassungen einer Liste können jederzeit vorgenommen werden.</p>"
+          "question": "Wozu habe ich Masterlisten?",
+          "answer": "<p class=\"paragraph\">In der Plattform finden Sie die Listen im Menü, in der Ecke oben rechts. Es gibt jeweils eine Liste für die Maschinen, die Bodenbearbeitungsmassnahmen inkl. Saat und Ernte (=> alle Tätigkeiten ausser Düngung und Pflanzenschutztätigkeiten), Krankheiten/Schädlinge, die Düngemittel und die Pflanzenschutzmittel.</p><p class=\"paragraph\">Einmal definiert stehen die Werte aus dieser Liste in der Plattform zur Verfügung. Diese Erfassung ist nötig wenn man die Funktionen rund um die Kulturenblätter nutzen möchte. Neue Einträge oder Anpassungen einer Liste können jederzeit vorgenommen werden.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/tS_wP27Ufu0"
         },
         "overview": {
-          "question": "Welche Informationen sehe ich in der Übersicht?",
-          "answer": "<p class=\"paragraph\">In der Übersicht sieht man alle erfassten Felder inklusive Grösse und Ökofläche. Ebenfalls sieht man die Kulturen auf den jeweiligen Felder, dies für den Zeitraum von einem Jahr. Mit einem Schiebebalken kann man diesen Zeitraum in die Zukunft oder in die Vergangenheit schieben. Fährt man mit der Maus über eine Kultur werden dazu weitere Informationen angezeigt.</p><p class=\"paragraph\">Bei jedem Feld gibt es drei runde Symbole. Mit dem ersten Symbol kann man das bestehende Feld anpassen (z.B. den Namen), mit dem zweiten gelangt man auf die Feldinformationen und mit einem Klick auf das letzte erhält man die Möglichkeit das Feld zu archivieren.</p><p class=\"paragraph\">Ein archiviertes Feld kann wieder angezeigt werden wenn man die Checkbox \"archvierte Felder anzeigen\" auswählt und bei Bedarf aktiviert werden wenn man erneut das dritte Symbol auswählt. Mit einem Klick hinter dem gewünschten Feld kann man eine neue Kultur erfassen.</p><p class=\"paragraph\"> Am Ende des Dashboards werden Kennzahlen zu Gesamtgrösse aller Felder, Anzahl Felder und Anzahl aktuell abgetauschter Kulturen angezeigt. Ebenfalls ist ersichtlich auf welcher Feldgrösse eine Kultur pro Jahr angepflanzt.</p>"
+          "question": "Welche Informationen sehe ich in der Übersicht bzw. dem Dashboard?",
+          "answer": "<p class=\"paragraph\">In der Übersicht sieht man alle erfassten Felder inklusive Grösse und Ökofläche. Ebenfalls sieht man die Kulturen auf den jeweiligen Felder, dies für den Zeitraum von einem Jahr. Mit einem Schiebebalken kann man diesen Zeitraum in die Zukunft oder in die Vergangenheit schieben. Fährt man mit der Maus über eine Kultur werden dazu weitere Informationen angezeigt.</p><p class=\"paragraph\">Bei jedem Feld gibt es drei runde Symbole. Mit dem ersten Symbol kann man das bestehende Feld anpassen (z.B. den Namen), mit dem zweiten gelangt man auf die Feldinformationen und mit einem Klick auf das letzte erhält man die Möglichkeit das Feld zu archivieren.</p><p class=\"paragraph\">Ein archiviertes Feld kann wieder angezeigt werden wenn man die Checkbox \"Archvierte Felder anzeigen\" auswählt und bei Bedarf aktiviert werden wenn man erneut das dritte Symbol auswählt. Mit einem Klick auf den Knopf \"Neue Kultur\" hinter dem gewünschten Feld kann man eine neue Kultur erfassen. Dies geht auch mit einem Doppelklick in den grauen Bereich jedes Feldes, wo die Kulturen unterhalb der Monatsangaben angezeigt werden.</p><p class=\"paragraph\">Am Ende des Dashboards werden Kennzahlen zu Gesamtgrösse aller Felder, Anzahl Felder und Anzahl aktuell abgetauschter Kulturen angezeigt. Ebenfalls ist ersichtlich auf welcher Feldgrösse eine Kultur pro Jahr angepflanzt wurde (Start- oder Enddatum).</p>",
+          "video": "https://www.youtube-nocookie.com/embed/TdwjZ1oY-TA"
         },
         "newField": {
           "question": "Wie erfasse ich ein neues Feld?",
-          "answer": "Mit einem Klick auf den + Knopf oben links kann ein neues Feld erstellt werden. Dazu sind einige Angaben erforderlich, die im aufgehenden Fenster eingegeben werden müssen."
+          "answer": "Mit einem Klick auf den Knopf \"Neues Feld\" oben links über der Übersicht Ihrer Felder kann ein neues Feld erstellt werden. Dazu sind einige Angaben erforderlich, die im aufgehenden Fenster eingegeben werden müssen.",
+          "video": "https://www.youtube-nocookie.com/embed/-BH8kerhPPg"
         },
         "deleteField": {
           "question": "Wie kann ich ein Feld löschen?",
           "answer": "<p class=\"paragraph\">Wenn Sie ein Feld aus Ihrer Übersicht löschen möchten, so können Sie dies tun, indem Sie das zu löschende Feld zunächst archivieren. Dies tun Sie in der Übersicht über einen Klick auf den Archivieren-Knopf ganz rechts, links neben «Neue Kultur».</p><p class=\"paragraph\">Ist das getan, so aktivieren Sie das Häkchen «Archivierte Felder anzeigen». Sie sehen alle zuvor archivierten Felder nun wieder. Um ein Feld zu löschen, drücken Sie auf «Feld bearbeiten» und scrollen Sie im Dialog ganz nach unten. Dort finden Sie nun einen roten Knopf «Feld löschen».</p>"
         },
         "cultures": {
-          "question": "Wie erfasse ich Kulturen und wie kann ich Änderungen vornehmen?",
-          "answer": "<p class=\"paragraph\">Mit einem Klick auf den Knopf «Neue Kultur» wird eine neue Kultur erstellt. Die benötigten Informationen werden im aufgehenden Fenster eingegeben und können später bei Bedarf angepasst werden. Dazu fährt man mit der Maus in der Übersicht über die Kultur und klickt Bleistift-Symbol.</p><p class=\"paragraph\">Wenn man in der Übersicht über die Kultur fährt werden zusätzliche Informationen angezeigt, wie zum Beispiel mit wem das Feld abgetauscht ist und in welchem Zeitraum dieselbe Kultur schon einmal auf diesem Feld angepflanzt war.</p><p class=\"paragraph\">Mit einem Symbol wird darauf hingewiesen, falls die aktuelle Planung nicht der Fruchtfolgeplanung entspricht oder dass das Feld abgetauscht ist.</p>"
+          "question": "Wie erfasse ich neue Kulturen und wie kann ich Änderungen vornehmen?",
+          "answer": "<p class='paragraph'>Mit einem Klick auf den Knopf «Neue Kultur» hinter dem gewünschten Feld kann man eine neue Kultur erfassen. Dies geht auch mit einem Doppelklick in den grauen Bereich jedes Feldes, wo die Kulturen unterhalb der Monatsangaben angezeigt werden. Die nötigen Informationen werden in einem Fenster eingegeben und können später angepasst werden wenn man mit der Maus in der Übersicht über die Kultur fährt und dann auf das Bleistift-Symbol klickt.</p><p class='paragraph'>Wenn man in der Übersicht über die Kultur fährt werden zusätzliche Informationen angezeigt wie zum Beispiel mit wem das Feld abgetauscht ist und in welchem Zeitraum bereits die gleiche Kultur auf diesem Feld angepflanzt war. Mit einem Symbol wird darauf hingewiesen, falls die aktuelle Planung nicht der Fruchtfolgeplanung entspricht oder dass das Feld abgetauscht ist.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/5N9p2iH8nIU"
+
         },
         "fieldInfos": {
           "question": "Was sehe ich in den Feldinformationen?",
-          "answer": "Mit einem Klick auf das mittlere runde Symbol, hinter dem Feld in der Übersicht, gelangt man zu den Feldinformationen wo die Kulturen detaillierter und grösser dargestellt sind als in der Übersicht. Der angezeigt Zeitraum kann angepasst werden. Ebenfalls kann man hier mit einem Klick auf Export ein PDF in grafischer oder tabellarischer Form erstellen lassen."
+          "answer": "Mit einem Klick auf das mittlere runde Symbol, hinter dem Feld in der Übersicht, gelangt man zu den Feldinformationen wo die Kulturen detaillierter und grösser dargestellt sind als in der Übersicht. Der angezeigte Zeitraum kann angepasst werden."
         },
         "cultureSheets": {
           "question": "Was sind Kulturenblätter?",
-          "answer": "Die Kulturenblätter sind aktuell in Entwicklung und werden etwa Anfang August verfügbar sein. Dort wird man die Möglichkeit haben alle Tätigkeiten (Düngen, Bodenbearbeitung, Pflanzenschutz etc.) auf dem Feld zu erfassen und zu exportieren, welche für die Kontrolle und Planung nötig sind."
+          "answer": "<p class='paragraph'>Die Kulturenblätter bieten die Möglichkeit für eine Kultur eine Aufzeichnung aller Tätigkeiten auf dem Feld aufzuzeichnen. Wenn man mit der Maus über die gewünschte Kultur in der Feldübersicht/Dashboard fährt, dann sieht man zusätzliche Informationen zu der Kultur und hat oben rechts zwei Icons.</p><p class='paragraph'>Mit dem ersten Bleistiftsymbol kann ich die Kultur bearbeiten und mit dem «Registerkarten + Symbol» kann man auf das Kulturenblatt zugreiffen. Wenn man dies auf einem mobilen Gerät macht, dann muss man einmal auf die gewünschte Kultur klicken und die zusätzlichen Informationen sowie die beiden Icons werden angzeigt.</p><p class='paragraph'>Im Kulturenblatt gibt es nun die 3 Abschnitte Düngen, Pflanzenschutz und Bodenbearbeitung (inkl. Saat und Ernte). Mit einem Klick auf den gewünschten Bereich kann man nun neue Tätigkeiten für diese Kultur im jeweiligen Bereich erfassen. Dazu einfach die vorgegebenen Felder ausfüllen und am Ende auf «Tätigkeit speichern» klicken.</p><p class='paragraph'>Damit dies möglich ist muss man eventuell vorgängig in den Masterlisten einmalig die gewünschten Maschinen, Dünge- und Pflanzenschutzmittel erfassen, falls dies nicht schon gemacht wurde.</p><p class='paragraph'>Beim Pflanzenschutz gibt es die Möglichkeit gleichzeitig mehrere Mittel auf einmal zu erfassen. Dies ist Möglich wenn man auf den «+ Knopf» klickt und somit zusätzliche Mittel auswählen kann. Zudem ist es in allen Bereichen möglich die Tätigkeit gleichzeitig für mehrere Kulturen zu erfassen. Dazu gibt es das Eingabefeld «für andere Kulturen übernehmen», wo nun die weiteren Kulturen ausgewählt werden können</p>Es werden die genau gleichen Werte erfasst. Die Menge/ha beim Düngen und beim Pflanzenschutz wird ebenfalls übernommen und die entsprechende Gesamtmenge wird mit Hilfe der Kulturengrösse berechnet</p><p class='paragraph'>Ganz unten in jedem Bereich gibt es den auf- und zuklappbaren Bereich «Frühere Tätigkeiten», wo die bisherigen Tätigkeiten eingesehen, gelöscht oder angepasst werden können.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/9RMLEeyYwYY"
         },
         "exports": {
-          "question": "Wo kann ich Exporte erstellen und was sehe ich dort?",
-          "answer": "<p class=\"paragraph\">Exports können entweder in den Feldinformationen mit einem Klick auf den Export-Knopf oder mit einem Klick auf Exporte in der Top-Navigation erstellt werden. Vor dem Export kann man auswählen, ob der Export in grafischer oder tabellarischer Form erstellt werden.</p><p class=\"paragraph\">Auch wählen kann man den Zeitraum und welche Felder man im Export sehen will. Um einen Gesamtexport erstellen zu können, der für die Kontrolle ausreicht, muss man die 7 letzten Jahre nacherfassen. Auf beiden Exporten ist die Kultur, die Kulturendauer, die bepflanzte Grösse, Feldname und weiteres ersichtlich.</p>"
+          "question": "Wo und wie kann ich Exporte erstellen?",
+          "answer": "<p class='paragraph'>Exporte können mit einem Klick auf «Exporte» in der Top-Navigation erstellt werden. Folgende Exporte stehen zur Verfügung: Fruchtfolge, Kulturenblätter, Angebaute Fläche pro Kultur und Jahr, Inventar der Dünge- und Pflanzenschutzmittel und die Düngemittelbilanz. Mit einem Klick auf den gewünschten Bereich kann ein Export erstellt und heruntergeladen werden.</p><p class='paragraph'>Wählen Sie dazu einfach das gewünschte Datum oder Jahr aus und klicken sie auf «exportieren». Vor dem Export der Fruchtfolge kann man auswählen, ob der Export in grafischer oder tabellarischer Form erstellt werden. Auch wählen kann man den Zeitraum und welche Felder man im Export sehen will.</p><p class='paragraph'>Um einen Gesamtexport erstellen zu können, der für die Kontrolle ausreicht, muss man die 7 letzten Jahre nacherfassen. Auf den Exporten ist ersichtlich, was sie im Dashboard erfasst haben und für die Kontrolle notwendig ist. Zum Beispiel die Kultur, die Kulturendauer, die bepflanzte Grösse, Feldname und weiteres ersichtlich.</p>"
+        },
+        "whatCultures": {
+          "question": "Welche Kulturen können bei der Arbeit mit Agricontrol ausgewählt werden?",
+          "answer": "Die Liste der Kulturen wird stetig angepasst und ausgebaut. Die Liste ist im Menü unter dem Punkt Kulturen zu finden wo sie auch die Farbe pro Kultur individuell anpassen können. Zögern Sie nicht Kontakt mit uns aufzunehmen falls Ihnen eine Kultur fehlt."
+        },
+        "inventory": {
+          "question": "Wo findet man das Inventar und wie funktioniert es?",
+          "answer": "<p class='paragraph'>Das Inventar findet man im Menu oben rechts. Das Inventar dient dazu, immer zu sehen wie viel Dünge- und Pflanzenschutzmittel im Lager noch vorhanden ist. Zudem soll es ermöglichen, dass man jederzeit für eine Kontrolle bereit ist oder für ein gewünschtes Datum den Stand einsehen und ausdrucken kann.</p><p class='paragraph'>Wird das Inventar das erste Mal geöffnet, ist es noch leer. Man hat hat für die beiden Bereiche Düngemittel und Pflanzenschutzmittel drei Abschnitte im Inventar. Im Bereich «Im Lager» sieht man, was aktuell im Lager vorhanden ist. Eingerechnet sind dort alle Tätigkeiten, die bereits erfasst sind, auch wenn diese in der Zukunft liegen.</p><p class='paragraph'>Ebenfalls eingerechnet sind dort neue Einlagerungen ins Inventar, falls diese für die Zukunft bereits schon erfasst wurden. Im Bereich «Lager auffüllen» kann ich mit wenigen Klicks neue Mengen ins Inventar aufnehmen indem die notwendigen Felder (Produkt, Menge, Datum etc.) ausgefüllt werden.</p><p class='paragraph'>Es ist auch möglich hier mehrere Produkte gleichzeitig zu erfassen, falls das Datum und der Lieferant identisch sind. Die Produkte müssen vorgängig in der jeweiligen Masterliste einmalig erfasst werden. Im Bereich Historie  sehe ich alle bisherigen Neuerfassungen im Inventar.</p><p class='paragraph'>Mit einem Klick kann ich diese Erfassung löschen oder anpassen, falls sie fehlerhaft ist. Ist das Inventar einmal erfasst, werden die Bestände automatisch aktualisiert wenn relevante Tätigkeiten (Düngen und Pflanzenschutzmittel in den Kulturenblättern) erfasst werden oder das Lager aufgefüllt wird.</p><p class='paragraph'>Unter «Exportieren» kann das Inventar für jeden beliebigen Tag eingesehen und zum Drucken exportiert werden. In den angegebenen Beträgen sind alle Tätigkeiten und Auffüllungen des Inventars enthalten, die bis und mit dem gewünschten Tag erfolgt sind. Zum Beispiel ist die  Düngetätigkeit vom 20. Oktober im Export per 20. Oktober noch enthalten aber die geplante und bereits erfasste Auffüllung vom 21. Oktober nicht.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/puPKJY6Igzc"
+        },
+        "exportsDontWork": {
+          "question": "Warum kann ich keine Exporte erstellen?",
+          "answer": "Ist ihre kostenlose Testphase oder Ihr Abonnement abgelaufen? Wenn dies der Fall ist, können Sie keine Exporte mehr erstellen bis Sie Ihr Abo entsprechend verlängern. Wenn dies nicht zutrifft, hilft meistens das Löschen des Browserverlaufs inkl. Cache.",
+          "video": "https://www.youtube-nocookie.com/embed/tGVbWBzyhIY"
+
+        },
+        "endlessLoading": {
+          "question": "Warum erhalte ich nach dem Login nur einen Ladebildschirm?",
+          "answer": "Wenn nach der Anmeldung oder zu einem anderen Zeitpunkt nur ein Ladebildschirm zu sehen ist und dieser auch nach 10 Sekunden nicht verschwindet, hilft es meistens die Seite zu aktualisieren. Falls dies nicht helfen sollte, kann es hilfreich sein die Seite ganz zu schliessen und falls nötig den Browserverlauf und den Cache zu löschen und es danach erneut zu versuchen."
         }
       },
       "help": {
