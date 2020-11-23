@@ -297,7 +297,6 @@
           "question": "Wie und wo kann ich mein Konto/mein Abo künden und löschen?",
           "answer": "Wenn Sie angemeldet sind können Sie Ihr Konto löschen indem Sie via Menü auf Ihrem Profil ganz unten auf der Seite «Konto löschen» auswählen. Dieser Schritt kann nicht rückgängig gemacht werden.",
           "video": "https://www.youtube-nocookie.com/embed/oN4uhP2us9w"
-
         },
         "paymentOptions": {
           "question": "Welche Zahlungsarten sind möglich?",
@@ -309,7 +308,7 @@
         },
         "prices": {
           "question": "Was sind die Preise?",
-          "answer": "<p class='paragraph'>Nach dem Ablauf der kostenlosen Testphase kostet ein Abonnement pro Jahr 499.- CHF inkl. Gesetzlicher MwSt. Wird das Abonnement vor Ende Dezember 2020 abgeschlossen, gibt es einen Rabatt von 100.- CHF auf das erste Jahr.</p><p class='paragraph'>Kosten für aussergewöhnlichen Support werden individuell geschätzt und nach Zustimmung des Nutzers effektiv (im Rahmen +-10% der Schätzung) verrechnet.</p><p class='paragraph'>Agricontrol bietet auf Anfrage verschiedene kostenpflichtige Dienstleistungen wie z.B. Nacherfassung Ihrer letzten Fruchtfolgeplanungen an. Anfragen sind an <a class='link' href='mailto:help@agricontrol.app'>help@agricontrol.app</a> zu richten. Verrechnet wird pro angefangene 30 Minuten zum Preis von 50.- CHF exkl. gesetzlicher MwSt.</p><p class='paragraph'>Datenkosten (Internet) für die Nutzung von Agricontrol gehen komplett zu Lasten des Kunden.</p>"
+          "answer": "<p class='paragraph'>Nach dem Ablauf der kostenlosen Testphase kostet ein Abonnement pro Jahr 499.- CHF inkl. Gesetzlicher MwSt. Wird das Abonnement vor Ende Dezember 2020 abgeschlossen, gibt es einen Rabatt von 100.- CHF auf das erste Jahr.</p><p class='paragraph'>Kosten für aussergewöhnlichen Support werden individuell geschätzt und nach Zustimmung des Nutzers effektiv (im Rahmen ±10% der Schätzung) verrechnet.</p><p class='paragraph'>Agricontrol bietet auf Anfrage verschiedene kostenpflichtige Dienstleistungen wie z.B. Nacherfassung Ihrer letzten Fruchtfolgeplanungen an. Anfragen sind an <a class='link' href='mailto:help@agricontrol.app'>help@agricontrol.app</a> zu richten. Verrechnet wird pro angefangene 30 Minuten zum Preis von 50.- CHF exkl. gesetzlicher MwSt.</p><p class='paragraph'>Datenkosten (Internet) für die Nutzung von Agricontrol gehen komplett zu Lasten des Kunden.</p>"
         }
       },
       "platform": {
@@ -333,7 +332,6 @@
           "question": "Wozu dient der Farbmaster?",
           "answer": "Im Farbmaster können sie die Farben, die in der Plattform für die jeweiligen Kulturen angezeigt werden, individuell nach Ihrem Geschmack anpassen.",
           "video": "https://www.youtube-nocookie.com/embed/9nQHdL51USU"
-
         },
         "lists": {
           "question": "Wozu habe ich Masterlisten?",
@@ -358,7 +356,6 @@
           "question": "Wie erfasse ich neue Kulturen und wie kann ich Änderungen vornehmen?",
           "answer": "<p class='paragraph'>Mit einem Klick auf den Knopf «Neue Kultur» hinter dem gewünschten Feld kann man eine neue Kultur erfassen. Dies geht auch mit einem Doppelklick in den grauen Bereich jedes Feldes, wo die Kulturen unterhalb der Monatsangaben angezeigt werden. Die nötigen Informationen werden in einem Fenster eingegeben und können später angepasst werden wenn man mit der Maus in der Übersicht über die Kultur fährt und dann auf das Bleistift-Symbol klickt.</p><p class='paragraph'>Wenn man in der Übersicht über die Kultur fährt werden zusätzliche Informationen angezeigt wie zum Beispiel mit wem das Feld abgetauscht ist und in welchem Zeitraum bereits die gleiche Kultur auf diesem Feld angepflanzt war. Mit einem Symbol wird darauf hingewiesen, falls die aktuelle Planung nicht der Fruchtfolgeplanung entspricht oder dass das Feld abgetauscht ist.</p>",
           "video": "https://www.youtube-nocookie.com/embed/5N9p2iH8nIU"
-
         },
         "fieldInfos": {
           "question": "Was sehe ich in den Feldinformationen?",
@@ -386,7 +383,6 @@
           "question": "Warum kann ich keine Exporte erstellen?",
           "answer": "Ist ihre kostenlose Testphase oder Ihr Abonnement abgelaufen? Wenn dies der Fall ist, können Sie keine Exporte mehr erstellen bis Sie Ihr Abo entsprechend verlängern. Wenn dies nicht zutrifft, hilft meistens das Löschen des Browserverlaufs inkl. Cache.",
           "video": "https://www.youtube-nocookie.com/embed/tGVbWBzyhIY"
-
         },
         "endlessLoading": {
           "question": "Warum erhalte ich nach dem Login nur einen Ladebildschirm?",

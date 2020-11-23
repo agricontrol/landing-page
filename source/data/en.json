@@ -244,24 +244,6 @@
   "faq": {
     "heading": "Frequently asked questions",
     "questions": {
-      "videos": {
-        "general": {
-          "question": "Video tutorials",
-          "answer": "To make it as easy as possible for you to get started, we have created some videos that explain the basic functions of Agricontrol."
-        },
-        "createFieldsCultures": {
-          "question": "Create and edit fields and cultures",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/24odJbuHw1o"
-        },
-        "masterListFieldActivities": {
-          "question": "Masterlists and field activities",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/cLo_KXD1LAw"
-        },
-        "profile": {
-          "question": "User profile and company- or sub-users",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/yrp-6YD8cSk"
-        }
-      },
       "product": {
         "general": {
           "question": "Our product",
@@ -274,7 +256,7 @@
       },
       "subscriptionAndPrice": {
         "general": {
-          "question": "Your subscriptionAndPrice",
+          "question": "Subscription & price",
           "answer": "The platform of Agricontrol can be used as soon as you have registered."
         },
         "registration": {
@@ -298,8 +280,35 @@
           "answer": "You can choose to get your invoice as a PDF via e-mail or the old-fashioned way via letter."
         },
         "paymentDeadline": {
-          "question": "3.6 In how many days do I have to pay my invoices?",
+          "question": "In how many days do I have to pay my invoices?",
           "answer": "You should pay your invoice within 30 days."
+        },
+        "login": {
+          "question": "Where do I log in?",
+          "answer": "You can log in here: <a class='link' href='https://agricontrol.app/dashboard/login'>agricontrol.app/dashboard/login</a>."
+        },
+        "loginShare": {
+          "question": "Can I share my login data?",
+          "answer": "The subscription includes one main user. The passing on of login data is not allowed. But you can invite up to 3 sub users to your account."
+        },
+        "addingSubUsers": {
+          "question": "How can I add more sub-users to my account?",
+          "answer": "<p class='paragraph'>You have the possibility to add up to 3 users to your account for free. After adding an additional user, the specified email address will receive an email with a link to the platform, where a password can now be defined.</p><p class='paragraph'>This allows you to collaborate with your employees and delete access if necessary. The invited ones have the same possibilities as the main user, but do not see the profile and cannot renew the subscription.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/_sGpF136VSk"
+        },
+        "purchase": {
+          "question": "How do I subscribe?",
+          "answer": "In the dashboard there is a \"Upgrade Now\" button at the top to subscribe. You will then be guided through the necessary steps.",
+          "video": "https://www.youtube-nocookie.com/embed/QEDWh4mfd_s"
+        },
+        "cancellation": {
+          "question": "How and where can I cancel and delete my account/subscription?",
+          "answer": "If you are logged in you can delete your account by selecting \"Delete Account\" from the menu at the bottom of your profile. This step cannot be undone.",
+          "video": "https://www.youtube-nocookie.com/embed/oN4uhP2us9w"
+        },
+        "prices": {
+          "question": "What are the prices?",
+          "answer": "<p class='paragraph'>After the free trial period has expired, a subscription costs CHF 499 per year incl. VAT. If the subscription is bought before the end of December 2020, there will be a discount of CHF 100 on the first year.</p><p class='paragraph'>Costs for exceptional support are estimated individually and charged effectively (within ±10% of the estimate) after the user's approval.</p><p class='paragraph'>Agricontrol offers various fee-based services on request, such as post-entry recording of your last crop rotation plans. Inquiries should be sent to help@agricontrol.app. You will be charged per 30 minutes and starting at CHF 50 excl. VAT.</p><p class='paragraph'>Data costs (Internet) for the use of Agricontrol are completely at the expense of the customer.</p>"
         }
       },
       "platform": {
@@ -321,19 +330,23 @@
         },
         "colorMaster": {
           "question": "What is the color master for?",
-          "answer": "In the color master you can assign colors to every every crop in your application."
+          "answer": "In the color master you can assign colors to every every crop in your application.",
+          "video": "https://www.youtube-nocookie.com/embed/9nQHdL51USU"
         },
         "lists": {
           "question": "What do I have lists for?",
-          "answer": "<p class=\"paragraph\">You can find a lot of lists in the app. There's one for crop colors, your machines, your fertilizers, your pesticides and your tillages. Once defined, you can use them all across the application.</p><p class=\"paragraph\">The initial compilation of these lists are integral if you want to use the field sheet functionality. Entries can always be added, removed or edited.</p>"
+          "answer": "<p class=\"paragraph\">You can find a lot of lists in the app. There's one for crop colors, your machines, your fertilizers, your pesticides and your tillages. Once defined, you can use them all across the application.</p><p class=\"paragraph\">The initial compilation of these lists are integral if you want to use the field sheet functionality. Entries can always be added, removed or edited.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/tS_wP27Ufu0"
         },
         "overview": {
           "question": "What informations can I see on the dashboard?",
-          "answer": "<p class=\"paragraph\">In the overview you can see all fields including size and ecological area. You can also see the crops on the respective fields for the period of one year. With a slider you can move this period into the future or into the past. If you move the mouse over a culture, further information will be shown.</p><p class=\"paragraph\">Each field has three round symbols. Use the first icon to adjust an existing field (e.g. its name), the second icon to access the field information and click on the last icon to archive the field.</p><p class=\"paragraph\">An archived field can be displayed again if you select the checkbox \"Show archived fields\" and be activated if necessary by clicking the third symbol again. With a click behind the desired field you can enter a new culture.</p><p class=\"paragraph\">At the bottom of the dashboard you can see the total size of all fields, the number of fields and the number of currently exchanged crops. You can also see on which field size a crop was planted during the year (start or end date).</p>"
+          "answer": "<p class=\"paragraph\">In the overview you can see all fields including size and ecological area. You can also see the crops on the respective fields for the period of one year. With a slider you can move this period into the future or into the past. If you move the mouse over a culture, further information will be shown.</p><p class=\"paragraph\">Each field has three round symbols. Use the first icon to adjust an existing field (e.g. its name), the second icon to access the field information and click on the last icon to archive the field.</p><p class=\"paragraph\">An archived field can be displayed again if you select the checkbox \"Show archived fields\" and be activated if necessary by clicking the third symbol again. With a click behind the desired field you can enter a new culture.</p><p class=\"paragraph\">At the bottom of the dashboard you can see the total size of all fields, the number of fields and the number of currently exchanged crops. You can also see on which field size a crop was planted during the year (start or end date).</p>",
+          "video": "https://www.youtube-nocookie.com/embed/TdwjZ1oY-TA"
         },
         "newField": {
           "question": "How do I add a new field?",
-          "answer": "Click the plus icon on the top left to create a new field. A new window will pop up, asking you to enter all the required information."
+          "answer": "Click the plus icon on the top left to create a new field. A new window will pop up, asking you to enter all the required information.",
+          "video": "https://www.youtube-nocookie.com/embed/-BH8kerhPPg"
         },
         "deleteField": {
           "question": "How can I delete a field?",
@@ -341,7 +354,8 @@
         },
         "cultures": {
           "question": "How do I add cultures and how do I make changes to them?",
-          "answer": "<p class=\"paragraph\">With a click on the button \"New Culture\" a new culture is created. The required information is entered in the window that opens up and can be edited later on if necessary. Move the mouse over the culture and click on the pencil symbol.</p><p class=\"paragraph\">If you hover over a culture in the overview, additional information is displayed, such as with whom the field is exchanged and in which period the same culture has already been planted on this field. A symbol indicates if the current planning does not correspond to the crop rotation planning or if the field has been swapped.</p>"
+          "answer": "<p class=\"paragraph\">With a click on the button \"New Culture\" a new culture is created. The required information is entered in the window that opens up and can be edited later on if necessary. Move the mouse over the culture and click on the pencil symbol.</p><p class=\"paragraph\">If you hover over a culture in the overview, additional information is displayed, such as with whom the field is exchanged and in which period the same culture has already been planted on this field. A symbol indicates if the current planning does not correspond to the crop rotation planning or if the field has been swapped.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/5N9p2iH8nIU"
         },
         "fieldInfos": {
           "question": "What can I see in the field information?",
@@ -349,11 +363,30 @@
         },
         "cultureSheets": {
           "question": "What are field sheets?",
-          "answer": "Field sheets are in development right now and will be available around the beginning of August. There, you will be able to add all tillages to a field, and to export them. This is necessary for controlling."
+          "answer": "Field sheets are in development right now and will be available around the beginning of August. There, you will be able to add all tillages to a field, and to export them. This is necessary for controlling.",
+          "video": "https://www.youtube-nocookie.com/embed/9RMLEeyYwYY"
         },
         "exports": {
           "question": "How can I create exports and what do I see there?",
           "answer": "<p class=\"paragraph\">Exports can be created either in the field information with a click on the Export button or with a click on Export in the top navigation. Before exporting, you can select whether the export is to be created in graphical or tabular form.</p><p class=\"paragraph\">You can also choose the time period and which fields you want to see in the export. In order to be able to create a total export that is sufficient for the controlling, you have to record the last 7 years. On both exports the culture, the culture duration, the planted size, field name and more are visible.</p>"
+        },
+        "whatCultures": {
+          "question": "Which crops can be selected when working with Agricontrol?",
+          "answer": "The list of crops is constantly being adapted and expanded. The list can be found in the menu under the item cultures where you can also customize the color per culture. Please do not hesitate to contact us if you are missing a culture."
+        },
+        "inventory": {
+          "question": "Where can I find the inventory and how does it work?",
+          "answer": "<p class='paragraph'>The inventory can be found in the menu on the top right. The inventory serves to always see how much fertilizer and pesticide is still available in the camp. Besides it is to make possible that one is at any time ready for a control or for a desired date the conditions to see and print out.</p><p class='paragraph'>When the inventory is opened for the first time, it is still empty. There are three sections in the inventory for the two areas of fertilizers and pesticides. In the section \"In Stock\" you can see what is currently in stock. Included there are all activities that are already recorded, even if they are in the future. Also included are new storage in the inventory, if these have already been recorded for the future.</p><p class='paragraph'>In the area \"Fill up stock\" I can add new quantities to the inventory with a few clicks by filling in the necessary fields (product, quantity, date etc.). It is also possible to enter several products at the same time, if the date and the supplier are identical. The products must be entered once in the respective master list.</p><p class='paragraph'>In the history section I can see all previous new entries in the inventory. With one click I can delete or adjust this entry if it is incorrect.</p><p class='paragraph'>Once the inventory has been entered, the stocks are automatically updated when relevant activities (fertilizers and pesticides in the crop leaves) are entered or when the warehouse is refilled.</p><p class='paragraph'>Under \"Export\" the inventory can be viewed for any day and exported for printing. The amounts shown include all activities and replenishments of the inventory up to and including the desired day. For example, the fertilizer activity of October 20 is still included in the export as of October 20, but the planned and already recorded replenishment of October 21 is not.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/puPKJY6Igzc"
+        },
+        "exportsDontWork": {
+          "question": "Why can't I create exports?",
+          "answer": "Has your free trial or subscription expired? If this is the case, you will not be able to create exports until you renew your subscription accordingly. If this is not the case, it usually helps to delete the browser history including cache.",
+          "video": "https://www.youtube-nocookie.com/embed/tGVbWBzyhIY"
+        },
+        "endlessLoading": {
+          "question": "Why do I only get a loading screen after after loading?",
+          "answer": "If after logging in or at any other time only a loading screen is visible and this does not disappear even after 10 seconds, it usually helps to refresh the page. If this does not help, it may be helpful to close the page completely and if necessary clear the browser history and cache and try again afterwards."
         }
       },
       "help": {

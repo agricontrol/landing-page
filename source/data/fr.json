@@ -244,24 +244,6 @@
   "faq": {
     "heading": "Questions fréquemment posées",
     "questions": {
-      "videos": {
-        "general": {
-          "question": "Tutoriels vidéo",
-          "answer": "Afin de vous faciliter au maximum la tâche, nous avons créé quelques vidéos pour vous expliquer les fonctions de base d'Agricontrol."
-        },
-        "createFieldsCultures": {
-          "question": "Créer et éditer des champs et des cultures",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/WVSJVEa2I68"
-        },
-        "masterListFieldActivities": {
-          "question": "Listes maîtresses et activités de terrain",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/twzhz-FHHas"
-        },
-        "profile": {
-          "question": "Profil utilisateur et société ou sous-utilisateur",
-          "youtubeLink": "https://www.youtube-nocookie.com/embed/Bvec6Nz_vR0"
-        }
-      },
       "product": {
         "general": {
           "question": "Notre produit",
@@ -274,7 +256,7 @@
       },
       "subscriptionAndPrice": {
         "general": {
-          "question": "L'abonnement ",
+          "question": "Abonnement & prix",
           "answer": "La plateforme d'Agricontrol peut être utilisée dès que vous vous êtes inscrit sans engagement."
         },
         "registration": {
@@ -300,6 +282,33 @@
         "paymentDeadline": {
           "question": "Dans quel délai dois-je payer une facture d'Agricontrol ?",
           "answer": "La facture doit être payée dans les 30 jours suivant sa réception."
+        },
+        "login": {
+          "question": "Où dois-je me connecter ?",
+          "answer": "Sous le lien <a class='link' href='https://agricontrol.app/dashboard/login'>agricontrol.app/dashboard/login</a> vous pouvez vous connecter et accéder à la plateforme."
+        },
+        "loginShare": {
+          "question": "Puis-je transmettre mes données de connexion ?",
+          "answer": "L'abonnement comprend un utilisateur principal. La transmission des données de connexion n'est pas autorisée. Mais vous pouvez inviter jusqu'à 3 sous-utilisateurs à votre compte."
+        },
+        "addingSubUsers": {
+          "question": "Comment puis-je ajouter d'autres sous-utilisateurs à mon compte ?",
+          "answer": "<p class='paragraph'>Vous avez la possibilité d'ajouter gratuitement jusqu'à 3 utilisateurs à votre compte. Après avoir ajouté un utilisateur supplémentaire, l'adresse électronique spécifiée recevra un courriel avec un lien vers la plate-forme, où un mot de passe peut maintenant être défini.</p><p class='paragraph'>Cela vous permet de collaborer avec vos employés et de supprimer l'accès si nécessaire. Les personnes invitées ont les mêmes possibilités que l'utilisateur principal, mais elles ne voient pas le profil et ne peuvent pas renouveler l'abonnement.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/_sGpF136VSk"
+        },
+        "purchase": {
+          "question": "Comment souscrire un abonnement ?",
+          "answer": "En haut du tableau de bord, il y a un bouton « S'abonner maintenant » pour compléter l'abonnement. Vous serez ensuite guidé à travers les étapes nécessaires.",
+          "video": "https://www.youtube-nocookie.com/embed/QEDWh4mfd_s"
+        },
+        "cancellation": {
+          "question": "Comment et où puis-je annuler et supprimer mon compte/abonnement ?",
+          "answer": "Si vous êtes connecté, vous pouvez supprimer votre compte en sélectionnant « Supprimer compte » dans le menu en bas de votre profil. Cette étape ne peut pas être annulée.",
+          "video": "https://www.youtube-nocookie.com/embed/oN4uhP2us9w"
+        },
+        "prices": {
+          "question": "Quels sont les prix ?",
+          "answer": "<p class='paragraph'>A l'issue de la période d'essai gratuite, un abonnement coûte CHF 499.- par an, TVA comprise. Si l'abonnement est souscrit avant la fin decembre 2020, il y aura une réduction de CHF 100.- sur la première année.</p><p class='paragraph'>Les coûts du support exceptionnel seront estimés individuellement et effectivement facturés (dans la limite de ±10% de l'estimation) après accord de l'utilisateur.</p><p class='paragraph'>Agricontrol offre divers services payants sur demande, comme l'enregistrement a prèalable de vos derniers plans de rotation des cultures. Les demandes de renseignements doivent être envoyées à help@agricontrol.app. Vous serez facturé par tranche de 30 minutes ou partie de 30 minutes au prix de CHF 50 hors TVA.</p><p class='paragraph'>Les frais de données (Internet) pour l'utilisation d'Agricontrol sont entièrement à la charge du client.</p>"
         }
       },
       "platform": {
@@ -321,19 +330,23 @@
         },
         "colorMaster": {
           "question": "Quel est le but de la maquette de couleur ?",
-          "answer": "Dans la maquette de couleur vous pouvez personnaliser les couleurs affichées dans la plateforme pour les cultures respectives selon vos goûts."
+          "answer": "Dans la maquette de couleur vous pouvez personnaliser les couleurs affichées dans la plateforme pour les cultures respectives selon vos goûts.",
+          "video": "https://www.youtube-nocookie.com/embed/9nQHdL51USU"
         },
         "lists": {
           "question": "Pourquoi ai-je des listes ?",
-          "answer": "<p class=\"paragraph\">Dans la plateforme, vous trouverez les listes dans le menu, en haut à droite. Il y a une liste pour les couleurs des cultures, les engrais, les phytosanitaires, les machines et les mesures de travail du sol. Une fois définies, les valeurs de cette liste sont disponibles dans la plateforme.</p><p class=\"paragraph\">Cet enregistrement est nécessaire si vous voulez utiliser les fonctions liées aux feuilles de la culture. De nouvelles entrées ou des modifications à une liste peuvent être effectuées à tout moment.</p>"
+          "answer": "<p class=\"paragraph\">Dans la plateforme, vous trouverez les listes dans le menu, en haut à droite. Il y a une liste pour les couleurs des cultures, les engrais, les phytosanitaires, les machines et les mesures de travail du sol. Une fois définies, les valeurs de cette liste sont disponibles dans la plateforme.</p><p class=\"paragraph\">Cet enregistrement est nécessaire si vous voulez utiliser les fonctions liées aux feuilles de la culture. De nouvelles entrées ou des modifications à une liste peuvent être effectuées à tout moment.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/tS_wP27Ufu0"
         },
         "overview": {
           "question": "Quelles sont les informations que je vois dans l'aperçu ?",
-          "answer": "<p class=\"paragraph\">Dans la vue d'ensemble, vous pouvez voir tous les champs enregistrés, y compris la taille et la zone écologique. Vous pouvez également voir les cultures sur les parcelles respectives pour la période d'un an. Avec une barre coulissante, vous pouvez décaler cette période dans le futur ou dans le passé.</p><p class=\"paragraph\">Si vous placez la souris sur une culture, d'autres informations s'affichent. Chaque champ comporte trois symboles ronds. Avec le premier symbole, vous pouvez ajuster le champ existant (par exemple le nom), avec le second vous accédez aux informations du champ et avec un clic sur le dernier vous avez la possibilité d'archiver le champ.</p><p class=\"paragraph\">Une parcelle archivée peut être à nouveau affichée si vous cochez la case \"Afficher les parcelles archivées\" et activée si nécessaire si vous cochez à nouveau le troisième symbole. Un clic derrière la parcelle désirée vous permet d'entrer une nouvelle culture.</p><p class=\"paragraph\">A la fin du tableau de bord, les chiffres clés pour la taille totale de tous les parcelles, le nombre de parcelles et le nombre de cultures actuellement échangées s'affichent. Vous pouvez également voir sur quelle taille de.</p>"
+          "answer": "<p class=\"paragraph\">Dans la vue d'ensemble, vous pouvez voir tous les champs enregistrés, y compris la taille et la zone écologique. Vous pouvez également voir les cultures sur les parcelles respectives pour la période d'un an. Avec une barre coulissante, vous pouvez décaler cette période dans le futur ou dans le passé.</p><p class=\"paragraph\">Si vous placez la souris sur une culture, d'autres informations s'affichent. Chaque champ comporte trois symboles ronds. Avec le premier symbole, vous pouvez ajuster le champ existant (par exemple le nom), avec le second vous accédez aux informations du champ et avec un clic sur le dernier vous avez la possibilité d'archiver le champ.</p><p class=\"paragraph\">Une parcelle archivée peut être à nouveau affichée si vous cochez la case \"Afficher les parcelles archivées\" et activée si nécessaire si vous cochez à nouveau le troisième symbole. Un clic derrière la parcelle désirée vous permet d'entrer une nouvelle culture.</p><p class=\"paragraph\">A la fin du tableau de bord, les chiffres clés pour la taille totale de tous les parcelles, le nombre de parcelles et le nombre de cultures actuellement échangées s'affichent. Vous pouvez également voir sur quelle taille de.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/TdwjZ1oY-TA"
         },
         "newField": {
           "question": "Comment saisir ue nouvelle parcelle?",
-          "answer": "En cliquant sur le bouton + en haut à gauche, un nouveau champ peut être créé. Pour cela, vous avez besoin d'informations que vous devez entrer dans la case de saisie qui s'ouvre."
+          "answer": "En cliquant sur le bouton + en haut à gauche, un nouveau champ peut être créé. Pour cela, vous avez besoin d'informations que vous devez entrer dans la case de saisie qui s'ouvre.",
+          "video": "https://www.youtube-nocookie.com/embed/-BH8kerhPPg"
         },
         "deleteField": {
           "question": "Comment puis-je effacer un champ?",
@@ -341,7 +354,8 @@
         },
         "cultures": {
           "question": "Comment puis-je saisir des cultures et comment puis-je faire des ajustements ?",
-          "answer": "<p class=\"paragraph\">En cliquant sur le bouton \"Nouvelle culture\", une nouvelle culture est crée. Les informations requises sont saisies dans la fenêtre qui s'ouvre et peuvent être adaptées ultérieurement si nécessaire. Il suffit de passer la souris sur la culture et de cliquer sur le symbole du crayon.</p><p class=\"paragraph\">Si vous vous déplacez dans la synthèse de la culture, des informations supplémentaires s'affichent, telles que les personnes avec lesquelles le champ est échangé et la période pendant laquelle la même culture a déjà été plantée sur ce champ.</p><p class=\"paragraph\">Un symbole indique si la planification actuelle ne correspond pas à la planification de la rotation des cultures ou si le champ a été échangé.</p>"
+          "answer": "<p class=\"paragraph\">En cliquant sur le bouton \"Nouvelle culture\", une nouvelle culture est crée. Les informations requises sont saisies dans la fenêtre qui s'ouvre et peuvent être adaptées ultérieurement si nécessaire. Il suffit de passer la souris sur la culture et de cliquer sur le symbole du crayon.</p><p class=\"paragraph\">Si vous vous déplacez dans la synthèse de la culture, des informations supplémentaires s'affichent, telles que les personnes avec lesquelles le champ est échangé et la période pendant laquelle la même culture a déjà été plantée sur ce champ.</p><p class=\"paragraph\">Un symbole indique si la planification actuelle ne correspond pas à la planification de la rotation des cultures ou si le champ a été échangé.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/5N9p2iH8nIU"
         },
         "fieldInfos": {
           "question": "Qu'est-ce que je vois dans les données de la parcelle ?",
@@ -349,11 +363,30 @@
         },
         "cultureSheets": {
           "question": "Que sont les feuilles de culture ?",
-          "answer": "Les fiches de culture sont en cours de réalisation et seront disponibles vers le début du mois d'août. Vous aurez la possibilité de saisir et d'exporter toutes les activités sur le champ (fertilisation, culture du sol, protection des plantes, etc.) qui sont nécessaires au contrôle et à la planification."
+          "answer": "Les fiches de culture sont en cours de réalisation et seront disponibles vers le début du mois d'août. Vous aurez la possibilité de saisir et d'exporter toutes les activités sur le champ (fertilisation, culture du sol, protection des plantes, etc.) qui sont nécessaires au contrôle et à la planification.",
+          "video": "https://www.youtube-nocookie.com/embed/9RMLEeyYwYY"
         },
         "exports": {
           "question": "Où puis-je exporter mes données et que puisje y voir ?",
           "answer": "<p class=\"paragraph\">Les exportations peuvent être créées soit dans les informations du champ en cliquant sur le bouton Exporter, ou par un clic sur Exporter dans la navigation du haut. Avant d'exporter, vous pouvez choisir si l'exportation doit être créée sous forme graphique ou tabulaire.</p><p class=\"paragraph\">Vous pouvez également sélectionner la période et les zones à afficher dans les exports. Afin de pouvoir créer une exportation totale suffisante pour le contrôle, vous devez enregistrer les 7 dernières années. Sur les deux exportations, la culture, la durée de la culture, la surface plantée, le nom du champ et plus encore sont visibles.</p>"
+        },
+        "whatCultures": {
+          "question": "Quelles sont les cultures qui peuvent être sélectionnées en travaillant avec Agricontrol ?",
+          "answer": "La liste des cultures est constamment adaptée et élargie. La liste se trouve dans le menu sous le point cultures où vous pouvez également ajuster la couleur par culture individuellement. N'hésitez pas à nous contacter si une culture vous manque."
+        },
+        "inventory": {
+          "question": "Où puis-je trouver l'inventaire et comment fonctionne-t-il ?",
+          "answer": "<p class='paragraph'>L'inventaire se trouve dans le menu en haut à droite. L'inventaire sert à toujours voir combien d'engrais et de pesticides il reste dans le camp. En outre, il devrait permettre d'être prêt pour un contrôle à tout moment ou de voir et d'imprimer le statut pour une date souhaitée.</p><p class='paragraph'>Lorsque l'inventaire est ouvert pour la première fois, il est encore vide. L'inventaire comporte trois sections pour les deux domaines que sont les engrais et les pesticides. Dans la section « en stock », vous pouvez voir ce qui est actuellement en stock. Sont incluses toutes les activités qui sont déjà enregistrées, même si elles le sont dans le futur. Sont également inclus dans l'inventaire les nouveaux stockages, si ceux-ci ont déjà été enregistrés pour l'avenir.</p><p class='paragraph'>Dans la zone « Remplir le stock », je peux ajouter de nouvelles quantités à l'inventaire en quelques clics en remplissant les champs nécessaires (produit, quantité, date, etc.). Il est également possible de saisir plusieurs produits en même temps, si la date et le fournisseur sont identiques. Les produits doivent être inscrits une fois dans la liste maîtresse correspondante.</p><p class='paragraph'>Dans la zone historique, je peux voir toutes les nouvelles entrées précédentes dans l'inventaire. En un clic, je peux supprimer ou ajuster cette entrée si elle est incorrecte.</p><p class='paragraph'>Une fois l'inventaire saisi, les stocks sont automatiquement mis à jour lorsque des activités pertinentes (engrais et pesticides dans les feuilles de culture) sont saisies ou que l'entrepôt est réapprovisionné.</p><p class='paragraph'>Sous « Exporter », l'inventaire de chaque jour peut être consulté et exporté pour être imprimé. Les montants indiqués comprennent toutes les activités et les réapprovisionnements de l'inventaire qui ont eu lieu jusqu'au jour souhaité inclus. Par exemple, l'activité de fertilisation du 20 octobre est toujours incluse dans l'exportation à partir du 20 octobre, mais le réapprovisionnement prévu et déjà enregistré du 21 octobre ne l'est pas.</p>",
+          "video": "https://www.youtube-nocookie.com/embed/puPKJY6Igzc"
+        },
+        "exportsDontWork": {
+          "question": "Pourquoi peux-j'y pas créer d'exportations?",
+          "answer": "Votre période d'essai gratuit ou votre abonnement a-t-il expiré ? Si c'est le cas, vous ne pourrez pas créer d'exportations tant que vous n'aurez pas renouvelé votre abonnement. Si ce n'est pas le cas, il est généralement utile de supprimer l'historique du navigateur, y compris le cache.",
+          "video": "https://www.youtube-nocookie.com/embed/tGVbWBzyhIY"
+        },
+        "endlessLoading": {
+          "question": "Après la connexion, pourquoi je n'obtiens qu'un écran de chargement ?",
+          "answer": "Si, après la connexion ou à tout autre moment, seul un écran de chargement est visible et que celui-ci ne disparaît pas même après 10 secondes, il est généralement utile de rafraîchir la page. Si cela n'aide pas, il peut être utile de fermer complètement la page et, si nécessaire, d'effacer l'historique et le cache du navigateur et d'essayer à nouveau par la suite."
         }
       },
       "help": {
