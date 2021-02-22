@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'sweet/web',
+  extends: 'sweet',
   overrides: [{
     files: 'stylelint.config.js',
     rules: {
