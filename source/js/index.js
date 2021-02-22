@@ -1,6 +1,6 @@
 import './polyfills';
 import './navigation';
-import './i18n';
+import './translate';
 import './mobile-nav';
 import './cookies';
 import './sidebar-nav';
