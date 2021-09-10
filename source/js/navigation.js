@@ -17,7 +17,7 @@ const scrollToNode = event => {
 
 const cameFromAnotherPageWithHash = () => {
   if (location.hash) {
-    const section = `[data-${location.hash.substring(1)}-anchor]`;
+    const section = `[data-${location.hash.slice(1)}-anchor]`;
     jump(section);
     location.hash = '';
   }

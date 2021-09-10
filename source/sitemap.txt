@@ -1,9 +1,6 @@
-https://agricontrol.app
-https://agricontrol.app/dashboard
-https://agricontrol.app/dashboard/login
-https://agricontrol.app/dashboard/register
-https://agricontrol.app/faq.html
-https://agricontrol.app/ueber-uns.html
-https://agricontrol.app/nutzungsbedingungen.html
-https://agricontrol.app/impressum.html
-https://agricontrol.app/datenschutz.html
+https://agricontrol.ch
+https://agricontrol.ch/faq.html
+https://agricontrol.ch/ueber-uns.html
+https://agricontrol.ch/nutzungsbedingungen.html
+https://agricontrol.ch/impressum.html
+https://agricontrol.ch/datenschutz.html

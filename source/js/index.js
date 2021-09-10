@@ -1,4 +1,3 @@
-import './polyfills';
 import './navigation';
 import './translate';
 import './mobile-nav';
